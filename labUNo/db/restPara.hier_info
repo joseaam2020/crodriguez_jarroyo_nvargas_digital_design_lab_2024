@@ -1,0 +1,16 @@
+|restPara_tb
+
+
+|restPara_tb|restPara:rest
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[1].IN0
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+wq[0] => q[0]~reg0.ADATA
+wq[1] => q[1]~reg0.ADATA
+we => q[1].IN1
+
+
