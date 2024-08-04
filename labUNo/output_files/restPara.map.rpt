@@ -1,5 +1,5 @@
 Analysis & Elaboration report for restPara
-Thu Aug 01 13:10:11 2024
+Sat Aug 03 21:37:36 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -9,11 +9,15 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: restPara:rest
-  5. Analysis & Elaboration Settings
-  6. Port Connectivity Checks: "restPara:rest"
-  7. Analysis & Elaboration Messages
-  8. Analysis & Elaboration Suppressed Messages
+  4. Parameter Settings for User Entity Instance: restPara:rest0
+  5. Parameter Settings for User Entity Instance: restPara:rest1
+  6. Parameter Settings for User Entity Instance: restPara:rest2
+  7. Analysis & Elaboration Settings
+  8. Port Connectivity Checks: "restPara:rest2"
+  9. Port Connectivity Checks: "restPara:rest1"
+ 10. Port Connectivity Checks: "restPara:rest0"
+ 11. Analysis & Elaboration Messages
+ 12. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -40,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Aug 01 13:10:10 2024       ;
+; Analysis & Elaboration Status ; Successful - Sat Aug 03 21:37:36 2024       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; restPara                                    ;
 ; Top-level Entity Name         ; restPara_tb                                 ;
@@ -60,8 +64,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -71,13 +75,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restPara:rest ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; N              ; 2     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: restPara:rest0 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 2     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: restPara:rest1 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 4     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: restPara:rest2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 6     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -168,14 +192,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restPara:rest"                                                                                                                             ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                    ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
-; wq   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (2 bits) it drives.  Extra input bit(s) "wq[1..1]" will be connected to GND. ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "restPara:rest2"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "restPara:rest1"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "restPara:rest0"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -184,28 +225,124 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Aug 01 13:09:55 2024
+    Info: Processing started: Sat Aug 03 21:37:26 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off labUno -c restPara --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file restpara.sv
     Info (12023): Found entity 1: restPara File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file restpara_tb.sv
     Info (12023): Found entity 1: restPara_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 2
 Info (12127): Elaborating entity "restPara_tb" for the top level hierarchy
-Warning (10755): Verilog HDL warning at restPara_tb.sv(19): assignments to clk create a combinational loop File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 19
-Warning (10230): Verilog HDL assignment warning at restPara_tb.sv(26): truncated value with size 32 to match size of target (1) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 26
-Info (12128): Elaborating entity "restPara" for hierarchy "restPara:rest" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 16
+Warning (10755): Verilog HDL warning at restPara_tb.sv(40): assignments to clk create a combinational loop File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 40
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          63 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          62 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          61 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          60 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          59 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          58 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          57 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          56 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          55 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          54 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          53 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          52 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          51 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          50 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          49 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          48 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          47 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          46 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          45 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          44 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          43 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          42 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          41 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          40 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          39 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          38 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          37 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          36 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          35 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          34 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          33 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          32 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          31 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          30 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          29 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          28 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          27 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          26 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          25 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          24 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          23 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          22 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          21 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          20 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          19 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          18 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          17 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          16 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          15 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          14 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          13 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          12 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          11 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =          10 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           9 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           8 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           7 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           6 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           5 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           4 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           3 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           2 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           1 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(63): q2 =  0, i =           0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 63
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =          15 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =          14 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =          13 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =          12 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =          11 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =          10 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           9 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           8 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           7 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           6 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           5 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           4 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           3 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           2 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           1 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(71): q1 =  0, i =           0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(80): q0 = 0, i =           3 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 80
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(80): q0 = 0, i =           2 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 80
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(80): q0 = 0, i =           1 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 80
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(80): q0 = 0, i =           0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 80
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(86): q0 = 0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 86
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(87): q1 =  0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 87
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(88): q2 =  0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 88
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(90): Enabling write, all counters set to one File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 90
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(104): q0 = 0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 104
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(105): q1 =  0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 105
+Info (10648): Verilog HDL Display System Task info at restPara_tb.sv(106): q2 =  0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 106
+Warning (10175): Verilog HDL warning at restPara_tb.sv(108): ignoring unsupported system task File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 108
+Info (12128): Elaborating entity "restPara" for hierarchy "restPara:rest0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at restPara.sv(19): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara.sv Line: 19
+Info (12128): Elaborating entity "restPara" for hierarchy "restPara:rest1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 30
+Warning (10230): Verilog HDL assignment warning at restPara.sv(19): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara.sv Line: 19
+Info (12128): Elaborating entity "restPara" for hierarchy "restPara:rest2" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 38
+Warning (10230): Verilog HDL assignment warning at restPara.sv(19): truncated value with size 32 to match size of target (6) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara.sv Line: 19
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 4
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+    Warning (12110): Net "reset" is missing source, defaulting to GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 5
+    Warning (12110): Net "we" is missing source, defaulting to GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara_tb.sv Line: 6
 Info (144001): Generated suppressed messages file C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/output_files/restPara.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4770 megabytes
-    Info: Processing ended: Thu Aug 01 13:10:11 2024
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:22
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4763 megabytes
+    Info: Processing ended: Sat Aug 03 21:37:37 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +--------------------------------------------+
