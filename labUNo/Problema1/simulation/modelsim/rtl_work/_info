@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/simulation/modelsim
 vbinary2bcd
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1722713425
+!s110 1722832922
 !i10b 1
 !s100 cgZB[F5@;OhP3<_BCO<7k1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,25 +19,25 @@ I@JHFUl2F6fN@0S4nW6OS=0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1722713389
+Z4 w1722831975
 8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv
 FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv
 !i122 0
 L0 3 16
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1722713425.000000
+!s108 1722832922.000000
 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv|
 !i113 1
-Z5 o-sv -work work
-Z6 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1
-Z7 tCvgOpt 0
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1
+Z8 tCvgOpt 0
 vbinary2bcd_tb
 R1
-!s110 1722713426
+!s110 1722832923
 !i10b 1
 !s100 nmN5_gfMFNINSI@DIJgS70
 R2
@@ -45,19 +45,19 @@ IzzmU:1bY3P:]3lCm7^X0;2
 R3
 S1
 R0
-w1722712779
+R4
 8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv
 FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv
 !i122 1
 L0 3 17
-R4
+R5
 r1
 !s85 0
 31
-!s108 1722713426.000000
+!s108 1722832923.000000
 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv|
 !i113 1
-R5
 R6
 R7
+R8

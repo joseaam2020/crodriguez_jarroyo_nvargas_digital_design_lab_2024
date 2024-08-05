@@ -12,29 +12,29 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1 {C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:30:25 on Aug 03,2024
+# Start time: 22:42:02 on Aug 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1" C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv 
 # -- Compiling module binary2bcd
 # 
 # Top level modules:
 # 	binary2bcd
-# End time: 13:30:25 on Aug 03,2024, Elapsed time: 0:00:00
+# End time: 22:42:02 on Aug 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1 {C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:30:26 on Aug 03,2024
+# Start time: 22:42:03 on Aug 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1" C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv 
 # -- Compiling module binary2bcd_tb
 # 
 # Top level modules:
 # 	binary2bcd_tb
-# End time: 13:30:26 on Aug 03,2024, Elapsed time: 0:00:00
+# End time: 22:42:03 on Aug 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  binary2bcd_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" binary2bcd_tb 
-# Start time: 13:30:26 on Aug 03,2024
+# Start time: 22:42:03 on Aug 04,2024
 # Loading sv_std.std
 # Loading work.binary2bcd_tb
 # Loading work.binary2bcd
@@ -45,5 +45,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 13:31:55 on Aug 03,2024, Elapsed time: 0:01:29
+# End time: 23:31:31 on Aug 04,2024, Elapsed time: 0:49:28
 # Errors: 0, Warnings: 0
