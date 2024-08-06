@@ -12,32 +12,47 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1 {C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:42:02 on Aug 04,2024
+# Start time: 09:32:55 on Aug 06,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1" C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv 
 # -- Compiling module binary2bcd
 # 
 # Top level modules:
 # 	binary2bcd
-# End time: 22:42:02 on Aug 04,2024, Elapsed time: 0:00:00
+# End time: 09:32:55 on Aug 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1 {C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/SevenSegmentDisplay.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:32:55 on Aug 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1" C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/SevenSegmentDisplay.sv 
+# -- Compiling module SevenSegmentDisplay
+# 
+# Top level modules:
+# 	SevenSegmentDisplay
+# End time: 09:32:55 on Aug 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1 {C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:42:03 on Aug 04,2024
+# Start time: 09:32:55 on Aug 06,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1" C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv 
 # -- Compiling module binary2bcd_tb
 # 
 # Top level modules:
 # 	binary2bcd_tb
-# End time: 22:42:03 on Aug 04,2024, Elapsed time: 0:00:00
+# End time: 09:32:56 on Aug 06,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  binary2bcd_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" binary2bcd_tb 
-# Start time: 22:42:03 on Aug 04,2024
+# Start time: 09:32:56 on Aug 06,2024
 # Loading sv_std.std
 # Loading work.binary2bcd_tb
 # Loading work.binary2bcd
+# Loading work.SevenSegmentDisplay
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /binary2bcd_tb/DUT File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv Line: 9
+# ** Warning: (vsim-3722) C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv(9): [TFMPC] - Missing connection for port 'display_output'.
+# ** Warning: (vsim-3722) C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv(9): [TFMPC] - Missing connection for port 'display_output2'.
 # 
 # add wave *
 # view structure
@@ -45,5 +60,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 23:31:31 on Aug 04,2024, Elapsed time: 0:49:28
-# Errors: 0, Warnings: 0
+# End time: 09:38:29 on Aug 06,2024, Elapsed time: 0:05:33
+# Errors: 0, Warnings: 3

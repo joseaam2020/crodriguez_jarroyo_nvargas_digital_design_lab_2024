@@ -1,26 +1,51 @@
 |binary2bcd
-binary_in[0] => binary_in[0].IN1
-binary_in[1] => binary_in[1].IN1
-binary_in[2] => binary_in[2].IN1
-binary_in[3] => binary_in[3].IN1
-bcd_out[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-bcd_out[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-bcd_out[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-bcd_out[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-bcd_out[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-bcd_out[5] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-bcd_out[6] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-bcd_out[7] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-display_output[0] <= SevenSegmentDisplay:display1.display_output
-display_output[1] <= SevenSegmentDisplay:display1.display_output
-display_output[2] <= SevenSegmentDisplay:display1.display_output
-display_output[3] <= SevenSegmentDisplay:display1.display_output
-display_output[4] <= SevenSegmentDisplay:display1.display_output
-display_output[5] <= SevenSegmentDisplay:display1.display_output
-display_output[6] <= SevenSegmentDisplay:display1.display_output
+binary_in[0] => Div0.IN7
+binary_in[0] => Mod0.IN7
+binary_in[1] => Div0.IN6
+binary_in[1] => Mod0.IN6
+binary_in[2] => Div0.IN5
+binary_in[2] => Mod0.IN5
+binary_in[3] => Div0.IN4
+binary_in[3] => Mod0.IN4
+bcd_out[0] << bcd_out[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[1] << bcd_out[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[2] << bcd_out[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[3] << bcd_out[3].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[4] << bcd_out[4].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[5] << bcd_out[5].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[6] << bcd_out[6].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[7] << bcd_out[7].DB_MAX_OUTPUT_PORT_TYPE
+display_output[0] << SevenSegmentDisplay:display1.display_output
+display_output[1] << SevenSegmentDisplay:display1.display_output
+display_output[2] << SevenSegmentDisplay:display1.display_output
+display_output[3] << SevenSegmentDisplay:display1.display_output
+display_output[4] << SevenSegmentDisplay:display1.display_output
+display_output[5] << SevenSegmentDisplay:display1.display_output
+display_output[6] << SevenSegmentDisplay:display1.display_output
+display_output2[0] << SevenSegmentDisplay:display2.display_output
+display_output2[1] << SevenSegmentDisplay:display2.display_output
+display_output2[2] << SevenSegmentDisplay:display2.display_output
+display_output2[3] << SevenSegmentDisplay:display2.display_output
+display_output2[4] << SevenSegmentDisplay:display2.display_output
+display_output2[5] << SevenSegmentDisplay:display2.display_output
+display_output2[6] << SevenSegmentDisplay:display2.display_output
 
 
 |binary2bcd|SevenSegmentDisplay:display1
+binary_input[0] => Decoder0.IN3
+binary_input[1] => Decoder0.IN2
+binary_input[2] => Decoder0.IN1
+binary_input[3] => Decoder0.IN0
+display_output[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_output[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_output[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_output[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_output[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary2bcd|SevenSegmentDisplay:display2
 binary_input[0] => Decoder0.IN3
 binary_input[1] => Decoder0.IN2
 binary_input[2] => Decoder0.IN1

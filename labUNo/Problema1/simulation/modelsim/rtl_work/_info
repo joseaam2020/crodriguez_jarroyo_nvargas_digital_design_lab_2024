@@ -11,53 +11,80 @@ cModel Technology
 Z0 dC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/simulation/modelsim
 vbinary2bcd
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1722832922
+Z2 !s110 1722958375
 !i10b 1
-!s100 cgZB[F5@;OhP3<_BCO<7k1
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I@JHFUl2F6fN@0S4nW6OS=0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 _:FbdHNVeJ7LJD=9am=9L2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUS92DnfOD7SQVFSaHzdTl1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z4 w1722831975
+w1722957594
 8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv
 FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv
 !i122 0
-L0 3 16
+L0 3 23
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1722832922.000000
+Z6 !s108 1722958375.000000
 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1
-Z8 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1
+Z9 tCvgOpt 0
 vbinary2bcd_tb
 R1
-!s110 1722832923
+!s110 1722958376
 !i10b 1
 !s100 nmN5_gfMFNINSI@DIJgS70
-R2
-IzzmU:1bY3P:]3lCm7^X0;2
 R3
+IzzmU:1bY3P:]3lCm7^X0;2
+R4
 S1
 R0
-R4
+w1722831975
 8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv
 FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv
-!i122 1
+!i122 2
 L0 3 17
 R5
 r1
 !s85 0
 31
-!s108 1722832923.000000
+R6
 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/binary2bcd_tb.sv|
 !i113 1
-R6
 R7
 R8
+R9
+vSevenSegmentDisplay
+R1
+R2
+!i10b 1
+!s100 M7Y=86S;9DZYU4[bBN;NR1
+R3
+I3h>BAVB`FkTSd7kQgVlWl0
+R4
+S1
+R0
+w1722835173
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/SevenSegmentDisplay.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/SevenSegmentDisplay.sv
+!i122 1
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/SevenSegmentDisplay.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/SevenSegmentDisplay.sv|
+!i113 1
+R7
+R8
+R9
+n@seven@segment@display

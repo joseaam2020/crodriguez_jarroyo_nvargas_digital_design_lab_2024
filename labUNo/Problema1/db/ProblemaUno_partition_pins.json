@@ -24,6 +24,50 @@
 					"strict" : false
 				},
 				{
+					"name" : "display_output[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_output2[5]",
+					"strict" : false
+				},
+				{
 					"name" : "binary_in[0]",
 					"strict" : false
 				},

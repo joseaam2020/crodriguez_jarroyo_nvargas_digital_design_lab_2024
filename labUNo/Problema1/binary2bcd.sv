@@ -3,7 +3,7 @@
 module binary2bcd (
 	input logic [3:0] binary_in,
 	output logic [7:0] bcd_out,
-	output logic [6:0] display_output
+	output logic [6:0] display_output,
 	output logic [6:0] display_output2
 );
 	
@@ -19,7 +19,7 @@ module binary2bcd (
 	
 	assign bcd_out = {tens, ones}; // Aquí se concatena o une todo el número 
 	
-	SevenSegmentDisplay display1 (.binary_input(bcd_out[3:0]), .display_output(display_output));
-	SevenSegmentDisplay display2 (.binary_input(bcd_out[7:4]), .display_output(display_output2));
+	SevenSegmentDisplay display1 (.binary_input(bcd_out[3:0]), .display_output(display_output)); // Para las unidades 
+	SevenSegmentDisplay display2 (.binary_input(bcd_out[7:4]), .display_output(display_output2)); // Para las decenas
 	
 endmodule 
