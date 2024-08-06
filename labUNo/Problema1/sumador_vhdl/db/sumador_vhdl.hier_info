@@ -1,0 +1,39 @@
+|sumador_vhdl
+a => a_and0.IN0
+a => c_and0.IN0
+a => a_xor0.IN0
+a => a_and1.IN0
+a => a_xor1.IN0
+a => a_and2.IN0
+a => a_xor2.IN0
+a => a_and3.IN0
+a => a_xor3.IN0
+b => a_and0.IN1
+b => b_and0.IN0
+b => a_xor0.IN1
+b => a_and1.IN1
+b => b_and1.IN0
+b => a_xor1.IN1
+b => a_and2.IN1
+b => b_and2.IN0
+b => a_xor2.IN1
+b => a_and3.IN1
+b => b_and3.IN0
+b => a_xor3.IN1
+c => b_and0.IN1
+c => c_and0.IN1
+c => s0.IN1
+c => b_and1.IN1
+c => b_and2.IN1
+c => b_and3.IN1
+c0 << c0.DB_MAX_OUTPUT_PORT_TYPE
+s0 << s0.DB_MAX_OUTPUT_PORT_TYPE
+c1 << c_and2.DB_MAX_OUTPUT_PORT_TYPE
+s1 << s1.DB_MAX_OUTPUT_PORT_TYPE
+c2 << c_and3.DB_MAX_OUTPUT_PORT_TYPE
+s2 << s2.DB_MAX_OUTPUT_PORT_TYPE
+c3 << c3.DB_MAX_OUTPUT_PORT_TYPE
+s3 << s3.DB_MAX_OUTPUT_PORT_TYPE
+s4 << c3.DB_MAX_OUTPUT_PORT_TYPE
+
+
