@@ -1,0 +1,59 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity sumador_vhdl is
+    port(
+        a : in  STD_LOGIC;
+        b : in  STD_LOGIC;
+        c : in  STD_LOGIC;
+		  
+        C0 : out STD_LOGIC; 
+        S0 : out STD_LOGIC
+		  
+		  C1 : out STD_LOGIC; 
+        S1 : out STD_LOGIC
+		  
+		  C2 : out STD_LOGIC; 
+        S2 : out STD_LOGIC;
+		  
+		  C3 : out STD_LOGIC; 
+        S3 : out STD_LOGIC;
+		  
+		  S4 : out STD_LOGIC
+		  
+		  
+		  
+		   
+		  
+    );
+end entity;
+
+architecture behavior of sumador_vhdl is
+begin
+    process(a, b, c)
+    begin
+       
+        S0 <= (a xor b) xor c; 
+        C0 <= (a and b) or (b and c) or (a and c); 
+		  
+		  S1 <= (a xor b) xor C0; 
+        C1 <= (a and b) or (b and C0) or (a and C0); 
+		  
+		  S2 <= (a xor b) xor C1; 
+        C2 <= (a and b) or (b and C1) or (a and C1); 
+		  
+		  S3 <= (a xor b) xor C2; 
+        C3 <= (a and b) or (b and C2) or (a and C2); 
+		  
+		  S4 <= C3;
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+    end process;
+end architecture;
