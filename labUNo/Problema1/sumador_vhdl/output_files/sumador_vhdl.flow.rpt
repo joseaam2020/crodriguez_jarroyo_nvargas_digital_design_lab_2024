@@ -1,5 +1,5 @@
 Flow report for sumador_vhdl
-Mon Aug 05 18:46:13 2024
+Tue Aug 06 11:53:28 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Mon Aug 05 18:46:13 2024       ;
+; Flow Status                 ; Successful - Tue Aug 06 11:53:28 2024       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; sumador_vhdl                                ;
 ; Top-level Entity Name       ; sumador_vhdl                                ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/05/2024 18:45:59 ;
+; Start date & time ; 08/06/2024 11:53:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sumador_vhdl        ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 228800457882635.172290515902808        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 26694249407863.172296679315820         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; sumador_tb     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; sumador_tb                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -100,8 +100,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:15     ; 1.0                     ; 4827 MB             ; 00:00:33                           ;
-; Total                  ; 00:00:15     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Elaboration ; 00:00:16     ; 1.0                     ; 4842 MB             ; 00:00:26                           ;
+; Total                  ; 00:00:16     ; --                      ; --                  ; 00:00:26                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,7 +110,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-UMDOO3C  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; Noemí            ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 

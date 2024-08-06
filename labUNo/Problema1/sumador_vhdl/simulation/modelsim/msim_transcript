@@ -10,33 +10,33 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/genne/OneDrive/Escritorio/taller_digitales/sumador_vhdl/sumador_vhdl.vhd}
+# vcom -93 -work work {C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:46:26 on Aug 05,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/genne/OneDrive/Escritorio/taller_digitales/sumador_vhdl/sumador_vhdl.vhd 
+# Start time: 11:53:51 on Aug 06,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sumador_vhdl
 # -- Compiling architecture Behavioral of sumador_vhdl
-# End time: 18:46:26 on Aug 05,2024, Elapsed time: 0:00:00
+# End time: 11:53:51 on Aug 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/genne/OneDrive/Escritorio/taller_digitales/sumador_vhdl/sumador_tb.vhd}
+# vcom -93 -work work {C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:46:27 on Aug 05,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/genne/OneDrive/Escritorio/taller_digitales/sumador_vhdl/sumador_tb.vhd 
+# Start time: 11:53:52 on Aug 06,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sumador_tb
 # -- Compiling architecture Behavioral of sumador_tb
-# End time: 18:46:27 on Aug 05,2024, Elapsed time: 0:00:00
+# End time: 11:53:52 on Aug 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  sumador_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" sumador_tb 
-# Start time: 18:46:27 on Aug 05,2024
+# Start time: 11:53:52 on Aug 06,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -49,5 +49,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 18:48:45 on Aug 05,2024, Elapsed time: 0:02:18
+# End time: 11:58:08 on Aug 06,2024, Elapsed time: 0:04:16
 # Errors: 0, Warnings: 0

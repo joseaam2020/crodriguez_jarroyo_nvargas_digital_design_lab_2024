@@ -6,7 +6,8 @@ end sumador_tb;
 
 architecture Behavioral of sumador_tb is
 
-    signal a, b, c : STD_LOGIC;
+    signal a, b : STD_LOGIC_vector(0 to 3);
+	 signal c: STD_LOGIC;
     signal c0, s0 : STD_LOGIC;
     signal c1, s1 : STD_LOGIC;
     signal c2, s2 : STD_LOGIC;
@@ -15,8 +16,8 @@ architecture Behavioral of sumador_tb is
 
     component sumador_vhdl
         port (
-            a : in STD_LOGIC;
-            b : in STD_LOGIC;
+            a : in std_logic_vector (0 to 3);
+            b : in std_logic_vector (0 to 3);
             c : in STD_LOGIC;
             
             c0 : out STD_LOGIC;
@@ -61,46 +62,35 @@ begin
     stim_proc: process
     begin
         
-        a <= '0';
-        b <= '0';
+        a <= "0000";
+        b <= "0000";
         c <= '0';
         wait for 40 ns;
 
-        a <= '0';
-        b <= '0';
+        a <= "0000";
+        b <= "0000";
         c <= '1';
         wait for 40 ns;
 
-        a <= '0';
-        b <= '1';
+        a <= "1010";
+        b <= "1010";
         c <= '0';
         wait for 40 ns;
 
-        a <= '0';
-        b <= '1';
+        a <= "0101";
+        b <= "0101";
         c <= '1';
         wait for 40 ns;
 
-        a <= '1';
-        b <= '0';
+        a <= "1010";
+        b <= "1010";
         c <= '0';
         wait for 40 ns;
 
-        a <= '1';
-        b <= '0';
+        a <= "1010";
+        b <= "1010";
         c <= '1';
-        wait for 40 ns;
-
-        a <= '1';
-        b <= '1';
-        c <= '0';
-        wait for 40 ns;
-
-        a <= '1';
-        b <= '1';
-        c <= '1';
-        wait for 40 ns;
-
+       
         wait;
     end process;
 
