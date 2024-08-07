@@ -92,7 +92,7 @@ begin
 -----------------------------------------------------------------------    
     
     s4 <= c3;
-	 LED_in <= s0 & s1 & s2 & s3;
+	 LED_in <= s3 & s2 & s1 & s0;
 	 
 	 display: seven_segment
 		port map(
