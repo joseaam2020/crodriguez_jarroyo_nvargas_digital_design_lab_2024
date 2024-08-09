@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/simulation/modelsim
+Eseven_segment
+Z1 w1723060270
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/seven_segment.vhd
+Z5 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/seven_segment.vhd
+l0
+L4 1
+V0jch`0J[PlN3kC4^bOJdG0
+!s100 [P_:oPa@jT2bz^Z5OUG=n0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1723060404
+!i10b 1
+Z8 !s108 1723060404.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/seven_segment.vhd|
+Z10 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/seven_segment.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 13 seven_segment 0 22 0jch`0J[PlN3kC4^bOJdG0
+!i122 0
+l14
+L12 27
+V8IZ;X>`=WCFcK^1;DzK<Y1
+!s100 f2ooS`@?fj=Q0Y1S5R5a91
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esumador_tb
+Z13 w1723059091
+R2
+R3
+!i122 2
+R0
+Z14 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_tb.vhd
+Z15 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_tb.vhd
+l0
+L4 1
+VdWF>_M>CbX?Aje<l=_C1h0
+!s100 Wk4G]T8bTW:U80fYG726`0
+R6
+31
+Z16 !s110 1723060405
+!i10b 1
+Z17 !s108 1723060405.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_tb.vhd|
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 sumador_tb 0 22 dWF>_M>CbX?Aje<l=_C1h0
+!i122 2
+l43
+L7 96
+VU6_cadS>_Ed5Tf>YA=]Mf2
+!s100 A=P1SP5^GEVGGZQMQ7lgH0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+Z19 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_tb.vhd|
+!i113 1
+R11
+R12
+Esumador_vhdl
+Z20 w1723059815
+R2
+R3
+!i122 1
+R0
+Z21 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_vhdl.vhd
+Z22 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_vhdl.vhd
+l0
+L4 1
+V1[J^2HEE78@lNG=aFPf]z2
+!s100 XoE4:8W@I9hl3A0T0<Sne1
+R6
+31
+R16
+!i10b 1
+R17
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_vhdl.vhd|
+Z24 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema2/sumador_vhdl.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 12 sumador_vhdl 0 22 1[J^2HEE78@lNG=aFPf]z2
+!i122 1
+l56
+L29 79
+V7mmLKcKoVJ7?a=GXmTT2D3
+!s100 dZ_51WoZhgPnA8dj_oN^S3
+R6
+31
+R16
+!i10b 1
+R17
+R23
+R24
+!i113 1
+R11
+R12

@@ -1,0 +1,71 @@
+|restPara
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[5].IN0
+q[0] << q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] << q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] << q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] << q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] << q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] << q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+wq[0] => q[0]~reg0.ADATA
+wq[1] => q[1]~reg0.ADATA
+wq[2] => q[2]~reg0.ADATA
+wq[3] => q[3]~reg0.ADATA
+wq[4] => q[4]~reg0.ADATA
+wq[5] => q[5]~reg0.ADATA
+we => q[5].IN1
+display1[0] << SevenSegmentDisplay:seven1.display_output
+display1[1] << SevenSegmentDisplay:seven1.display_output
+display1[2] << SevenSegmentDisplay:seven1.display_output
+display1[3] << SevenSegmentDisplay:seven1.display_output
+display1[4] << SevenSegmentDisplay:seven1.display_output
+display1[5] << SevenSegmentDisplay:seven1.display_output
+display1[6] << SevenSegmentDisplay:seven1.display_output
+display2[0] << SevenSegmentDisplay:seven2.display_output
+display2[1] << SevenSegmentDisplay:seven2.display_output
+display2[2] << SevenSegmentDisplay:seven2.display_output
+display2[3] << SevenSegmentDisplay:seven2.display_output
+display2[4] << SevenSegmentDisplay:seven2.display_output
+display2[5] << SevenSegmentDisplay:seven2.display_output
+display2[6] << SevenSegmentDisplay:seven2.display_output
+
+
+|restPara|SevenSegmentDisplay:seven1
+binary_input[0] => Decoder0.IN3
+binary_input[1] => Decoder0.IN2
+binary_input[2] => Decoder0.IN1
+binary_input[3] => Decoder0.IN0
+display_output[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_output[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_output[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_output[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_output[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restPara|SevenSegmentDisplay:seven2
+binary_input[0] => Decoder0.IN3
+binary_input[1] => Decoder0.IN2
+binary_input[2] => Decoder0.IN1
+binary_input[3] => Decoder0.IN0
+display_output[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_output[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_output[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_output[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_output[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

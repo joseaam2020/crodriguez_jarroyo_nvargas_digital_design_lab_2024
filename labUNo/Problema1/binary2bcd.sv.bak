@@ -1,0 +1,21 @@
+`timescale 1ns / 1ps
+
+module binary2bcd (
+	input logic [7:0] binary_in,
+	output logic [11:0] bcd_out
+	);
+	
+	
+	logic [3:0] hundreds, tens, ones;
+	logic [6:0] temp_reg;
+	
+	always_comb begin // Se ejecuta cada que las entradas cambien
+		hundreds = binary_in / 100;
+		temp_reg = binary_in % 100;
+		tens = temp_reg / 10;
+		ones = tempp_reg % 10;
+	end
+	
+	assign bcd_out = {hundresd, tens, ones};
+	
+endmodule 
