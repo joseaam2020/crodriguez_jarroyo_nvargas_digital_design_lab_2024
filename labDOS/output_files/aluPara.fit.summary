@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun Aug 18 22:23:27 2024
+Fitter Status : Successful - Mon Aug 19 11:22:33 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : aluPara
-Top-level Entity Name : mux16to1
+Top-level Entity Name : restador
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 21 / 41,910 ( < 1 % )
+Logic utilization (in ALMs) : 4 / 41,910 ( < 1 % )
 Total registers : 0
-Total pins : 72 / 499 ( 14 % )
+Total pins : 14 / 499 ( 3 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
 Total RAM Blocks : 0 / 553 ( 0 % )
