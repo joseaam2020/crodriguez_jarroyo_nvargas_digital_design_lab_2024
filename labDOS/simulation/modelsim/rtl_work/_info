@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/simulation/modelsim
+vmux16to1
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1724042751
+!i10b 1
+!s100 6G4@>Pb5jB;VHKEY_FJ=B0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ITMH4UGUZ?[YDlJ@z6i>2D1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1724041269
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv
+!i122 0
+L0 1 28
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1724042751.000000
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS
+Z7 tCvgOpt 0
+vmux16to1_tb
+R1
+!s110 1724042753
+!i10b 1
+!s100 Sl9HcBBFQf@65735Im3`c3
+R2
+IEaileKB2d:hS<@;ZG:azc3
+R3
+S1
+R0
+w1724042562
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1_tb.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1_tb.sv
+!i122 1
+L0 1 36
+R4
+r1
+!s85 0
+31
+!s108 1724042752.000000
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1_tb.sv|
+!i113 1
+R5
+R6
+R7
