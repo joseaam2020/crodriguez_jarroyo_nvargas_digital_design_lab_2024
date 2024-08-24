@@ -19,15 +19,15 @@ module restador
 		(
 			input logic [N-1: 0] a,
 			input logic [N-1: 0] b,
-			input logic cin,
 			output logic cout_restador,
 			output logic [N-1:0]s_restador
+			
 	
 		);
 
     logic  [N:0] c ; 
 	 genvar i;
-	 assign c[0] = cin;
+	 assign c[0] = 1;
 	  
 	 generate
 				
