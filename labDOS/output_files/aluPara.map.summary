@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Aug 19 11:21:37 2024
+Analysis & Synthesis Status : Successful - Sat Aug 24 10:16:12 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : aluPara
-Top-level Entity Name : restador
+Top-level Entity Name : aluPara
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 14
+Total registers : 5
+Total pins : 31
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 0
+Total DSP Blocks : 1
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
