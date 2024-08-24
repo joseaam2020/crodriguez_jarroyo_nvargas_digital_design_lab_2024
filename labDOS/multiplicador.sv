@@ -24,7 +24,7 @@ module multiplicador
 	 
 		for(j = 0 ; j < N ; j++ ) // 1
 		
-			matriz_productos[i][j] = a[i] * b[j]; //0 * 1
+			matriz_productos[i][j] = a[i] & b[j]; //0 * 1
 		/*
 		00
 		11

@@ -3,10 +3,13 @@ module aluPara #(parameter N = 4) (
 	input logic [N-1:0] a,
 	input logic [N-1:0] b,	
 	input logic selector,
+	input logic reset,
 
 	output logic [N-1:0] resultado,
 	output logic [6:0] display_selector1,
 	output logic [6:0] display_selector2,
+	output logic [6:0] display_resultado1,
+	output logic [6:0] display_resultado2,
 	output logic zero_flag,
 	output logic carry_flag,
 	output logic overflow_flag,
@@ -14,15 +17,14 @@ module aluPara #(parameter N = 4) (
 );
 
 	//Se define Contador
-	logic reset_selector = 0;
-	logic we_selecetor;
-	logic [N-1:0] wq_selector = 10; //write q 
-	logic [N-1:0] q_selector;
+	logic we_selector;
+	logic [3:0] wq_selector = 9; //write q 
+	logic [3:0] q_selector;
 	
-	restPara #(N) contador_selector(
+	restPara #(4) contador_selector(
 		.clk(selector),
-		.reset(reset_selector),
-		.we(we_selecetor),
+		.reset(reset),
+		.we(we_selector),
 		.wq(wq_selector),
 		.q(q_selector),
 		.display1(display_selector1),
@@ -43,9 +45,9 @@ module aluPara #(parameter N = 4) (
 	Sumador_estructural #(N) nuevo_sumandor (
 		.a(a),
 		.b(b),
-		.cin(0),
+		.cin(1'b0),
 		.cout_sumador(cout_sumador), //Hay que pegarlo a flag de carry 
-		.s_sumador(mux_in[0]),
+		.s_sumador(mux_in[0])
 	);
 
 	//Se define restador
@@ -53,9 +55,9 @@ module aluPara #(parameter N = 4) (
 	restador #(N) nuevo_restador (
 		.a(a),
 		.b(b),
-		.cin(0),
+		.cin(1'b0),
 		.cout_restador(cout_restador), //Hay que pegarlo a flag de carry 
-		.s_restador(mux_in[1]),
+		.s_restador(mux_in[1])
 	); 
 
 	//Se define multiplicador
@@ -64,7 +66,7 @@ module aluPara #(parameter N = 4) (
 	multiplicador #(N) nuevo_multiplicador(
 		.a(a),
 		.b(b),
-		.s_multiplicador(resulto_multiplicador),
+		.s_multiplicador(resulto_multiplicador)
 	);
 
 	assign mux_in[2] = resulto_multiplicador[N-1:0];
@@ -98,15 +100,22 @@ module aluPara #(parameter N = 4) (
 	assign overflow_flag = sumador_restador_seleccionado & a_and_s_opuestos & (a_and_b_mismo_signo | a_and_b_opuestos); 
 
 	//Se define comportamiento para el funcionamiento del selector de operaciones 
-	always_ff @(posedge selector) begin
-		if(q_selector == 'x) begin
-			we_selecetor = 1;
-		end else if (q_selector == 0) begin
-			we_selecetor = 1;
+	always_comb begin
+		if (q_selector > 9) begin
+			we_selector = 1;
 		end else begin
-			we_selecetor = 0;
+			we_selector = 0;
 		end	
-
 	end
 	
+	//Se escribe resultado en 7 segmentos
+	logic [3:0] bin_in1;
+	logic [3:0] bin_in2;
+
+	assign bin_in1 = resultado / 10;
+	assign bin_in2 = resultado % 10;
+		
+	SevenSegmentDisplay seven1 (.binary_input(bin_in1), .display_output(display_resultado1));
+	SevenSegmentDisplay seven2 (.binary_input(bin_in2), .display_output(display_resultado2));
+
 endmodule	

@@ -8,6 +8,7 @@ b[1] => b[1].IN3
 b[2] => b[2].IN3
 b[3] => b[3].IN3
 selector => selector.IN1
+reset => reset.IN1
 resultado[0] << mux16to1:nuevo_mux.out[0]
 resultado[1] << mux16to1:nuevo_mux.out[1]
 resultado[2] << mux16to1:nuevo_mux.out[2]
@@ -26,6 +27,20 @@ display_selector2[3] << restPara:contador_selector.display2
 display_selector2[4] << restPara:contador_selector.display2
 display_selector2[5] << restPara:contador_selector.display2
 display_selector2[6] << restPara:contador_selector.display2
+display_resultado1[0] << SevenSegmentDisplay:seven1.display_output
+display_resultado1[1] << SevenSegmentDisplay:seven1.display_output
+display_resultado1[2] << SevenSegmentDisplay:seven1.display_output
+display_resultado1[3] << SevenSegmentDisplay:seven1.display_output
+display_resultado1[4] << SevenSegmentDisplay:seven1.display_output
+display_resultado1[5] << SevenSegmentDisplay:seven1.display_output
+display_resultado1[6] << SevenSegmentDisplay:seven1.display_output
+display_resultado2[0] << SevenSegmentDisplay:seven2.display_output
+display_resultado2[1] << SevenSegmentDisplay:seven2.display_output
+display_resultado2[2] << SevenSegmentDisplay:seven2.display_output
+display_resultado2[3] << SevenSegmentDisplay:seven2.display_output
+display_resultado2[4] << SevenSegmentDisplay:seven2.display_output
+display_resultado2[5] << SevenSegmentDisplay:seven2.display_output
+display_resultado2[6] << SevenSegmentDisplay:seven2.display_output
 zero_flag << Equal2.DB_MAX_OUTPUT_PORT_TYPE
 carry_flag << carry_flag.DB_MAX_OUTPUT_PORT_TYPE
 overflow_flag << overflow_flag.DB_MAX_OUTPUT_PORT_TYPE
@@ -741,5 +756,33 @@ c => cout_sumador.IN1
 c => cout_sumador.IN1
 s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara|SevenSegmentDisplay:seven1
+binary_input[0] => Decoder0.IN3
+binary_input[1] => Decoder0.IN2
+binary_input[2] => Decoder0.IN1
+binary_input[3] => Decoder0.IN0
+display_output[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_output[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_output[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_output[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_output[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara|SevenSegmentDisplay:seven2
+binary_input[0] => Decoder0.IN3
+binary_input[1] => Decoder0.IN2
+binary_input[2] => Decoder0.IN1
+binary_input[3] => Decoder0.IN0
+display_output[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_output[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_output[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_output[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_output[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -64,6 +64,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "display_resultado1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_resultado1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_resultado1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_resultado1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_resultado2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_resultado2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_resultado2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_resultado2[5]",
+					"strict" : false
+				},
+				{
 					"name" : "zero_flag",
 					"strict" : false
 				},
