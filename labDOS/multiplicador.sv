@@ -69,7 +69,7 @@ module multiplicador
         //genvar i;
 		  
 		  //if (N > 2) begin 
-			 logic [N-1:0][2*N-2:0] matriz_sumaParcial;
+			 logic [N-2:0][2*N-2:0] matriz_sumaParcial;
 		  //end else begin
 			 //logic [1:0][2*N-2:0] matriz_sumaParcial;
 	     //end
@@ -97,10 +97,10 @@ module multiplicador
 				end else begin
 					// Instancia del sumador #N
 					Sumador_estructural #(2*N-1) nuevo_sumador (
-						 .a(suma_parcial),
+						 .a(matriz_sumaParcial[i-1]),
 						 .b(matriz_shift[i+1]),
 						 .cin(c[i]),
-						 .s_sumador(matriz_sumaParcial[i+1]),
+						 .s_sumador(matriz_sumaParcial[i]),
 						 .cout_sumador(c[i + 1])
 						 
 					);
@@ -123,7 +123,7 @@ module multiplicador
 	 // Suma final
 	 
 	 
-	 assign s_multiplicador[2*N-2:0] = matriz_sumaParcial[N-1]; 
+	 assign s_multiplicador[2*N-2:0] = matriz_sumaParcial[N-2]; 
 	 assign s_multiplicador[2*N-1] = c[N-1];
 	
 	 
