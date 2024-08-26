@@ -55,7 +55,6 @@ module aluPara #(parameter N = 4) (
 	restador #(N) nuevo_restador (
 		.a(a),
 		.b(b),
-		.cin(1'b0),
 		.cout_restador(cout_restador), //Hay que pegarlo a flag de carry 
 		.s_restador(mux_in[1])
 	); 

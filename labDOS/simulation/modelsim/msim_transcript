@@ -12,91 +12,91 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:22 on Aug 24,2024
+# Start time: 16:51:26 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv 
 # -- Compiling module SevenSegmentDisplay
 # 
 # Top level modules:
 # 	SevenSegmentDisplay
-# End time: 14:28:22 on Aug 24,2024, Elapsed time: 0:00:00
+# End time: 16:51:26 on Aug 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:23 on Aug 24,2024
+# Start time: 16:51:27 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv 
 # -- Compiling module multiplicador
 # 
 # Top level modules:
 # 	multiplicador
-# End time: 14:28:23 on Aug 24,2024, Elapsed time: 0:00:00
+# End time: 16:51:27 on Aug 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:23 on Aug 24,2024
+# Start time: 16:51:27 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv 
 # -- Compiling module aluPara
 # 
 # Top level modules:
 # 	aluPara
-# End time: 14:28:24 on Aug 24,2024, Elapsed time: 0:00:01
+# End time: 16:51:27 on Aug 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:24 on Aug 24,2024
+# Start time: 16:51:27 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv 
 # -- Compiling module sumador
 # -- Compiling module Sumador_estructural
 # 
 # Top level modules:
 # 	Sumador_estructural
-# End time: 14:28:24 on Aug 24,2024, Elapsed time: 0:00:00
+# End time: 16:51:28 on Aug 24,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:24 on Aug 24,2024
+# Start time: 16:51:28 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv 
 # -- Compiling module restador_ins
 # -- Compiling module restador
 # 
 # Top level modules:
 # 	restador
-# End time: 14:28:24 on Aug 24,2024, Elapsed time: 0:00:00
+# End time: 16:51:28 on Aug 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:24 on Aug 24,2024
+# Start time: 16:51:28 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv 
 # -- Compiling module mux16to1
 # 
 # Top level modules:
 # 	mux16to1
-# End time: 14:28:25 on Aug 24,2024, Elapsed time: 0:00:01
+# End time: 16:51:28 on Aug 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restpara.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:25 on Aug 24,2024
+# Start time: 16:51:28 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restpara.sv 
 # -- Compiling module restPara
 # 
 # Top level modules:
 # 	restPara
-# End time: 14:28:25 on Aug 24,2024, Elapsed time: 0:00:00
+# End time: 16:51:29 on Aug 24,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:28:25 on Aug 24,2024
+# Start time: 16:51:29 on Aug 24,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tb.sv 
 # -- Compiling module aluPara_tb
 # 
 # Top level modules:
 # 	aluPara_tb
-# End time: 14:28:25 on Aug 24,2024, Elapsed time: 0:00:00
+# End time: 16:51:29 on Aug 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  aluPara_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" aluPara_tb 
-# Start time: 14:28:25 on Aug 24,2024
+# Start time: 16:51:29 on Aug 24,2024
 # Loading sv_std.std
 # Loading work.aluPara_tb
 # Loading work.aluPara
@@ -115,11 +115,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-add wave -position 3  sim:/aluPara_tb/nueva_alu/q_selector
-restart -f
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# End time: 14:51:38 on Aug 24,2024, Elapsed time: 0:23:13
+# End time: 19:30:36 on Aug 24,2024, Elapsed time: 2:39:07
 # Errors: 0, Warnings: 0

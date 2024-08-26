@@ -1,10 +1,13 @@
 module aluPara_tb(); 
-    logic [2-1:0] a;
-    logic [2-1:0] b;	
+
+    parameter int N = 4;
+
+    logic [N-1:0] a;
+    logic [N-1:0] b;	
     logic selector;
     logic reset;
 
-    logic [2-1:0] resultado;
+    logic [N-1:0] resultado;
     logic [6:0] display_selector1;
     logic [6:0] display_selector2;
     logic [6:0] display_resultado1;
@@ -14,7 +17,7 @@ module aluPara_tb();
     logic overflow_flag;
     logic negative_flag; 
     
-    aluPara #(2) nueva_alu (	
+    aluPara #(N) nueva_alu (	
         .a(a),
         .b(b),
         .selector(selector),
@@ -31,9 +34,9 @@ module aluPara_tb();
     );
 
     initial begin
-        selector = 0;
-        a = 0;
-        b =0;
+
+        selector = 0; a = 0; b =0;
+
         reset = 1;
         #1;
         reset = 0;
