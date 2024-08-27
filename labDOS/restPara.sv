@@ -25,8 +25,8 @@ module restPara #(parameter N = 6)(clk,reset,q,wq,we,display1,display2);
 	
 	end
 		
-	assign bin_in1 = q / 10;
-	assign bin_in2 = q % 10;
+	assign bin_in1 = q % 10;
+	assign bin_in2 = q / 10;
 		
 	SevenSegmentDisplay seven1 (.binary_input(bin_in1), .display_output(display1));
 	SevenSegmentDisplay seven2 (.binary_input(bin_in2), .display_output(display2));

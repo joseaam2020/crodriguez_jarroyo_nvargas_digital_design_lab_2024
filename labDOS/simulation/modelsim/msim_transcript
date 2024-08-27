@@ -7,119 +7,111 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:16 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv 
+# Start time: 01:19:40 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv 
+# -- Compiling module restPara
+# 
+# Top level modules:
+# 	restPara
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:19:41 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv 
 # -- Compiling module SevenSegmentDisplay
 # 
 # Top level modules:
 # 	SevenSegmentDisplay
-# End time: 23:32:17 on Aug 26,2024, Elapsed time: 0:00:01
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:17 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv 
+# Start time: 01:19:41 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv 
 # -- Compiling module multiplicador
 # 
 # Top level modules:
 # 	multiplicador
-# End time: 23:32:17 on Aug 26,2024, Elapsed time: 0:00:00
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:17 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv 
+# Start time: 01:19:41 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv 
 # -- Compiling module aluPara
 # 
 # Top level modules:
 # 	aluPara
-# End time: 23:32:17 on Aug 26,2024, Elapsed time: 0:00:00
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:17 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv 
+# Start time: 01:19:41 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv 
 # -- Compiling module sumador
 # -- Compiling module Sumador_estructural
 # 
 # Top level modules:
 # 	Sumador_estructural
-# End time: 23:32:18 on Aug 26,2024, Elapsed time: 0:00:01
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:18 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv 
+# Start time: 01:19:41 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv 
 # -- Compiling module restador_ins
 # -- Compiling module restador
 # 
 # Top level modules:
 # 	restador
-# End time: 23:32:18 on Aug 26,2024, Elapsed time: 0:00:00
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:18 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv 
+# Start time: 01:19:41 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv 
 # -- Compiling module mux16to1
 # 
 # Top level modules:
 # 	mux16to1
-# End time: 23:32:18 on Aug 26,2024, Elapsed time: 0:00:00
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:18 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv 
-# -- Compiling module registro
 # 
-# Top level modules:
-# 	registro
-# End time: 23:32:18 on Aug 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:19 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv 
+# Start time: 01:19:41 on Aug 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv 
 # -- Compiling module aluPara_tbreg
 # 
 # Top level modules:
 # 	aluPara_tbreg
-# End time: 23:32:19 on Aug 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restpara.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:19 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restpara.sv 
-# -- Compiling module restPara
-# 
-# Top level modules:
-# 	restPara
-# End time: 23:32:19 on Aug 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/Lab\ de\ fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS {C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:32:19 on Aug 26,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS" C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv 
-# -- Compiling module aluPara_tbreg
-# 
-# Top level modules:
-# 	aluPara_tbreg
-# End time: 23:32:19 on Aug 26,2024, Elapsed time: 0:00:00
+# End time: 01:19:41 on Aug 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  aluPara_tbreg
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" aluPara_tbreg 
-# Start time: 23:32:19 on Aug 26,2024
+# Start time: 01:19:41 on Aug 27,2024
 # Loading sv_std.std
 # Loading work.aluPara_tbreg
-# Loading work.registro
+# ** Error: (vsim-3033) Instantiation of 'registro' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /aluPara_tbreg File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv Line: 29
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/simulation/modelsim/rtl_work
+#             C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/simulation/modelsim/rtl_work
 # Loading work.aluPara
 # Loading work.restPara
 # Loading work.SevenSegmentDisplay
@@ -127,23 +119,22 @@
 # Loading work.Sumador_estructural
 # Loading work.restador
 # Loading work.multiplicador
-# Loading work.sumador
-# Loading work.restador_ins
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /aluPara_tbreg/reg1 File: C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv Line: 29
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv(3).
-#    Time: 0 ps  Iteration: 0  Instance: /aluPara_tbreg/nueva_alu File: C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv Line: 39
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /aluPara_tbreg/reg2 File: C:/Users/genne/OneDrive/Escritorio/Lab de fundamentos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv Line: 58
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-run
-force -freeze sim:/aluPara_tbreg/clk 1 0, 0 {50 ps} -r 100
-run
-# End time: 23:34:16 on Aug 26,2024, Elapsed time: 0:01:57
-# Errors: 0, Warnings: 3
+# ** Error: (vsim-3033) Instantiation of 'registro' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /aluPara_tbreg File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv Line: 58
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/simulation/modelsim/rtl_work
+#             C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./aluPara_run_msim_rtl_verilog.do PAUSED at line 18
+# End time: 01:20:27 on Aug 27,2024, Elapsed time: 0:00:46
+# Errors: 2, Warnings: 0

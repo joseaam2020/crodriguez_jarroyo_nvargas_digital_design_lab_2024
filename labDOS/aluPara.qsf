@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSXFC6D6F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY aluPara_tbreg
+set_global_assignment -name TOP_LEVEL_ENTITY aluPara
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:31:46  AUGUST 18, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -61,20 +61,9 @@ set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH aluPara_tbreg -
 set_global_assignment -name EDA_TEST_BENCH_NAME mux16to1_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id mux16to1_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME mux16to1_tb -section_id mux16to1_tb
-set_global_assignment -name SYSTEMVERILOG_FILE aluPara_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE SevenSegmentDisplay.sv
-set_global_assignment -name SYSTEMVERILOG_FILE multiplicador_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE multiplicador.sv
-set_global_assignment -name SYSTEMVERILOG_FILE aluPara.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Sumador_estructural.sv
-set_global_assignment -name SYSTEMVERILOG_FILE restador.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux16to1_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux16to1.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME aluPara_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id aluPara_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME aluPara_tb -section_id aluPara_tb
-set_global_assignment -name SYSTEMVERILOG_FILE registro.sv
-set_global_assignment -name SYSTEMVERILOG_FILE aluPara_tbreg.sv
 set_global_assignment -name EDA_TEST_BENCH_FILE mux16to1_tb.sv -section_id mux16to1_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE aluPara_tb.sv -section_id aluPara_tb
 set_global_assignment -name EDA_TEST_BENCH_NAME aluPara_tbreg -section_id eda_simulation
@@ -84,5 +73,60 @@ set_global_assignment -name EDA_TEST_BENCH_FILE aluPara_tbreg.sv -section_id alu
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AB30 -to a[0]
+set_location_assignment PIN_Y27 -to a[1]
+set_location_assignment PIN_AB28 -to a[2]
+set_location_assignment PIN_AC30 -to a[3]
+set_location_assignment PIN_W25 -to b[0]
+set_location_assignment PIN_V25 -to b[1]
+set_location_assignment PIN_AC28 -to b[2]
+set_location_assignment PIN_AD30 -to b[3]
+set_location_assignment PIN_AA24 -to carry_flag
+set_location_assignment PIN_AB23 -to negative_flag
+set_location_assignment PIN_AC23 -to overflow_flag
+set_location_assignment PIN_AD24 -to zero_flag
+set_location_assignment PIN_AC29 -to reset
+set_location_assignment PIN_AJ4 -to selector
+set_location_assignment PIN_W17 -to display_resultado1[0]
+set_location_assignment PIN_V18 -to display_resultado1[1]
+set_location_assignment PIN_AG17 -to display_resultado1[2]
+set_location_assignment PIN_AG16 -to display_resultado1[3]
+set_location_assignment PIN_AH17 -to display_resultado1[4]
+set_location_assignment PIN_AG18 -to display_resultado1[5]
+set_location_assignment PIN_AH18 -to display_resultado1[6]
+set_location_assignment PIN_AF16 -to display_resultado2[0]
+set_location_assignment PIN_V16 -to display_resultado2[1]
+set_location_assignment PIN_AE16 -to display_resultado2[2]
+set_location_assignment PIN_AD17 -to display_resultado2[3]
+set_location_assignment PIN_AE18 -to display_resultado2[4]
+set_location_assignment PIN_AE17 -to display_resultado2[5]
+set_location_assignment PIN_V17 -to display_resultado2[6]
+set_location_assignment PIN_AA21 -to display_selector1[0]
+set_location_assignment PIN_AB17 -to display_selector1[1]
+set_location_assignment PIN_AA18 -to display_selector1[2]
+set_location_assignment PIN_Y17 -to display_selector1[3]
+set_location_assignment PIN_Y18 -to display_selector1[4]
+set_location_assignment PIN_AF18 -to display_selector1[5]
+set_location_assignment PIN_W16 -to display_selector1[6]
+set_location_assignment PIN_Y19 -to display_selector2[0]
+set_location_assignment PIN_W19 -to display_selector2[1]
+set_location_assignment PIN_AD19 -to display_selector2[2]
+set_location_assignment PIN_AA20 -to display_selector2[3]
+set_location_assignment PIN_AC20 -to display_selector2[4]
+set_location_assignment PIN_AA19 -to display_selector2[5]
+set_location_assignment PIN_AD20 -to display_selector2[6]
+set_global_assignment -name SDC_FILE aluPara.out.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE restPara.sv
+set_global_assignment -name SYSTEMVERILOG_FILE aluPara_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SevenSegmentDisplay.sv
+set_global_assignment -name SYSTEMVERILOG_FILE multiplicador_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE multiplicador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE aluPara.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Sumador_estructural.sv
+set_global_assignment -name SYSTEMVERILOG_FILE restador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux16to1_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux16to1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE registro.sv
+set_global_assignment -name SYSTEMVERILOG_FILE aluPara_tbreg.sv
 set_global_assignment -name SDC_FILE clock.sdc
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

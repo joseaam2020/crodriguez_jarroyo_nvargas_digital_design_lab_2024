@@ -18,7 +18,7 @@ module aluPara #(parameter N = 4) (
 
 	//Se define Contador
 	logic we_selector;
-	logic [3:0] wq_selector = 9; //write q 
+	logic [3:0] wq_selector = 4'b1001; //write q 
 	logic [3:0] q_selector;
 	
 	restPara #(4) contador_selector(
@@ -100,10 +100,10 @@ module aluPara #(parameter N = 4) (
 
 	//Se define comportamiento para el funcionamiento del selector de operaciones 
 	always_comb begin
-		if (q_selector > 9) begin
-			we_selector = 1;
+		if (q_selector > 4'b1001) begin
+			we_selector = 1'b1;
 		end else begin
-			we_selector = 0;
+			we_selector = 1'b0;
 		end	
 	end
 	
@@ -111,8 +111,8 @@ module aluPara #(parameter N = 4) (
 	logic [3:0] bin_in1;
 	logic [3:0] bin_in2;
 
-	assign bin_in1 = resultado / 10;
-	assign bin_in2 = resultado % 10;
+	assign bin_in1 = resultado % 10;
+	assign bin_in2 = resultado / 10;
 		
 	SevenSegmentDisplay seven1 (.binary_input(bin_in1), .display_output(display_resultado1));
 	SevenSegmentDisplay seven2 (.binary_input(bin_in2), .display_output(display_resultado2));
