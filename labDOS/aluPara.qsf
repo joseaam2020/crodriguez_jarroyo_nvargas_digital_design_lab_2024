@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSXFC6D6F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY aluPara
+set_global_assignment -name TOP_LEVEL_ENTITY aluPara_2
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:31:46  AUGUST 18, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -70,9 +70,6 @@ set_global_assignment -name EDA_TEST_BENCH_NAME aluPara_tbreg -section_id eda_si
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id aluPara_tbreg
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME aluPara_tbreg -section_id aluPara_tbreg
 set_global_assignment -name EDA_TEST_BENCH_FILE aluPara_tbreg.sv -section_id aluPara_tbreg
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_AB30 -to a[0]
 set_location_assignment PIN_Y27 -to a[1]
 set_location_assignment PIN_AB28 -to a[2]
@@ -129,4 +126,9 @@ set_global_assignment -name SYSTEMVERILOG_FILE mux16to1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE registro.sv
 set_global_assignment -name SYSTEMVERILOG_FILE aluPara_tbreg.sv
 set_global_assignment -name SDC_FILE clock.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE aluPara_2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE registro_S.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

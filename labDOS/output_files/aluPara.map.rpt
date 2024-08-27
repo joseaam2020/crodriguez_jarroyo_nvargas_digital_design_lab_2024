@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aluPara
-Tue Aug 27 01:29:33 2024
+Tue Aug 27 08:55:54 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,31 +14,42 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |aluPara
- 11. Parameter Settings for User Entity Instance: restPara:contador_selector
- 12. Parameter Settings for User Entity Instance: mux16to1:nuevo_mux
- 13. Parameter Settings for User Entity Instance: Sumador_estructural:nuevo_sumandor
- 14. Parameter Settings for User Entity Instance: restador:nuevo_restador
- 15. Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador
- 16. Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador
- 17. Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador
- 18. Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador
- 19. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 20. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 21. Parameter Settings for Inferred Entity Instance: restPara:contador_selector|lpm_divide:Mod0
- 22. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
- 23. Port Connectivity Checks: "multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador"
- 24. Port Connectivity Checks: "multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador"
- 25. Port Connectivity Checks: "multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador"
- 26. Port Connectivity Checks: "multiplicador:nuevo_multiplicador"
- 27. Port Connectivity Checks: "restador:nuevo_restador|restador_ins:restados[0].nuevo"
- 28. Port Connectivity Checks: "Sumador_estructural:nuevo_sumandor"
- 29. Port Connectivity Checks: "mux16to1:nuevo_mux"
- 30. Port Connectivity Checks: "restPara:contador_selector"
- 31. Post-Synthesis Netlist Statistics for Top Partition
- 32. Elapsed Time Per Partition
- 33. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |aluPara_2
+ 10. Parameter Settings for User Entity Instance: registro:reg1
+ 11. Parameter Settings for User Entity Instance: aluPara:nueva_alu
+ 12. Parameter Settings for User Entity Instance: aluPara:nueva_alu|restPara:contador_selector
+ 13. Parameter Settings for User Entity Instance: aluPara:nueva_alu|mux16to1:nuevo_mux
+ 14. Parameter Settings for User Entity Instance: aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor
+ 15. Parameter Settings for User Entity Instance: aluPara:nueva_alu|restador:nuevo_restador
+ 16. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador
+ 17. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador
+ 18. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador
+ 19. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador
+ 20. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador
+ 21. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador
+ 22. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador
+ 23. Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador
+ 24. Parameter Settings for User Entity Instance: registro_S:reg2
+ 25. Parameter Settings for Inferred Entity Instance: aluPara:nueva_alu|lpm_divide:Div0
+ 26. Parameter Settings for Inferred Entity Instance: aluPara:nueva_alu|lpm_divide:Mod0
+ 27. Port Connectivity Checks: "registro_S:reg2"
+ 28. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador"
+ 29. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador"
+ 30. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador"
+ 31. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador"
+ 32. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador"
+ 33. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador"
+ 34. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador"
+ 35. Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador"
+ 36. Port Connectivity Checks: "aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[0].nuevo"
+ 37. Port Connectivity Checks: "aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor"
+ 38. Port Connectivity Checks: "aluPara:nueva_alu|mux16to1:nuevo_mux"
+ 39. Port Connectivity Checks: "aluPara:nueva_alu|restPara:contador_selector"
+ 40. Port Connectivity Checks: "aluPara:nueva_alu"
+ 41. Port Connectivity Checks: "registro:reg1"
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
 
 
 
@@ -65,14 +76,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 27 01:29:33 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Aug 27 08:55:54 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aluPara                                     ;
-; Top-level Entity Name           ; aluPara                                     ;
+; Top-level Entity Name           ; aluPara_2                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 46                                          ;
+; Total registers                 ; 6                                           ;
+; Total pins                      ; 20                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -91,7 +102,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; aluPara            ; aluPara            ;
+; Top-level entity name                                                           ; aluPara_2          ; aluPara            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -177,110 +188,91 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 10          ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; restPara.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv                ;         ;
-; SevenSegmentDisplay.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv     ;         ;
-; multiplicador.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv           ;         ;
-; aluPara.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv                 ;         ;
-; Sumador_estructural.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv     ;         ;
-; restador.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv                ;         ;
-; mux16to1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv                ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                       ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                                      ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                  ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                       ;         ;
-; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_1am.tdf      ;         ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/sign_div_unsign_7kh.tdf ;         ;
-; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/alt_u_div_kse.tdf       ;         ;
-; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_42m.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; restPara.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv                ;         ;
+; SevenSegmentDisplay.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv     ;         ;
+; multiplicador.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv           ;         ;
+; aluPara.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv                 ;         ;
+; Sumador_estructural.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv     ;         ;
+; restador.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv                ;         ;
+; mux16to1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv                ;         ;
+; registro.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv                ;         ;
+; aluPara_2.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv               ;         ;
+; registro_S.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro_S.sv              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                             ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                                            ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                        ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                             ;         ;
+; db/lpm_divide_9am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_9am.tdf      ;         ;
+; db/sign_div_unsign_fkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/sign_div_unsign_fkh.tdf ;         ;
+; db/alt_u_div_4te.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/alt_u_div_4te.tdf       ;         ;
+; db/lpm_divide_c2m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_c2m.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 74         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 135        ;
-;     -- 7 input functions                    ; 1          ;
-;     -- 6 input functions                    ; 11         ;
-;     -- 5 input functions                    ; 21         ;
-;     -- 4 input functions                    ; 41         ;
-;     -- <=3 input functions                  ; 61         ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 4          ;
-;                                             ;            ;
-; I/O pins                                    ; 46         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; b[3]~input ;
-; Maximum fan-out                             ; 28         ;
-; Total fan-out                               ; 577        ;
-; Average fan-out                             ; 2.50       ;
-+---------------------------------------------+------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 10          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 18          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 1           ;
+;     -- 5 input functions                    ; 1           ;
+;     -- 4 input functions                    ; 5           ;
+;     -- <=3 input functions                  ; 11          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 6           ;
+;                                             ;             ;
+; I/O pins                                    ; 20          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 8           ;
+; Total fan-out                               ; 92          ;
+; Average fan-out                             ; 1.44        ;
++---------------------------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                         ;
-+---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                 ; Entity Name         ; Library Name ;
-+---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |aluPara                                                ; 135 (6)             ; 4 (0)                     ; 0                 ; 0          ; 46   ; 0            ; |aluPara                                                                                                                            ; aluPara             ; work         ;
-;    |SevenSegmentDisplay:seven1|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|SevenSegmentDisplay:seven1                                                                                                 ; SevenSegmentDisplay ; work         ;
-;    |SevenSegmentDisplay:seven2|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|SevenSegmentDisplay:seven2                                                                                                 ; SevenSegmentDisplay ; work         ;
-;    |Sumador_estructural:nuevo_sumandor|                 ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|Sumador_estructural:nuevo_sumandor                                                                                         ; Sumador_estructural ; work         ;
-;       |sumador:instacias[1].nuevo|                      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|Sumador_estructural:nuevo_sumandor|sumador:instacias[1].nuevo                                                              ; sumador             ; work         ;
-;       |sumador:instacias[2].nuevo|                      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|Sumador_estructural:nuevo_sumandor|sumador:instacias[2].nuevo                                                              ; sumador             ; work         ;
-;    |lpm_divide:Div0|                                    ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Div0                                                                                                            ; lpm_divide          ; work         ;
-;       |lpm_divide_1am:auto_generated|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                                              ; lpm_divide_1am      ; work         ;
-;          |sign_div_unsign_7kh:divider|                  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                                                  ; sign_div_unsign_7kh ; work         ;
-;             |alt_u_div_kse:divider|                     ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider                            ; alt_u_div_kse       ; work         ;
-;    |lpm_divide:Mod0|                                    ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod0                                                                                                            ; lpm_divide          ; work         ;
-;       |lpm_divide_42m:auto_generated|                   ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                                              ; lpm_divide_42m      ; work         ;
-;          |sign_div_unsign_7kh:divider|                  ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                                                  ; sign_div_unsign_7kh ; work         ;
-;             |alt_u_div_kse:divider|                     ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider                            ; alt_u_div_kse       ; work         ;
-;    |lpm_divide:Mod1|                                    ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod1                                                                                                            ; lpm_divide          ; work         ;
-;       |lpm_divide_42m:auto_generated|                   ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod1|lpm_divide_42m:auto_generated                                                                              ; lpm_divide_42m      ; work         ;
-;          |sign_div_unsign_7kh:divider|                  ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod1|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                                                  ; sign_div_unsign_7kh ; work         ;
-;             |alt_u_div_kse:divider|                     ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|lpm_divide:Mod1|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider                            ; alt_u_div_kse       ; work         ;
-;    |multiplicador:nuevo_multiplicador|                  ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador                                                                                          ; multiplicador       ; work         ;
-;       |Sumador_estructural:instancias[0].nuevo_sumador| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador                                          ; Sumador_estructural ; work         ;
-;          |sumador:instacias[1].nuevo|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[1].nuevo               ; sumador             ; work         ;
-;          |sumador:instacias[2].nuevo|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[2].nuevo               ; sumador             ; work         ;
-;       |Sumador_estructural:instancias[1].nuevo_sumador| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador                                          ; Sumador_estructural ; work         ;
-;          |sumador:instacias[2].nuevo|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[2].nuevo               ; sumador             ; work         ;
-;       |Sumador_estructural:instancias[2].nuevo_sumador| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador                                          ; Sumador_estructural ; work         ;
-;          |sumador:instacias[3].nuevo|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[3].nuevo               ; sumador             ; work         ;
-;    |mux16to1:nuevo_mux|                                 ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|mux16to1:nuevo_mux                                                                                                         ; mux16to1            ; work         ;
-;    |restPara:contador_selector|                         ; 27 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restPara:contador_selector                                                                                                 ; restPara            ; work         ;
-;       |SevenSegmentDisplay:seven1|                      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restPara:contador_selector|SevenSegmentDisplay:seven1                                                                      ; SevenSegmentDisplay ; work         ;
-;       |lpm_divide:Mod0|                                 ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restPara:contador_selector|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_42m:auto_generated|                ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restPara:contador_selector|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
-;             |sign_div_unsign_7kh:divider|               ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restPara:contador_selector|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;                |alt_u_div_kse:divider|                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restPara:contador_selector|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-;    |restador:nuevo_restador|                            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restador:nuevo_restador                                                                                                    ; restador            ; work         ;
-;       |restador_ins:restados[1].nuevo|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restador:nuevo_restador|restador_ins:restados[1].nuevo                                                                     ; restador_ins        ; work         ;
-;       |restador_ins:restados[2].nuevo|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara|restador:nuevo_restador|restador_ins:restados[2].nuevo                                                                     ; restador_ins        ; work         ;
-+---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                          ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |aluPara_2                                ; 18 (0)              ; 6 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |aluPara_2                                                                                                                   ; aluPara_2           ; work         ;
+;    |aluPara:nueva_alu|                    ; 18 (0)              ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu                                                                                                 ; aluPara             ; work         ;
+;       |lpm_divide:Div0|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_9am:auto_generated|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Div0|lpm_divide_9am:auto_generated                                                   ; lpm_divide_9am      ; work         ;
+;             |sign_div_unsign_fkh:divider| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Div0|lpm_divide_9am:auto_generated|sign_div_unsign_fkh:divider                       ; sign_div_unsign_fkh ; work         ;
+;                |alt_u_div_4te:divider|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Div0|lpm_divide_9am:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_4te:divider ; alt_u_div_4te       ; work         ;
+;       |lpm_divide:Mod0|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_c2m:auto_generated|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Mod0|lpm_divide_c2m:auto_generated                                                   ; lpm_divide_c2m      ; work         ;
+;             |sign_div_unsign_fkh:divider| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Mod0|lpm_divide_c2m:auto_generated|sign_div_unsign_fkh:divider                       ; sign_div_unsign_fkh ; work         ;
+;                |alt_u_div_4te:divider|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|lpm_divide:Mod0|lpm_divide_c2m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_4te:divider ; alt_u_div_4te       ; work         ;
+;       |mux16to1:nuevo_mux|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|mux16to1:nuevo_mux                                                                              ; mux16to1            ; work         ;
+;       |restPara:contador_selector|        ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|aluPara:nueva_alu|restPara:contador_selector                                                                      ; restPara            ; work         ;
+;    |registro:reg1|                        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|registro:reg1                                                                                                     ; registro            ; work         ;
+;    |registro_S:reg2|                      ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |aluPara_2|registro_S:reg2                                                                                                   ; registro_S          ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -289,285 +281,379 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 6     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |aluPara|mux16to1:nuevo_mux|Mux2 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |aluPara ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 4     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |aluPara_2 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 8     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restPara:contador_selector ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 4     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registro:reg1 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; N              ; 8     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux16to1:nuevo_mux ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 4     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Sumador_estructural:nuevo_sumandor ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:nuevo_restador ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; N              ; 4     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                  ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; N              ; 7     ; Signed Integer                                                                                        ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                  ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; N              ; 7     ; Signed Integer                                                                                        ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                  ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; N              ; 7     ; Signed Integer                                                                                        ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_1am ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: restPara:contador_selector|lpm_divide:Mod0 ;
-+------------------------+----------------+---------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                              ;
-+------------------------+----------------+---------------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                           ;
-; LPM_WIDTHD             ; 4              ; Untyped                                           ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
-; LPM_PIPELINE           ; 0              ; Untyped                                           ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                                           ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
-+------------------------+----------------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador" ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                          ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-; b[2..0] ; Input ; Info     ; Stuck at GND                                                                     ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador" ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                          ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-; b[1..0] ; Input ; Info     ; Stuck at GND                                                                     ;
-; b[6]    ; Input ; Info     ; Stuck at GND                                                                     ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador" ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                          ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-; a[6..4] ; Input ; Info     ; Stuck at GND                                                                     ;
-; b[6..5] ; Input ; Info     ; Stuck at GND                                                                     ;
-; b[0]    ; Input ; Info     ; Stuck at GND                                                                     ;
-; cin     ; Input ; Info     ; Stuck at GND                                                                     ;
-+---------+-------+----------+----------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:nuevo_multiplicador"                                                                   ;
-+-----------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                  ; Type   ; Severity ; Details                                                                             ;
-+-----------------------+--------+----------+-------------------------------------------------------------------------------------+
-; s_multiplicador[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:nuevo_restador|restador_ins:restados[0].nuevo" ;
-+------+-------+----------+----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                  ;
-+------+-------+----------+----------------------------------------------------------+
-; c    ; Input ; Info     ; Stuck at VCC                                             ;
-+------+-------+----------+----------------------------------------------------------+
 
 
 +----------------------------------------------------------------+
-; Port Connectivity Checks: "Sumador_estructural:nuevo_sumandor" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; cin  ; Input ; Info     ; Stuck at GND                         ;
-+------+-------+----------+--------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 8     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "mux16to1:nuevo_mux" ;
-+------------+-------+----------+----------------+
-; Port       ; Type  ; Severity ; Details        ;
-+------------+-------+----------+----------------+
-; in[15..10] ; Input ; Info     ; Stuck at GND   ;
-; in[9][3]   ; Input ; Info     ; Stuck at GND   ;
-; in[8][0]   ; Input ; Info     ; Stuck at GND   ;
-+------------+-------+----------+----------------+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|restPara:contador_selector ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------+
-; Port Connectivity Checks: "restPara:contador_selector" ;
-+----------+-------+----------+--------------------------+
-; Port     ; Type  ; Severity ; Details                  ;
-+----------+-------+----------+--------------------------+
-; wq[2..1] ; Input ; Info     ; Stuck at GND             ;
-; wq[3]    ; Input ; Info     ; Stuck at VCC             ;
-; wq[0]    ; Input ; Info     ; Stuck at VCC             ;
-+----------+-------+----------+--------------------------+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|mux16to1:nuevo_mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|restador:nuevo_restador ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; N              ; 15    ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; N              ; 15    ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; N              ; 15    ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; N              ; 15    ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; N              ; 15    ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; N              ; 15    ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; N              ; 15    ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registro_S:reg2 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; N              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: aluPara:nueva_alu|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------+
+; Parameter Name         ; Value          ; Type                                     ;
++------------------------+----------------+------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                  ;
+; LPM_WIDTHD             ; 8              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_9am ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                           ;
++------------------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: aluPara:nueva_alu|lpm_divide:Mod0 ;
++------------------------+----------------+------------------------------------------+
+; Parameter Name         ; Value          ; Type                                     ;
++------------------------+----------------+------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                  ;
+; LPM_WIDTHD             ; 8              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_c2m ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                           ;
++------------------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registro_S:reg2"                                                                                                     ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+; Q    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "Q[7..1]" have no fanouts ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador" ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                            ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------+
+; b[6..0] ; Input ; Info     ; Stuck at GND                                                                                       ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador" ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                            ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------+
+; b[5..0] ; Input ; Info     ; Stuck at GND                                                                                       ;
+; b[14]   ; Input ; Info     ; Stuck at GND                                                                                       ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                          ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; b[14..13] ; Input ; Info     ; Stuck at GND                                                                                     ;
+; b[4..0]   ; Input ; Info     ; Stuck at GND                                                                                     ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                          ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; b[14..12] ; Input ; Info     ; Stuck at GND                                                                                     ;
+; b[3..0]   ; Input ; Info     ; Stuck at GND                                                                                     ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                          ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; b[14..11] ; Input ; Info     ; Stuck at GND                                                                                     ;
+; b[2..0]   ; Input ; Info     ; Stuck at GND                                                                                     ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                          ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; b[14..10] ; Input ; Info     ; Stuck at GND                                                                                     ;
+; b[1..0]   ; Input ; Info     ; Stuck at GND                                                                                     ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador" ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                           ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------+
+; a[14..8] ; Input ; Info     ; Stuck at GND                                                                                      ;
+; b[14..9] ; Input ; Info     ; Stuck at GND                                                                                      ;
+; b[0]     ; Input ; Info     ; Stuck at GND                                                                                      ;
+; cin      ; Input ; Info     ; Stuck at GND                                                                                      ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|multiplicador:nuevo_multiplicador"                                                  ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                   ; Type   ; Severity ; Details                                                                             ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; s_multiplicador[15..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[0].nuevo" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; c    ; Input ; Info     ; Stuck at VCC                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|mux16to1:nuevo_mux" ;
++------------+-------+----------+----------------------------------+
+; Port       ; Type  ; Severity ; Details                          ;
++------------+-------+----------+----------------------------------+
+; in[15..10] ; Input ; Info     ; Stuck at GND                     ;
+; in[9][7]   ; Input ; Info     ; Stuck at GND                     ;
+; in[8][0]   ; Input ; Info     ; Stuck at GND                     ;
++------------+-------+----------+----------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu|restPara:contador_selector" ;
++----------+-------+----------+--------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                    ;
++----------+-------+----------+--------------------------------------------+
+; wq[2..1] ; Input ; Info     ; Stuck at GND                               ;
+; wq[3]    ; Input ; Info     ; Stuck at VCC                               ;
+; wq[0]    ; Input ; Info     ; Stuck at VCC                               ;
++----------+-------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:nueva_alu"                                                                                                                                      ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type   ; Severity ; Details                                                                                                                                   ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; a                  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "a[7..1]" will be connected to GND. ;
+; b                  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "b[7..1]" will be connected to GND. ;
+; display_selector1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; display_selector2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; display_resultado1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; display_resultado2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; zero_flag          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; carry_flag         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; overflow_flag      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; negative_flag      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registro:reg1"                                                                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Y    ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "Y[7..1]" will be connected to GND. ;
+; Q    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "Q[7..1]" have no fanouts                      ;
+; Z    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "Z[7..1]" have no fanouts                      ;
+; U    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "U[7..1]" have no fanouts                      ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -575,33 +661,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 4                           ;
-;     CLR               ; 4                           ;
-; arriav_lcell_comb     ; 140                         ;
-;     arith             ; 18                          ;
-;         0 data inputs ; 6                           ;
-;         2 data inputs ; 2                           ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 6                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 98                          ;
+; arriav_ff             ; 6                           ;
+;     CLR               ; 6                           ;
+; arriav_lcell_comb     ; 18                          ;
+;     normal            ; 14                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 5                           ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 1                           ;
+;     shared            ; 4                           ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 24                          ;
-;         4 data inputs ; 31                          ;
-;         5 data inputs ; 15                          ;
-;         6 data inputs ; 11                          ;
-;     shared            ; 23                          ;
-;         0 data inputs ; 7                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 6                           ;
-;         4 data inputs ; 6                           ;
-; boundary_port         ; 46                          ;
+;         2 data inputs ; 2                           ;
+; boundary_port         ; 20                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 14.80                       ;
-; Average LUT depth     ; 10.45                       ;
+; Max LUT depth         ; 3.10                        ;
+; Average LUT depth     ; 2.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -610,7 +685,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -620,107 +695,117 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug 27 01:29:25 2024
+    Info: Processing started: Tue Aug 27 08:55:38 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off labDOS -c aluPara
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file restpara.sv
-    Info (12023): Found entity 1: restPara File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 2
+    Info (12023): Found entity 1: restPara File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alupara_tb.sv
-    Info (12023): Found entity 1: aluPara_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tb.sv Line: 1
+    Info (12023): Found entity 1: aluPara_tb File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sevensegmentdisplay.sv
-    Info (12023): Found entity 1: SevenSegmentDisplay File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv Line: 1
+    Info (12023): Found entity 1: SevenSegmentDisplay File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/SevenSegmentDisplay.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplicador_tb.sv
-    Info (12023): Found entity 1: multiplicador_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador_tb.sv Line: 1
+    Info (12023): Found entity 1: multiplicador_tb File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplicador.sv
-    Info (12023): Found entity 1: multiplicador File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 1
+    Info (12023): Found entity 1: multiplicador File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alupara.sv
-    Info (12023): Found entity 1: aluPara File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 1
+    Info (12023): Found entity 1: aluPara File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file sumador_estructural.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv Line: 2
-    Info (12023): Found entity 2: Sumador_estructural File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv Line: 16
+    Info (12023): Found entity 1: sumador File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv Line: 2
+    Info (12023): Found entity 2: Sumador_estructural File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv Line: 16
 Info (12021): Found 2 design units, including 2 entities, in source file restador.sv
-    Info (12023): Found entity 1: restador_ins File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv Line: 2
-    Info (12023): Found entity 2: restador File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv Line: 16
+    Info (12023): Found entity 1: restador_ins File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv Line: 2
+    Info (12023): Found entity 2: restador File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file mux16to1_tb.sv
-    Info (12023): Found entity 1: mux16to1_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1_tb.sv Line: 1
+    Info (12023): Found entity 1: mux16to1_tb File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux16to1.sv
-    Info (12023): Found entity 1: mux16to1 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv Line: 1
+    Info (12023): Found entity 1: mux16to1 File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/mux16to1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registro.sv
-    Info (12023): Found entity 1: registro File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv Line: 1
+    Info (12023): Found entity 1: registro File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alupara_tbreg.sv
-    Info (12023): Found entity 1: aluPara_tbreg File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at multiplicador.sv(12): created implicit net for "product" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 12
-Info (12127): Elaborating entity "aluPara" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at aluPara.sv(114): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 114
-Warning (10230): Verilog HDL assignment warning at aluPara.sv(115): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 115
-Warning (10030): Net "mux_in[15..10]" at aluPara.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 35
-Info (12128): Elaborating entity "restPara" for hierarchy "restPara:contador_selector" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 32
-Warning (10230): Verilog HDL assignment warning at restPara.sv(23): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 23
-Warning (10230): Verilog HDL assignment warning at restPara.sv(28): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at restPara.sv(29): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 29
-Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "restPara:contador_selector|SevenSegmentDisplay:seven1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 31
-Info (12128): Elaborating entity "mux16to1" for hierarchy "mux16to1:nuevo_mux" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 41
-Info (12128): Elaborating entity "Sumador_estructural" for hierarchy "Sumador_estructural:nuevo_sumandor" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 51
-Info (12128): Elaborating entity "sumador" for hierarchy "Sumador_estructural:nuevo_sumandor|sumador:instacias[0].nuevo" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv Line: 45
-Info (12128): Elaborating entity "restador" for hierarchy "restador:nuevo_restador" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 60
-Info (12128): Elaborating entity "restador_ins" for hierarchy "restador:nuevo_restador|restador_ins:restados[0].nuevo" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv Line: 45
-Info (12128): Elaborating entity "multiplicador" for hierarchy "multiplicador:nuevo_multiplicador" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 69
-Warning (10036): Verilog HDL or VHDL warning at multiplicador.sv(12): object "product" assigned a value but never read File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 12
-Warning (10230): Verilog HDL assignment warning at multiplicador.sv(12): truncated value with size 4 to match size of target (1) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 12
-Info (12128): Elaborating entity "Sumador_estructural" for hierarchy "multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 96
-Info (278001): Inferred 4 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 74
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 75
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "restPara:contador_selector|Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 28
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 114
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 74
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 74
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12023): Found entity 1: aluPara_tbreg File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_tbreg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alupara_2.sv
+    Info (12023): Found entity 1: aluPara_2 File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registro_s.sv
+    Info (12023): Found entity 1: registro_S File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro_S.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at multiplicador.sv(12): created implicit net for "product" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 12
+Info (12127): Elaborating entity "aluPara_2" for the top level hierarchy
+Info (12128): Elaborating entity "registro" for hierarchy "registro:reg1" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 46
+Critical Warning (10237): Verilog HDL warning at registro.sv(24): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv Line: 24
+Critical Warning (10237): Verilog HDL warning at registro.sv(25): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/registro.sv Line: 25
+Info (12128): Elaborating entity "aluPara" for hierarchy "aluPara:nueva_alu" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 65
+Warning (10230): Verilog HDL assignment warning at aluPara.sv(114): truncated value with size 32 to match size of target (4) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 114
+Warning (10230): Verilog HDL assignment warning at aluPara.sv(115): truncated value with size 32 to match size of target (4) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 115
+Warning (10030): Net "mux_in[15..10]" at aluPara.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 35
+Info (12128): Elaborating entity "restPara" for hierarchy "aluPara:nueva_alu|restPara:contador_selector" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at restPara.sv(23): truncated value with size 32 to match size of target (4) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 23
+Warning (10230): Verilog HDL assignment warning at restPara.sv(28): truncated value with size 32 to match size of target (4) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at restPara.sv(29): truncated value with size 32 to match size of target (4) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 29
+Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "aluPara:nueva_alu|restPara:contador_selector|SevenSegmentDisplay:seven1" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 31
+Info (12128): Elaborating entity "mux16to1" for hierarchy "aluPara:nueva_alu|mux16to1:nuevo_mux" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 41
+Info (12128): Elaborating entity "Sumador_estructural" for hierarchy "aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 51
+Info (12128): Elaborating entity "sumador" for hierarchy "aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[0].nuevo" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/Sumador_estructural.sv Line: 45
+Info (12128): Elaborating entity "restador" for hierarchy "aluPara:nueva_alu|restador:nuevo_restador" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 60
+Info (12128): Elaborating entity "restador_ins" for hierarchy "aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[0].nuevo" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restador.sv Line: 45
+Info (12128): Elaborating entity "multiplicador" for hierarchy "aluPara:nueva_alu|multiplicador:nuevo_multiplicador" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 69
+Warning (10036): Verilog HDL or VHDL warning at multiplicador.sv(12): object "product" assigned a value but never read File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 12
+Warning (10230): Verilog HDL assignment warning at multiplicador.sv(12): truncated value with size 8 to match size of target (1) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 12
+Info (12128): Elaborating entity "Sumador_estructural" for hierarchy "aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/multiplicador.sv Line: 96
+Info (12128): Elaborating entity "registro_S" for hierarchy "registro_S:reg2" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 77
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "aluPara:nueva_alu|Div0" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 74
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "aluPara:nueva_alu|Mod0" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 75
+Info (12130): Elaborated megafunction instantiation "aluPara:nueva_alu|lpm_divide:Div0" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 74
+Info (12133): Instantiated megafunction "aluPara:nueva_alu|lpm_divide:Div0" with the following parameter: File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 74
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1am.tdf
-    Info (12023): Found entity 1: lpm_divide_1am File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_1am.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/sign_div_unsign_7kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
-    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/alt_u_div_kse.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 75
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 75
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9am.tdf
+    Info (12023): Found entity 1: lpm_divide_9am File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_9am.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_fkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_fkh File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/sign_div_unsign_fkh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4te.tdf
+    Info (12023): Found entity 1: alt_u_div_4te File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/alt_u_div_4te.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "aluPara:nueva_alu|lpm_divide:Mod0" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 75
+Info (12133): Instantiated megafunction "aluPara:nueva_alu|lpm_divide:Mod0" with the following parameter: File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 75
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
-    Info (12023): Found entity 1: lpm_divide_42m File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_42m.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "restPara:contador_selector|lpm_divide:Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 28
-Info (12133): Instantiated megafunction "restPara:contador_selector|lpm_divide:Mod0" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 28
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_c2m.tdf
+    Info (12023): Found entity 1: lpm_divide_c2m File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/db/lpm_divide_c2m.tdf Line: 25
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "restPara:contador_selector|q[0]" is converted into an equivalent circuit using register "restPara:contador_selector|q[0]~_emulated" and latch "restPara:contador_selector|q[0]~1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 23
-    Warning (13310): Register "restPara:contador_selector|q[3]" is converted into an equivalent circuit using register "restPara:contador_selector|q[3]~_emulated" and latch "restPara:contador_selector|q[0]~1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 23
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display_selector2[1]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 10
-    Warning (13410): Pin "display_selector2[2]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 10
-    Warning (13410): Pin "display_selector2[6]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 10
-    Warning (13410): Pin "display_resultado2[1]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 12
-    Warning (13410): Pin "display_resultado2[2]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 12
-    Warning (13410): Pin "display_resultado2[6]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara.sv Line: 12
+    Warning (13310): Register "aluPara:nueva_alu|restPara:contador_selector|q[3]" is converted into an equivalent circuit using register "aluPara:nueva_alu|restPara:contador_selector|q[3]~_emulated" and latch "aluPara:nueva_alu|restPara:contador_selector|q[3]~1" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 23
+    Warning (13310): Register "aluPara:nueva_alu|restPara:contador_selector|q[0]" is converted into an equivalent circuit using register "aluPara:nueva_alu|restPara:contador_selector|q[0]~_emulated" and latch "aluPara:nueva_alu|restPara:contador_selector|q[3]~1" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/restPara.sv Line: 23
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 181 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 36 output pins
-    Info (21061): Implemented 135 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 4885 megabytes
-    Info: Processing ended: Tue Aug 27 01:29:33 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:04
+Warning (21074): Design contains 14 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "a[1]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 5
+    Warning (15610): No output dependent on input pin "a[2]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 5
+    Warning (15610): No output dependent on input pin "a[3]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 5
+    Warning (15610): No output dependent on input pin "a[4]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 5
+    Warning (15610): No output dependent on input pin "a[5]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 5
+    Warning (15610): No output dependent on input pin "a[6]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 5
+    Warning (15610): No output dependent on input pin "a[7]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 5
+    Warning (15610): No output dependent on input pin "b[1]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 6
+    Warning (15610): No output dependent on input pin "b[2]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 6
+    Warning (15610): No output dependent on input pin "b[3]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 6
+    Warning (15610): No output dependent on input pin "b[4]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 6
+    Warning (15610): No output dependent on input pin "b[5]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 6
+    Warning (15610): No output dependent on input pin "b[6]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 6
+    Warning (15610): No output dependent on input pin "b[7]" File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labDOS/aluPara_2.sv Line: 6
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 19 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Tue Aug 27 08:55:54 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:27
 
 

@@ -1,5 +1,5 @@
 Flow report for aluPara
-Tue Aug 27 01:30:16 2024
+Tue Aug 27 08:57:13 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Aug 27 01:30:16 2024       ;
+; Flow Status                     ; Successful - Tue Aug 27 08:57:13 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aluPara                                     ;
-; Top-level Entity Name           ; aluPara                                     ;
+; Top-level Entity Name           ; aluPara_2                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 73 / 41,910 ( < 1 % )                       ;
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 46 / 499 ( 9 % )                            ;
+; Logic utilization (in ALMs)     ; 10 / 41,910 ( < 1 % )                       ;
+; Total registers                 ; 6                                           ;
+; Total pins                      ; 20 / 499 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/27/2024 01:29:26 ;
+; Start date & time ; 08/27/2024 08:55:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; aluPara             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 88648931053584.172474376503312         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 26694249407863.172477053922376         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mux16to1_tb                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; aluPara_tb                        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; aluPara_tbreg                     ;
@@ -103,12 +103,13 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; aluPara_2   ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; aluPara_2   ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; aluPara_2   ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; aluPara_2                              ; aluPara       ; --          ; --                                ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -117,12 +118,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4885 MB             ; 00:00:04                           ;
-; Fitter               ; 00:00:30     ; 1.0                     ; 7130 MB             ; 00:00:32                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4841 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 5222 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:00                           ;
-; Total                ; 00:00:48     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4877 MB             ; 00:00:26                           ;
+; Fitter               ; 00:00:57     ; 1.0                     ; 6984 MB             ; 00:01:43                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4845 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5194 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4728 MB             ; 00:00:01                           ;
+; Total                ; 00:01:29     ; --                      ; --                  ; 00:02:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -131,11 +132,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Noemí            ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Noemí            ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Noemí            ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Noemí            ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Noemí            ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

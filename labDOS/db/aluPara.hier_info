@@ -1,18 +1,120 @@
-|aluPara
+|aluPara_2
+clk => clk.IN2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+selector => selector.IN1
+reset => reset.IN3
+out_reg2 <= registro_S:reg2.Q
+
+
+|aluPara_2|registro:reg1
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+reset => Q[4]~reg0.ACLR
+reset => Q[5]~reg0.ACLR
+reset => Q[6]~reg0.ACLR
+reset => Q[7]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+X[0] => Z[0].DATAIN
+X[1] => Z[1].DATAIN
+X[2] => Z[2].DATAIN
+X[3] => Z[3].DATAIN
+X[4] => Z[4].DATAIN
+X[5] => Z[5].DATAIN
+X[6] => Z[6].DATAIN
+X[7] => Z[7].DATAIN
+Y[0] => U[0].DATAIN
+Y[1] => U[1].DATAIN
+Y[2] => U[2].DATAIN
+Y[3] => U[3].DATAIN
+Y[4] => U[4].DATAIN
+Y[5] => U[5].DATAIN
+Y[6] => U[6].DATAIN
+Y[7] => U[7].DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[0] <= X[0].DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= X[1].DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= X[2].DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= X[3].DB_MAX_OUTPUT_PORT_TYPE
+Z[4] <= X[4].DB_MAX_OUTPUT_PORT_TYPE
+Z[5] <= X[5].DB_MAX_OUTPUT_PORT_TYPE
+Z[6] <= X[6].DB_MAX_OUTPUT_PORT_TYPE
+Z[7] <= X[7].DB_MAX_OUTPUT_PORT_TYPE
+U[0] <= Y[0].DB_MAX_OUTPUT_PORT_TYPE
+U[1] <= Y[1].DB_MAX_OUTPUT_PORT_TYPE
+U[2] <= Y[2].DB_MAX_OUTPUT_PORT_TYPE
+U[3] <= Y[3].DB_MAX_OUTPUT_PORT_TYPE
+U[4] <= Y[4].DB_MAX_OUTPUT_PORT_TYPE
+U[5] <= Y[5].DB_MAX_OUTPUT_PORT_TYPE
+U[6] <= Y[6].DB_MAX_OUTPUT_PORT_TYPE
+U[7] <= Y[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu
 a[0] => a[0].IN3
 a[1] => a[1].IN3
 a[2] => a[2].IN3
 a[3] => a[3].IN3
+a[4] => a[4].IN3
+a[5] => a[5].IN3
+a[6] => a[6].IN3
+a[7] => a[7].IN3
 b[0] => b[0].IN3
 b[1] => b[1].IN3
 b[2] => b[2].IN3
 b[3] => b[3].IN3
+b[4] => b[4].IN3
+b[5] => b[5].IN3
+b[6] => b[6].IN3
+b[7] => b[7].IN3
 selector => restPara:contador_selector.clk
 reset => restPara:contador_selector.reset
 resultado[0] <= mux16to1:nuevo_mux.out[0]
 resultado[1] <= mux16to1:nuevo_mux.out[1]
 resultado[2] <= mux16to1:nuevo_mux.out[2]
 resultado[3] <= mux16to1:nuevo_mux.out[3]
+resultado[4] <= mux16to1:nuevo_mux.out[4]
+resultado[5] <= mux16to1:nuevo_mux.out[5]
+resultado[6] <= mux16to1:nuevo_mux.out[6]
+resultado[7] <= mux16to1:nuevo_mux.out[7]
 display_selector1[0] <= restPara:contador_selector.display1[0]
 display_selector1[1] <= restPara:contador_selector.display1[1]
 display_selector1[2] <= restPara:contador_selector.display1[2]
@@ -44,10 +146,10 @@ display_resultado2[6] <= SevenSegmentDisplay:seven2.display_output
 zero_flag <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
 carry_flag <= carry_flag.DB_MAX_OUTPUT_PORT_TYPE
 overflow_flag <= overflow_flag.DB_MAX_OUTPUT_PORT_TYPE
-negative_flag <= mux16to1:nuevo_mux.out[3]
+negative_flag <= mux16to1:nuevo_mux.out[7]
 
 
-|aluPara|restPara:contador_selector
+|aluPara_2|aluPara:nueva_alu|restPara:contador_selector
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 clk => q[2]~reg0.CLK
@@ -82,7 +184,7 @@ display2[5] <= SevenSegmentDisplay:seven2.display_output
 display2[6] <= SevenSegmentDisplay:seven2.display_output
 
 
-|aluPara|restPara:contador_selector|SevenSegmentDisplay:seven1
+|aluPara_2|aluPara:nueva_alu|restPara:contador_selector|SevenSegmentDisplay:seven1
 binary_input[0] => Decoder0.IN3
 binary_input[1] => Decoder0.IN2
 binary_input[2] => Decoder0.IN1
@@ -96,7 +198,7 @@ display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|restPara:contador_selector|SevenSegmentDisplay:seven2
+|aluPara_2|aluPara:nueva_alu|restPara:contador_selector|SevenSegmentDisplay:seven2
 binary_input[0] => Decoder0.IN3
 binary_input[1] => Decoder0.IN2
 binary_input[2] => Decoder0.IN1
@@ -110,111 +212,207 @@ display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|mux16to1:nuevo_mux
+|aluPara_2|aluPara:nueva_alu|mux16to1:nuevo_mux
 s[0] => Mux0.IN3
 s[0] => Mux1.IN3
 s[0] => Mux2.IN3
 s[0] => Mux3.IN3
+s[0] => Mux4.IN3
+s[0] => Mux5.IN3
+s[0] => Mux6.IN3
+s[0] => Mux7.IN3
 s[1] => Mux0.IN2
 s[1] => Mux1.IN2
 s[1] => Mux2.IN2
 s[1] => Mux3.IN2
+s[1] => Mux4.IN2
+s[1] => Mux5.IN2
+s[1] => Mux6.IN2
+s[1] => Mux7.IN2
 s[2] => Mux0.IN1
 s[2] => Mux1.IN1
 s[2] => Mux2.IN1
 s[2] => Mux3.IN1
+s[2] => Mux4.IN1
+s[2] => Mux5.IN1
+s[2] => Mux6.IN1
+s[2] => Mux7.IN1
 s[3] => Mux0.IN0
 s[3] => Mux1.IN0
 s[3] => Mux2.IN0
 s[3] => Mux3.IN0
-in[0][0] => Mux3.IN19
-in[0][1] => Mux2.IN19
-in[0][2] => Mux1.IN19
-in[0][3] => Mux0.IN19
-in[1][0] => Mux3.IN18
-in[1][1] => Mux2.IN18
-in[1][2] => Mux1.IN18
-in[1][3] => Mux0.IN18
-in[2][0] => Mux3.IN17
-in[2][1] => Mux2.IN17
-in[2][2] => Mux1.IN17
-in[2][3] => Mux0.IN17
-in[3][0] => Mux3.IN16
-in[3][1] => Mux2.IN16
-in[3][2] => Mux1.IN16
-in[3][3] => Mux0.IN16
-in[4][0] => Mux3.IN15
-in[4][1] => Mux2.IN15
-in[4][2] => Mux1.IN15
-in[4][3] => Mux0.IN15
-in[5][0] => Mux3.IN14
-in[5][1] => Mux2.IN14
-in[5][2] => Mux1.IN14
-in[5][3] => Mux0.IN14
-in[6][0] => Mux3.IN13
-in[6][1] => Mux2.IN13
-in[6][2] => Mux1.IN13
-in[6][3] => Mux0.IN13
-in[7][0] => Mux3.IN12
-in[7][1] => Mux2.IN12
-in[7][2] => Mux1.IN12
-in[7][3] => Mux0.IN12
-in[8][0] => Mux3.IN11
-in[8][1] => Mux2.IN11
-in[8][2] => Mux1.IN11
-in[8][3] => Mux0.IN11
-in[9][0] => Mux3.IN10
-in[9][1] => Mux2.IN10
-in[9][2] => Mux1.IN10
-in[9][3] => Mux0.IN10
-in[10][0] => Mux3.IN9
-in[10][1] => Mux2.IN9
-in[10][2] => Mux1.IN9
-in[10][3] => Mux0.IN9
-in[11][0] => Mux3.IN8
-in[11][1] => Mux2.IN8
-in[11][2] => Mux1.IN8
-in[11][3] => Mux0.IN8
-in[12][0] => Mux3.IN7
-in[12][1] => Mux2.IN7
-in[12][2] => Mux1.IN7
-in[12][3] => Mux0.IN7
-in[13][0] => Mux3.IN6
-in[13][1] => Mux2.IN6
-in[13][2] => Mux1.IN6
-in[13][3] => Mux0.IN6
-in[14][0] => Mux3.IN5
-in[14][1] => Mux2.IN5
-in[14][2] => Mux1.IN5
-in[14][3] => Mux0.IN5
-in[15][0] => Mux3.IN4
-in[15][1] => Mux2.IN4
-in[15][2] => Mux1.IN4
-in[15][3] => Mux0.IN4
-out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+s[3] => Mux4.IN0
+s[3] => Mux5.IN0
+s[3] => Mux6.IN0
+s[3] => Mux7.IN0
+in[0][0] => Mux7.IN19
+in[0][1] => Mux6.IN19
+in[0][2] => Mux5.IN19
+in[0][3] => Mux4.IN19
+in[0][4] => Mux3.IN19
+in[0][5] => Mux2.IN19
+in[0][6] => Mux1.IN19
+in[0][7] => Mux0.IN19
+in[1][0] => Mux7.IN18
+in[1][1] => Mux6.IN18
+in[1][2] => Mux5.IN18
+in[1][3] => Mux4.IN18
+in[1][4] => Mux3.IN18
+in[1][5] => Mux2.IN18
+in[1][6] => Mux1.IN18
+in[1][7] => Mux0.IN18
+in[2][0] => Mux7.IN17
+in[2][1] => Mux6.IN17
+in[2][2] => Mux5.IN17
+in[2][3] => Mux4.IN17
+in[2][4] => Mux3.IN17
+in[2][5] => Mux2.IN17
+in[2][6] => Mux1.IN17
+in[2][7] => Mux0.IN17
+in[3][0] => Mux7.IN16
+in[3][1] => Mux6.IN16
+in[3][2] => Mux5.IN16
+in[3][3] => Mux4.IN16
+in[3][4] => Mux3.IN16
+in[3][5] => Mux2.IN16
+in[3][6] => Mux1.IN16
+in[3][7] => Mux0.IN16
+in[4][0] => Mux7.IN15
+in[4][1] => Mux6.IN15
+in[4][2] => Mux5.IN15
+in[4][3] => Mux4.IN15
+in[4][4] => Mux3.IN15
+in[4][5] => Mux2.IN15
+in[4][6] => Mux1.IN15
+in[4][7] => Mux0.IN15
+in[5][0] => Mux7.IN14
+in[5][1] => Mux6.IN14
+in[5][2] => Mux5.IN14
+in[5][3] => Mux4.IN14
+in[5][4] => Mux3.IN14
+in[5][5] => Mux2.IN14
+in[5][6] => Mux1.IN14
+in[5][7] => Mux0.IN14
+in[6][0] => Mux7.IN13
+in[6][1] => Mux6.IN13
+in[6][2] => Mux5.IN13
+in[6][3] => Mux4.IN13
+in[6][4] => Mux3.IN13
+in[6][5] => Mux2.IN13
+in[6][6] => Mux1.IN13
+in[6][7] => Mux0.IN13
+in[7][0] => Mux7.IN12
+in[7][1] => Mux6.IN12
+in[7][2] => Mux5.IN12
+in[7][3] => Mux4.IN12
+in[7][4] => Mux3.IN12
+in[7][5] => Mux2.IN12
+in[7][6] => Mux1.IN12
+in[7][7] => Mux0.IN12
+in[8][0] => Mux7.IN11
+in[8][1] => Mux6.IN11
+in[8][2] => Mux5.IN11
+in[8][3] => Mux4.IN11
+in[8][4] => Mux3.IN11
+in[8][5] => Mux2.IN11
+in[8][6] => Mux1.IN11
+in[8][7] => Mux0.IN11
+in[9][0] => Mux7.IN10
+in[9][1] => Mux6.IN10
+in[9][2] => Mux5.IN10
+in[9][3] => Mux4.IN10
+in[9][4] => Mux3.IN10
+in[9][5] => Mux2.IN10
+in[9][6] => Mux1.IN10
+in[9][7] => Mux0.IN10
+in[10][0] => Mux7.IN9
+in[10][1] => Mux6.IN9
+in[10][2] => Mux5.IN9
+in[10][3] => Mux4.IN9
+in[10][4] => Mux3.IN9
+in[10][5] => Mux2.IN9
+in[10][6] => Mux1.IN9
+in[10][7] => Mux0.IN9
+in[11][0] => Mux7.IN8
+in[11][1] => Mux6.IN8
+in[11][2] => Mux5.IN8
+in[11][3] => Mux4.IN8
+in[11][4] => Mux3.IN8
+in[11][5] => Mux2.IN8
+in[11][6] => Mux1.IN8
+in[11][7] => Mux0.IN8
+in[12][0] => Mux7.IN7
+in[12][1] => Mux6.IN7
+in[12][2] => Mux5.IN7
+in[12][3] => Mux4.IN7
+in[12][4] => Mux3.IN7
+in[12][5] => Mux2.IN7
+in[12][6] => Mux1.IN7
+in[12][7] => Mux0.IN7
+in[13][0] => Mux7.IN6
+in[13][1] => Mux6.IN6
+in[13][2] => Mux5.IN6
+in[13][3] => Mux4.IN6
+in[13][4] => Mux3.IN6
+in[13][5] => Mux2.IN6
+in[13][6] => Mux1.IN6
+in[13][7] => Mux0.IN6
+in[14][0] => Mux7.IN5
+in[14][1] => Mux6.IN5
+in[14][2] => Mux5.IN5
+in[14][3] => Mux4.IN5
+in[14][4] => Mux3.IN5
+in[14][5] => Mux2.IN5
+in[14][6] => Mux1.IN5
+in[14][7] => Mux0.IN5
+in[15][0] => Mux7.IN4
+in[15][1] => Mux6.IN4
+in[15][2] => Mux5.IN4
+in[15][3] => Mux4.IN4
+in[15][4] => Mux3.IN4
+in[15][5] => Mux2.IN4
+in[15][6] => Mux1.IN4
+in[15][7] => Mux0.IN4
+out[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|Sumador_estructural:nuevo_sumandor
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
 cin => c[0].IN1
-cout_sumador <= sumador:instacias[3].nuevo.cout_sumador
+cout_sumador <= sumador:instacias[7].nuevo.cout_sumador
 s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
 s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
 s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
 s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
+s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
+s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
+s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
 
 
-|aluPara|Sumador_estructural:nuevo_sumandor|sumador:instacias[0].nuevo
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[0].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -228,7 +426,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|Sumador_estructural:nuevo_sumandor|sumador:instacias[1].nuevo
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[1].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -242,7 +440,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|Sumador_estructural:nuevo_sumandor|sumador:instacias[2].nuevo
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[2].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -256,7 +454,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|Sumador_estructural:nuevo_sumandor|sumador:instacias[3].nuevo
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[3].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -270,23 +468,91 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|restador:nuevo_restador
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[4].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[5].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[6].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|Sumador_estructural:nuevo_sumandor|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
-cout_restador <= restador_ins:restados[3].nuevo.cout_restador
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cout_restador <= restador_ins:restados[7].nuevo.cout_restador
 s_restador[0] <= restador_ins:restados[0].nuevo.s_restador
 s_restador[1] <= restador_ins:restados[1].nuevo.s_restador
 s_restador[2] <= restador_ins:restados[2].nuevo.s_restador
 s_restador[3] <= restador_ins:restados[3].nuevo.s_restador
+s_restador[4] <= restador_ins:restados[4].nuevo.s_restador
+s_restador[5] <= restador_ins:restados[5].nuevo.s_restador
+s_restador[6] <= restador_ins:restados[6].nuevo.s_restador
+s_restador[7] <= restador_ins:restados[7].nuevo.s_restador
 
 
-|aluPara|restador:nuevo_restador|restador_ins:restados[0].nuevo
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[0].nuevo
 a => s_restador.IN0
 a => cout_restador.IN0
 a => cout_restador.IN0
@@ -300,7 +566,7 @@ s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
 cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|restador:nuevo_restador|restador_ins:restados[1].nuevo
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[1].nuevo
 a => s_restador.IN0
 a => cout_restador.IN0
 a => cout_restador.IN0
@@ -314,7 +580,7 @@ s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
 cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|restador:nuevo_restador|restador_ins:restados[2].nuevo
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[2].nuevo
 a => s_restador.IN0
 a => cout_restador.IN0
 a => cout_restador.IN0
@@ -328,7 +594,7 @@ s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
 cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|restador:nuevo_restador|restador_ins:restados[3].nuevo
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[3].nuevo
 a => s_restador.IN0
 a => cout_restador.IN0
 a => cout_restador.IN0
@@ -342,50 +608,210 @@ s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
 cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[4].nuevo
+a => s_restador.IN0
+a => cout_restador.IN0
+a => cout_restador.IN0
+b => s_restador.IN1
+b => cout_restador.IN0
+b => cout_restador.IN1
+c => s_restador.IN1
+c => cout_restador.IN1
+c => cout_restador.IN1
+s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
+cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[5].nuevo
+a => s_restador.IN0
+a => cout_restador.IN0
+a => cout_restador.IN0
+b => s_restador.IN1
+b => cout_restador.IN0
+b => cout_restador.IN1
+c => s_restador.IN1
+c => cout_restador.IN1
+c => cout_restador.IN1
+s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
+cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[6].nuevo
+a => s_restador.IN0
+a => cout_restador.IN0
+a => cout_restador.IN0
+b => s_restador.IN1
+b => cout_restador.IN0
+b => cout_restador.IN1
+c => s_restador.IN1
+c => cout_restador.IN1
+c => cout_restador.IN1
+s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
+cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|restador:nuevo_restador|restador_ins:restados[7].nuevo
+a => s_restador.IN0
+a => cout_restador.IN0
+a => cout_restador.IN0
+b => s_restador.IN1
+b => cout_restador.IN0
+b => cout_restador.IN1
+c => s_restador.IN1
+c => cout_restador.IN1
+c => cout_restador.IN1
+s_restador <= s_restador.DB_MAX_OUTPUT_PORT_TYPE
+cout_restador <= cout_restador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador
 a[0] => matriz_shift[0][0].IN0
 a[0] => matriz_shift[0][1].IN0
 a[0] => matriz_shift[0][2].IN0
 a[0] => matriz_shift[0][3].IN0
+a[0] => matriz_shift[0][4].IN0
+a[0] => matriz_shift[0][5].IN0
+a[0] => matriz_shift[0][6].IN0
+a[0] => matriz_shift[0][7].IN0
 a[1] => matriz_shift[1][1].IN0
 a[1] => matriz_shift[1][2].IN0
 a[1] => matriz_shift[1][3].IN0
 a[1] => matriz_shift[1][4].IN0
+a[1] => matriz_shift[1][5].IN0
+a[1] => matriz_shift[1][6].IN0
+a[1] => matriz_shift[1][7].IN0
+a[1] => matriz_shift[1][8].IN0
 a[2] => matriz_shift[2][2].IN0
 a[2] => matriz_shift[2][3].IN0
 a[2] => matriz_shift[2][4].IN0
 a[2] => matriz_shift[2][5].IN0
+a[2] => matriz_shift[2][6].IN0
+a[2] => matriz_shift[2][7].IN0
+a[2] => matriz_shift[2][8].IN0
+a[2] => matriz_shift[2][9].IN0
 a[3] => matriz_shift[3][3].IN0
 a[3] => matriz_shift[3][4].IN0
 a[3] => matriz_shift[3][5].IN0
 a[3] => matriz_shift[3][6].IN0
+a[3] => matriz_shift[3][7].IN0
+a[3] => matriz_shift[3][8].IN0
+a[3] => matriz_shift[3][9].IN0
+a[3] => matriz_shift[3][10].IN0
+a[4] => matriz_shift[4][4].IN0
+a[4] => matriz_shift[4][5].IN0
+a[4] => matriz_shift[4][6].IN0
+a[4] => matriz_shift[4][7].IN0
+a[4] => matriz_shift[4][8].IN0
+a[4] => matriz_shift[4][9].IN0
+a[4] => matriz_shift[4][10].IN0
+a[4] => matriz_shift[4][11].IN0
+a[5] => matriz_shift[5][5].IN0
+a[5] => matriz_shift[5][6].IN0
+a[5] => matriz_shift[5][7].IN0
+a[5] => matriz_shift[5][8].IN0
+a[5] => matriz_shift[5][9].IN0
+a[5] => matriz_shift[5][10].IN0
+a[5] => matriz_shift[5][11].IN0
+a[5] => matriz_shift[5][12].IN0
+a[6] => matriz_shift[6][6].IN0
+a[6] => matriz_shift[6][7].IN0
+a[6] => matriz_shift[6][8].IN0
+a[6] => matriz_shift[6][9].IN0
+a[6] => matriz_shift[6][10].IN0
+a[6] => matriz_shift[6][11].IN0
+a[6] => matriz_shift[6][12].IN0
+a[6] => matriz_shift[6][13].IN0
+a[7] => matriz_shift[7][7].IN0
+a[7] => matriz_shift[7][8].IN0
+a[7] => matriz_shift[7][9].IN0
+a[7] => matriz_shift[7][10].IN0
+a[7] => matriz_shift[7][11].IN0
+a[7] => matriz_shift[7][12].IN0
+a[7] => matriz_shift[7][13].IN0
+a[7] => matriz_shift[7][14].IN0
 b[0] => matriz_shift[0][0].IN1
 b[0] => matriz_shift[1][1].IN1
 b[0] => matriz_shift[2][2].IN1
 b[0] => matriz_shift[3][3].IN1
+b[0] => matriz_shift[4][4].IN1
+b[0] => matriz_shift[5][5].IN1
+b[0] => matriz_shift[6][6].IN1
+b[0] => matriz_shift[7][7].IN1
 b[1] => matriz_shift[0][1].IN1
 b[1] => matriz_shift[1][2].IN1
 b[1] => matriz_shift[2][3].IN1
 b[1] => matriz_shift[3][4].IN1
+b[1] => matriz_shift[4][5].IN1
+b[1] => matriz_shift[5][6].IN1
+b[1] => matriz_shift[6][7].IN1
+b[1] => matriz_shift[7][8].IN1
 b[2] => matriz_shift[0][2].IN1
 b[2] => matriz_shift[1][3].IN1
 b[2] => matriz_shift[2][4].IN1
 b[2] => matriz_shift[3][5].IN1
+b[2] => matriz_shift[4][6].IN1
+b[2] => matriz_shift[5][7].IN1
+b[2] => matriz_shift[6][8].IN1
+b[2] => matriz_shift[7][9].IN1
 b[3] => matriz_shift[0][3].IN1
 b[3] => matriz_shift[1][4].IN1
 b[3] => matriz_shift[2][5].IN1
 b[3] => matriz_shift[3][6].IN1
-s_multiplicador[0] <= Sumador_estructural:instancias[2].nuevo_sumador.s_sumador[0]
-s_multiplicador[1] <= Sumador_estructural:instancias[2].nuevo_sumador.s_sumador[1]
-s_multiplicador[2] <= Sumador_estructural:instancias[2].nuevo_sumador.s_sumador[2]
-s_multiplicador[3] <= Sumador_estructural:instancias[2].nuevo_sumador.s_sumador[3]
-s_multiplicador[4] <= Sumador_estructural:instancias[2].nuevo_sumador.s_sumador[4]
-s_multiplicador[5] <= Sumador_estructural:instancias[2].nuevo_sumador.s_sumador[5]
-s_multiplicador[6] <= Sumador_estructural:instancias[2].nuevo_sumador.s_sumador[6]
-s_multiplicador[7] <= Sumador_estructural:instancias[2].nuevo_sumador.cout_sumador
+b[3] => matriz_shift[4][7].IN1
+b[3] => matriz_shift[5][8].IN1
+b[3] => matriz_shift[6][9].IN1
+b[3] => matriz_shift[7][10].IN1
+b[4] => matriz_shift[0][4].IN1
+b[4] => matriz_shift[1][5].IN1
+b[4] => matriz_shift[2][6].IN1
+b[4] => matriz_shift[3][7].IN1
+b[4] => matriz_shift[4][8].IN1
+b[4] => matriz_shift[5][9].IN1
+b[4] => matriz_shift[6][10].IN1
+b[4] => matriz_shift[7][11].IN1
+b[5] => matriz_shift[0][5].IN1
+b[5] => matriz_shift[1][6].IN1
+b[5] => matriz_shift[2][7].IN1
+b[5] => matriz_shift[3][8].IN1
+b[5] => matriz_shift[4][9].IN1
+b[5] => matriz_shift[5][10].IN1
+b[5] => matriz_shift[6][11].IN1
+b[5] => matriz_shift[7][12].IN1
+b[6] => matriz_shift[0][6].IN1
+b[6] => matriz_shift[1][7].IN1
+b[6] => matriz_shift[2][8].IN1
+b[6] => matriz_shift[3][9].IN1
+b[6] => matriz_shift[4][10].IN1
+b[6] => matriz_shift[5][11].IN1
+b[6] => matriz_shift[6][12].IN1
+b[6] => matriz_shift[7][13].IN1
+b[7] => matriz_shift[0][7].IN1
+b[7] => matriz_shift[1][8].IN1
+b[7] => matriz_shift[2][9].IN1
+b[7] => matriz_shift[3][10].IN1
+b[7] => matriz_shift[4][11].IN1
+b[7] => matriz_shift[5][12].IN1
+b[7] => matriz_shift[6][13].IN1
+b[7] => matriz_shift[7][14].IN1
+s_multiplicador[0] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[0]
+s_multiplicador[1] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[1]
+s_multiplicador[2] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[2]
+s_multiplicador[3] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[3]
+s_multiplicador[4] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[4]
+s_multiplicador[5] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[5]
+s_multiplicador[6] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[6]
+s_multiplicador[7] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[7]
+s_multiplicador[8] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[8]
+s_multiplicador[9] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[9]
+s_multiplicador[10] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[10]
+s_multiplicador[11] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[11]
+s_multiplicador[12] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[12]
+s_multiplicador[13] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[13]
+s_multiplicador[14] <= Sumador_estructural:instancias[6].nuevo_sumador.s_sumador[14]
+s_multiplicador[15] <= Sumador_estructural:instancias[6].nuevo_sumador.cout_sumador
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -393,6 +819,14 @@ a[3] => a[3].IN1
 a[4] => a[4].IN1
 a[5] => a[5].IN1
 a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
@@ -400,8 +834,16 @@ b[3] => b[3].IN1
 b[4] => b[4].IN1
 b[5] => b[5].IN1
 b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
 cin => c[0].IN1
-cout_sumador <= sumador:instacias[6].nuevo.cout_sumador
+cout_sumador <= sumador:instacias[14].nuevo.cout_sumador
 s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
 s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
 s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
@@ -409,9 +851,17 @@ s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
 s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
 s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
 s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
+s_sumador[8] <= sumador:instacias[8].nuevo.s_sumador
+s_sumador[9] <= sumador:instacias[9].nuevo.s_sumador
+s_sumador[10] <= sumador:instacias[10].nuevo.s_sumador
+s_sumador[11] <= sumador:instacias[11].nuevo.s_sumador
+s_sumador[12] <= sumador:instacias[12].nuevo.s_sumador
+s_sumador[13] <= sumador:instacias[13].nuevo.s_sumador
+s_sumador[14] <= sumador:instacias[14].nuevo.s_sumador
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[0].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[0].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -425,7 +875,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[1].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[1].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -439,7 +889,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[2].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[2].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -453,7 +903,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[3].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[3].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -467,7 +917,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[4].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[4].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -481,7 +931,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[5].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[5].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -495,7 +945,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[6].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[6].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -509,7 +959,119 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[8].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[9].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[10].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[11].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[12].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[13].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador|sumador:instacias[14].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -517,6 +1079,14 @@ a[3] => a[3].IN1
 a[4] => a[4].IN1
 a[5] => a[5].IN1
 a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
@@ -524,8 +1094,16 @@ b[3] => b[3].IN1
 b[4] => b[4].IN1
 b[5] => b[5].IN1
 b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
 cin => c[0].IN1
-cout_sumador <= sumador:instacias[6].nuevo.cout_sumador
+cout_sumador <= sumador:instacias[14].nuevo.cout_sumador
 s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
 s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
 s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
@@ -533,9 +1111,17 @@ s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
 s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
 s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
 s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
+s_sumador[8] <= sumador:instacias[8].nuevo.s_sumador
+s_sumador[9] <= sumador:instacias[9].nuevo.s_sumador
+s_sumador[10] <= sumador:instacias[10].nuevo.s_sumador
+s_sumador[11] <= sumador:instacias[11].nuevo.s_sumador
+s_sumador[12] <= sumador:instacias[12].nuevo.s_sumador
+s_sumador[13] <= sumador:instacias[13].nuevo.s_sumador
+s_sumador[14] <= sumador:instacias[14].nuevo.s_sumador
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[0].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[0].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -549,7 +1135,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[1].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[1].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -563,7 +1149,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[2].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[2].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -577,7 +1163,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[3].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[3].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -591,7 +1177,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[4].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[4].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -605,7 +1191,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[5].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[5].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -619,7 +1205,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[6].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[6].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -633,7 +1219,119 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[8].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[9].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[10].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[11].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[12].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[13].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador|sumador:instacias[14].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -641,6 +1339,14 @@ a[3] => a[3].IN1
 a[4] => a[4].IN1
 a[5] => a[5].IN1
 a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
@@ -648,8 +1354,16 @@ b[3] => b[3].IN1
 b[4] => b[4].IN1
 b[5] => b[5].IN1
 b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
 cin => c[0].IN1
-cout_sumador <= sumador:instacias[6].nuevo.cout_sumador
+cout_sumador <= sumador:instacias[14].nuevo.cout_sumador
 s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
 s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
 s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
@@ -657,9 +1371,17 @@ s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
 s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
 s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
 s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
+s_sumador[8] <= sumador:instacias[8].nuevo.s_sumador
+s_sumador[9] <= sumador:instacias[9].nuevo.s_sumador
+s_sumador[10] <= sumador:instacias[10].nuevo.s_sumador
+s_sumador[11] <= sumador:instacias[11].nuevo.s_sumador
+s_sumador[12] <= sumador:instacias[12].nuevo.s_sumador
+s_sumador[13] <= sumador:instacias[13].nuevo.s_sumador
+s_sumador[14] <= sumador:instacias[14].nuevo.s_sumador
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[0].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[0].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -673,7 +1395,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[1].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[1].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -687,7 +1409,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[2].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[2].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -701,7 +1423,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[3].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[3].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -715,7 +1437,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[4].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[4].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -729,7 +1451,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[5].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[5].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -743,7 +1465,7 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[6].nuevo
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[6].nuevo
 a => s_sumador.IN0
 a => cout_sumador.IN0
 a => cout_sumador.IN0
@@ -757,7 +1479,1159 @@ s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
 cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|SevenSegmentDisplay:seven1
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[8].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[9].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[10].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[11].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[12].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[13].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador|sumador:instacias[14].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+cin => c[0].IN1
+cout_sumador <= sumador:instacias[14].nuevo.cout_sumador
+s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
+s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
+s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
+s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
+s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
+s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
+s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
+s_sumador[8] <= sumador:instacias[8].nuevo.s_sumador
+s_sumador[9] <= sumador:instacias[9].nuevo.s_sumador
+s_sumador[10] <= sumador:instacias[10].nuevo.s_sumador
+s_sumador[11] <= sumador:instacias[11].nuevo.s_sumador
+s_sumador[12] <= sumador:instacias[12].nuevo.s_sumador
+s_sumador[13] <= sumador:instacias[13].nuevo.s_sumador
+s_sumador[14] <= sumador:instacias[14].nuevo.s_sumador
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[0].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[1].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[2].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[3].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[4].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[5].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[6].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[8].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[9].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[10].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[11].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[12].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[13].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador|sumador:instacias[14].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+cin => c[0].IN1
+cout_sumador <= sumador:instacias[14].nuevo.cout_sumador
+s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
+s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
+s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
+s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
+s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
+s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
+s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
+s_sumador[8] <= sumador:instacias[8].nuevo.s_sumador
+s_sumador[9] <= sumador:instacias[9].nuevo.s_sumador
+s_sumador[10] <= sumador:instacias[10].nuevo.s_sumador
+s_sumador[11] <= sumador:instacias[11].nuevo.s_sumador
+s_sumador[12] <= sumador:instacias[12].nuevo.s_sumador
+s_sumador[13] <= sumador:instacias[13].nuevo.s_sumador
+s_sumador[14] <= sumador:instacias[14].nuevo.s_sumador
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[0].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[1].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[2].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[3].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[4].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[5].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[6].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[8].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[9].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[10].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[11].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[12].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[13].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador|sumador:instacias[14].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+cin => c[0].IN1
+cout_sumador <= sumador:instacias[14].nuevo.cout_sumador
+s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
+s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
+s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
+s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
+s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
+s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
+s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
+s_sumador[8] <= sumador:instacias[8].nuevo.s_sumador
+s_sumador[9] <= sumador:instacias[9].nuevo.s_sumador
+s_sumador[10] <= sumador:instacias[10].nuevo.s_sumador
+s_sumador[11] <= sumador:instacias[11].nuevo.s_sumador
+s_sumador[12] <= sumador:instacias[12].nuevo.s_sumador
+s_sumador[13] <= sumador:instacias[13].nuevo.s_sumador
+s_sumador[14] <= sumador:instacias[14].nuevo.s_sumador
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[0].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[1].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[2].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[3].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[4].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[5].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[6].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[8].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[9].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[10].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[11].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[12].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[13].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador|sumador:instacias[14].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+cin => c[0].IN1
+cout_sumador <= sumador:instacias[14].nuevo.cout_sumador
+s_sumador[0] <= sumador:instacias[0].nuevo.s_sumador
+s_sumador[1] <= sumador:instacias[1].nuevo.s_sumador
+s_sumador[2] <= sumador:instacias[2].nuevo.s_sumador
+s_sumador[3] <= sumador:instacias[3].nuevo.s_sumador
+s_sumador[4] <= sumador:instacias[4].nuevo.s_sumador
+s_sumador[5] <= sumador:instacias[5].nuevo.s_sumador
+s_sumador[6] <= sumador:instacias[6].nuevo.s_sumador
+s_sumador[7] <= sumador:instacias[7].nuevo.s_sumador
+s_sumador[8] <= sumador:instacias[8].nuevo.s_sumador
+s_sumador[9] <= sumador:instacias[9].nuevo.s_sumador
+s_sumador[10] <= sumador:instacias[10].nuevo.s_sumador
+s_sumador[11] <= sumador:instacias[11].nuevo.s_sumador
+s_sumador[12] <= sumador:instacias[12].nuevo.s_sumador
+s_sumador[13] <= sumador:instacias[13].nuevo.s_sumador
+s_sumador[14] <= sumador:instacias[14].nuevo.s_sumador
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[0].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[1].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[2].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[3].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[4].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[5].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[6].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[7].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[8].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[9].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[10].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[11].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[12].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[13].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador|sumador:instacias[14].nuevo
+a => s_sumador.IN0
+a => cout_sumador.IN0
+a => cout_sumador.IN0
+b => s_sumador.IN1
+b => cout_sumador.IN1
+b => cout_sumador.IN0
+c => s_sumador.IN1
+c => cout_sumador.IN1
+c => cout_sumador.IN1
+s_sumador <= s_sumador.DB_MAX_OUTPUT_PORT_TYPE
+cout_sumador <= cout_sumador.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|aluPara:nueva_alu|SevenSegmentDisplay:seven1
 binary_input[0] => Decoder0.IN3
 binary_input[1] => Decoder0.IN2
 binary_input[2] => Decoder0.IN1
@@ -771,7 +2645,7 @@ display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aluPara|SevenSegmentDisplay:seven2
+|aluPara_2|aluPara:nueva_alu|SevenSegmentDisplay:seven2
 binary_input[0] => Decoder0.IN3
 binary_input[1] => Decoder0.IN2
 binary_input[2] => Decoder0.IN1
@@ -783,5 +2657,40 @@ display_output[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 display_output[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 display_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 display_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aluPara_2|registro_S:reg2
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+reset => Q[4]~reg0.ACLR
+reset => Q[5]~reg0.ACLR
+reset => Q[6]~reg0.ACLR
+reset => Q[7]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

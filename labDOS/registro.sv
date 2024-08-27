@@ -3,9 +3,10 @@ module registro #(parameter int N = 8)
 (  
     input logic clk, reset, 
 	 
-    input logic [N-1:0] D,         
+    input logic [N-1:0] D, X, Y, 
+	 
 														 // Entrada de datos
-    output logic [N-1:0] Q                // Salida de datos
+    output logic [N-1:0] Q, Z, U               // Salida de datos
 );
     always_ff @(posedge clk or posedge reset) 
 	 
@@ -19,8 +20,9 @@ module registro #(parameter int N = 8)
         else
 		  
 		  
-            Q <= D;     
-											  // Si no, la salida toma el valor de D
+            Q <= D;  // a
+				Z <= X; // b
+				U <= Y; // selector											  // Si no, la salida toma el valor de D
     end
 	 
 endmodule
