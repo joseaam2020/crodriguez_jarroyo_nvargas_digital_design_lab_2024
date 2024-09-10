@@ -21,9 +21,9 @@ always_comb
 	
 	
 // Outputs
-assign error = (state == 2'b10);
-assign en_count = (state == 2'b11);
-assign rst_timer = (state == 2'b11);
+assign error = (state == 2'b11);
+assign en_count = (state == 2'b01);
+assign rst_timer = (state == 2'b01);
 
 
 
