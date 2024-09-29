@@ -41,3 +41,30 @@ initial begin
 end
 
 endmodule
+
+/*`timescale 1 ns / 1 ns
+
+module cronometer_tb (clk_50Mhz,newClk_reset,cronometer_rst,seconds);
+
+input logic clk_50Mhz;
+input logic newClk_reset;
+input logic cronometer_rst;
+output logic [3:0] seconds;
+
+logic clk_2Mhz;
+
+
+second_clk newClk (
+    .refclk(clk_50Mhz),
+    .rst(newClk_reset),
+    .outclk_0(clk_2Mhz),
+    .locked()
+);
+
+cronometer crono (
+    .clock(clk_2Mhz),
+    .reset(cronometer_rst),
+    .seconds(seconds)
+);
+
+endmodule*/
