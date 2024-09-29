@@ -2,164 +2,132 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -5.464
-TNS   : -124.226
+Type  : Slow 1100mV 85C Model Setup 'iVGA_CLK'
+Slack : -3.519
+TNS   : -186.867
 
-Type  : Slow 1100mV 85C Model Setup 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -2.321
-TNS   : -60.343
+Type  : Slow 1100mV 85C Model Setup 'video_sync_generator:LTM_ins|blank_n'
+Slack : -2.748
+TNS   : -64.571
 
-Type  : Slow 1100mV 85C Model Hold 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -5.769
-TNS   : -22.205
+Type  : Slow 1100mV 85C Model Hold 'iVGA_CLK'
+Slack : -2.195
+TNS   : -5.225
 
-Type  : Slow 1100mV 85C Model Hold 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 0.261
+Type  : Slow 1100mV 85C Model Hold 'video_sync_generator:LTM_ins|blank_n'
+Slack : 0.287
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Recovery 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -7.222
-TNS   : -216.471
+Type  : Slow 1100mV 85C Model Recovery 'video_sync_generator:LTM_ins|blank_n'
+Slack : -3.848
+TNS   : -103.665
 
-Type  : Slow 1100mV 85C Model Removal 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 5.631
+Type  : Slow 1100mV 85C Model Removal 'video_sync_generator:LTM_ins|blank_n'
+Slack : 2.712
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'iVGA_CLK'
 Slack : -0.394
-TNS   : -15.310
+TNS   : -58.813
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 1.666
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.900
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.157
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -4.815
-TNS   : -109.106
-
-Type  : Slow 1100mV 0C Model Setup 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -2.310
-TNS   : -59.330
-
-Type  : Slow 1100mV 0C Model Hold 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -5.843
-TNS   : -23.608
-
-Type  : Slow 1100mV 0C Model Hold 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 0.322
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -7.187
-TNS   : -215.402
-
-Type  : Slow 1100mV 0C Model Removal 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 5.792
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'video_sync_generator:LTM_ins|blank_n'
 Slack : -0.394
-TNS   : -16.046
+TNS   : -14.098
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 1.666
+Type  : Slow 1100mV 0C Model Setup 'iVGA_CLK'
+Slack : -3.168
+TNS   : -176.817
+
+Type  : Slow 1100mV 0C Model Setup 'video_sync_generator:LTM_ins|blank_n'
+Slack : -2.607
+TNS   : -60.079
+
+Type  : Slow 1100mV 0C Model Hold 'iVGA_CLK'
+Slack : -2.268
+TNS   : -5.787
+
+Type  : Slow 1100mV 0C Model Hold 'video_sync_generator:LTM_ins|blank_n'
+Slack : 0.342
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.926
+Type  : Slow 1100mV 0C Model Recovery 'video_sync_generator:LTM_ins|blank_n'
+Slack : -3.751
+TNS   : -101.200
+
+Type  : Slow 1100mV 0C Model Removal 'video_sync_generator:LTM_ins|blank_n'
+Slack : 2.806
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.164
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'iVGA_CLK'
+Slack : -0.394
+TNS   : -62.685
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'video_sync_generator:LTM_ins|blank_n'
+Slack : -0.394
+TNS   : -14.132
+
+Type  : Fast 1100mV 85C Model Setup 'iVGA_CLK'
+Slack : -2.919
+TNS   : -97.803
+
+Type  : Fast 1100mV 85C Model Setup 'video_sync_generator:LTM_ins|blank_n'
+Slack : -1.329
+TNS   : -30.760
+
+Type  : Fast 1100mV 85C Model Hold 'iVGA_CLK'
+Slack : -1.114
+TNS   : -2.277
+
+Type  : Fast 1100mV 85C Model Hold 'video_sync_generator:LTM_ins|blank_n'
+Slack : 0.121
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -4.796
-TNS   : -105.631
+Type  : Fast 1100mV 85C Model Recovery 'video_sync_generator:LTM_ins|blank_n'
+Slack : -1.986
+TNS   : -53.506
 
-Type  : Fast 1100mV 85C Model Setup 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -0.926
-TNS   : -23.095
-
-Type  : Fast 1100mV 85C Model Hold 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -3.154
-TNS   : -12.167
-
-Type  : Fast 1100mV 85C Model Hold 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 0.112
+Type  : Fast 1100mV 85C Model Removal 'video_sync_generator:LTM_ins|blank_n'
+Slack : 1.589
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Recovery 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -3.886
-TNS   : -116.449
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'iVGA_CLK'
+Slack : -0.186
+TNS   : -7.524
 
-Type  : Fast 1100mV 85C Model Removal 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 3.326
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'video_sync_generator:LTM_ins|blank_n'
+Slack : 0.070
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 0.145
+Type  : Fast 1100mV 0C Model Setup 'iVGA_CLK'
+Slack : -2.327
+TNS   : -77.929
+
+Type  : Fast 1100mV 0C Model Setup 'video_sync_generator:LTM_ins|blank_n'
+Slack : -1.181
+TNS   : -26.811
+
+Type  : Fast 1100mV 0C Model Hold 'iVGA_CLK'
+Slack : -1.146
+TNS   : -2.666
+
+Type  : Fast 1100mV 0C Model Hold 'video_sync_generator:LTM_ins|blank_n'
+Slack : 0.121
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 1.666
+Type  : Fast 1100mV 0C Model Recovery 'video_sync_generator:LTM_ins|blank_n'
+Slack : -1.934
+TNS   : -52.109
+
+Type  : Fast 1100mV 0C Model Removal 'video_sync_generator:LTM_ins|blank_n'
+Slack : 1.582
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.643
-TNS   : 0.000
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'iVGA_CLK'
+Slack : -0.224
+TNS   : -8.007
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.529
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -3.726
-TNS   : -81.649
-
-Type  : Fast 1100mV 0C Model Setup 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -0.845
-TNS   : -20.373
-
-Type  : Fast 1100mV 0C Model Hold 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -3.111
-TNS   : -12.029
-
-Type  : Fast 1100mV 0C Model Hold 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 0.114
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Recovery 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : -3.758
-TNS   : -112.643
-
-Type  : Fast 1100mV 0C Model Removal 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 3.287
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n'
-Slack : 0.158
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 1.666
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.632
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.533
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'video_sync_generator:LTM_ins|blank_n'
+Slack : 0.067
 TNS   : 0.000
 
 ------------------------------------------------------------

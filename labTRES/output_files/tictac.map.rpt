@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tictac
-Sat Sep 28 21:20:57 2024
+Sun Sep 29 15:15:34 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,20 +13,16 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. Registers Protected by Synthesis
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Source assignments for vga_controller:vga_ins
- 13. Parameter Settings for User Entity Instance: Top-level Entity: |vgaTest
- 14. Parameter Settings for User Entity Instance: vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i
- 15. Parameter Settings for User Entity Instance: vga_controller:vga_ins
- 16. Parameter Settings for User Entity Instance: vga_controller:vga_ins|video_sync_generator:LTM_ins
- 17. Port Connectivity Checks: "vga_pll:u1"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
- 21. Analysis & Synthesis Suppressed Messages
+  8. Registers Protected by Synthesis
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Source assignments for Top-level Entity: |vga_controller
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |vga_controller
+ 13. Parameter Settings for User Entity Instance: video_sync_generator:LTM_ins
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,14 +49,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Sep 28 21:20:57 2024       ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 29 15:15:34 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; tictac                                      ;
-; Top-level Entity Name           ; vgaTest                                     ;
+; Top-level Entity Name           ; vga_controller                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 115                                         ;
-; Total pins                      ; 48                                          ;
+; Total pins                      ; 47                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 1                                           ;
+; Total PLLs                      ; 0                                           ;
 ; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
 
@@ -79,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; vgaTest            ; tictac             ;
+; Top-level entity name                                                           ; vga_controller     ; tictac             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -165,86 +161,64 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 10          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                              ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; video_sync_generator.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv ;         ;
-; vgaTest.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv              ;         ;
-; vga_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv       ;         ;
-; cronometer.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv           ;         ;
-; vga_pll.v                        ; yes             ; User Wizard-Generated File   ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.v               ; vga_pll ;
-; vga_pll/vga_pll_0002.v           ; yes             ; User Verilog HDL File        ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v  ; vga_pll ;
-; altera_pll.v                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                       ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; video_sync_generator.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv ;         ;
+; vga_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv       ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                               ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                       ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 75                                                                          ;
-;                                             ;                                                                             ;
-; Combinational ALUT usage for logic          ; 134                                                                         ;
-;     -- 7 input functions                    ; 0                                                                           ;
-;     -- 6 input functions                    ; 15                                                                          ;
-;     -- 5 input functions                    ; 8                                                                           ;
-;     -- 4 input functions                    ; 11                                                                          ;
-;     -- <=3 input functions                  ; 100                                                                         ;
-;                                             ;                                                                             ;
-; Dedicated logic registers                   ; 115                                                                         ;
-;                                             ;                                                                             ;
-; I/O pins                                    ; 48                                                                          ;
-;                                             ;                                                                             ;
-; Total DSP Blocks                            ; 0                                                                           ;
-;                                             ;                                                                             ;
-; Total PLLs                                  ; 1                                                                           ;
-;     -- PLLs                                 ; 1                                                                           ;
-;                                             ;                                                                             ;
-; Maximum fan-out node                        ; vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 97                                                                          ;
-; Total fan-out                               ; 747                                                                         ;
-; Average fan-out                             ; 2.16                                                                        ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 76             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 134            ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 17             ;
+;     -- 5 input functions                    ; 7              ;
+;     -- 4 input functions                    ; 9              ;
+;     -- <=3 input functions                  ; 101            ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 115            ;
+;                                             ;                ;
+; I/O pins                                    ; 47             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; iVGA_CLK~input ;
+; Maximum fan-out                             ; 96             ;
+; Total fan-out                               ; 813            ;
+; Average fan-out                             ; 2.37           ;
++---------------------------------------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name          ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+----------------------+--------------+
-; |vgaTest                             ; 134 (0)             ; 115 (0)                   ; 0                 ; 0          ; 48   ; 0            ; |vgaTest                                                              ; vgaTest              ; work         ;
-;    |vga_controller:vga_ins|          ; 134 (101)           ; 115 (91)                  ; 0                 ; 0          ; 0    ; 0            ; |vgaTest|vga_controller:vga_ins                                       ; vga_controller       ; work         ;
-;       |video_sync_generator:LTM_ins| ; 33 (33)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |vgaTest|vga_controller:vga_ins|video_sync_generator:LTM_ins          ; video_sync_generator ; work         ;
-;    |vga_pll:u1|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vgaTest|vga_pll:u1                                                   ; vga_pll              ; vga_pll      ;
-;       |vga_pll_0002:vga_pll_inst|    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vgaTest|vga_pll:u1|vga_pll_0002:vga_pll_inst                         ; vga_pll_0002         ; vga_pll      ;
-;          |altera_pll:altera_pll_i|   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vgaTest|vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i ; altera_pll           ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+----------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name          ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------------+--------------+
+; |vga_controller                   ; 134 (102)           ; 115 (91)                  ; 0                 ; 0          ; 47   ; 0            ; |vga_controller                              ; vga_controller       ; work         ;
+;    |video_sync_generator:LTM_ins| ; 32 (32)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_controller|video_sync_generator:LTM_ins ; video_sync_generator ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                 ;
-+--------+--------------+---------+--------------+--------------+---------------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance     ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+---------------------+-----------------+
-; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |vgaTest|vga_pll:u1 ; vga_pll.v       ;
-+--------+--------------+---------+--------------+--------------+---------------------+-----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -252,69 +226,69 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 ; Register Name                             ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
 +-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; vga_controller:vga_ins|H_Cont[0]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[18]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[17]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[16]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[15]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[14]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[13]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[12]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[11]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[10]         ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[9]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[8]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[7]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[6]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[5]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[4]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[3]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[2]          ; yes                                                              ; yes                                        ;
-; vga_controller:vga_ins|H_Cont[1]          ; yes                                                              ; yes                                        ;
+; H_Cont[0]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[18]                                ; yes                                                              ; yes                                        ;
+; H_Cont[17]                                ; yes                                                              ; yes                                        ;
+; H_Cont[16]                                ; yes                                                              ; yes                                        ;
+; H_Cont[15]                                ; yes                                                              ; yes                                        ;
+; H_Cont[14]                                ; yes                                                              ; yes                                        ;
+; H_Cont[13]                                ; yes                                                              ; yes                                        ;
+; H_Cont[12]                                ; yes                                                              ; yes                                        ;
+; H_Cont[11]                                ; yes                                                              ; yes                                        ;
+; H_Cont[10]                                ; yes                                                              ; yes                                        ;
+; H_Cont[9]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[8]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[7]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[6]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[5]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[4]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[3]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[2]                                 ; yes                                                              ; yes                                        ;
+; H_Cont[1]                                 ; yes                                                              ; yes                                        ;
 ; Total number of protected registers is 19 ;                                                                  ;                                            ;
 +-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                      ;
-+------------------------------------------------+----------------------------------------+
-; Register name                                  ; Reason for Removal                     ;
-+------------------------------------------------+----------------------------------------+
-; vga_controller:vga_ins|vertical_bottom[0..5]   ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_bottom[6]      ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_bottom[7]      ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_bottom[8]      ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_bottom[9..31]  ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_top[0..4]      ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_top[5]         ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_top[6]         ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_top[7]         ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|vertical_top[8..31]     ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[0]     ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[1]     ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[2]     ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[3]     ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[4]     ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[5]     ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[6]     ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[7,8]   ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_right[9..31] ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[0]      ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[1]      ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[2]      ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[3]      ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[4]      ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[5]      ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[6,7]    ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|horizontal_left[8..31]  ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|bgr_data[1][1]          ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|bgr_data[1][5]          ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|bgr_data[2][1]          ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|bgr_data[2][2]          ; Stuck at VCC due to stuck port data_in ;
-; vga_controller:vga_ins|bgr_data[2][5]          ; Stuck at GND due to stuck port data_in ;
-; vga_controller:vga_ins|bgr_data[2][6]          ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 134        ;                                        ;
-+------------------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; vertical_bottom[0..5]                   ; Stuck at GND due to stuck port data_in ;
+; vertical_bottom[6]                      ; Stuck at VCC due to stuck port data_in ;
+; vertical_bottom[7]                      ; Stuck at GND due to stuck port data_in ;
+; vertical_bottom[8]                      ; Stuck at VCC due to stuck port data_in ;
+; vertical_bottom[9..31]                  ; Stuck at GND due to stuck port data_in ;
+; vertical_top[0..4]                      ; Stuck at GND due to stuck port data_in ;
+; vertical_top[5]                         ; Stuck at VCC due to stuck port data_in ;
+; vertical_top[6]                         ; Stuck at GND due to stuck port data_in ;
+; vertical_top[7]                         ; Stuck at VCC due to stuck port data_in ;
+; vertical_top[8..31]                     ; Stuck at GND due to stuck port data_in ;
+; horizontal_right[0]                     ; Stuck at GND due to stuck port data_in ;
+; horizontal_right[1]                     ; Stuck at VCC due to stuck port data_in ;
+; horizontal_right[2]                     ; Stuck at GND due to stuck port data_in ;
+; horizontal_right[3]                     ; Stuck at VCC due to stuck port data_in ;
+; horizontal_right[4]                     ; Stuck at GND due to stuck port data_in ;
+; horizontal_right[5]                     ; Stuck at VCC due to stuck port data_in ;
+; horizontal_right[6]                     ; Stuck at GND due to stuck port data_in ;
+; horizontal_right[7,8]                   ; Stuck at VCC due to stuck port data_in ;
+; horizontal_right[9..31]                 ; Stuck at GND due to stuck port data_in ;
+; horizontal_left[0]                      ; Stuck at VCC due to stuck port data_in ;
+; horizontal_left[1]                      ; Stuck at GND due to stuck port data_in ;
+; horizontal_left[2]                      ; Stuck at VCC due to stuck port data_in ;
+; horizontal_left[3]                      ; Stuck at GND due to stuck port data_in ;
+; horizontal_left[4]                      ; Stuck at VCC due to stuck port data_in ;
+; horizontal_left[5]                      ; Stuck at GND due to stuck port data_in ;
+; horizontal_left[6,7]                    ; Stuck at VCC due to stuck port data_in ;
+; horizontal_left[8..31]                  ; Stuck at GND due to stuck port data_in ;
+; bgr_data[1][1]                          ; Stuck at VCC due to stuck port data_in ;
+; bgr_data[1][5]                          ; Stuck at VCC due to stuck port data_in ;
+; bgr_data[2][1]                          ; Stuck at GND due to stuck port data_in ;
+; bgr_data[2][2]                          ; Stuck at VCC due to stuck port data_in ;
+; bgr_data[2][5]                          ; Stuck at GND due to stuck port data_in ;
+; bgr_data[2][6]                          ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 134 ;                                        ;
++-----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -325,356 +299,89 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 115   ;
 ; Number of registers using Synchronous Clear  ; 59    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Clear ; 78    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Clock Enable       ; 20    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------+
-; Source assignments for vga_controller:vga_ins         ;
-+---------------------------+-------+------+------------+
-; Assignment                ; Value ; From ; To         ;
-+---------------------------+-------+------+------------+
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[0]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[0]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[18] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[18] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[17] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[17] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[16] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[16] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[15] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[15] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[14] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[14] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[13] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[13] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[12] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[12] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[11] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[11] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[10] ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[10] ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[9]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[9]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[8]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[8]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[7]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[7]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[6]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[6]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[5]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[5]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[4]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[4]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[3]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[3]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[2]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[2]  ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[1]  ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[1]  ;
-+---------------------------+-------+------+------------+
++----------------------------------------------------------+
+; Source assignments for Top-level Entity: |vga_controller ;
++---------------------------+-------+------+---------------+
+; Assignment                ; Value ; From ; To            ;
++---------------------------+-------+------+---------------+
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[0]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[0]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[18]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[18]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[17]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[17]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[16]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[16]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[15]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[15]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[14]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[14]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[13]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[13]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[12]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[12]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[11]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[11]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[10]    ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[10]    ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[9]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[9]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[8]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[8]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[7]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[7]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[6]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[6]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[5]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[5]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[4]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[4]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[3]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[3]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[2]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[2]     ;
+; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[1]     ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[1]     ;
++---------------------------+-------+------+---------------+
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |vgaTest ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; VIDEO_W        ; 640   ; Signed Integer                                 ;
-; VIDEO_H        ; 480   ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |vga_controller ;
++-------------------+-------+----------------------------------------------------+
+; Parameter Name    ; Value ; Type                                               ;
++-------------------+-------+----------------------------------------------------+
+; VIDEO_W           ; 640   ; Signed Integer                                     ;
+; VIDEO_H           ; 480   ; Signed Integer                                     ;
+; line_W            ; 10    ; Signed Integer                                     ;
+; vertical_margin   ; 20    ; Signed Integer                                     ;
+; horizontal_margin ; 20    ; Signed Integer                                     ;
++-------------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i ;
-+--------------------------------------+------------------------+-------------------------------------------+
-; Parameter Name                       ; Value                  ; Type                                      ;
-+--------------------------------------+------------------------+-------------------------------------------+
-; reference_clock_frequency            ; 50.0 MHz               ; String                                    ;
-; fractional_vco_multiplier            ; false                  ; String                                    ;
-; pll_type                             ; General                ; String                                    ;
-; pll_subtype                          ; General                ; String                                    ;
-; number_of_clocks                     ; 1                      ; Signed Integer                            ;
-; operation_mode                       ; direct                 ; String                                    ;
-; deserialization_factor               ; 4                      ; Signed Integer                            ;
-; data_rate                            ; 0                      ; Signed Integer                            ;
-; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                            ;
-; output_clock_frequency0              ; 25.000000 MHz          ; String                                    ;
-; phase_shift0                         ; 0 ps                   ; String                                    ;
-; duty_cycle0                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency1              ; 0 MHz                  ; String                                    ;
-; phase_shift1                         ; 0 ps                   ; String                                    ;
-; duty_cycle1                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency2              ; 0 MHz                  ; String                                    ;
-; phase_shift2                         ; 0 ps                   ; String                                    ;
-; duty_cycle2                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency3              ; 0 MHz                  ; String                                    ;
-; phase_shift3                         ; 0 ps                   ; String                                    ;
-; duty_cycle3                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency4              ; 0 MHz                  ; String                                    ;
-; phase_shift4                         ; 0 ps                   ; String                                    ;
-; duty_cycle4                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency5              ; 0 MHz                  ; String                                    ;
-; phase_shift5                         ; 0 ps                   ; String                                    ;
-; duty_cycle5                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency6              ; 0 MHz                  ; String                                    ;
-; phase_shift6                         ; 0 ps                   ; String                                    ;
-; duty_cycle6                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency7              ; 0 MHz                  ; String                                    ;
-; phase_shift7                         ; 0 ps                   ; String                                    ;
-; duty_cycle7                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency8              ; 0 MHz                  ; String                                    ;
-; phase_shift8                         ; 0 ps                   ; String                                    ;
-; duty_cycle8                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency9              ; 0 MHz                  ; String                                    ;
-; phase_shift9                         ; 0 ps                   ; String                                    ;
-; duty_cycle9                          ; 50                     ; Signed Integer                            ;
-; output_clock_frequency10             ; 0 MHz                  ; String                                    ;
-; phase_shift10                        ; 0 ps                   ; String                                    ;
-; duty_cycle10                         ; 50                     ; Signed Integer                            ;
-; output_clock_frequency11             ; 0 MHz                  ; String                                    ;
-; phase_shift11                        ; 0 ps                   ; String                                    ;
-; duty_cycle11                         ; 50                     ; Signed Integer                            ;
-; output_clock_frequency12             ; 0 MHz                  ; String                                    ;
-; phase_shift12                        ; 0 ps                   ; String                                    ;
-; duty_cycle12                         ; 50                     ; Signed Integer                            ;
-; output_clock_frequency13             ; 0 MHz                  ; String                                    ;
-; phase_shift13                        ; 0 ps                   ; String                                    ;
-; duty_cycle13                         ; 50                     ; Signed Integer                            ;
-; output_clock_frequency14             ; 0 MHz                  ; String                                    ;
-; phase_shift14                        ; 0 ps                   ; String                                    ;
-; duty_cycle14                         ; 50                     ; Signed Integer                            ;
-; output_clock_frequency15             ; 0 MHz                  ; String                                    ;
-; phase_shift15                        ; 0 ps                   ; String                                    ;
-; duty_cycle15                         ; 50                     ; Signed Integer                            ;
-; output_clock_frequency16             ; 0 MHz                  ; String                                    ;
-; phase_shift16                        ; 0 ps                   ; String                                    ;
-; duty_cycle16                         ; 50                     ; Signed Integer                            ;
-; output_clock_frequency17             ; 0 MHz                  ; String                                    ;
-; phase_shift17                        ; 0 ps                   ; String                                    ;
-; duty_cycle17                         ; 50                     ; Signed Integer                            ;
-; clock_name_0                         ;                        ; String                                    ;
-; clock_name_1                         ;                        ; String                                    ;
-; clock_name_2                         ;                        ; String                                    ;
-; clock_name_3                         ;                        ; String                                    ;
-; clock_name_4                         ;                        ; String                                    ;
-; clock_name_5                         ;                        ; String                                    ;
-; clock_name_6                         ;                        ; String                                    ;
-; clock_name_7                         ;                        ; String                                    ;
-; clock_name_8                         ;                        ; String                                    ;
-; clock_name_global_0                  ; false                  ; String                                    ;
-; clock_name_global_1                  ; false                  ; String                                    ;
-; clock_name_global_2                  ; false                  ; String                                    ;
-; clock_name_global_3                  ; false                  ; String                                    ;
-; clock_name_global_4                  ; false                  ; String                                    ;
-; clock_name_global_5                  ; false                  ; String                                    ;
-; clock_name_global_6                  ; false                  ; String                                    ;
-; clock_name_global_7                  ; false                  ; String                                    ;
-; clock_name_global_8                  ; false                  ; String                                    ;
-; m_cnt_hi_div                         ; 1                      ; Signed Integer                            ;
-; m_cnt_lo_div                         ; 1                      ; Signed Integer                            ;
-; m_cnt_bypass_en                      ; false                  ; String                                    ;
-; m_cnt_odd_div_duty_en                ; false                  ; String                                    ;
-; n_cnt_hi_div                         ; 1                      ; Signed Integer                            ;
-; n_cnt_lo_div                         ; 1                      ; Signed Integer                            ;
-; n_cnt_bypass_en                      ; false                  ; String                                    ;
-; n_cnt_odd_div_duty_en                ; false                  ; String                                    ;
-; c_cnt_hi_div0                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div0                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en0                     ; false                  ; String                                    ;
-; c_cnt_in_src0                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en0               ; false                  ; String                                    ;
-; c_cnt_prst0                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst0                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div1                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div1                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en1                     ; false                  ; String                                    ;
-; c_cnt_in_src1                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en1               ; false                  ; String                                    ;
-; c_cnt_prst1                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst1                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div2                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div2                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en2                     ; false                  ; String                                    ;
-; c_cnt_in_src2                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en2               ; false                  ; String                                    ;
-; c_cnt_prst2                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst2                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div3                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div3                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en3                     ; false                  ; String                                    ;
-; c_cnt_in_src3                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en3               ; false                  ; String                                    ;
-; c_cnt_prst3                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst3                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div4                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div4                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en4                     ; false                  ; String                                    ;
-; c_cnt_in_src4                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en4               ; false                  ; String                                    ;
-; c_cnt_prst4                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst4                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div5                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div5                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en5                     ; false                  ; String                                    ;
-; c_cnt_in_src5                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en5               ; false                  ; String                                    ;
-; c_cnt_prst5                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst5                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div6                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div6                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en6                     ; false                  ; String                                    ;
-; c_cnt_in_src6                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en6               ; false                  ; String                                    ;
-; c_cnt_prst6                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst6                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div7                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div7                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en7                     ; false                  ; String                                    ;
-; c_cnt_in_src7                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en7               ; false                  ; String                                    ;
-; c_cnt_prst7                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst7                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div8                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div8                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en8                     ; false                  ; String                                    ;
-; c_cnt_in_src8                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en8               ; false                  ; String                                    ;
-; c_cnt_prst8                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst8                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div9                        ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div9                        ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en9                     ; false                  ; String                                    ;
-; c_cnt_in_src9                        ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en9               ; false                  ; String                                    ;
-; c_cnt_prst9                          ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst9                   ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div10                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div10                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en10                    ; false                  ; String                                    ;
-; c_cnt_in_src10                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en10              ; false                  ; String                                    ;
-; c_cnt_prst10                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst10                  ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div11                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div11                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en11                    ; false                  ; String                                    ;
-; c_cnt_in_src11                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en11              ; false                  ; String                                    ;
-; c_cnt_prst11                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst11                  ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div12                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div12                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en12                    ; false                  ; String                                    ;
-; c_cnt_in_src12                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en12              ; false                  ; String                                    ;
-; c_cnt_prst12                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst12                  ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div13                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div13                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en13                    ; false                  ; String                                    ;
-; c_cnt_in_src13                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en13              ; false                  ; String                                    ;
-; c_cnt_prst13                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst13                  ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div14                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div14                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en14                    ; false                  ; String                                    ;
-; c_cnt_in_src14                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en14              ; false                  ; String                                    ;
-; c_cnt_prst14                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst14                  ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div15                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div15                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en15                    ; false                  ; String                                    ;
-; c_cnt_in_src15                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en15              ; false                  ; String                                    ;
-; c_cnt_prst15                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst15                  ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div16                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div16                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en16                    ; false                  ; String                                    ;
-; c_cnt_in_src16                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en16              ; false                  ; String                                    ;
-; c_cnt_prst16                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst16                  ; 0                      ; Signed Integer                            ;
-; c_cnt_hi_div17                       ; 1                      ; Signed Integer                            ;
-; c_cnt_lo_div17                       ; 1                      ; Signed Integer                            ;
-; c_cnt_bypass_en17                    ; false                  ; String                                    ;
-; c_cnt_in_src17                       ; ph_mux_clk             ; String                                    ;
-; c_cnt_odd_div_duty_en17              ; false                  ; String                                    ;
-; c_cnt_prst17                         ; 1                      ; Signed Integer                            ;
-; c_cnt_ph_mux_prst17                  ; 0                      ; Signed Integer                            ;
-; pll_vco_div                          ; 1                      ; Signed Integer                            ;
-; pll_slf_rst                          ; false                  ; String                                    ;
-; pll_bw_sel                           ; low                    ; String                                    ;
-; pll_output_clk_frequency             ; 0 MHz                  ; String                                    ;
-; pll_cp_current                       ; 0                      ; Signed Integer                            ;
-; pll_bwctrl                           ; 0                      ; Signed Integer                            ;
-; pll_fractional_division              ; 1                      ; Signed Integer                            ;
-; pll_fractional_cout                  ; 24                     ; Signed Integer                            ;
-; pll_dsm_out_sel                      ; 1st_order              ; String                                    ;
-; mimic_fbclk_type                     ; gclk                   ; String                                    ;
-; pll_fbclk_mux_1                      ; glb                    ; String                                    ;
-; pll_fbclk_mux_2                      ; fb_1                   ; String                                    ;
-; pll_m_cnt_in_src                     ; ph_mux_clk             ; String                                    ;
-; pll_vcoph_div                        ; 1                      ; Signed Integer                            ;
-; refclk1_frequency                    ; 0 MHz                  ; String                                    ;
-; pll_clkin_0_src                      ; clk_0                  ; String                                    ;
-; pll_clkin_1_src                      ; clk_0                  ; String                                    ;
-; pll_clk_loss_sw_en                   ; false                  ; String                                    ;
-; pll_auto_clk_sw_en                   ; false                  ; String                                    ;
-; pll_manu_clk_sw_en                   ; false                  ; String                                    ;
-; pll_clk_sw_dly                       ; 0                      ; Signed Integer                            ;
-; pll_extclk_0_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                    ;
-; pll_extclk_1_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                    ;
-+--------------------------------------+------------------------+-------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: video_sync_generator:LTM_ins ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; hori_line      ; 800   ; Signed Integer                                   ;
+; hori_back      ; 144   ; Signed Integer                                   ;
+; hori_front     ; 16    ; Signed Integer                                   ;
+; vert_line      ; 525   ; Signed Integer                                   ;
+; vert_back      ; 34    ; Signed Integer                                   ;
+; vert_front     ; 11    ; Signed Integer                                   ;
+; H_sync_cycle   ; 96    ; Signed Integer                                   ;
+; V_sync_cycle   ; 2     ; Signed Integer                                   ;
+; H_BLANK        ; 112   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: vga_controller:vga_ins ;
-+-------------------+-------+-----------------------------------------+
-; Parameter Name    ; Value ; Type                                    ;
-+-------------------+-------+-----------------------------------------+
-; VIDEO_W           ; 640   ; Signed Integer                          ;
-; VIDEO_H           ; 480   ; Signed Integer                          ;
-; line_W            ; 10    ; Signed Integer                          ;
-; vertical_margin   ; 20    ; Signed Integer                          ;
-; horizontal_margin ; 20    ; Signed Integer                          ;
-+-------------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: vga_controller:vga_ins|video_sync_generator:LTM_ins ;
-+----------------+-------+-------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                    ;
-+----------------+-------+-------------------------------------------------------------------------+
-; hori_line      ; 800   ; Signed Integer                                                          ;
-; hori_back      ; 144   ; Signed Integer                                                          ;
-; hori_front     ; 16    ; Signed Integer                                                          ;
-; vert_line      ; 525   ; Signed Integer                                                          ;
-; vert_back      ; 34    ; Signed Integer                                                          ;
-; vert_front     ; 11    ; Signed Integer                                                          ;
-; H_sync_cycle   ; 96    ; Signed Integer                                                          ;
-; V_sync_cycle   ; 2     ; Signed Integer                                                          ;
-; H_BLANK        ; 112   ; Signed Integer                                                          ;
-+----------------+-------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Port Connectivity Checks: "vga_pll:u1"              ;
-+--------+--------+----------+------------------------+
-; Port   ; Type   ; Severity ; Details                ;
-+--------+--------+----------+------------------------+
-; locked ; Output ; Info     ; Explicitly unconnected ;
-+--------+--------+----------+------------------------+
 
 
 +-----------------------------------------------------+
@@ -684,9 +391,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 115                         ;
 ;     CLR               ; 19                          ;
-;     ENA SCLR          ; 10                          ;
-;     SCLR              ; 49                          ;
-;     plain             ; 37                          ;
+;     CLR SCLR          ; 49                          ;
+;     ENA               ; 10                          ;
+;     ENA CLR SCLR      ; 10                          ;
+;     plain             ; 27                          ;
 ; arriav_lcell_comb     ; 136                         ;
 ;     arith             ; 77                          ;
 ;         1 data inputs ; 76                          ;
@@ -695,15 +403,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 17                          ;
 ;         2 data inputs ; 3                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 11                          ;
-;         5 data inputs ; 8                           ;
-;         6 data inputs ; 15                          ;
-; boundary_port         ; 48                          ;
-; generic_pll           ; 1                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 9                           ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 17                          ;
+; boundary_port         ; 47                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.88                        ;
+; Average LUT depth     ; 1.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -712,7 +419,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -722,169 +429,104 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Sep 28 21:20:49 2024
+    Info: Processing started: Sun Sep 29 15:14:58 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tictac -c tictac
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vgatestbench.sv
-    Info (12023): Found entity 1: vgaTestBench File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTestBench.sv Line: 3
+    Info (12023): Found entity 1: vgaTestBench File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.sv
-    Info (12023): Found entity 1: video_sync_generator File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 1
+    Info (12023): Found entity 1: video_sync_generator File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgatest.sv
-    Info (12023): Found entity 1: vgaTest File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 1
+    Info (12023): Found entity 1: vgaTest File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
-    Info (12023): Found entity 1: vga_controller File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 1
+    Info (12023): Found entity 1: vga_controller File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file valido_tb.sv
-    Info (12023): Found entity 1: valido_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido_tb.sv Line: 1
+    Info (12023): Found entity 1: valido_tb File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file valido.sv
-    Info (12023): Found entity 1: valido File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv Line: 1
+    Info (12023): Found entity 1: valido File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tresenfila_tb.sv
-    Info (12023): Found entity 1: TresenFila_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila_tb.sv Line: 1
+    Info (12023): Found entity 1: TresenFila_tb File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tresenfila.sv
-    Info (12023): Found entity 1: TresenFila File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv Line: 1
+    Info (12023): Found entity 1: TresenFila File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm_gato.sv
-    Info (12023): Found entity 1: FSM_Gato File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 1
+    Info (12023): Found entity 1: FSM_Gato File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cronometer_tb.sv
-    Info (12023): Found entity 1: cronometer_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer_tb.sv Line: 3
+    Info (12023): Found entity 1: cronometer_tb File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file cronometer.sv
-    Info (12023): Found entity 1: cronometer File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv Line: 1
+    Info (12023): Found entity 1: cronometer File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_pll.v
-    Info (12023): Found entity 1: vga_pll File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.v Line: 8
+    Info (12023): Found entity 1: vga_pll File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file vga_pll/vga_pll_0002.v
-    Info (12023): Found entity 1: vga_pll_0002 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v Line: 2
+    Info (12023): Found entity 1: vga_pll_0002 File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file second_clk.v
-    Info (12023): Found entity 1: second_clk File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.v Line: 8
+    Info (12023): Found entity 1: second_clk File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file second_clk/second_clk_0002.v
-    Info (12023): Found entity 1: second_clk_0002 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk/second_clk_0002.v Line: 2
-Info (12127): Elaborating entity "vgaTest" for the top level hierarchy
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
-Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_pll:u1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 29
-Info (12128): Elaborating entity "vga_pll_0002" for hierarchy "vga_pll:u1|vga_pll_0002:vga_pll_inst" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.v Line: 20
-Info (12128): Elaborating entity "altera_pll" for hierarchy "vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v Line: 85
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v Line: 85
-Info (12133): Instantiated megafunction "vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v Line: 85
-    Info (12134): Parameter "fractional_vco_multiplier" = "false"
-    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
-    Info (12134): Parameter "operation_mode" = "direct"
-    Info (12134): Parameter "number_of_clocks" = "1"
-    Info (12134): Parameter "output_clock_frequency0" = "25.000000 MHz"
-    Info (12134): Parameter "phase_shift0" = "0 ps"
-    Info (12134): Parameter "duty_cycle0" = "50"
-    Info (12134): Parameter "output_clock_frequency1" = "0 MHz"
-    Info (12134): Parameter "phase_shift1" = "0 ps"
-    Info (12134): Parameter "duty_cycle1" = "50"
-    Info (12134): Parameter "output_clock_frequency2" = "0 MHz"
-    Info (12134): Parameter "phase_shift2" = "0 ps"
-    Info (12134): Parameter "duty_cycle2" = "50"
-    Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
-    Info (12134): Parameter "phase_shift3" = "0 ps"
-    Info (12134): Parameter "duty_cycle3" = "50"
-    Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
-    Info (12134): Parameter "phase_shift4" = "0 ps"
-    Info (12134): Parameter "duty_cycle4" = "50"
-    Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
-    Info (12134): Parameter "phase_shift5" = "0 ps"
-    Info (12134): Parameter "duty_cycle5" = "50"
-    Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
-    Info (12134): Parameter "phase_shift6" = "0 ps"
-    Info (12134): Parameter "duty_cycle6" = "50"
-    Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
-    Info (12134): Parameter "phase_shift7" = "0 ps"
-    Info (12134): Parameter "duty_cycle7" = "50"
-    Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
-    Info (12134): Parameter "phase_shift8" = "0 ps"
-    Info (12134): Parameter "duty_cycle8" = "50"
-    Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
-    Info (12134): Parameter "phase_shift9" = "0 ps"
-    Info (12134): Parameter "duty_cycle9" = "50"
-    Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
-    Info (12134): Parameter "phase_shift10" = "0 ps"
-    Info (12134): Parameter "duty_cycle10" = "50"
-    Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
-    Info (12134): Parameter "phase_shift11" = "0 ps"
-    Info (12134): Parameter "duty_cycle11" = "50"
-    Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
-    Info (12134): Parameter "phase_shift12" = "0 ps"
-    Info (12134): Parameter "duty_cycle12" = "50"
-    Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
-    Info (12134): Parameter "phase_shift13" = "0 ps"
-    Info (12134): Parameter "duty_cycle13" = "50"
-    Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
-    Info (12134): Parameter "phase_shift14" = "0 ps"
-    Info (12134): Parameter "duty_cycle14" = "50"
-    Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
-    Info (12134): Parameter "phase_shift15" = "0 ps"
-    Info (12134): Parameter "duty_cycle15" = "50"
-    Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
-    Info (12134): Parameter "phase_shift16" = "0 ps"
-    Info (12134): Parameter "duty_cycle16" = "50"
-    Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
-    Info (12134): Parameter "phase_shift17" = "0 ps"
-    Info (12134): Parameter "duty_cycle17" = "50"
-    Info (12134): Parameter "pll_type" = "General"
-    Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 40
-Warning (10230): Verilog HDL assignment warning at vga_controller.sv(59): truncated value with size 32 to match size of target (19) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 59
-Warning (10230): Verilog HDL assignment warning at vga_controller.sv(174): truncated value with size 32 to match size of target (19) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 174
+    Info (12023): Found entity 1: second_clk_0002 File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk/second_clk_0002.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file main.sv
+    Info (12023): Found entity 1: main File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 1
+Info (12127): Elaborating entity "vga_controller" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at vga_controller.sv(59): truncated value with size 32 to match size of target (19) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 59
+Warning (10230): Verilog HDL assignment warning at vga_controller.sv(174): truncated value with size 32 to match size of target (19) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 174
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(82): truncated value with size 32 to match size of target (10) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 82
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(85): truncated value with size 32 to match size of target (11) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 85
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "video_sync_generator:LTM_ins" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(82): truncated value with size 32 to match size of target (10) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 82
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(85): truncated value with size 32 to match size of target (11) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 85
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 9
-    Warning (13410): Pin "VGA_B[2]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 9
-    Warning (13410): Pin "VGA_B[5]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 9
-    Warning (13410): Pin "VGA_B[6]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 9
-    Warning (13410): Pin "VGA_G[1]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 10
-    Warning (13410): Pin "VGA_G[5]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 10
+    Warning (13410): Pin "oVGA_B[1]" is stuck at GND File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
+    Warning (13410): Pin "oVGA_B[2]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
+    Warning (13410): Pin "oVGA_B[5]" is stuck at GND File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
+    Warning (13410): Pin "oVGA_B[6]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
+    Warning (13410): Pin "oVGA_G[1]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 20
+    Warning (13410): Pin "oVGA_G[5]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 20
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 16 assignments for entity "second_clk" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity second_clk -sip second_clk.sip -library lib_second_clk was ignored
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 20.1 -entity second_clk -sip second_clk.sip -library lib_second_clk was ignored
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity second_clk -sip second_clk.sip -library lib_second_clk was ignored
 Warning (20013): Ignored 317 assignments for entity "second_clk_0002" -- entity does not exist in design
-Info (144001): Generated suppressed messages file C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg
+Warning (20013): Ignored 16 assignments for entity "vga_pll" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 20.1 -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
+Warning (20013): Ignored 317 assignments for entity "vga_pll_0002" -- entity does not exist in design
+Info (144001): Generated suppressed messages file C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning: RST port on the PLL is not properly connected on instance vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
-    Info: Must be connected
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 18 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "matriz_juego[0][0][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[0][0][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[0][1][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[0][1][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[0][2][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[0][2][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[1][0][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[1][0][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[1][1][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[1][1][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[1][2][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[1][2][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[2][0][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[2][0][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[2][1][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[2][1][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[2][2][0]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-    Warning (15610): No output dependent on input pin "matriz_juego[2][2][1]" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 4
-Info (21057): Implemented 191 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
-    Info (21059): Implemented 29 output pins
+    Warning (15610): No output dependent on input pin "matriz[0][0][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[0][0][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[0][1][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[0][1][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[0][2][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[0][2][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[1][0][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[1][0][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[1][1][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[1][1][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[1][2][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[1][2][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[2][0][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[2][0][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[2][1][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[2][1][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[2][2][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+    Warning (15610): No output dependent on input pin "matriz[2][2][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
+Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 27 output pins
     Info (21061): Implemented 142 logic cells
-    Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4890 megabytes
-    Info: Processing ended: Sat Sep 28 21:20:57 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Sun Sep 29 15:15:34 2024
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:50
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg.
+The suppressed messages can be found in C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg.
 
 

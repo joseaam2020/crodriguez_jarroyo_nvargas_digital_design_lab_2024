@@ -1,6 +1,6 @@
 module FSM_Gato (
     input logic [1:0] PC,
-    input logic t0,
+    input logic [3:0]t0,
     input logic [3:0] interrupt,
     input logic enfila, valido, todoLleno,
 	 input logic Reset,

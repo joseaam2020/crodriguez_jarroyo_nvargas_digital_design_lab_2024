@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sat Sep 28 21:21:38 2024
+Fitter Status : Successful - Sun Sep 29 15:18:14 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : tictac
-Top-level Entity Name : vgaTest
+Top-level Entity Name : vga_controller
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 76 / 41,910 ( < 1 % )
-Total registers : 130
-Total pins : 48 / 499 ( 10 % )
+Logic utilization (in ALMs) : 77 / 41,910 ( < 1 % )
+Total registers : 132
+Total pins : 47 / 499 ( 9 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
 Total RAM Blocks : 0 / 553 ( 0 % )
@@ -16,5 +16,5 @@ Total HSSI RX PCSs : 0 / 9 ( 0 % )
 Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
 Total HSSI TX PCSs : 0 / 9 ( 0 % )
 Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
-Total PLLs : 1 / 15 ( 7 % )
+Total PLLs : 0 / 15 ( 0 % )
 Total DLLs : 0 / 4 ( 0 % )
