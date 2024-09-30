@@ -1,6 +1,6 @@
 module FSM_Gato (
     input logic [1:0] PC,
-    input logic [3:0]t0,
+    input logic t0,
     input logic [3:0] interrupt,
     input logic enfila, valido, todoLleno,
 	 input logic Reset,
@@ -10,11 +10,12 @@ module FSM_Gato (
     output logic [1:0] Gano,
     output logic Reiniciar,
     output logic Reset_timer,
+	 output logic Jug,
     input logic clk
 );
 
 logic [2:0] state, next_state;
-logic Jug;  // Debe ser de 1 bit
+//logic Jug;  // Debe ser de 1 bit
 logic tiempo_jug1;
 logic tiempo_jug2;
 logic interrupt_mayor0; 

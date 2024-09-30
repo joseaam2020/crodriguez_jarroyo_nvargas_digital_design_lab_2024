@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/simulation/modelsim
+vactualizar
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1727717901
+!i10b 1
+!s100 cf[WTNhK_lXMPl]`@M?PW1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I9__n[E83k@EdM<SALz?B]1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1727715964
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv
+!i122 2
+L0 1 47
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1727717901.000000
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES
+Z9 tCvgOpt 0
+vsecond_clk
+R2
+!i10b 1
+!s100 Jn6g[Vlc7]47KcHz]`cnB1
+R3
+I8;309GAjM`j_>3jjWTM>40
+R4
+R0
+Z10 w1727635335
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo
+!i122 1
+Z11 L0 32 264
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo|
+!s90 -reportprogress|300|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo|
+!i113 1
+R9
+vtb_actualizar
+R1
+R2
+!i10b 1
+!s100 K@YNY@]YHLz7HY>e9Y[T22
+R3
+I0JM2=_8:Xdg@lEZIbL;fL3
+R4
+S1
+R0
+w1727717853
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv
+!i122 3
+L0 1 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv|
+!i113 1
+R7
+R8
+R9
+vvga_pll
+R2
+!i10b 1
+!s100 f;jjXg^J3TUTfFaCWFN6C1
+R3
+ISAYof^`PP4?0o3o:2=9Xm3
+R4
+R0
+R10
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
+!i122 0
+R11
+R5
+r1
+!s85 0
+31
+!s108 1727717900.000000
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo|
+!s90 -reportprogress|300|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo|
+!i113 1
+R9

@@ -1,5 +1,5 @@
-Analysis & Synthesis report for tictac
-Sun Sep 29 15:15:34 2024
+Analysis & Elaboration report for tictac
+Mon Sep 30 11:38:03 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -7,22 +7,11 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Protected by Synthesis
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Source assignments for Top-level Entity: |vga_controller
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |vga_controller
- 13. Parameter Settings for User Entity Instance: video_sync_generator:LTM_ins
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -46,36 +35,47 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Sep 29 15:15:34 2024       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                   ; tictac                                      ;
-; Top-level Entity Name           ; vga_controller                              ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 115                                         ;
-; Total pins                      ; 47                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon Sep 30 11:38:03 2024       ;
+; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                 ; tictac                                      ;
+; Top-level Entity Name         ; actualizar                                  ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; vga_controller     ; tictac             ;
+; Top-level entity name                                                           ; actualizar         ; tictac             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -156,331 +156,84 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; video_sync_generator.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv ;         ;
-; vga_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv       ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 76             ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 134            ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 17             ;
-;     -- 5 input functions                    ; 7              ;
-;     -- 4 input functions                    ; 9              ;
-;     -- <=3 input functions                  ; 101            ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 115            ;
-;                                             ;                ;
-; I/O pins                                    ; 47             ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; iVGA_CLK~input ;
-; Maximum fan-out                             ; 96             ;
-; Total fan-out                               ; 813            ;
-; Average fan-out                             ; 2.37           ;
-+---------------------------------------------+----------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name          ; Library Name ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------------+--------------+
-; |vga_controller                   ; 134 (102)           ; 115 (91)                  ; 0                 ; 0          ; 47   ; 0            ; |vga_controller                              ; vga_controller       ; work         ;
-;    |video_sync_generator:LTM_ins| ; 32 (32)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_controller|video_sync_generator:LTM_ins ; video_sync_generator ; work         ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Protected by Synthesis                                                                                                                          ;
-+-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; Register Name                             ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
-+-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; H_Cont[0]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[18]                                ; yes                                                              ; yes                                        ;
-; H_Cont[17]                                ; yes                                                              ; yes                                        ;
-; H_Cont[16]                                ; yes                                                              ; yes                                        ;
-; H_Cont[15]                                ; yes                                                              ; yes                                        ;
-; H_Cont[14]                                ; yes                                                              ; yes                                        ;
-; H_Cont[13]                                ; yes                                                              ; yes                                        ;
-; H_Cont[12]                                ; yes                                                              ; yes                                        ;
-; H_Cont[11]                                ; yes                                                              ; yes                                        ;
-; H_Cont[10]                                ; yes                                                              ; yes                                        ;
-; H_Cont[9]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[8]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[7]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[6]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[5]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[4]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[3]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[2]                                 ; yes                                                              ; yes                                        ;
-; H_Cont[1]                                 ; yes                                                              ; yes                                        ;
-; Total number of protected registers is 19 ;                                                                  ;                                            ;
-+-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-
-
-+----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                               ;
-+-----------------------------------------+----------------------------------------+
-; Register name                           ; Reason for Removal                     ;
-+-----------------------------------------+----------------------------------------+
-; vertical_bottom[0..5]                   ; Stuck at GND due to stuck port data_in ;
-; vertical_bottom[6]                      ; Stuck at VCC due to stuck port data_in ;
-; vertical_bottom[7]                      ; Stuck at GND due to stuck port data_in ;
-; vertical_bottom[8]                      ; Stuck at VCC due to stuck port data_in ;
-; vertical_bottom[9..31]                  ; Stuck at GND due to stuck port data_in ;
-; vertical_top[0..4]                      ; Stuck at GND due to stuck port data_in ;
-; vertical_top[5]                         ; Stuck at VCC due to stuck port data_in ;
-; vertical_top[6]                         ; Stuck at GND due to stuck port data_in ;
-; vertical_top[7]                         ; Stuck at VCC due to stuck port data_in ;
-; vertical_top[8..31]                     ; Stuck at GND due to stuck port data_in ;
-; horizontal_right[0]                     ; Stuck at GND due to stuck port data_in ;
-; horizontal_right[1]                     ; Stuck at VCC due to stuck port data_in ;
-; horizontal_right[2]                     ; Stuck at GND due to stuck port data_in ;
-; horizontal_right[3]                     ; Stuck at VCC due to stuck port data_in ;
-; horizontal_right[4]                     ; Stuck at GND due to stuck port data_in ;
-; horizontal_right[5]                     ; Stuck at VCC due to stuck port data_in ;
-; horizontal_right[6]                     ; Stuck at GND due to stuck port data_in ;
-; horizontal_right[7,8]                   ; Stuck at VCC due to stuck port data_in ;
-; horizontal_right[9..31]                 ; Stuck at GND due to stuck port data_in ;
-; horizontal_left[0]                      ; Stuck at VCC due to stuck port data_in ;
-; horizontal_left[1]                      ; Stuck at GND due to stuck port data_in ;
-; horizontal_left[2]                      ; Stuck at VCC due to stuck port data_in ;
-; horizontal_left[3]                      ; Stuck at GND due to stuck port data_in ;
-; horizontal_left[4]                      ; Stuck at VCC due to stuck port data_in ;
-; horizontal_left[5]                      ; Stuck at GND due to stuck port data_in ;
-; horizontal_left[6,7]                    ; Stuck at VCC due to stuck port data_in ;
-; horizontal_left[8..31]                  ; Stuck at GND due to stuck port data_in ;
-; bgr_data[1][1]                          ; Stuck at VCC due to stuck port data_in ;
-; bgr_data[1][5]                          ; Stuck at VCC due to stuck port data_in ;
-; bgr_data[2][1]                          ; Stuck at GND due to stuck port data_in ;
-; bgr_data[2][2]                          ; Stuck at VCC due to stuck port data_in ;
-; bgr_data[2][5]                          ; Stuck at GND due to stuck port data_in ;
-; bgr_data[2][6]                          ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 134 ;                                        ;
-+-----------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 115   ;
-; Number of registers using Synchronous Clear  ; 59    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 78    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 20    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+----------------------------------------------------------+
-; Source assignments for Top-level Entity: |vga_controller ;
-+---------------------------+-------+------+---------------+
-; Assignment                ; Value ; From ; To            ;
-+---------------------------+-------+------+---------------+
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[0]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[0]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[18]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[18]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[17]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[17]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[16]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[16]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[15]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[15]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[14]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[14]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[13]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[13]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[12]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[12]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[11]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[11]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[10]    ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[10]    ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[9]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[9]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[8]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[8]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[7]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[7]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[6]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[6]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[5]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[5]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[4]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[4]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[3]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[3]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[2]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[2]     ;
-; PRESERVE_REGISTER         ; on    ; -    ; H_Cont[1]     ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; H_Cont[1]     ;
-+---------------------------+-------+------+---------------+
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |vga_controller ;
-+-------------------+-------+----------------------------------------------------+
-; Parameter Name    ; Value ; Type                                               ;
-+-------------------+-------+----------------------------------------------------+
-; VIDEO_W           ; 640   ; Signed Integer                                     ;
-; VIDEO_H           ; 480   ; Signed Integer                                     ;
-; line_W            ; 10    ; Signed Integer                                     ;
-; vertical_margin   ; 20    ; Signed Integer                                     ;
-; horizontal_margin ; 20    ; Signed Integer                                     ;
-+-------------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: video_sync_generator:LTM_ins ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; hori_line      ; 800   ; Signed Integer                                   ;
-; hori_back      ; 144   ; Signed Integer                                   ;
-; hori_front     ; 16    ; Signed Integer                                   ;
-; vert_line      ; 525   ; Signed Integer                                   ;
-; vert_back      ; 34    ; Signed Integer                                   ;
-; vert_front     ; 11    ; Signed Integer                                   ;
-; H_sync_cycle   ; 96    ; Signed Integer                                   ;
-; V_sync_cycle   ; 2     ; Signed Integer                                   ;
-; H_BLANK        ; 112   ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 115                         ;
-;     CLR               ; 19                          ;
-;     CLR SCLR          ; 49                          ;
-;     ENA               ; 10                          ;
-;     ENA CLR SCLR      ; 10                          ;
-;     plain             ; 27                          ;
-; arriav_lcell_comb     ; 136                         ;
-;     arith             ; 77                          ;
-;         1 data inputs ; 76                          ;
-;         2 data inputs ; 1                           ;
-;     normal            ; 59                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 9                           ;
-;         5 data inputs ; 7                           ;
-;         6 data inputs ; 17                          ;
-; boundary_port         ; 47                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.89                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Sep 29 15:14:58 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tictac -c tictac
+    Info: Processing started: Mon Sep 30 11:37:52 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tictac -c tictac --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vgatestbench.sv
-    Info (12023): Found entity 1: vgaTestBench File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTestBench.sv Line: 3
+    Info (12023): Found entity 1: vgaTestBench File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.sv
-    Info (12023): Found entity 1: video_sync_generator File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 1
+    Info (12023): Found entity 1: video_sync_generator File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgatest.sv
-    Info (12023): Found entity 1: vgaTest File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 1
+    Info (12023): Found entity 1: vgaTest File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
-    Info (12023): Found entity 1: vga_controller File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 1
+    Info (12023): Found entity 1: vga_controller File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file valido_tb.sv
-    Info (12023): Found entity 1: valido_tb File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido_tb.sv Line: 1
+    Info (12023): Found entity 1: valido_tb File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file valido.sv
-    Info (12023): Found entity 1: valido File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv Line: 1
+    Info (12023): Found entity 1: valido File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tresenfila_tb.sv
-    Info (12023): Found entity 1: TresenFila_tb File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila_tb.sv Line: 1
+    Info (12023): Found entity 1: TresenFila_tb File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tresenfila.sv
-    Info (12023): Found entity 1: TresenFila File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv Line: 1
+    Info (12023): Found entity 1: TresenFila File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm_gato.sv
-    Info (12023): Found entity 1: FSM_Gato File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 1
+    Info (12023): Found entity 1: FSM_Gato File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cronometer_tb.sv
-    Info (12023): Found entity 1: cronometer_tb File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer_tb.sv Line: 3
+    Info (12023): Found entity 1: cronometer_tb File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file cronometer.sv
-    Info (12023): Found entity 1: cronometer File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv Line: 1
+    Info (12023): Found entity 1: cronometer File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_pll.v
-    Info (12023): Found entity 1: vga_pll File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.v Line: 8
+    Info (12023): Found entity 1: vga_pll File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file vga_pll/vga_pll_0002.v
-    Info (12023): Found entity 1: vga_pll_0002 File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v Line: 2
+    Info (12023): Found entity 1: vga_pll_0002 File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll/vga_pll_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file second_clk.v
-    Info (12023): Found entity 1: second_clk File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.v Line: 8
+    Info (12023): Found entity 1: second_clk File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file second_clk/second_clk_0002.v
-    Info (12023): Found entity 1: second_clk_0002 File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk/second_clk_0002.v Line: 2
+    Info (12023): Found entity 1: second_clk_0002 File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk/second_clk_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
-    Info (12023): Found entity 1: main File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 1
-Info (12127): Elaborating entity "vga_controller" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at vga_controller.sv(59): truncated value with size 32 to match size of target (19) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 59
-Warning (10230): Verilog HDL assignment warning at vga_controller.sv(174): truncated value with size 32 to match size of target (19) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 174
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "video_sync_generator:LTM_ins" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(82): truncated value with size 32 to match size of target (10) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 82
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(85): truncated value with size 32 to match size of target (11) File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv Line: 85
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "oVGA_B[1]" is stuck at GND File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
-    Warning (13410): Pin "oVGA_B[2]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
-    Warning (13410): Pin "oVGA_B[5]" is stuck at GND File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
-    Warning (13410): Pin "oVGA_B[6]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 19
-    Warning (13410): Pin "oVGA_G[1]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 20
-    Warning (13410): Pin "oVGA_G[5]" is stuck at VCC File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 20
-Info (286030): Timing-Driven Synthesis is running
+    Info (12023): Found entity 1: main File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file actualizar.sv
+    Info (12023): Found entity 1: actualizar File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_actualizar.sv
+    Info (12023): Found entity 1: tb_actualizar File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv Line: 1
+Info (12127): Elaborating entity "actualizar" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(23): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 23
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(24): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 24
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(25): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 26
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(28): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(29): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(30): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 30
+Warning (10230): Verilog HDL assignment warning at actualizar.sv(31): truncated value with size 32 to match size of target (2) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 31
+Info (10041): Inferred latch for "new_juego[0][0][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[0][0][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[0][1][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[0][1][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[0][2][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[0][2][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[1][0][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[1][0][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[1][1][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[1][1][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[1][2][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[1][2][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[2][0][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[2][0][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[2][1][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[2][1][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[2][2][0]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10041): Inferred latch for "new_juego[2][2][1]" at actualizar.sv(15) File: C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 15
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "new_juego" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "new_juego" into its bus
 Warning (20013): Ignored 16 assignments for entity "second_clk" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity second_clk -sip second_clk.sip -library lib_second_clk was ignored
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 20.1 -entity second_clk -sip second_clk.sip -library lib_second_clk was ignored
@@ -491,42 +244,17 @@ Warning (20013): Ignored 16 assignments for entity "vga_pll" -- entity does not 
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 20.1 -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
 Warning (20013): Ignored 317 assignments for entity "vga_pll_0002" -- entity does not exist in design
-Info (144001): Generated suppressed messages file C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 18 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "matriz[0][0][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[0][0][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[0][1][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[0][1][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[0][2][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[0][2][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[1][0][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[1][0][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[1][1][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[1][1][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[1][2][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[1][2][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[2][0][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[2][0][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[2][1][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[2][1][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[2][2][0]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-    Warning (15610): No output dependent on input pin "matriz[2][2][1]" File: C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 9
-Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 20 input pins
-    Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 142 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Sun Sep 29 15:15:34 2024
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:00:50
+Info (144001): Generated suppressed messages file C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4766 megabytes
+    Info: Processing ended: Mon Sep 30 11:38:03 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg.
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/output_files/tictac.map.smsg.
 
 

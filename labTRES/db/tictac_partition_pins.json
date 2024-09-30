@@ -4,95 +4,167 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "oBLANK_n",
+					"name" : "new_juego[0][0][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oHS",
+					"name" : "new_juego[0][0][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVS",
+					"name" : "new_juego[0][1][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_B[0]",
+					"name" : "new_juego[0][1][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_B[3]",
+					"name" : "new_juego[0][2][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_B[4]",
+					"name" : "new_juego[0][2][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_B[7]",
+					"name" : "new_juego[1][0][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_G[0]",
+					"name" : "new_juego[1][0][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_G[2]",
+					"name" : "new_juego[1][1][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_G[3]",
+					"name" : "new_juego[1][1][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_G[4]",
+					"name" : "new_juego[1][2][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_G[6]",
+					"name" : "new_juego[1][2][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_G[7]",
+					"name" : "new_juego[2][0][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[0]",
+					"name" : "new_juego[2][0][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[1]",
+					"name" : "new_juego[2][1][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[2]",
+					"name" : "new_juego[2][1][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[3]",
+					"name" : "new_juego[2][2][0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[4]",
+					"name" : "new_juego[2][2][1]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[5]",
+					"name" : "Jug",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[6]",
+					"name" : "posicion[0]",
 					"strict" : false
 				},
 				{
-					"name" : "oVGA_R[7]",
+					"name" : "posicion[3]",
 					"strict" : false
 				},
 				{
-					"name" : "iVGA_CLK",
+					"name" : "posicion[1]",
 					"strict" : false
 				},
 				{
-					"name" : "iRST_n",
+					"name" : "posicion[2]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[0][0][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[0][0][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[0][1][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[0][1][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[0][2][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[0][2][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[1][0][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[1][0][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[1][1][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[1][1][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[1][2][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[1][2][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[2][0][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[2][0][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[2][1][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[2][1][1]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[2][2][0]",
+					"strict" : false
+				},
+				{
+					"name" : "matriz_juego[2][2][1]",
 					"strict" : false
 				}
 			]

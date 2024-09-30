@@ -1,6 +1,6 @@
 module main (
 	 input logic [1:0] PC,
-    input logic t0,
+    
     input logic [3:0] interrupt,
 	 input logic Reset,
     
@@ -12,15 +12,13 @@ module main (
     input logic clk,
 //--------------------------------------------------
 
-	input logic [2:0][2:0][1:0] matriz_juego,
-
 //--------------------------------------------------
 
 	
 	input logic [3:0] posicion 
 	
 //--------------------------------------------------
-
+	
 
 
 );
@@ -29,6 +27,11 @@ logic [3:0] seconds;
 logic ganador;
 logic valido;
 logic lleno;
+logic clk_2Mhz;
+logic t0;
+logic [2:0][2:0][1:0] matriz_juego;
+
+assign t0 = seconds ==  4'd15;
 
 
 FSM_Gato FSMins (
@@ -59,10 +62,17 @@ TresenFila TresenFilains(
 );
 
 
+second_clk secs (
+	.refclk(clk),
+	.rst(Reset),
+	.outclk_0(clk_2Mhz),
+	.locked()
+);
+
 cronometer cronometerins(
 
 	.clock(clk),
-	.reset(Reset),
+	.reset(Reset_timer),
 	.seconds(seconds)
 
 

@@ -1,0 +1,40 @@
+module tb_actualizar;
+
+  // Definir señales para entradas y salidas del módulo
+  logic [2:0][2:0][1:0] matriz_juego;  // Matriz del juego (3x3), con dos bits por posición
+  logic [3:0] posicion;                // Posición donde se quiere actualizar (1-9)
+  logic Jug;                           // Jugador: 0 o 1
+  logic actualizar;                    // Señal para actualizar la matriz
+  logic [2:0][2:0][1:0] new_juego;     // Salida de la nueva matriz actualizada
+
+  // Instanciar el módulo que vamos a probar
+  actualizar uut (
+    .matriz_juego(matriz_juego),
+    .posicion(posicion),
+    .Jug(Jug),
+    .actualizar(actualizar),
+    .new_juego(new_juego)
+  );
+
+  // Proceso inicial para definir el test
+  initial begin
+    // Inicializar las señales
+    matriz_juego = '{ '{2'b00, 2'b00, 2'b00}, '{2'b00, 2'b00, 2'b00}, '{2'b00, 2'b00, 2'b00} };
+    Jug = 0;            // Jugador 1 (0)
+    actualizar = 1;      // Activamos la señal de actualización
+
+    // Probar la posición 1 para Jugador 1
+    posicion = 4'd1;
+    #5; // Esperar 5 unidades de tiempo
+    
+
+    // Probar la posición 5 para Jugador 1
+    posicion = 4'd5;
+    #5;
+   
+    // Cambiar a Jugador 2 y probar la posición 9
+    Jug = 1;  // Jugador 2 (1)
+    posicion = 4'd9;
+    #5;
+   end 
+endmodule 	 
