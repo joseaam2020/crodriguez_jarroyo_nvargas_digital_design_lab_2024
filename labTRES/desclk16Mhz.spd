@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="desclk16Mhz_sim/desclk16Mhz.vo" type="VERILOG" />
+ <topLevel name="desclk16Mhz" />
+ <deviceFamily name="cyclonev" />
+</simPackage>
