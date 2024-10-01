@@ -16,11 +16,11 @@ module  desclk16Mhz_0002(
 
 	altera_pll #(
 		.fractional_vco_multiplier("false"),
-		.reference_clock_frequency("16.0 MHz"),
+		.reference_clock_frequency("50.0 MHz"),
 		.operation_mode("direct"),
 		.number_of_clocks(1),
 		.output_clock_frequency0("16.000000 MHz"),
-		.phase_shift0("31250 ps"),
+		.phase_shift0("15625 ps"),
 		.duty_cycle0(50),
 		.output_clock_frequency1("0 MHz"),
 		.phase_shift1("0 ps"),
