@@ -76,6 +76,25 @@ logic v_cond3;
 logic v_cond4;
 logic print1;
 logic print2;
+logic print3;
+logic printe;
+logic printc;
+
+equis equi (
+  .matriz(matriz),
+  .clk(iVGA_CLK),
+  .x(ADDR_x),
+  .y(ADDR_y),
+  .print(printe)
+);
+
+cuadrados cuadrado (
+  .matriz(matriz),
+  .clk(iVGA_CLK),
+  .x(ADDR_x),
+  .y(ADDR_y),
+  .print(printc)
+);
 
 //Parameters 
 parameter line_W = 10;
@@ -113,13 +132,22 @@ begin
 
       print2 <= (v_cond3 || v_cond4) && (h_cond3 && h_cond4);
 
+      //Print
       if(print1 || print2) begin 
-				bgr_data[2] <= 8'h55;  
-        bgr_data[1] <= 8'h22;//green
-        bgr_data[0] <= 8'h00;
+        bgr_data[2] <= 8'h88; 
+        bgr_data[1] <= 8'h67;
+        bgr_data[0] <= 8'h08;//red
+      end else if(printe) begin
+				bgr_data[2] <= 8'hd5;  
+        bgr_data[1] <= 8'hae;//green
+        bgr_data[0] <= 8'h06;
+      end else if(printc)begin 
+        bgr_data[2] <= 8'h08; 
+        bgr_data[1] <= 8'hc8;
+        bgr_data[0] <= 8'hf0;//red
       end else begin 
-        bgr_data[2] <= 8'hcc; 
-        bgr_data[1] <= 8'hff;
+        bgr_data[2] <= 8'hd0; 
+        bgr_data[1] <= 8'hf1;
         bgr_data[0] <= 8'hff;//red
       end
 

@@ -18,6 +18,8 @@ module vgaTestBench();
 	logic		          	VGA_VS;
 	logic						VGA_BLANK;
 	logic 					VGA_SYNC;
+	
+	
 
  vgaTest vga(
  
@@ -30,15 +32,15 @@ module vgaTestBench();
 	.VGA_HS(VGA_HS),
 	.VGA_VS(VGA_VS),
 	.VGA_BLANK(VGA_BLANK),
-	.VGA_SYNC(VGA_SYNC),
-	.matriz_juego(matriz_juego)
+	.VGA_SYNC(VGA_SYNC)
+//	.matriz_juego(matriz_juego)
 	
 );
 
 always #20 MAX10_CLK1_50 = ~MAX10_CLK1_50;
 
 initial begin 
-
+matriz_juego[0][0] = 1;
 MAX10_CLK1_50 = 0;
 //reset = 0;
 
