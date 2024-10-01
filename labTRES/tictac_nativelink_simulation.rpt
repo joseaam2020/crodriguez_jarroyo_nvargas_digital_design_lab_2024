@@ -1,5 +1,5 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=tictac_iputf_input --spd=C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.spd --spd=C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=tictac_iputf_input --spd=C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll.spd --spd=C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.spd --spd=C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz.spd 
 
 ========= EDA Simulation Settings =====================
 
@@ -18,6 +18,6 @@ Sim dir               :  simulation\modelsim
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File tictac_run_msim_rtl_systemverilog.do already exists - backing up current file as tictac_run_msim_rtl_systemverilog.do.bak9
+Warning: File tictac_run_msim_rtl_systemverilog.do already exists - backing up current file as tictac_run_msim_rtl_systemverilog.do.bak11
 Info: Spawning ModelSim-Altera Simulation software 
 Info: NativeLink simulation flow was successful

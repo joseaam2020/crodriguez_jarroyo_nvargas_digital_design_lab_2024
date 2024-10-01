@@ -9,45 +9,42 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/simulation/modelsim
-vactualizar
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1727717901
+vclk16Mhz
+Z1 !s110 1727771060
 !i10b 1
-!s100 cf[WTNhK_lXMPl]`@M?PW1
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I9__n[E83k@EdM<SALz?B]1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-S1
+!s100 LcL9K<S@N>m1A]YGP31Fc0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I5N1BYfXKlfg9;5ZGzU3cE2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727715964
-8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv
-FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv
+w1727749382
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo
 !i122 2
-L0 1 47
+Z4 L0 32 264
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1727717901.000000
-!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv|
+Z6 !s108 1727771060.000000
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo|
+!s90 -reportprogress|300|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES
-Z9 tCvgOpt 0
+Z7 tCvgOpt 0
+nclk16@mhz
 vsecond_clk
-R2
+R1
 !i10b 1
 !s100 Jn6g[Vlc7]47KcHz]`cnB1
-R3
+R2
 I8;309GAjM`j_>3jjWTM>40
-R4
+R3
 R0
-Z10 w1727635335
+Z8 w1727749240
 8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo
 FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo
 !i122 1
-Z11 L0 32 264
+R4
 R5
 r1
 !s85 0
@@ -56,52 +53,78 @@ R6
 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo|
 !s90 -reportprogress|300|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo|
 !i113 1
-R9
-vtb_actualizar
+R7
+vswitches
+Z9 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 R1
-R2
 !i10b 1
-!s100 K@YNY@]YHLz7HY>e9Y[T22
+!s100 F8K>m^PP0S;gVdi:_2MDH1
+R2
+IGEcG9l`3i:=W;3`1D7k3;0
 R3
-I0JM2=_8:Xdg@lEZIbL;fL3
-R4
 S1
 R0
-w1727717853
-8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv
-FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv
+w1727771026
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv
 !i122 3
-L0 1 40
+L0 1 19
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv|
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv|
 !i113 1
+Z10 o-sv -work work
+Z11 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES
 R7
-R8
+vswitches_tb
 R9
-vvga_pll
-R2
+!s110 1727771061
 !i10b 1
-!s100 f;jjXg^J3TUTfFaCWFN6C1
+!s100 D3NSeiDzkZYWNBNnlHWAk1
+R2
+IdU6RHgZFYO1W79`=4>_`f1
 R3
-ISAYof^`PP4?0o3o:2=9Xm3
-R4
+S1
 R0
-R10
-8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
-FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
-!i122 0
-R11
+w1727771048
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches_tb.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches_tb.sv
+!i122 4
+L0 1 24
 R5
 r1
 !s85 0
 31
-!s108 1727717900.000000
+R6
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches_tb.sv|
+!i113 1
+R10
+R11
+R7
+vvga_pll
+R1
+!i10b 1
+!s100 f;jjXg^J3TUTfFaCWFN6C1
+R2
+ISAYof^`PP4?0o3o:2=9Xm3
+R3
+R0
+R8
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
+!i122 0
+R4
+R5
+r1
+!s85 0
+31
+!s108 1727771059.000000
 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo|
 !s90 -reportprogress|300|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo|
 !i113 1
-R9
+R7

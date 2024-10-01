@@ -1,6 +1,6 @@
 module spiTest(
 
-logic logic reset,
+input logic reset,
 input logic message, 
 input logic clk50Mhz,
 input logic miso,

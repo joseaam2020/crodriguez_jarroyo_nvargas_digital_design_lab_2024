@@ -1,0 +1,20 @@
+module switches(
+    input  logic        pos,      // Entrada de 1 bit
+    input  logic [8:0]  switchs,  // Entrada de 9 bits
+    output logic [3:0]  pos_out   // Salida incrementada
+);
+
+    always_comb begin
+        // Inicializamos pos_out con el valor actual de pos
+        pos_out = pos;
+
+        // Recorremos cada bit del vector de switches
+        for (int i = 0; i < 9; i++) begin
+            // Si el bit i-ésimo de switchs es igual a pos_out
+            if (switchs[i] == pos_out[0]) begin
+                // Incrementamos pos_out en 1
+                pos_out = pos_out + 1'b1;
+            end
+        end
+    end
+endmodule
