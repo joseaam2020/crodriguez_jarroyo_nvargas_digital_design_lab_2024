@@ -1,4 +1,4 @@
-`timescale 1 ns / 1 ns
+`timescale 1 us / 10 ns
 module maintb;
   logic [1:0] PC;
   logic Reset;
@@ -48,7 +48,7 @@ module maintb;
   // Clock generation
   initial begin
     clk = 0;
-    forever #10 clk = ~clk; // 50MHz clock
+    forever #0.01 clk = ~clk; // 50MHz clock
   end
 
   // Test stimulus
@@ -59,11 +59,11 @@ module maintb;
     switches = 9'b000000000;
     MISO = 0;
 
-    #20 Reset = 1;
-    #500 Reset = 0;
+    #0.1 Reset = 1;
+    #0.5 Reset = 0;
 
-    #100 PC = 1; //FPGA
-    #100 switches = 9'b000000001; 
+    #0.1 PC = 1; //FPGA
+    #0.1 switches = 9'b000000001; 
 
 
   end

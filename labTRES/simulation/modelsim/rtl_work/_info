@@ -9,93 +9,593 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/simulation/modelsim
+vactualizar
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1727947368
+!i10b 1
+!s100 D@H^e2c9SJh_Km>kJ^<JK2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^F61^oOUI4[geG5Ua_L2j2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1727927836
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv
+!i122 16
+L0 1 47
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1727947368.000000
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES
+Z10 tCvgOpt 0
 vclk16Mhz
-Z1 !s110 1727942016
+Z11 !s110 1727947366
 !i10b 1
 !s100 LcL9K<S@N>m1A]YGP31Fc0
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+R3
 If:57Xll63o2A4`X:E6;YO0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+R4
 R0
-w1727936193
+R5
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo
 !i122 2
-Z4 L0 32 264
-Z5 OV;L;2020.1;71
+Z12 L0 32 264
+R6
 r1
 !s85 0
 31
-Z6 !s108 1727942016.000000
+Z13 !s108 1727947366.000000
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo|
 !s90 -reportprogress|300|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz_sim/clk16Mhz.vo|
 !i113 1
-Z7 tCvgOpt 0
+R10
 nclk16@mhz
+vcronometer
+R1
+Z14 !s110 1727947367
+!i10b 1
+!s100 iJUoFX:IgbSoUm[b^jJj^3
+R3
+IRCF6_i>CmEB3U8_=RiWGV2
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv
+!i122 14
+L0 1 29
+R6
+r1
+!s85 0
+31
+Z15 !s108 1727947367.000000
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv|
+!i113 1
+R8
+R9
+R10
+vcuadrados
+R1
+R14
+!i10b 1
+!s100 kWHMD171c^7NL9H]aGQzg0
+R3
+I7kREe:f9>^:e73a?fRQ3;3
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cuadrados.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cuadrados.sv
+!i122 7
+Z16 L0 1 60
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cuadrados.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cuadrados.sv|
+!i113 1
+R8
+R9
+R10
 vdesclk16Mhz
-!s110 1727942017
+R11
 !i10b 1
 !s100 [j_QGOGgH^m]G4oFc01P62
-R2
-I:607TNIGEg@ALQn27H@^k3
 R3
+I:607TNIGEg@ALQn27H@^k3
+R4
 R0
-Z8 w1727840800
+R5
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/desclk16Mhz_sim/desclk16Mhz.vo
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/desclk16Mhz_sim/desclk16Mhz.vo
 !i122 3
-R4
-R5
+R12
+R6
 r1
 !s85 0
 31
-R6
+R13
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/desclk16Mhz_sim/desclk16Mhz.vo|
 !s90 -reportprogress|300|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/desclk16Mhz_sim/desclk16Mhz.vo|
 !i113 1
-R7
+R10
 ndesclk16@mhz
-vsecond_clk
+vequis
 R1
+R14
+!i10b 1
+!s100 g9kX?81UXfQ^h9Z]NkIX]1
+R3
+IOH1KAz?KLg2_dg;N_=6_m0
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/equis.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/equis.sv
+!i122 6
+L0 1 41
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/equis.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/equis.sv|
+!i113 1
+R8
+R9
+R10
+vFSM_Gato
+R1
+R14
+!i10b 1
+!s100 1n:ZWf3Da2QGITXQMha<30
+R3
+I>40zV1MViZ;bck?oiQQkh1
+R4
+S1
+R0
+w1727944705
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv
+!i122 13
+L0 1 182
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv|
+!i113 1
+R8
+R9
+R10
+n@f@s@m_@gato
+vmain
+R1
+R14
+!i10b 1
+!s100 60f^cSUQR?d;2T7IBR<0=1
+R3
+IW6@8d?N9>cLize]f1CMVo0
+R4
+S1
+R0
+w1727945362
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv
+!i122 15
+L0 2 245
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv|
+!i113 1
+R8
+R9
+R10
+vmaintb
+R1
+Z17 !s110 1727947369
+!i10b 1
+!s100 2VNAiU`gN?G<56M^7IX2`0
+R3
+If8@L6<WBT]9eW2gTejCj:0
+R4
+S1
+R0
+w1727947340
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/maintb.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/maintb.sv
+!i122 22
+L0 2 70
+R6
+r1
+!s85 0
+31
+Z18 !s108 1727947369.000000
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/maintb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/maintb.sv|
+!i113 1
+R8
+R9
+R10
+vmux2to1
+R1
+R11
+!i10b 1
+!s100 N77LhS_A1de`A1emjcjW=2
+R3
+IOH`[L6KN7[5Haa<EU0`N12
+R4
+S1
+R0
+w1727942549
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/mux2to1.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/mux2to1.sv
+!i122 4
+L0 1 16
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/mux2to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/mux2to1.sv|
+!i113 1
+R8
+R9
+R10
+vrandom_number_position
+R1
+R17
+!i10b 1
+!s100 Rd^_O`elO9<Pi15X=Bd2f1
+R3
+I?cXE^mYLd8h<gQ>jBBkU?3
+R4
+S1
+R0
+w1727945740
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/random_number_position.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/random_number_position.sv
+!i122 20
+Z19 L0 1 28
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/random_number_position.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/random_number_position.sv|
+!i113 1
+R8
+R9
+R10
+vsecond_clk
+R11
 !i10b 1
 !s100 Jn6g[Vlc7]47KcHz]`cnB1
-R2
-IEjQnQ`MR<TX5:>KY8^JX[0
 R3
+IEjQnQ`MR<TX5:>KY8^JX[0
+R4
 R0
-w1727931168
+R5
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo
 !i122 1
-R4
-R5
+R12
+R6
 r1
 !s85 0
 31
-R6
+R13
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo|
 !s90 -reportprogress|300|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk_sim/second_clk.vo|
 !i113 1
-R7
-vvga_pll
+R10
+vSevenSegmentDisplay
 R1
+R17
 !i10b 1
-!s100 f;jjXg^J3TUTfFaCWFN6C1
-R2
-IXL^D7c8NFJlk_]`DBfMz73
+!s100 ?fJibUYLY[=cO3LlYZ;D_0
 R3
-R0
-R8
-8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
-FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
-!i122 0
+ICH2zPQD^V6N[[^`a5]5Ca0
 R4
+S1
+R0
 R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/sevensegmentdisplay.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/sevensegmentdisplay.sv
+!i122 21
+L0 1 21
+R6
 r1
 !s85 0
 31
-!s108 1727942015.000000
+R18
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/sevensegmentdisplay.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/sevensegmentdisplay.sv|
+!i113 1
+R8
+R9
+R10
+n@seven@segment@display
+vspiTest
+R1
+R2
+!i10b 1
+!s100 0EcEV;]zWhO[]OnHWNP8=0
+R3
+I1AmjJIm2<Ad]oVK^nDP=O3
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spiTest.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spiTest.sv
+!i122 18
+L0 1 67
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spiTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spiTest.sv|
+!i113 1
+R8
+R9
+R10
+nspi@test
+vswitches
+R1
+R14
+!i10b 1
+!s100 F8K>m^PP0S;gVdi:_2MDH1
+R3
+Id8h=KRIja1jUOlC^2eYcc0
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv
+!i122 5
+Z20 L0 1 19
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv|
+!i113 1
+R8
+R9
+R10
+vtb_actualizar
+R1
+R2
+!i10b 1
+!s100 K@YNY@]YHLz7HY>e9Y[T22
+R3
+IXC[JcWLX?C<>fR:9W7>XB0
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv
+!i122 17
+L0 1 40
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/tb_actualizar.sv|
+!i113 1
+R8
+R9
+R10
+vtodoLleno
+R1
+R2
+!i10b 1
+!s100 I3I<f2^S4K6^:L6iGcOkk3
+R3
+I4>YMF_F]1[7=P36N@cm5Q3
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/todoLleno.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/todoLleno.sv
+!i122 19
+R20
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/todoLleno.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/todoLleno.sv|
+!i113 1
+R8
+R9
+R10
+ntodo@lleno
+vTresenFila
+R1
+R14
+!i10b 1
+!s100 TPkT4OU>VImA_>60XoZI_2
+R3
+Ibg9aOiAecAWa9ZDi<3cR81
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv
+!i122 12
+L0 1 53
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/TresenFila.sv|
+!i113 1
+R8
+R9
+R10
+n@tresen@fila
+vvalido
+R1
+R14
+!i10b 1
+!s100 Hm7Nk<a<0P4QXSX1cA=j^1
+R3
+IA`a;[O9HgMD9iH<FK;8ER3
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv
+!i122 11
+R19
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/valido.sv|
+!i113 1
+R8
+R9
+R10
+vvga_controller
+R1
+R14
+!i10b 1
+!s100 1`e?:4QY;WS>NOMnmRKMA3
+R3
+IkIZ6mzG=gThIRB@FROAb;2
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv
+!i122 10
+L0 1 206
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv|
+!i113 1
+R8
+R9
+R10
+vvga_pll
+R11
+!i10b 1
+!s100 f;jjXg^J3TUTfFaCWFN6C1
+R3
+IXL^D7c8NFJlk_]`DBfMz73
+R4
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo
+!i122 0
+R12
+R6
+r1
+!s85 0
+31
+R13
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo|
 !s90 -reportprogress|300|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_pll_sim/vga_pll.vo|
 !i113 1
-R7
+R10
+vvgaTest
+R1
+R14
+!i10b 1
+!s100 Sl:7N`ATEI6lk7<h8W`@K2
+R3
+IVki7EFHW_1nHSDhz87]=;2
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv
+!i122 9
+R16
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv|
+!i113 1
+R8
+R9
+R10
+nvga@test
+vvideo_sync_generator
+R1
+R14
+!i10b 1
+!s100 NK_D9PEHKXI34nkiTmbDW2
+R3
+IGYhheQebAz5F1]XR<ObUd0
+R4
+S1
+R0
+R5
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv
+!i122 8
+L0 1 104
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/video_sync_generator.sv|
+!i113 1
+R8
+R9
+R10

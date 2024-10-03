@@ -98,7 +98,11 @@ always_comb begin
                     next_state = state4;
                 end
             end else begin
-                next_state = state4;
+                if(t0) begin
+                    next_state = state4;
+                end else begin
+                    next_state = state1;
+                end
             end
         end
 
@@ -117,6 +121,8 @@ always_comb begin
                 next_state = state1;
             end else if ((enfila == 1) && (valido == 1)) begin
                 next_state = GANAR;
+            end else begin
+                next_state = state3;
             end
         end
 

@@ -211,8 +211,9 @@ vgaTest vgaTestins(
 logic [3:0] posicion_random;
 
 random_number_position irand (
-    .juego(matriz_juego),  
-    .position(posicion_random),              
+    .juego(matriz_juego),  //input 
+	.clk(clk),	//input
+    .position(posicion_random)  //output
 );
 
 

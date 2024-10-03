@@ -138,7 +138,7 @@ set_global_assignment -name EDA_TEST_BENCH_FILE maintb.sv -section_id maintb
 set_location_assignment PIN_AF14 -to clk
 set_location_assignment PIN_AJ4 -to PC[0]
 set_location_assignment PIN_AK4 -to PC[1]
-set_location_assignment PIN_AA14 -to Reset
+set_location_assignment PIN_AA30 -to Reset
 set_location_assignment PIN_AB30 -to switches[0]
 set_location_assignment PIN_Y27 -to switches[1]
 set_location_assignment PIN_AB28 -to switches[2]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tictac
-Thu Oct 03 01:43:15 2024
+Thu Oct 03 03:34:33 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -33,15 +33,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  25. Parameter Settings for User Entity Instance: mux2to1:nuevo_mux
  26. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
  27. Port Connectivity Checks: "mux2to1:nuevo_mux"
- 28. Port Connectivity Checks: "random_number_position:irand|valido:validador"
- 29. Port Connectivity Checks: "vgaTest:vgaTestins|vga_pll:u1"
- 30. Port Connectivity Checks: "second_clk:secs"
- 31. Port Connectivity Checks: "FSM_Gato:FSMins"
- 32. Port Connectivity Checks: "spiTest:ispiTest|desclk16Mhz:idesclk16Mhz"
- 33. Port Connectivity Checks: "spiTest:ispiTest|clk16Mhz:iclk16Mhz"
- 34. Post-Synthesis Netlist Statistics for Top Partition
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
+ 28. Port Connectivity Checks: "vgaTest:vgaTestins|vga_pll:u1"
+ 29. Port Connectivity Checks: "second_clk:secs"
+ 30. Port Connectivity Checks: "FSM_Gato:FSMins"
+ 31. Port Connectivity Checks: "spiTest:ispiTest|desclk16Mhz:idesclk16Mhz"
+ 32. Port Connectivity Checks: "spiTest:ispiTest|clk16Mhz:iclk16Mhz"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
 
 
 
@@ -68,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 03 01:43:15 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 03 03:34:33 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; tictac                                      ;
 ; Top-level Entity Name           ; main                                        ;
@@ -180,15 +179,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -239,11 +238,11 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                          ;
 +---------------------------------------------+------------------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 149                                                                                            ;
+; Estimate of Logic utilization (ALMs needed) ; 150                                                                                            ;
 ;                                             ;                                                                                                ;
-; Combinational ALUT usage for logic          ; 255                                                                                            ;
+; Combinational ALUT usage for logic          ; 256                                                                                            ;
 ;     -- 7 input functions                    ; 4                                                                                              ;
-;     -- 6 input functions                    ; 36                                                                                             ;
+;     -- 6 input functions                    ; 37                                                                                             ;
 ;     -- 5 input functions                    ; 31                                                                                             ;
 ;     -- 4 input functions                    ; 47                                                                                             ;
 ;     -- <=3 input functions                  ; 137                                                                                            ;
@@ -259,8 +258,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                                ;
 ; Maximum fan-out node                        ; vgaTest:vgaTestins|vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 100                                                                                            ;
-; Total fan-out                               ; 1586                                                                                           ;
-; Average fan-out                             ; 2.89                                                                                           ;
+; Total fan-out                               ; 1593                                                                                           ;
+; Average fan-out                             ; 2.90                                                                                           ;
 +---------------------------------------------+------------------------------------------------------------------------------------------------+
 
 
@@ -269,8 +268,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                   ; Entity Name          ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |main                                   ; 255 (0)             ; 170 (0)                   ; 0                 ; 0          ; 60   ; 0            ; |main                                                                                                 ; main                 ; work         ;
-;    |FSM_Gato:FSMins|                    ; 17 (17)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |main|FSM_Gato:FSMins                                                                                 ; FSM_Gato             ; work         ;
+; |main                                   ; 256 (0)             ; 170 (0)                   ; 0                 ; 0          ; 60   ; 0            ; |main                                                                                                 ; main                 ; work         ;
+;    |FSM_Gato:FSMins|                    ; 19 (19)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |main|FSM_Gato:FSMins                                                                                 ; FSM_Gato             ; work         ;
 ;    |SevenSegmentDisplay:seven1|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|SevenSegmentDisplay:seven1                                                                      ; SevenSegmentDisplay  ; work         ;
 ;    |SevenSegmentDisplay:seven2|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|SevenSegmentDisplay:seven2                                                                      ; SevenSegmentDisplay  ; work         ;
 ;    |actualizar:actualizarins|           ; 10 (10)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|actualizar:actualizarins                                                                        ; actualizar           ; work         ;
@@ -287,7 +286,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |clk16Mhz:iclk16Mhz|              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|spiTest:ispiTest|clk16Mhz:iclk16Mhz                                                             ; clk16Mhz             ; clk16Mhz     ;
 ;          |clk16Mhz_0002:clk16mhz_inst|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|spiTest:ispiTest|clk16Mhz:iclk16Mhz|clk16Mhz_0002:clk16mhz_inst                                 ; clk16Mhz_0002        ; clk16Mhz     ;
 ;             |altera_pll:altera_pll_i|   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|spiTest:ispiTest|clk16Mhz:iclk16Mhz|clk16Mhz_0002:clk16mhz_inst|altera_pll:altera_pll_i         ; altera_pll           ; work         ;
-;    |switches:iswitches|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|switches:iswitches                                                                              ; switches             ; work         ;
+;    |switches:iswitches|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|switches:iswitches                                                                              ; switches             ; work         ;
 ;    |todoLleno:itodoLleno|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|todoLleno:itodoLleno                                                                            ; todoLleno            ; work         ;
 ;    |valido:validoins|                   ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|valido:validoins                                                                                ; valido               ; work         ;
 ;    |vgaTest:vgaTestins|                 ; 149 (0)             ; 118 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|vgaTest:vgaTestins                                                                              ; vgaTest              ; work         ;
@@ -347,11 +346,11 @@ Encoding Type:  One-Hot
 ; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[9]  ; yes                                                              ; yes                                        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[8]  ; yes                                                              ; yes                                        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[7]  ; yes                                                              ; yes                                        ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[1]  ; yes                                                              ; yes                                        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[5]  ; yes                                                              ; yes                                        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[4]  ; yes                                                              ; yes                                        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[3]  ; yes                                                              ; yes                                        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[2]  ; yes                                                              ; yes                                        ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|H_Cont[1]  ; yes                                                              ; yes                                        ;
 ; Total number of protected registers is 19            ;                                                                  ;                                            ;
 +------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
@@ -392,12 +391,14 @@ Encoding Type:  One-Hot
 ; vgaTest:vgaTestins|vga_controller:vga_ins|horizontal_left[8..31]   ; Stuck at GND due to stuck port data_in ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][1]           ; Stuck at GND due to stuck port data_in ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][5]           ; Stuck at GND due to stuck port data_in ;
+; random_number_position:irand|new_position[0..3]                    ; Lost fanout                            ;
+; random_number_position:irand|random_num[0..3]                      ; Lost fanout                            ;
 ; spiTest:ispiTest|cs                                                ; Stuck at VCC due to stuck port data_in ;
 ; spiTest:ispiTest|received_i[0..31]                                 ; Stuck at GND due to stuck port clock   ;
 ; spiMessage                                                         ; Lost fanout                            ;
 ; spiTest:ispiTest|received_reg[0..3]                                ; Stuck at GND due to stuck port data_in ;
-; actualizar:actualizarins|new_juego[0][1][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[0][0][1]                        ; Stuck at GND due to stuck port data_in ;
+; actualizar:actualizarins|new_juego[0][1][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[0][2][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[1][0][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[1][1][1]                        ; Stuck at GND due to stuck port data_in ;
@@ -412,42 +413,50 @@ Encoding Type:  One-Hot
 ; FSM_Gato:FSMins|state~5                                            ; Lost fanout                            ;
 ; FSM_Gato:FSMins|state~6                                            ; Lost fanout                            ;
 ; FSM_Gato:FSMins|state.state3                                       ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 189                            ;                                        ;
+; Total Number of Removed Registers = 197                            ;                                        ;
 +--------------------------------------------------------------------+----------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                             ;
-+---------------+---------------------------+-----------------------------------------------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register                                      ;
-+---------------+---------------------------+-----------------------------------------------------------------------------+
-; spiReset      ; Stuck at GND              ; spiTest:ispiTest|received_i[3], spiTest:ispiTest|received_i[2],             ;
-;               ; due to stuck port data_in ; spiTest:ispiTest|received_i[4], spiTest:ispiTest|received_i[5],             ;
-;               ;                           ; spiTest:ispiTest|received_i[6], spiTest:ispiTest|received_i[7],             ;
-;               ;                           ; spiTest:ispiTest|received_i[8], spiTest:ispiTest|received_i[9],             ;
-;               ;                           ; spiTest:ispiTest|received_i[10], spiTest:ispiTest|received_i[11],           ;
-;               ;                           ; spiTest:ispiTest|received_i[12], spiTest:ispiTest|received_i[13],           ;
-;               ;                           ; spiTest:ispiTest|received_i[14], spiTest:ispiTest|received_i[15],           ;
-;               ;                           ; spiTest:ispiTest|received_i[16], spiTest:ispiTest|received_i[17],           ;
-;               ;                           ; spiTest:ispiTest|received_i[18], spiTest:ispiTest|received_i[19],           ;
-;               ;                           ; spiTest:ispiTest|received_i[20], spiTest:ispiTest|received_i[21],           ;
-;               ;                           ; spiTest:ispiTest|received_i[22], spiTest:ispiTest|received_i[23],           ;
-;               ;                           ; spiTest:ispiTest|received_i[24], spiTest:ispiTest|received_i[25],           ;
-;               ;                           ; spiTest:ispiTest|received_i[26], spiTest:ispiTest|received_i[27],           ;
-;               ;                           ; spiTest:ispiTest|received_i[28], spiTest:ispiTest|received_i[29],           ;
-;               ;                           ; spiTest:ispiTest|received_i[30], spiTest:ispiTest|received_i[31],           ;
-;               ;                           ; spiTest:ispiTest|received_i[1], spiTest:ispiTest|received_i[0], spiMessage, ;
-;               ;                           ; spiTest:ispiTest|received_reg[3], spiTest:ispiTest|received_reg[2],         ;
-;               ;                           ; spiTest:ispiTest|received_reg[1], spiTest:ispiTest|received_reg[0],         ;
-;               ;                           ; actualizar:actualizarins|new_juego[0][1][1],                                ;
-;               ;                           ; actualizar:actualizarins|new_juego[0][0][1],                                ;
-;               ;                           ; actualizar:actualizarins|new_juego[0][2][1],                                ;
-;               ;                           ; actualizar:actualizarins|new_juego[1][0][1],                                ;
-;               ;                           ; actualizar:actualizarins|new_juego[1][1][1],                                ;
-;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|cuadrados:cuadrado|print,         ;
-;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][7],                   ;
-;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[1][5]                    ;
-+---------------+---------------------------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                        ;
++------------------------------------------+---------------------------+-----------------------------------------------------------------------------+
+; Register name                            ; Reason for Removal        ; Registers Removed due to This Register                                      ;
++------------------------------------------+---------------------------+-----------------------------------------------------------------------------+
+; spiReset                                 ; Stuck at GND              ; spiTest:ispiTest|received_i[3], spiTest:ispiTest|received_i[2],             ;
+;                                          ; due to stuck port data_in ; spiTest:ispiTest|received_i[4], spiTest:ispiTest|received_i[5],             ;
+;                                          ;                           ; spiTest:ispiTest|received_i[6], spiTest:ispiTest|received_i[7],             ;
+;                                          ;                           ; spiTest:ispiTest|received_i[8], spiTest:ispiTest|received_i[9],             ;
+;                                          ;                           ; spiTest:ispiTest|received_i[10], spiTest:ispiTest|received_i[11],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[12], spiTest:ispiTest|received_i[13],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[14], spiTest:ispiTest|received_i[15],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[16], spiTest:ispiTest|received_i[17],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[18], spiTest:ispiTest|received_i[19],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[20], spiTest:ispiTest|received_i[21],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[22], spiTest:ispiTest|received_i[23],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[24], spiTest:ispiTest|received_i[25],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[26], spiTest:ispiTest|received_i[27],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[28], spiTest:ispiTest|received_i[29],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[30], spiTest:ispiTest|received_i[31],           ;
+;                                          ;                           ; spiTest:ispiTest|received_i[1], spiTest:ispiTest|received_i[0], spiMessage, ;
+;                                          ;                           ; spiTest:ispiTest|received_reg[3], spiTest:ispiTest|received_reg[2],         ;
+;                                          ;                           ; spiTest:ispiTest|received_reg[1], spiTest:ispiTest|received_reg[0],         ;
+;                                          ;                           ; actualizar:actualizarins|new_juego[0][0][1],                                ;
+;                                          ;                           ; actualizar:actualizarins|new_juego[0][1][1],                                ;
+;                                          ;                           ; actualizar:actualizarins|new_juego[0][2][1],                                ;
+;                                          ;                           ; actualizar:actualizarins|new_juego[1][0][1],                                ;
+;                                          ;                           ; actualizar:actualizarins|new_juego[1][1][1],                                ;
+;                                          ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|cuadrados:cuadrado|print,         ;
+;                                          ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][7],                   ;
+;                                          ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[1][5]                    ;
+; random_number_position:irand|position[0] ; Lost Fanouts              ; random_number_position:irand|new_position[0],                               ;
+;                                          ;                           ; random_number_position:irand|random_num[0]                                  ;
+; random_number_position:irand|position[1] ; Lost Fanouts              ; random_number_position:irand|new_position[1],                               ;
+;                                          ;                           ; random_number_position:irand|random_num[1]                                  ;
+; random_number_position:irand|position[2] ; Lost Fanouts              ; random_number_position:irand|new_position[2],                               ;
+;                                          ;                           ; random_number_position:irand|random_num[2]                                  ;
+; random_number_position:irand|position[3] ; Lost Fanouts              ; random_number_position:irand|new_position[3],                               ;
+;                                          ;                           ; random_number_position:irand|random_num[3]                                  ;
++------------------------------------------+---------------------------+-----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -470,9 +479,8 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |main|vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][3] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |main|vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[1][3] ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |main|vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data       ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|FSM_Gato:FSMins|next_state.state4                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
 
 
@@ -1617,15 +1625,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+------------------+
 
 
-+---------------------------------------------------------------------------+
-; Port Connectivity Checks: "random_number_position:irand|valido:validador" ;
-+----------+-------+----------+---------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                     ;
-+----------+-------+----------+---------------------------------------------+
-; posicion ; Input ; Info     ; Stuck at GND                                ;
-+----------+-------+----------+---------------------------------------------+
-
-
 +-----------------------------------------------------------+
 ; Port Connectivity Checks: "vgaTest:vgaTestins|vga_pll:u1" ;
 +--------+--------+----------+------------------------------+
@@ -1686,20 +1685,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 2                           ;
 ;     SLD               ; 1                           ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 258                         ;
+; arriav_lcell_comb     ; 259                         ;
 ;     arith             ; 109                         ;
 ;         1 data inputs ; 108                         ;
 ;         2 data inputs ; 1                           ;
 ;     extend            ; 4                           ;
 ;         7 data inputs ; 4                           ;
-;     normal            ; 140                         ;
+;     normal            ; 141                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 15                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 16                          ;
 ;         4 data inputs ; 47                          ;
 ;         5 data inputs ; 31                          ;
-;         6 data inputs ; 36                          ;
+;         6 data inputs ; 37                          ;
 ;     shared            ; 5                           ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
@@ -1707,7 +1706,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; generic_pll           ; 3                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.83                        ;
+; Average LUT depth     ; 2.84                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1716,7 +1715,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -1726,10 +1725,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 03 01:42:56 2024
+    Info: Processing started: Thu Oct 03 03:34:24 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tictac -c tictac
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file todolleno_tb.sv
     Info (12023): Found entity 1: todoLleno_tb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/todoLleno_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2to1.sv
@@ -1774,7 +1773,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file second_
     Info (12023): Found entity 1: second_clk File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file second_clk/second_clk_0002.v
     Info (12023): Found entity 1: second_clk_0002 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk/second_clk_0002.v Line: 2
-Warning (10275): Verilog HDL Module Instantiation warning at main.sv(216): ignored dangling comma in List of Port Connections File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 216
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
     Info (12023): Found entity 1: main File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file actualizar.sv
@@ -1798,9 +1796,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file maintb.
 Info (12021): Found 1 design units, including 1 entities, in source file random_number_position.sv
     Info (12023): Found entity 1: random_number_position File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/random_number_position.sv Line: 1
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at main.sv(225): object "s" assigned a value but never read File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 225
-Warning (10230): Verilog HDL assignment warning at main.sv(239): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
+Warning (10036): Verilog HDL or VHDL warning at main.sv(226): object "s" assigned a value but never read File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 226
 Warning (10230): Verilog HDL assignment warning at main.sv(240): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 240
+Warning (10230): Verilog HDL assignment warning at main.sv(241): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 241
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "old_juego" into its bus
 Info (12128): Elaborating entity "switches" for hierarchy "switches:iswitches" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 46
@@ -1942,7 +1940,7 @@ Info (12128): Elaborating entity "todoLleno" for hierarchy "todoLleno:itodoLleno
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
 Info (12128): Elaborating entity "FSM_Gato" for hierarchy "FSM_Gato:FSMins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 121
-Warning (10230): Verilog HDL assignment warning at FSM_Gato.sv(162): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 162
+Warning (10230): Verilog HDL assignment warning at FSM_Gato.sv(168): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 168
 Info (12128): Elaborating entity "TresenFila" for hierarchy "TresenFila:TresenFilains" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 130
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
@@ -2115,20 +2113,20 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (12128): Elaborating entity "cuadrados" for hierarchy "vgaTest:vgaTestins|vga_controller:vga_ins|cuadrados:cuadrado" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 97
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
-Info (12128): Elaborating entity "random_number_position" for hierarchy "random_number_position:irand" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 216
+Info (12128): Elaborating entity "random_number_position" for hierarchy "random_number_position:irand" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 217
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
-Info (12128): Elaborating entity "mux2to1" for hierarchy "mux2to1:nuevo_mux" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 233
+Info (12128): Elaborating entity "mux2to1" for hierarchy "mux2to1:nuevo_mux" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 234
 Warning (12125): Using design file sevensegmentdisplay.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: SevenSegmentDisplay File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/sevensegmentdisplay.sv Line: 1
-Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "SevenSegmentDisplay:seven1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 242
+Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "SevenSegmentDisplay:seven1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 243
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
         Warning (14320): Synthesized away node "spiTest:ispiTest|desclk16Mhz:idesclk16Mhz|desclk16Mhz_0002:desclk16mhz_inst|altera_pll:altera_pll_i|outclk_wire[0]" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 240
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 240
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 240
     Info (12134): Parameter "LPM_WIDTHN" = "4"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2150,22 +2148,22 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display2[2]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 29
     Warning (13410): Pin "display2[6]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 29
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (17049): 16 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 3 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance spiTest:ispiTest|clk16Mhz:iclk16Mhz|clk16Mhz_0002:clk16mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MISO" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 20
-Info (21057): Implemented 341 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 342 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 278 logic cells
+    Info (21061): Implemented 279 logic cells
     Info (21065): Implemented 3 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4875 megabytes
-    Info: Processing ended: Thu Oct 03 01:43:15 2024
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:39
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Thu Oct 03 03:34:33 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:03
 
 
