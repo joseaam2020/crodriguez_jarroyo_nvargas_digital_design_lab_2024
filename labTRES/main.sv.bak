@@ -1,0 +1,78 @@
+module main (
+
+
+
+);
+
+
+FSM_Gato FSMins (
+
+	.PC(),
+	.t0(),
+	.interrupt(),
+	.valido(),
+	.todoLleno(),
+	.enfila(),
+	.Reset(),
+	
+	.Arduino(),
+	.Actualizar(),
+	.Gano(),
+	.Reiniciar(),
+	.Reset_timer(),
+	.clk()
+	
+	
+);	
+	
+TresenFila TresenFilains(
+
+	.matriz_juego(),
+	.ganador()
+
+);
+
+
+cronometer cronometerins(
+
+	.clock(),
+	.reset(),
+	.seconds()
+
+
+)
+
+valido validoins(
+
+	.juego(),
+	.posicion(),
+	.valido()
+
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule 
+
+

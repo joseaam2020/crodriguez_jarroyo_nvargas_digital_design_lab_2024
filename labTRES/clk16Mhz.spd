@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="clk16Mhz_sim/clk16Mhz.vo" type="VERILOG" />
+ <topLevel name="clk16Mhz" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

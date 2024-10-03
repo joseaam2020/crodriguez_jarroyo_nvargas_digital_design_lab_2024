@@ -1,0 +1,48 @@
+module switches_tb();
+
+    // Señales del testbench
+    logic        tb_pos;      // Entrada de 1 bit
+    logic [8:0]  tb_switchs;  // Entrada de 9 bits
+    logic [3:0]  tb_pos_out;  // Salida de 4 bits
+
+    // Instancia del DUT (Device Under Test)
+    switches uut (
+        .pos(tb_pos),
+        .switchs(tb_switchs),
+        .pos_out(tb_pos_out)
+    );
+
+    // Proceso inicial de testbench
+    initial begin
+        // Iniciar las señales
+        tb_pos = 0;
+        tb_switchs = 9'b000000000;
+
+        // Tiempo 0: Prueba inicial sin coincidencias
+        #10;
+        
+
+        // Tiempo 10: Probar con switchs[0] igual a pos
+        tb_pos = 1'b1;
+        tb_switchs = 9'b000000001;  // Coincide el bit 0 de switchs con pos
+        #10;
+        
+        // Tiempo 20: Probar con varios bits encendidos en switchs
+        tb_switchs = 9'b100000001;  // Coincide el bit 0 y el bit 8 de switchs con pos
+        #10;
+        
+
+        // Tiempo 30: Cambiar el valor de pos y probar con switchs diferente
+        tb_pos = 1'b0;
+        tb_switchs = 9'b111111111;  // Todos los bits en switchs son 1
+        #10;
+        
+
+        // Tiempo 40: Probar sin coincidencias
+        tb_switchs = 9'b000000000;  // Ningún bit coincide
+        #10;
+        
+
+       
+    end
+endmodule
