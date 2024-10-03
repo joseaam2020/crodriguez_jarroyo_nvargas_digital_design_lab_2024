@@ -4,15 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Arduino[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Arduino[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Reset_timer",
+					"name" : "VGA_B[0]",
 					"strict" : false
 				},
 				{
@@ -32,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_G[0]",
+					"strict" : false
+				},
+				{
 					"name" : "VGA_G[1]",
 					"strict" : false
 				},
@@ -48,6 +44,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_G[6]",
+					"strict" : false
+				},
+				{
 					"name" : "VGA_G[7]",
 					"strict" : false
 				},
@@ -61,6 +61,10 @@
 				},
 				{
 					"name" : "VGA_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[3]",
 					"strict" : false
 				},
 				{
@@ -96,11 +100,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "PC[0]",
+					"name" : "display1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[1]",
+					"name" : "display1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[5]",
 					"strict" : false
 				},
 				{
@@ -112,35 +152,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "posicion[0]",
+					"name" : "PC[0]",
 					"strict" : false
 				},
 				{
-					"name" : "posicion[1]",
+					"name" : "PC[1]",
 					"strict" : false
 				},
 				{
-					"name" : "posicion[2]",
+					"name" : "switches[8]",
 					"strict" : false
 				},
 				{
-					"name" : "posicion[3]",
+					"name" : "switches[7]",
 					"strict" : false
 				},
 				{
-					"name" : "interrupt[0]",
+					"name" : "switches[1]",
 					"strict" : false
 				},
 				{
-					"name" : "interrupt[1]",
+					"name" : "switches[2]",
 					"strict" : false
 				},
 				{
-					"name" : "interrupt[2]",
+					"name" : "switches[3]",
 					"strict" : false
 				},
 				{
-					"name" : "interrupt[3]",
+					"name" : "switches[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[6]",
 					"strict" : false
 				}
 			]
