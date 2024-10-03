@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tictac
-Wed Oct 02 16:15:53 2024
+Thu Oct 03 01:43:15 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -33,14 +33,15 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  25. Parameter Settings for User Entity Instance: mux2to1:nuevo_mux
  26. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
  27. Port Connectivity Checks: "mux2to1:nuevo_mux"
- 28. Port Connectivity Checks: "vgaTest:vgaTestins|vga_pll:u1"
- 29. Port Connectivity Checks: "second_clk:secs"
- 30. Port Connectivity Checks: "FSM_Gato:FSMins"
- 31. Port Connectivity Checks: "spiTest:ispiTest|desclk16Mhz:idesclk16Mhz"
- 32. Port Connectivity Checks: "spiTest:ispiTest|clk16Mhz:iclk16Mhz"
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
+ 28. Port Connectivity Checks: "random_number_position:irand|valido:validador"
+ 29. Port Connectivity Checks: "vgaTest:vgaTestins|vga_pll:u1"
+ 30. Port Connectivity Checks: "second_clk:secs"
+ 31. Port Connectivity Checks: "FSM_Gato:FSMins"
+ 32. Port Connectivity Checks: "spiTest:ispiTest|desclk16Mhz:idesclk16Mhz"
+ 33. Port Connectivity Checks: "spiTest:ispiTest|clk16Mhz:iclk16Mhz"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
 
 
 
@@ -67,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 02 16:15:53 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 03 01:43:15 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; tictac                                      ;
 ; Top-level Entity Name           ; main                                        ;
@@ -220,6 +221,7 @@ https://fpgasoftware.intel.com/eula.
 ; desclk16Mhz.v                    ; yes             ; User Wizard-Generated File         ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/desclk16Mhz.v                  ; desclk16Mhz ;
 ; desclk16Mhz/desclk16Mhz_0002.v   ; yes             ; User Verilog HDL File              ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/desclk16Mhz/desclk16Mhz_0002.v ; desclk16Mhz ;
 ; todoLleno.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/todoLleno.sv                   ;             ;
+; random_number_position.sv        ; yes             ; User SystemVerilog HDL File        ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/random_number_position.sv      ;             ;
 ; altera_pll.v                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                              ;             ;
 ; sevensegmentdisplay.sv           ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/sevensegmentdisplay.sv         ;             ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                            ;             ;
@@ -241,10 +243,10 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                                ;
 ; Combinational ALUT usage for logic          ; 255                                                                                            ;
 ;     -- 7 input functions                    ; 4                                                                                              ;
-;     -- 6 input functions                    ; 37                                                                                             ;
-;     -- 5 input functions                    ; 29                                                                                             ;
-;     -- 4 input functions                    ; 49                                                                                             ;
-;     -- <=3 input functions                  ; 136                                                                                            ;
+;     -- 6 input functions                    ; 36                                                                                             ;
+;     -- 5 input functions                    ; 31                                                                                             ;
+;     -- 4 input functions                    ; 47                                                                                             ;
+;     -- <=3 input functions                  ; 137                                                                                            ;
 ;                                             ;                                                                                                ;
 ; Dedicated logic registers                   ; 170                                                                                            ;
 ;                                             ;                                                                                                ;
@@ -257,8 +259,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                                ;
 ; Maximum fan-out node                        ; vgaTest:vgaTestins|vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 100                                                                                            ;
-; Total fan-out                               ; 1588                                                                                           ;
-; Average fan-out                             ; 2.90                                                                                           ;
+; Total fan-out                               ; 1586                                                                                           ;
+; Average fan-out                             ; 2.89                                                                                           ;
 +---------------------------------------------+------------------------------------------------------------------------------------------------+
 
 
@@ -360,6 +362,7 @@ Encoding Type:  One-Hot
 ; Register name                                                      ; Reason for Removal                     ;
 +--------------------------------------------------------------------+----------------------------------------+
 ; spiReset                                                           ; Stuck at GND due to stuck port data_in ;
+; random_number_position:irand|position[0..3]                        ; Lost fanout                            ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|vertical_bottom[0..5]    ; Stuck at GND due to stuck port data_in ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|vertical_bottom[6]       ; Stuck at VCC due to stuck port data_in ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|vertical_bottom[7]       ; Stuck at GND due to stuck port data_in ;
@@ -389,12 +392,12 @@ Encoding Type:  One-Hot
 ; vgaTest:vgaTestins|vga_controller:vga_ins|horizontal_left[8..31]   ; Stuck at GND due to stuck port data_in ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][1]           ; Stuck at GND due to stuck port data_in ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][5]           ; Stuck at GND due to stuck port data_in ;
-; spiMessage                                                         ; Stuck at GND due to stuck port data_in ;
 ; spiTest:ispiTest|cs                                                ; Stuck at VCC due to stuck port data_in ;
 ; spiTest:ispiTest|received_i[0..31]                                 ; Stuck at GND due to stuck port clock   ;
+; spiMessage                                                         ; Lost fanout                            ;
 ; spiTest:ispiTest|received_reg[0..3]                                ; Stuck at GND due to stuck port data_in ;
-; actualizar:actualizarins|new_juego[0][0][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[0][1][1]                        ; Stuck at GND due to stuck port data_in ;
+; actualizar:actualizarins|new_juego[0][0][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[0][2][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[1][0][1]                        ; Stuck at GND due to stuck port data_in ;
 ; actualizar:actualizarins|new_juego[1][1][1]                        ; Stuck at GND due to stuck port data_in ;
@@ -409,42 +412,42 @@ Encoding Type:  One-Hot
 ; FSM_Gato:FSMins|state~5                                            ; Lost fanout                            ;
 ; FSM_Gato:FSMins|state~6                                            ; Lost fanout                            ;
 ; FSM_Gato:FSMins|state.state3                                       ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 185                            ;                                        ;
+; Total Number of Removed Registers = 189                            ;                                        ;
 +--------------------------------------------------------------------+----------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                     ;
-+---------------+---------------------------+---------------------------------------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register                              ;
-+---------------+---------------------------+---------------------------------------------------------------------+
-; spiReset      ; Stuck at GND              ; spiTest:ispiTest|received_i[2], spiTest:ispiTest|received_i[3],     ;
-;               ; due to stuck port data_in ; spiTest:ispiTest|received_i[4], spiTest:ispiTest|received_i[5],     ;
-;               ;                           ; spiTest:ispiTest|received_i[6], spiTest:ispiTest|received_i[7],     ;
-;               ;                           ; spiTest:ispiTest|received_i[8], spiTest:ispiTest|received_i[9],     ;
-;               ;                           ; spiTest:ispiTest|received_i[10], spiTest:ispiTest|received_i[11],   ;
-;               ;                           ; spiTest:ispiTest|received_i[12], spiTest:ispiTest|received_i[13],   ;
-;               ;                           ; spiTest:ispiTest|received_i[14], spiTest:ispiTest|received_i[15],   ;
-;               ;                           ; spiTest:ispiTest|received_i[16], spiTest:ispiTest|received_i[17],   ;
-;               ;                           ; spiTest:ispiTest|received_i[18], spiTest:ispiTest|received_i[19],   ;
-;               ;                           ; spiTest:ispiTest|received_i[20], spiTest:ispiTest|received_i[21],   ;
-;               ;                           ; spiTest:ispiTest|received_i[22], spiTest:ispiTest|received_i[23],   ;
-;               ;                           ; spiTest:ispiTest|received_i[24], spiTest:ispiTest|received_i[25],   ;
-;               ;                           ; spiTest:ispiTest|received_i[26], spiTest:ispiTest|received_i[27],   ;
-;               ;                           ; spiTest:ispiTest|received_i[28], spiTest:ispiTest|received_i[29],   ;
-;               ;                           ; spiTest:ispiTest|received_i[30], spiTest:ispiTest|received_i[31],   ;
-;               ;                           ; spiTest:ispiTest|received_i[1], spiTest:ispiTest|received_i[0],     ;
-;               ;                           ; spiTest:ispiTest|received_reg[3], spiTest:ispiTest|received_reg[2], ;
-;               ;                           ; spiTest:ispiTest|received_reg[1], spiTest:ispiTest|received_reg[0], ;
-;               ;                           ; actualizar:actualizarins|new_juego[0][0][1],                        ;
-;               ;                           ; actualizar:actualizarins|new_juego[0][1][1],                        ;
-;               ;                           ; actualizar:actualizarins|new_juego[0][2][1],                        ;
-;               ;                           ; actualizar:actualizarins|new_juego[1][0][1],                        ;
-;               ;                           ; actualizar:actualizarins|new_juego[1][1][1],                        ;
-;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|cuadrados:cuadrado|print, ;
-;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][7],           ;
-;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[1][5]            ;
-+---------------+---------------------------+---------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                             ;
++---------------+---------------------------+-----------------------------------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register                                      ;
++---------------+---------------------------+-----------------------------------------------------------------------------+
+; spiReset      ; Stuck at GND              ; spiTest:ispiTest|received_i[3], spiTest:ispiTest|received_i[2],             ;
+;               ; due to stuck port data_in ; spiTest:ispiTest|received_i[4], spiTest:ispiTest|received_i[5],             ;
+;               ;                           ; spiTest:ispiTest|received_i[6], spiTest:ispiTest|received_i[7],             ;
+;               ;                           ; spiTest:ispiTest|received_i[8], spiTest:ispiTest|received_i[9],             ;
+;               ;                           ; spiTest:ispiTest|received_i[10], spiTest:ispiTest|received_i[11],           ;
+;               ;                           ; spiTest:ispiTest|received_i[12], spiTest:ispiTest|received_i[13],           ;
+;               ;                           ; spiTest:ispiTest|received_i[14], spiTest:ispiTest|received_i[15],           ;
+;               ;                           ; spiTest:ispiTest|received_i[16], spiTest:ispiTest|received_i[17],           ;
+;               ;                           ; spiTest:ispiTest|received_i[18], spiTest:ispiTest|received_i[19],           ;
+;               ;                           ; spiTest:ispiTest|received_i[20], spiTest:ispiTest|received_i[21],           ;
+;               ;                           ; spiTest:ispiTest|received_i[22], spiTest:ispiTest|received_i[23],           ;
+;               ;                           ; spiTest:ispiTest|received_i[24], spiTest:ispiTest|received_i[25],           ;
+;               ;                           ; spiTest:ispiTest|received_i[26], spiTest:ispiTest|received_i[27],           ;
+;               ;                           ; spiTest:ispiTest|received_i[28], spiTest:ispiTest|received_i[29],           ;
+;               ;                           ; spiTest:ispiTest|received_i[30], spiTest:ispiTest|received_i[31],           ;
+;               ;                           ; spiTest:ispiTest|received_i[1], spiTest:ispiTest|received_i[0], spiMessage, ;
+;               ;                           ; spiTest:ispiTest|received_reg[3], spiTest:ispiTest|received_reg[2],         ;
+;               ;                           ; spiTest:ispiTest|received_reg[1], spiTest:ispiTest|received_reg[0],         ;
+;               ;                           ; actualizar:actualizarins|new_juego[0][1][1],                                ;
+;               ;                           ; actualizar:actualizarins|new_juego[0][0][1],                                ;
+;               ;                           ; actualizar:actualizarins|new_juego[0][2][1],                                ;
+;               ;                           ; actualizar:actualizarins|new_juego[1][0][1],                                ;
+;               ;                           ; actualizar:actualizarins|new_juego[1][1][1],                                ;
+;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|cuadrados:cuadrado|print,         ;
+;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[2][7],                   ;
+;               ;                           ; vgaTest:vgaTestins|vga_controller:vga_ins|bgr_data[1][5]                    ;
++---------------+---------------------------+-----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1607,11 +1610,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------+
 ; Port Connectivity Checks: "mux2to1:nuevo_mux" ;
-+------+-------+----------+---------------------+
-; Port ; Type  ; Severity ; Details             ;
-+------+-------+----------+---------------------+
-; s[1] ; Input ; Info     ; Stuck at GND        ;
-+------+-------+----------+---------------------+
++---------+-------+----------+------------------+
+; Port    ; Type  ; Severity ; Details          ;
++---------+-------+----------+------------------+
+; s[2..1] ; Input ; Info     ; Stuck at GND     ;
++---------+-------+----------+------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "random_number_position:irand|valido:validador" ;
++----------+-------+----------+---------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                     ;
++----------+-------+----------+---------------------------------------------+
+; posicion ; Input ; Info     ; Stuck at GND                                ;
++----------+-------+----------+---------------------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -1623,24 +1635,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "second_clk:secs"         ;
-+--------+--------+----------+------------------------+
-; Port   ; Type   ; Severity ; Details                ;
-+--------+--------+----------+------------------------+
-; locked ; Output ; Info     ; Explicitly unconnected ;
-+--------+--------+----------+------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "second_clk:secs"                                                                      ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; locked ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FSM_Gato:FSMins"                                                                                                                                ;
-+-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                                    ;
-+-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; PC        ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (2 bits) it drives.  Extra input bit(s) "PC[1..1]" will be connected to GND. ;
-; Gano      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
-; Reiniciar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
-+-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FSM_Gato:FSMins"                                                                         ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Gano      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Reiniciar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; random    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -1683,11 +1695,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 140                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 4                           ;
+;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 15                          ;
-;         4 data inputs ; 49                          ;
-;         5 data inputs ; 29                          ;
-;         6 data inputs ; 37                          ;
+;         4 data inputs ; 47                          ;
+;         5 data inputs ; 31                          ;
+;         6 data inputs ; 36                          ;
 ;     shared            ; 5                           ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
@@ -1714,7 +1726,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 02 16:15:34 2024
+    Info: Processing started: Thu Oct 03 01:42:56 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tictac -c tictac
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -1762,6 +1774,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file second_
     Info (12023): Found entity 1: second_clk File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file second_clk/second_clk_0002.v
     Info (12023): Found entity 1: second_clk_0002 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk/second_clk_0002.v Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at main.sv(216): ignored dangling comma in List of Port Connections File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 216
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
     Info (12023): Found entity 1: main File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file actualizar.sv
@@ -1782,14 +1795,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file todolle
     Info (12023): Found entity 1: todoLleno File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/todoLleno.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maintb.sv
     Info (12023): Found entity 1: maintb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/maintb.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file random_number_position.sv
+    Info (12023): Found entity 1: random_number_position File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/random_number_position.sv Line: 1
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at main.sv(224): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 224
-Warning (10230): Verilog HDL assignment warning at main.sv(225): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 225
+Warning (10036): Verilog HDL or VHDL warning at main.sv(225): object "s" assigned a value but never read File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 225
+Warning (10230): Verilog HDL assignment warning at main.sv(239): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
+Warning (10230): Verilog HDL assignment warning at main.sv(240): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 240
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "old_juego" into its bus
-Info (12128): Elaborating entity "switches" for hierarchy "switches:iswitches" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 45
+Info (12128): Elaborating entity "switches" for hierarchy "switches:iswitches" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 46
 Warning (10230): Verilog HDL assignment warning at switches.sv(14): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/switches.sv Line: 14
-Info (12128): Elaborating entity "spiTest" for hierarchy "spiTest:ispiTest" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 79
+Info (12128): Elaborating entity "spiTest" for hierarchy "spiTest:ispiTest" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 80
 Info (12128): Elaborating entity "clk16Mhz" for hierarchy "spiTest:ispiTest|clk16Mhz:iclk16Mhz" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spiTest.sv Line: 24
 Info (12128): Elaborating entity "clk16Mhz_0002" for hierarchy "spiTest:ispiTest|clk16Mhz:iclk16Mhz|clk16Mhz_0002:clk16mhz_inst" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz.v Line: 20
 Info (12128): Elaborating entity "altera_pll" for hierarchy "spiTest:ispiTest|clk16Mhz:iclk16Mhz|clk16Mhz_0002:clk16mhz_inst|altera_pll:altera_pll_i" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/clk16Mhz/clk16Mhz_0002.v Line: 85
@@ -1922,15 +1938,15 @@ Info (12133): Instantiated megafunction "spiTest:ispiTest|desclk16Mhz:idesclk16M
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "todoLleno" for hierarchy "todoLleno:itodoLleno" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 88
+Info (12128): Elaborating entity "todoLleno" for hierarchy "todoLleno:itodoLleno" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 89
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
-Info (12128): Elaborating entity "FSM_Gato" for hierarchy "FSM_Gato:FSMins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 119
-Warning (10230): Verilog HDL assignment warning at FSM_Gato.sv(159): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 159
-Info (12128): Elaborating entity "TresenFila" for hierarchy "TresenFila:TresenFilains" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 128
+Info (12128): Elaborating entity "FSM_Gato" for hierarchy "FSM_Gato:FSMins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 121
+Warning (10230): Verilog HDL assignment warning at FSM_Gato.sv(162): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/FSM_Gato.sv Line: 162
+Info (12128): Elaborating entity "TresenFila" for hierarchy "TresenFila:TresenFilains" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 130
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
-Info (12128): Elaborating entity "second_clk" for hierarchy "second_clk:secs" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 142
+Info (12128): Elaborating entity "second_clk" for hierarchy "second_clk:secs" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 145
 Info (12128): Elaborating entity "second_clk_0002" for hierarchy "second_clk:secs|second_clk_0002:second_clk_inst" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk.v Line: 20
 Info (12128): Elaborating entity "altera_pll" for hierarchy "second_clk:secs|second_clk_0002:second_clk_inst|altera_pll:altera_pll_i" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/second_clk/second_clk_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
@@ -1996,12 +2012,12 @@ Info (12133): Instantiated megafunction "second_clk:secs|second_clk_0002:second_
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "cronometer" for hierarchy "cronometer:cronometerins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 151
+Info (12128): Elaborating entity "cronometer" for hierarchy "cronometer:cronometerins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 154
 Warning (10230): Verilog HDL assignment warning at cronometer.sv(19): truncated value with size 32 to match size of target (4) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/cronometer.sv Line: 19
-Info (12128): Elaborating entity "valido" for hierarchy "valido:validoins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 161
+Info (12128): Elaborating entity "valido" for hierarchy "valido:validoins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 164
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
-Info (12128): Elaborating entity "actualizar" for hierarchy "actualizar:actualizarins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 185
+Info (12128): Elaborating entity "actualizar" for hierarchy "actualizar:actualizarins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 188
 Warning (10230): Verilog HDL assignment warning at actualizar.sv(33): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 33
 Warning (10230): Verilog HDL assignment warning at actualizar.sv(34): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 34
 Warning (10230): Verilog HDL assignment warning at actualizar.sv(35): truncated value with size 32 to match size of target (2) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/actualizar.sv Line: 35
@@ -2016,7 +2032,7 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego_temporal" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "new_juego" into its bus
-Info (12128): Elaborating entity "vgaTest" for hierarchy "vgaTest:vgaTestins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 206
+Info (12128): Elaborating entity "vgaTest" for hierarchy "vgaTest:vgaTestins" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 209
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_juego" into its bus
 Info (12128): Elaborating entity "vga_pll" for hierarchy "vgaTest:vgaTestins|vga_pll:u1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vgaTest.sv Line: 30
@@ -2099,17 +2115,20 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (12128): Elaborating entity "cuadrados" for hierarchy "vgaTest:vgaTestins|vga_controller:vga_ins|cuadrados:cuadrado" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/vga_controller.sv Line: 97
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
-Info (12128): Elaborating entity "mux2to1" for hierarchy "mux2to1:nuevo_mux" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 218
+Info (12128): Elaborating entity "random_number_position" for hierarchy "random_number_position:irand" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 216
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "juego" into its bus
+Info (12128): Elaborating entity "mux2to1" for hierarchy "mux2to1:nuevo_mux" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 233
 Warning (12125): Using design file sevensegmentdisplay.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: SevenSegmentDisplay File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/sevensegmentdisplay.sv Line: 1
-Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "SevenSegmentDisplay:seven1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 227
+Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "SevenSegmentDisplay:seven1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 242
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
         Warning (14320): Synthesized away node "spiTest:ispiTest|desclk16Mhz:idesclk16Mhz|desclk16Mhz_0002:desclk16mhz_inst|altera_pll:altera_pll_i|outclk_wire[0]" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 224
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 224
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 224
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 239
     Info (12134): Parameter "LPM_WIDTHN" = "4"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2120,7 +2139,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/db/sign_div_unsign_7kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
     Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/db/alt_u_div_kse.tdf Line: 23
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 11
     Warning (13410): Pin "VGA_B[5]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 11
@@ -2132,7 +2150,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display2[2]" is stuck at GND File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 29
     Warning (13410): Pin "display2[6]" is stuck at VCC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/main.sv Line: 29
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 3 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance spiTest:ispiTest|clk16Mhz:iclk16Mhz|clk16Mhz_0002:clk16mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
@@ -2144,10 +2162,10 @@ Info (21057): Implemented 341 device resources after synthesis - the final resou
     Info (21059): Implemented 46 output pins
     Info (21061): Implemented 278 logic cells
     Info (21065): Implemented 3 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Wed Oct 02 16:15:53 2024
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Thu Oct 03 01:43:15 2024
     Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Total CPU time (on all processors): 00:00:39
 
 

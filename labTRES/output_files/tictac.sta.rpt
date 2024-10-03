@@ -1,5 +1,5 @@
 Timing Analyzer report for tictac
-Wed Oct 02 16:17:37 2024
+Thu Oct 03 01:45:07 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -102,18 +102,18 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.25        ;
+; Average used               ; 1.27        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.8%      ;
-;     Processor 3            ;   3.7%      ;
-;     Processor 4            ;   3.6%      ;
-;     Processor 5            ;   3.5%      ;
-;     Processor 6            ;   3.5%      ;
-;     Processor 7            ;   3.5%      ;
-;     Processor 8            ;   3.5%      ;
+;     Processor 2            ;   4.0%      ;
+;     Processor 3            ;   3.9%      ;
+;     Processor 4            ;   3.9%      ;
+;     Processor 5            ;   3.7%      ;
+;     Processor 6            ;   3.7%      ;
+;     Processor 7            ;   3.7%      ;
+;     Processor 8            ;   3.7%      ;
 +----------------------------+-------------+
 
 
@@ -128,8 +128,7 @@ https://fpgasoftware.intel.com/eula.
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]               ; Generated ; 3.333   ; 300.0 MHz  ; 0.000 ; 1.666   ; 50.00      ; 2         ; 12          ;       ;        ;           ;            ; false    ; clk                                                                                   ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin                  ; { secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] }               ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk             ; Generated ; 500.000 ; 2.0 MHz    ; 0.000 ; 250.000 ; 50.00      ; 150       ; 1           ;       ;        ;           ;            ; false    ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]             ; { secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk }             ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n          ; Base      ; 1.000   ; 1000.0 MHz ; 0.000 ; 0.500   ;            ;           ;             ;       ;        ;           ;            ;          ;                                                                                       ;                                                                                            ; { vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n }          ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]         ; Generated ; 3.333   ; 300.0 MHz  ; 0.000 ; 1.666   ; 50.00      ; 2         ; 12          ;       ;        ;           ;            ; false    ; clk                                                                                   ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin            ; { vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] }         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; Generated ; 40.000  ; 25.0 MHz   ; 0.000 ; 20.000  ; 50.00      ; 12        ; 1           ;       ;        ;           ;            ; false    ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]       ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]       ; { vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk }       ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; Generated ; 40.000  ; 25.0 MHz   ; 0.000 ; 20.000  ; 50.00      ; 12        ; 1           ;       ;        ;           ;            ; false    ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]       ; { vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk }       ;
 +-----------------------------------------------------------------------------------------+-----------+---------+------------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
 
 
@@ -138,10 +137,10 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+-----------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                        ; Note ;
 +------------+-----------------+-----------------------------------------------------------------------------------+------+
-; 95.95 MHz  ; 95.95 MHz       ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 160.75 MHz ; 160.75 MHz      ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ;      ;
-; 161.42 MHz ; 161.42 MHz      ; clk                                                                               ;      ;
-; 317.86 MHz ; 317.86 MHz      ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
+; 101.65 MHz ; 101.65 MHz      ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 110.74 MHz ; 110.74 MHz      ; clk                                                                               ;      ;
+; 213.86 MHz ; 213.86 MHz      ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ;      ;
+; 290.7 MHz  ; 290.7 MHz       ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
 +------------+-----------------+-----------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -157,10 +156,10 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.417 ; -16.310       ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.146 ; -55.018       ;
-; clk                                                                               ; 12.800 ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 13.800 ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.058 ; -130.041      ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.440 ; -55.285       ;
+; clk                                                                               ; 10.970 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 14.371 ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -169,10 +168,10 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -7.329 ; -164.404      ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.271  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.368  ; 0.000         ;
-; clk                                                                               ; 0.375  ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.557 ; -16.642       ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.266  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.350  ; 0.000         ;
+; clk                                                                               ; 0.377  ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -181,8 +180,8 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -8.135 ; -233.990      ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 11.187 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -7.704 ; -206.590      ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 10.903 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -191,8 +190,8 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 3.754 ; 0.000         ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.576 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 4.850 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.254 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -201,13 +200,12 @@ HTML report is unavailable in plain text report export.
 +---------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                 ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------+---------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -0.394  ; -17.991       ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -0.394  ; -16.573       ;
 ; ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; 1.562   ; 0.000         ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; 1.666   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]       ; 1.666   ; 0.000         ;
-; clk                                                                                   ; 9.400   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.149  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.291 ; 0.000         ;
+; clk                                                                                   ; 9.406   ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.158  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.295 ; 0.000         ;
 +---------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -218,7 +216,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 37.014 ns
+Worst Case Available Settling Time: 39.094 ns
 
 
 
@@ -228,10 +226,10 @@ Worst Case Available Settling Time: 37.014 ns
 +------------+-----------------+-----------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                        ; Note ;
 +------------+-----------------+-----------------------------------------------------------------------------------+------+
-; 98.23 MHz  ; 98.23 MHz       ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 162.15 MHz ; 162.15 MHz      ; clk                                                                               ;      ;
-; 166.09 MHz ; 166.09 MHz      ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ;      ;
-; 317.16 MHz ; 317.16 MHz      ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
+; 103.36 MHz ; 103.36 MHz      ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 114.76 MHz ; 114.76 MHz      ; clk                                                                               ;      ;
+; 216.08 MHz ; 216.08 MHz      ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ;      ;
+; 288.68 MHz ; 288.68 MHz      ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
 +------------+-----------------+-----------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -241,10 +239,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.769 ; -13.726       ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.153 ; -54.079       ;
-; clk                                                                               ; 12.902 ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 14.097 ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.467 ; -115.683      ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.464 ; -54.892       ;
+; clk                                                                               ; 11.286 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 14.762 ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -253,10 +251,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -7.312 ; -165.996      ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.328  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.371  ; 0.000         ;
-; clk                                                                               ; 0.391  ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.609 ; -20.648       ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.322  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.332  ; 0.000         ;
+; clk                                                                               ; 0.393  ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -265,8 +263,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -7.926 ; -228.452      ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 11.685 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -7.623 ; -204.132      ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 11.480 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -275,8 +273,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 3.496 ; 0.000         ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.594 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 4.383 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.309 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -285,13 +283,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                 ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------+---------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -0.394  ; -16.196       ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -0.394  ; -14.926       ;
 ; ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; 1.562   ; 0.000         ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; 1.666   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]       ; 1.666   ; 0.000         ;
 ; clk                                                                                   ; 9.328   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.163  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.238 ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.159  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.247 ; 0.000         ;
 +---------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -302,7 +299,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 37.098 ns
+Worst Case Available Settling Time: 39.091 ns
 
 
 
@@ -312,10 +309,10 @@ Worst Case Available Settling Time: 37.098 ns
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.006 ; -14.001       ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.939 ; -23.316       ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 15.223 ; 0.000         ;
-; clk                                                                               ; 15.789 ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.850 ; -111.864      ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -1.074 ; -23.545       ;
+; clk                                                                               ; 13.796 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 15.631 ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -324,10 +321,10 @@ Worst Case Available Settling Time: 37.098 ns
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.148 ; -92.404       ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.116  ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.009 ; -8.056        ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.113  ; 0.000         ;
 ; clk                                                                               ; 0.182  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.183  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.182  ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -336,8 +333,8 @@ Worst Case Available Settling Time: 37.098 ns
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -4.346 ; -123.945      ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 13.580 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -4.047 ; -108.431      ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 13.382 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -346,8 +343,8 @@ Worst Case Available Settling Time: 37.098 ns
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 3.017 ; 0.000         ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.809 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.555 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 3.701 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -356,13 +353,12 @@ Worst Case Available Settling Time: 37.098 ns
 +---------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                 ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------+---------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; 0.125   ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; 0.134   ; 0.000         ;
 ; ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; 1.562   ; 0.000         ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; 1.666   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]       ; 1.666   ; 0.000         ;
-; clk                                                                                   ; 9.412   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.524  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.546 ; 0.000         ;
+; clk                                                                                   ; 9.411   ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.525  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.547 ; 0.000         ;
 +---------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -373,7 +369,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 37.996 ns
+Worst Case Available Settling Time: 39.487 ns
 
 
 
@@ -383,10 +379,10 @@ Worst Case Available Settling Time: 37.996 ns
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.110 ; -10.025       ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.825 ; -19.848       ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 15.977 ; 0.000         ;
-; clk                                                                               ; 15.996 ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.812 ; -86.807       ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.957 ; -20.368       ;
+; clk                                                                               ; 14.548 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 16.343 ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -395,10 +391,10 @@ Worst Case Available Settling Time: 37.996 ns
 +-----------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                             ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------------------+--------+---------------+
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.074 ; -91.806       ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.117  ; 0.000         ;
-; clk                                                                               ; 0.172  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.175  ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -2.976 ; -8.703        ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.115  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 0.173  ; 0.000         ;
+; clk                                                                               ; 0.174  ; 0.000         ;
 +-----------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -407,8 +403,8 @@ Worst Case Available Settling Time: 37.996 ns
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -4.196 ; -119.980      ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 14.528 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -3.939 ; -105.499      ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 14.327 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -417,8 +413,8 @@ Worst Case Available Settling Time: 37.996 ns
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 2.480 ; 0.000         ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.747 ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 3.003 ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.513 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -427,13 +423,12 @@ Worst Case Available Settling Time: 37.996 ns
 +---------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                 ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------+---------+---------------+
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; 0.143   ; 0.000         ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; 0.153   ; 0.000         ;
 ; ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; 1.562   ; 0.000         ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; 1.666   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]       ; 1.666   ; 0.000         ;
-; clk                                                                                   ; 9.414   ; 0.000         ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.523  ; 0.000         ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.537 ; 0.000         ;
+; clk                                                                                   ; 9.412   ; 0.000         ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; 19.531  ; 0.000         ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 249.541 ; 0.000         ;
 +---------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -444,33 +439,31 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 38.218 ns
+Worst Case Available Settling Time: 39.514 ns
 
 
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multicorner Timing Analysis Summary                                                                                                                    ;
-+----------------------------------------------------------------------------------------+---------+----------+----------+---------+---------------------+
-; Clock                                                                                  ; Setup   ; Hold     ; Recovery ; Removal ; Minimum Pulse Width ;
-+----------------------------------------------------------------------------------------+---------+----------+----------+---------+---------------------+
-; Worst-case Slack                                                                       ; -5.417  ; -7.329   ; -8.135   ; 2.480   ; -0.394              ;
-;  clk                                                                                   ; 12.800  ; 0.172    ; N/A      ; N/A     ; 9.328               ;
-;  ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; N/A     ; N/A      ; N/A      ; N/A     ; 1.562               ;
-;  secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; N/A     ; N/A      ; N/A      ; N/A     ; 1.666               ;
-;  secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 13.800  ; 0.175    ; 11.187   ; 2.480   ; 249.238             ;
-;  vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -2.153  ; 0.116    ; -8.135   ; 3.747   ; -0.394              ;
-;  vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]       ; N/A     ; N/A      ; N/A      ; N/A     ; 1.666               ;
-;  vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; -5.417  ; -7.329   ; N/A      ; N/A     ; 19.149              ;
-; Design-wide TNS                                                                        ; -71.328 ; -165.996 ; -233.99  ; 0.0     ; -17.991             ;
-;  clk                                                                                   ; 0.000   ; 0.000    ; N/A      ; N/A     ; 0.000               ;
-;  ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; N/A     ; N/A      ; N/A      ; N/A     ; 0.000               ;
-;  secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; N/A     ; N/A      ; N/A      ; N/A     ; 0.000               ;
-;  secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 0.000   ; 0.000    ; 0.000    ; 0.000   ; 0.000               ;
-;  vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -55.018 ; 0.000    ; -233.990 ; 0.000   ; -17.991             ;
-;  vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]       ; N/A     ; N/A      ; N/A      ; N/A     ; 0.000               ;
-;  vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; -16.310 ; -165.996 ; N/A      ; N/A     ; 0.000               ;
-+----------------------------------------------------------------------------------------+---------+----------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------+----------+---------+----------+---------+---------------------+
+; Clock                                                                                  ; Setup    ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------------------------------------------------------------------------+----------+---------+----------+---------+---------------------+
+; Worst-case Slack                                                                       ; -6.058   ; -5.609  ; -7.704   ; 3.003   ; -0.394              ;
+;  clk                                                                                   ; 10.970   ; 0.174   ; N/A      ; N/A     ; 9.328               ;
+;  ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; N/A      ; N/A     ; N/A      ; N/A     ; 1.562               ;
+;  secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; N/A      ; N/A     ; N/A      ; N/A     ; 1.666               ;
+;  secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 14.371   ; 0.173   ; 10.903   ; 3.003   ; 249.247             ;
+;  vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -2.464   ; 0.113   ; -7.704   ; 3.513   ; -0.394              ;
+;  vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; -6.058   ; -5.609  ; N/A      ; N/A     ; 19.158              ;
+; Design-wide TNS                                                                        ; -185.326 ; -20.648 ; -206.59  ; 0.0     ; -16.573             ;
+;  clk                                                                                   ; 0.000    ; 0.000   ; N/A      ; N/A     ; 0.000               ;
+;  ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; N/A      ; N/A     ; N/A      ; N/A     ; 0.000               ;
+;  secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]             ; N/A      ; N/A     ; N/A      ; N/A     ; 0.000               ;
+;  secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk           ; 0.000    ; 0.000   ; 0.000    ; 0.000   ; 0.000               ;
+;  vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n        ; -55.285  ; 0.000   ; -206.590 ; 0.000   ; -16.573             ;
+;  vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk     ; -130.041 ; -20.648 ; N/A      ; N/A     ; 0.000               ;
++----------------------------------------------------------------------------------------+----------+---------+----------+---------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -532,11 +525,11 @@ Worst Case Available Settling Time: 38.218 ns
 +-------------+--------------+-----------------+-----------------+
 ; Pin         ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------------+--------------+-----------------+-----------------+
-; MISO        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; MISO        ; 3.3-V LVCMOS ; 2640 ps         ; 2640 ps         ;
 ; clk         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; Reset       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; PC[0]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; PC[1]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Reset       ; 3.3-V LVCMOS ; 2640 ps         ; 2640 ps         ;
+; PC[0]       ; 3.3-V LVCMOS ; 2640 ps         ; 2640 ps         ;
+; PC[1]       ; 3.3-V LVCMOS ; 2640 ps         ; 2640 ps         ;
 ; switches[8] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; switches[7] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; switches[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -583,23 +576,23 @@ Worst Case Available Settling Time: 38.218 ns
 ; VGA_VS      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; VGA_BLANK   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; VGA_SYNC    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; display1[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; display1[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; display1[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; display2[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; display2[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -637,23 +630,23 @@ Worst Case Available Settling Time: 38.218 ns
 ; VGA_VS      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_BLANK   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; VGA_SYNC    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; display1[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; display1[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; display1[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; display2[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; display2[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -691,23 +684,23 @@ Worst Case Available Settling Time: 38.218 ns
 ; VGA_VS      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; VGA_BLANK   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; VGA_SYNC    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; display1[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; display1[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; display1[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; display2[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; display2[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -745,23 +738,23 @@ Worst Case Available Settling Time: 38.218 ns
 ; VGA_VS      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; VGA_BLANK   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
 ; VGA_SYNC    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
-; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
-; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; MOSI        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; SCLK        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; CS          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; display1[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; display1[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; display1[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; display1[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; display1[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
-; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; display1[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; display1[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; display2[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; display2[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; display2[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
-; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; display2[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; display2[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; display2[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; display2[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -773,11 +766,11 @@ Worst Case Available Settling Time: 38.218 ns
 ; clk                                                                               ; clk                                                                               ; 573      ; 0        ; 0        ; 0        ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; clk                                                                               ; 8        ; 0        ; 0        ; 0        ;
 ; clk                                                                               ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 1        ; 0        ; 0        ; 0        ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 1852     ; 0        ; 0        ; 0        ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 266      ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 1650     ; 0        ; 0        ; 0        ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 265      ;
 ; clk                                                                               ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 9        ; 0        ; 0        ; 0        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 20       ; 171      ; 0        ; 0        ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 773      ; 2        ; 0        ; 563      ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 779      ; 2        ; 0        ; 608      ;
 +-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -790,11 +783,11 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; clk                                                                               ; clk                                                                               ; 573      ; 0        ; 0        ; 0        ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; clk                                                                               ; 8        ; 0        ; 0        ; 0        ;
 ; clk                                                                               ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 1        ; 0        ; 0        ; 0        ;
-; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 1852     ; 0        ; 0        ; 0        ;
-; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 266      ;
+; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; 1650     ; 0        ; 0        ; 0        ;
+; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 265      ;
 ; clk                                                                               ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 9        ; 0        ; 0        ; 0        ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 20       ; 171      ; 0        ; 0        ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 773      ; 2        ; 0        ; 563      ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 779      ; 2        ; 0        ; 608      ;
 +-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -804,8 +797,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                        ; To Clock                                                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk                                                                               ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 44       ; 0        ; 0        ; 0        ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 29       ;
+; clk                                                                               ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 40       ; 0        ; 0        ; 0        ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 27       ;
 +-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -815,8 +808,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                        ; To Clock                                                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk                                                                               ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 44       ; 0        ; 0        ; 0        ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 29       ;
+; clk                                                                               ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk    ; 40       ; 0        ; 0        ; 0        ;
+; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 27       ;
 +-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -841,7 +834,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 13    ; 13   ;
-; Unconstrained Input Port Paths  ; 366   ; 366  ;
+; Unconstrained Input Port Paths  ; 358   ; 358  ;
 ; Unconstrained Output Ports      ; 37    ; 37   ;
 ; Unconstrained Output Port Paths ; 66    ; 66   ;
 +---------------------------------+-------+------+
@@ -858,7 +851,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]               ; secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]               ; Generated ; Constrained ;
 ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk             ; secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk             ; Generated ; Constrained ;
 ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n          ; vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n          ; Base      ; Constrained ;
-; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]         ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]         ; Generated ; Constrained ;
 ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk       ; Generated ; Constrained ;
 +-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+-----------+-------------+
 
@@ -1001,7 +993,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 02 16:17:26 2024
+    Info: Processing started: Thu Oct 03 01:44:56 2024
 Info: Command: quartus_sta tictac -c tictac
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1014,7 +1006,6 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_clock -period 20.000 -waveform {0.000 10.000} -name clk clk
     Info (332110): create_generated_clock -source {ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin} -divide_by 5 -multiply_by 32 -duty_cycle 50.00 -name {ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]} {ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]}
     Info (332110): create_generated_clock -source {ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 20 -duty_cycle 50.00 -name {ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk} {ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk}
-    Info (332110): create_generated_clock -source {vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin} -divide_by 2 -multiply_by 12 -duty_cycle 50.00 -name {vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]} {vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]}
     Info (332110): create_generated_clock -source {vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 12 -duty_cycle 50.00 -name {vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk} {vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk}
     Info (332110): create_generated_clock -source {secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin} -divide_by 2 -multiply_by 12 -duty_cycle 50.00 -name {secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]} {secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]}
     Info (332110): create_generated_clock -source {secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 150 -duty_cycle 50.00 -name {secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk} {secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk}
@@ -1024,59 +1015,56 @@ Info (332105): Deriving Clocks
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[2]  to: clkout
+    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.417
+Info (332146): Worst-case setup slack is -6.058
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.417             -16.310 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -2.146             -55.018 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    12.800               0.000 clk 
-    Info (332119):    13.800               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -7.329
+    Info (332119):    -6.058            -130.041 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -2.440             -55.285 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    10.970               0.000 clk 
+    Info (332119):    14.371               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -5.557
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.329            -164.404 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.271               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):     0.368               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.375               0.000 clk 
-Info (332146): Worst-case recovery slack is -8.135
+    Info (332119):    -5.557             -16.642 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.266               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.350               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.377               0.000 clk 
+Info (332146): Worst-case recovery slack is -7.704
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.135            -233.990 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    11.187               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 3.754
+    Info (332119):    -7.704            -206.590 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    10.903               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 4.850
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.754               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     6.576               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     4.850               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     6.254               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -17.991 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    -0.394             -16.573 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.562               0.000 ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     1.666               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     9.400               0.000 clk 
-    Info (332119):    19.149               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   249.291               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.406               0.000 clk 
+    Info (332119):    19.158               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   249.295               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 37.014 ns
+    Info (332114): Worst Case Available Settling Time: 39.094 ns
     Info (332114): 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
@@ -1084,56 +1072,53 @@ Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[2]  to: clkout
+    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.769
+Info (332146): Worst-case setup slack is -5.467
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.769             -13.726 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -2.153             -54.079 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    12.902               0.000 clk 
-    Info (332119):    14.097               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -7.312
+    Info (332119):    -5.467            -115.683 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -2.464             -54.892 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    11.286               0.000 clk 
+    Info (332119):    14.762               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -5.609
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.312            -165.996 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.328               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):     0.371               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.391               0.000 clk 
-Info (332146): Worst-case recovery slack is -7.926
+    Info (332119):    -5.609             -20.648 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.322               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.332               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.393               0.000 clk 
+Info (332146): Worst-case recovery slack is -7.623
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.926            -228.452 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    11.685               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 3.496
+    Info (332119):    -7.623            -204.132 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    11.480               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 4.383
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.496               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     6.594               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     4.383               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     6.309               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -16.196 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    -0.394             -14.926 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.562               0.000 ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     1.666               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.328               0.000 clk 
-    Info (332119):    19.163               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   249.238               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    19.159               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   249.247               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 37.098 ns
+    Info (332114): Worst Case Available Settling Time: 39.091 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
@@ -1141,117 +1126,111 @@ Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[2]  to: clkout
+    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.006
+Info (332146): Worst-case setup slack is -4.850
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.006             -14.001 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -0.939             -23.316 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    15.223               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    15.789               0.000 clk 
-Info (332146): Worst-case hold slack is -4.148
+    Info (332119):    -4.850            -111.864 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -1.074             -23.545 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    13.796               0.000 clk 
+    Info (332119):    15.631               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -3.009
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.148             -92.404 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.116               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    -3.009              -8.056 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.113               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     0.182               0.000 clk 
-    Info (332119):     0.183               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is -4.346
+    Info (332119):     0.182               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case recovery slack is -4.047
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.346            -123.945 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    13.580               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 3.017
+    Info (332119):    -4.047            -108.431 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    13.382               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 3.555
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.017               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     3.809               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case minimum pulse width slack is 0.125
+    Info (332119):     3.555               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     3.701               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case minimum pulse width slack is 0.134
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.125               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.134               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.562               0.000 ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     1.666               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     9.412               0.000 clk 
-    Info (332119):    19.524               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   249.546               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.411               0.000 clk 
+    Info (332119):    19.525               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   249.547               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 37.996 ns
+    Info (332114): Worst Case Available Settling Time: 39.487 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[2]  to: clkout
+    Info (332098): Cell: ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
-    Info (332098): Cell: vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.110
+Info (332146): Worst-case setup slack is -3.812
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.110             -10.025 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -0.825             -19.848 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    15.977               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    15.996               0.000 clk 
-Info (332146): Worst-case hold slack is -4.074
+    Info (332119):    -3.812             -86.807 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -0.957             -20.368 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    14.548               0.000 clk 
+    Info (332119):    16.343               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -2.976
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.074             -91.806 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.117               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):     0.172               0.000 clk 
-    Info (332119):     0.175               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is -4.196
+    Info (332119):    -2.976              -8.703 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.115               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.173               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.174               0.000 clk 
+Info (332146): Worst-case recovery slack is -3.939
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.196            -119.980 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):    14.528               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 2.480
+    Info (332119):    -3.939            -105.499 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    14.327               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 3.003
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.480               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     3.747               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case minimum pulse width slack is 0.143
+    Info (332119):     3.003               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.513               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case minimum pulse width slack is 0.153
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.143               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.153               0.000 vgaTest:vgaTestins|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.562               0.000 ispiTest|iclk16Mhz|clk16mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     1.666               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     9.414               0.000 clk 
-    Info (332119):    19.523               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   249.537               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.412               0.000 clk 
+    Info (332119):    19.531               0.000 vgaTestins|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   249.541               0.000 secs|second_clk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 38.218 ns
+    Info (332114): Worst Case Available Settling Time: 39.514 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5228 megabytes
-    Info: Processing ended: Wed Oct 02 16:17:37 2024
+    Info: Peak virtual memory: 5227 megabytes
+    Info: Processing ended: Thu Oct 03 01:45:07 2024
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:12
 

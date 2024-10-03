@@ -1,7 +1,7 @@
 #include <SPI.h>
 
 // Pines de los botones
-const int buttonPins[9] = {2,  3, 4, 5, 6, 7, 8, 9, 10};  
+const int buttonPins[9] = {2,  3, 4, 5, 6, 7, 8, 9, 14};  
 bool botonActual[9] = {LOW, LOW, LOW, LOW, LOW, LOW, LOW, LOW, LOW};
 bool botonAnterior[9] = {LOW, LOW, LOW, LOW, LOW, LOW, LOW, LOW, LOW};
 

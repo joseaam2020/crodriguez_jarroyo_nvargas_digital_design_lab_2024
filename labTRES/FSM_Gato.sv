@@ -11,6 +11,7 @@ module FSM_Gato (
     output logic Reiniciar,
     output logic Reset_timer,
     output logic Jug,
+    output logic random,
     input logic clk
 );
 
@@ -68,6 +69,8 @@ always_comb begin
     tiempo_jug1 = 0;
     tiempo_jug2 = 0;
     interrupt_mayor0 = 0;
+    random = 0;
+    
 
     // Combinational logic for state transitions
     case (state)
@@ -161,6 +164,12 @@ always_comb begin
         Actualizar = 1;
     end else begin
         Gano = 0;
+    end
+
+    if ((enfila == 0) && (state == state4)) begin
+        random = 1;
+    end else begin
+        random = 0;
     end
 end
 

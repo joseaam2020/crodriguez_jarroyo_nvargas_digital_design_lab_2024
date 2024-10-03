@@ -35,6 +35,7 @@ logic t0;
 logic valido;
 logic [2:0] Arduino;
 logic [2:0][2:0][1:0] matriz_juego = '{default: 2'b00}; // Initializing all elements to '00'
+logic random;
 
 //////////// Switches //////////
 logic [3:0] posicion_FPGA;
@@ -99,13 +100,13 @@ FSM_Gato FSMins (
 
 	//Input
 	.clk(clk),
-	.PC(!PC),
+	.PC(PC),
 	.t0(t0),
 	.interrupt(posicion),
 	.valido(valido),
 	.todoLleno(lleno),
 	.enfila(ganador),
-	.Reset(!Reset),
+	.Reset(Reset),
 	
 	//Ouput
 	.Arduino(Arduino),
@@ -113,7 +114,8 @@ FSM_Gato FSMins (
 	.Gano(Gano),
 	.Reiniciar(Reiniciar),
 	.Reset_timer(Reset_timer),
-	.Jug(jug)
+	.Jug(jug),
+	.random(random)
 	
 	
 );	
@@ -129,8 +131,9 @@ TresenFila TresenFilains(
 
 
 //////////// Cronometro //////////
-logic [3:0] seconds;
-logic clk_2Mhz;
+logic [3:0] seconds = '{default: '0};
+logic clk_2Mhz = 0;
+logic locked_2Mhz = 0;
 
 assign t0 = seconds == 4'd15;
 
@@ -138,7 +141,7 @@ second_clk secs (
 	.refclk(clk), //input
 	.rst(Reset), //input
 	.outclk_0(clk_2Mhz), //output
-	.locked()
+	.locked(locked_2Mhz)
 );
 
 cronometer cronometerins(
@@ -174,7 +177,7 @@ end
 actualizar actualizarins(
 	//inputs
 	.clk(clk),
-	.reset(!Reset),
+	.reset(Reset),
 	.matriz_juego(old_juego),
 	.posicion(posicion),
 	.Jug(jug),
@@ -191,7 +194,7 @@ vgaTest vgaTestins(
 	//Input
 	.MAX10_CLK1_50(clk),
 	.matriz_juego(matriz_juego),
-	.reset(!Reset),
+	.reset(Reset),
 	
 	//Output
 	.VGA_CLK(VGA_CLK),
@@ -204,12 +207,24 @@ vgaTest vgaTestins(
 	.VGA_SYNC(VGA_SYNC)
 
 );
+//////////// Random Posicion //////////
+logic [3:0] posicion_random;
+
+random_number_position irand (
+    .juego(matriz_juego),  
+    .position(posicion_random),              
+);
+
 
 //////////// MUX Posicion //////////
-logic [1:0][3:0] posicion_in;
+logic [3:0][3:0] posicion_in;
 assign posicion_in[0] = posicion_FPGA; 
 assign posicion_in[1] = posicion_Arduino;
-
+assign posicion_in[2] = posicion_random;
+assign posicion_in[3] = posicion_random;
+logic [1:0] s;
+assign s[0] = jug;
+assign s[1] = random;
 	
 mux2to1 #(4) nuevo_mux (	
 	.s(jug),

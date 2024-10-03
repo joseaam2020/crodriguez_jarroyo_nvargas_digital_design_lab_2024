@@ -60,7 +60,7 @@ module maintb;
     MISO = 0;
 
     #20 Reset = 1;
-    #20 Reset = 0;
+    #500 Reset = 0;
 
     #100 PC = 1; //FPGA
     #100 switches = 9'b000000001; 
