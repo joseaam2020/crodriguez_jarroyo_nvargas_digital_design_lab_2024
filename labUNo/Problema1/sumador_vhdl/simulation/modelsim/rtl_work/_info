@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/simulation/modelsim
+Esumador_tb
+Z1 w1722965602
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_tb.vhd
+Z5 FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_tb.vhd
+l0
+L4 1
+VdWF>_M>CbX?Aje<l=_C1h0
+!s100 Wk4G]T8bTW:U80fYG726`0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1722966832
+!i10b 1
+Z8 !s108 1722966832.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_tb.vhd|
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_tb.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 10 sumador_tb 0 22 dWF>_M>CbX?Aje<l=_C1h0
+!i122 1
+l39
+L7 91
+Vl>ODC>kajEmYS[ZFTJ?EM1
+!s100 HQ3ebl4S[W>oWkOh9?=fk0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_tb.vhd|
+!i113 1
+R10
+R11
+Esumador_vhdl
+Z13 w1722966792
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_vhdl.vhd
+Z15 FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_vhdl.vhd
+l0
+L4 1
+V^A9XE=bG4_BBK=:BZf<M^3
+!s100 PaSbjBlPJF:0Kz]U`PZFX3
+R6
+31
+Z16 !s110 1722966831
+!i10b 1
+Z17 !s108 1722966831.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_vhdl.vhd|
+Z19 !s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/Problema1/sumador_vhdl/sumador_vhdl.vhd|
+!i113 1
+R10
+R11
+Abehavioral
+R2
+R3
+DEx4 work 12 sumador_vhdl 0 22 ^A9XE=bG4_BBK=:BZf<M^3
+!i122 0
+l41
+L29 52
+VB>[hOI<[2lSaG9BkChQ4k2
+!s100 cz`]EhSmTZiY5d[>GA8F22
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R10
+R11

@@ -1,0 +1,14 @@
+|sumador_vhdl
+a => s.IN0
+a => O.IN0
+a => O.IN0
+b => s.IN1
+b => O.IN1
+b => O.IN0
+c => s.IN1
+c => O.IN1
+c => O.IN1
+O << O.DB_MAX_OUTPUT_PORT_TYPE
+s << s.DB_MAX_OUTPUT_PORT_TYPE
+
+

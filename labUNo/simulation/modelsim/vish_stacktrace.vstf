@@ -1,0 +1,27 @@
+# Current time Sat Aug 03 19:21:36 2024
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 73e62507. Traceback:
+# 0    0x73e62507: '<unknown (@0x73e62507)>'
+# 1    0x7569c623: 'CoReleaseMarshalData + 0x4073'
+# 2    0x77785f2e: 'RtlAllocateHeap + 0x3e'
+# 3    0x777863cf: 'RtlAllocateHeap + 0x4df'
+# 4    0x756e31fe: 'CoSwitchCallContext + 0x36e'
+# 5    0x77785f2e: 'RtlAllocateHeap + 0x3e'
+# 6    0x73e65019: 'Tkdnd_SafeInit + 0x89'
+# 7    0x76ef6df7: 'GetSystemMetricsForDpi + 0x2b7'
+# 8    0x73e6169a: '<unknown (@0x73e6169a)>'
+# 9    0x76ef60cc: 'PostMessageW + 0x9c'
+# 10   0x76ef6ce6: 'GetSystemMetricsForDpi + 0x1a6'
+# 11   0x75b1b2ac: 'OleQueryLinkFromData + 0x2ec'
+# 12   0x76f01b7b: 'AddClipboardFormatListener + 0x4b'
+# 13   0x76ef7fca: 'GetClassLongW + 0x7aa'
+# 14   0x75bb0d0b: 'GetActiveObjectExt + 0x975b'
+StackWalk failed 299
+# End of Stack Trace
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="simulation/spi_master.v" type="VERILOG" />
+ <topLevel name="spi_master" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

@@ -1,0 +1,17 @@
+# system info spi_master on 2024.09.30.16:05:35
+system_info:
+name,value
+DEVICE,5CSXFC6D6F31C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1727733934
+#
+#
+# Files generated for spi_master on 2024.09.30.16:05:35
+files:
+filepath,kind,attributes,module,is_top
+simulation/spi_master.v,VERILOG,,spi_master,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+spi_master.spi_0,spi_master_spi_0

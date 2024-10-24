@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/simulation/modelsim
+vcomparator
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1725988265
+!i10b 1
+!s100 XAO7^_4=I;zhk>5=RN:Ao2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IETm:c_?OnRDkbamc9HZ2B3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1725985304
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/comparator.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/comparator.sv
+!i122 3
+L0 1 6
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1725988265.000000
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/comparator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/comparator.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2
+Z9 tCvgOpt 0
+vcounter
+R1
+R2
+!i10b 1
+!s100 =TCjge;PPDIoXiLJ4Xnj]1
+R3
+IA=GB1];XRG`VE6nTDP[kl1
+R4
+S1
+R0
+w1725986837
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/counter.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/counter.sv
+!i122 4
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/counter.sv|
+!i113 1
+R7
+R8
+R9
+vFSM
+R1
+!s110 1725988264
+!i10b 1
+!s100 PkPSdMjFcj;BD_:9i^aYl2
+R3
+Ib`RHk?h4l>2zKnVN:IbTE0
+R4
+S1
+R0
+w1725988207
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/FSM.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/FSM.sv
+!i122 0
+L0 1 30
+R5
+r1
+!s85 0
+31
+Z10 !s108 1725988264.000000
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/FSM.sv|
+!i113 1
+R7
+R8
+R9
+n@f@s@m
+vmantenimiento
+R1
+Z11 !s110 1725988266
+!i10b 1
+!s100 T<>1Y;`;Z]A]CLcT0SNMH3
+R3
+Ih0czch;g]3_FHO@Sd4NQj3
+R4
+S1
+R0
+w1725985336
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento.sv
+!i122 5
+L0 1 15
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento.sv|
+!i113 1
+R7
+R8
+R9
+vmantenimiento_tb
+R1
+R11
+!i10b 1
+!s100 [W^hNjQ<@an9aB9mVW_oi2
+R3
+I9]K17TlO7HJBB^`Imnn1N1
+R4
+S1
+R0
+w1725987945
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento_tb.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento_tb.sv
+!i122 6
+L0 1 70
+R5
+r1
+!s85 0
+31
+!s108 1725988266.000000
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/mantenimiento_tb.sv|
+!i113 1
+R7
+R8
+R9
+vMux_2_to_1
+R1
+R2
+!i10b 1
+!s100 hEa>@15oEH7]@UHJaT3AB3
+R3
+I;XCfQ6bWN[gTLYe6F[l_K2
+R4
+S1
+R0
+w1725985324
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/Mux_2_to_1.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/Mux_2_to_1.sv
+!i122 1
+L0 1 7
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/Mux_2_to_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/Mux_2_to_1.sv|
+!i113 1
+R7
+R8
+R9
+n@mux_2_to_1
+vregister
+R1
+R2
+!i10b 1
+!s100 V[KfjTF_V05KRO>BUa]YS2
+R3
+IWMT]]WmJUROO:d^=E3z8g0
+R4
+S1
+R0
+w1725986835
+8C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/register.sv
+FC:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/register.sv
+!i122 2
+L0 1 16
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2|C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Tarea2/register.sv|
+!i113 1
+R7
+R8
+R9
