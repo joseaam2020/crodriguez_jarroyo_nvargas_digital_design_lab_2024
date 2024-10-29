@@ -3,13 +3,9 @@ Para el manejo de la imagen y los pixeles de la misma se puede usar una libería
 ya que esto se va a hacer de otra forma (ya conocida) en Cpulator
 '''
 
-
-
-
-
 from PIL import Image
-from mult import multiplicar
-from div import division
+#from mult import multiplicar
+#from div import division
 
 def sepia_filter(img_sepia):
 
@@ -30,18 +26,64 @@ def sepia_filter(img_sepia):
         for px in range(width):
             r, g, b = img_sepia.getpixel((px, py)) # Cambiarlo para que sean los de la lista
 
+            # Valores predefinidos para crear el filtro
+            # Valores para el rojo
+            rr = 393
+            rg = 769
+            rb = 189
+
+            # Valores para el verde
+            gr = 349
+            gg = 686
+            gb = 168
+
+            # Valores para el azul
+            br = 272
+            bg = 534
+            bb = 131
+
+
+            # Operaciones para el filtro
+            # Multiplicar
+            # Para el rojo
+            rojo1 = (r * rr)
+            rojo2 = (g * rg)
+            rojo3 = (b * rb)
+
+            # Para el verde
+            verde1 = r * gr
+            verde2 = g * gg
+            verde3 = b * gb
+
+            # Para el azul
+            azul1 = r * br
+            azul2 = g * bg
+            azul3 = b * bb
+
+            # Dividir
+            # Para el rojo
+            rojo1 /= 1000
+            rojo2 /= 1000
+            rojo3 /= 1000
+
+            # Para el verde
+            verde1 /= 1000
+            verde2 /= 1000
+            verde3 /= 1000
+
+            # Para el azul
+            azul1 /= 1000
+            azul2 /= 1000
+            azul3 /= 1000
+
+
             #Arreglar lo del int (usar la otra función de división)
-            outputRed = int(division(multiplicar(r,393), 1000) +
-                            division(multiplicar(g,769), 1000) +
-                            division(multiplicar(b,189), 1000))
+            outputRed = int(rojo1 + rojo2 + rojo3)
 
-            outputGreen = int(division(multiplicar(r, 349), 1000) +
-                            division(multiplicar(g, 686), 1000) +
-                            division(multiplicar(b, 168), 1000))
+            outputGreen = int(verde1 + verde2 + verde3)
 
-            outputBlue = int(division(multiplicar(r, 272), 1000) +
-                            division(multiplicar(g, 534), 1000) +
-                            division(multiplicar(b, 131), 1000))
+
+            outputBlue = int(azul1 + azul2 + azul3)
 
             # Asegurar que los valores no excedan 255
             if outputRed > 255:
