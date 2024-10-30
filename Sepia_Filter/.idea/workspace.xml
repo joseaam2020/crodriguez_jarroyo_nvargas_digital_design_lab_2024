@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca6eece5-61ae-4f5c-8291-6ee51fd01d55" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/filtro.py" beforeDir="false" afterPath="$PROJECT_DIR$/filtro.py" afterDir="false" />
-    </list>
+    <list default="true" id="ca6eece5-61ae-4f5c-8291-6ee51fd01d55" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,23 +69,12 @@
       <workItem from="1729900064728" duration="35000" />
       <workItem from="1730224076278" duration="1329000" />
       <workItem from="1730297522022" duration="48000" />
-      <workItem from="1730311236977" duration="566000" />
+      <workItem from="1730311236977" duration="767000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/div.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sepia_Filter$m2.coverage" NAME="m2 Coverage Results" MODIFIED="1729783268923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
