@@ -3,6 +3,8 @@ Para el manejo de la imagen y los pixeles de la misma se puede usar una libería
 ya que esto se va a hacer de otra forma (ya conocida) en Cpulator
 '''
 
+# Debo cambiar la lista de los pixeles?
+
 from PIL import Image
 #from mult import multiplicar
 #from div import division
