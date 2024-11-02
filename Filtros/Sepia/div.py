@@ -41,5 +41,5 @@ def division(dividendo, divisor):
         residuo -= divisor  # Restamos el divisor del residuo
         cociente += 1  # Incrementamos el cociente en cada iteración
     return cociente, residuo  # El cociente es el resultado de la división, y el residuo es lo que sobra
+    sepia_img.show()
     '''
-sepia_img.show()
