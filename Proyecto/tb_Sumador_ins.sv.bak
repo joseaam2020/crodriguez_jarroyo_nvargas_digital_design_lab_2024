@@ -1,0 +1,50 @@
+module tb_Sumador_ins;
+
+    parameter N = 4;
+
+    logic [N-1:0] a;
+    logic [N-1:0] b;
+    logic cin;
+    logic cout_sumador;
+    logic [N-1:0] s_sumador;
+
+    Sumador_estructural #(N) uut (
+        .a(a),
+        .b(b),
+        .cin(cin),
+        .cout_sumador(cout_sumador),
+        .s_sumador(s_sumador)
+    );
+
+    initial begin
+      
+        
+
+        
+	
+        a = 4'b0000; b = 4'b0000; cin = 0;
+        #10;
+      
+
+        // Caso 2: a = 0001, b = 0001, cin = 0
+        a = 4'b0001; b = 4'b0001; cin = 0;
+        #10;
+        $display("%0t   | %b | %b |  %b  |    %b    |      %b",          
+
+        // Caso 3: a = 0010, b = 0011, cin = 1
+        a = 4'b0010; b = 4'b0011; cin = 1;
+        #10;
+      
+
+        // Caso 4: a = 1111, b = 1111, cin = 1
+        a = 4'b1111; b = 4'b1111; cin = 1;
+        #10;
+       
+
+        // Puedes agregar más casos si es necesario
+
+        // Finaliza la simulación
+        #10;
+      
+    end
+endmodule

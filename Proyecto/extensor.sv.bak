@@ -1,0 +1,17 @@
+module extensor #(parameter M = 4, parameter N = 8) (
+    input logic [M-1:0] in,
+    input logic sign_extend,   // 1 para extensión de signo, 0 para extensión de ceros
+    output logic [N-1:0] out
+);
+
+    always_comb begin
+        if (sign_extend) begin
+            // Extensión de signo
+            out = {{(N-M){in[M-1]}}, in};
+        end else begin
+            // Extensión de cero
+            out = {{(N-M){1'b0}}, in};
+        end
+    end
+
+endmodule
