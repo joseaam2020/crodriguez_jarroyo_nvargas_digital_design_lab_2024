@@ -86,8 +86,9 @@ always_ff @(posedge clk or posedge rst) begin
 			4'b1111: regs[15] = wd3;
 			default: regs[0] = regs[0];  // Valor por defecto si se sale del rango de 4 bits
 		endcase
+		regs[15] = r15;
 	end	else begin
-		regs[0] = regs[0];
+		regs[15] = r15;
 	end
 end
 

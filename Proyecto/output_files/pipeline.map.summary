@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Tue Nov 05 19:59:41 2024
+Analysis & Synthesis Status : Successful - Wed Nov 06 16:11:59 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : pipeline
-Top-level Entity Name : registros
+Top-level Entity Name : uniciclo
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 512
-Total pins : 143
+Total registers : 0
+Total pins : 2
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

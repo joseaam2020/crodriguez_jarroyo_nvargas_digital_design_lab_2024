@@ -2,8 +2,7 @@ module aluPara #(parameter N = 4) (
 	
 	input logic [N-1:0] a,
 	input logic [N-1:0] b,	
-	input logic selector,
-	input logic reset,
+	input logic [3:0] selector,
 
 	output logic [N-1:0] resultado,
 	output logic [6:0] display_selector1,
@@ -15,27 +14,12 @@ module aluPara #(parameter N = 4) (
 	output logic overflow_flag,
 	output logic negative_flag 
 );
-
-	//Se define Contador
-	logic we_selector;
-	logic [3:0] wq_selector = 4'b1001; //write q 
-	logic [3:0] q_selector;
 	
-	restPara #(4) contador_selector(
-		.clk(selector),
-		.reset(reset),
-		.we(we_selector),
-		.wq(wq_selector),
-		.q(q_selector),
-		.display1(display_selector1),
-		.display2(display_selector2)
-	); 
-
 	//Se define Mux 
     logic [15:0][N-1:0] mux_in;
 	
 	mux16to1 #(N) nuevo_mux (	
-        .s(q_selector),
+        .s(selector),
         .in(mux_in),  
         .out(resultado) 
     );
@@ -87,10 +71,10 @@ module aluPara #(parameter N = 4) (
 	logic a_and_b_opuestos;
 	
 	assign cout = cout_sumador | cout_restador;
-	assign sumador_restador_seleccionado = (q_selector == 1 | q_selector == 0); 
+	assign sumador_restador_seleccionado = (selector == 1 | selector == 0); 
 	assign a_and_s_opuestos = (a[N-1] ^ mux_in[0][N-1]) | (a[N-1] ^ mux_in[1][N-1]); 
-	assign a_and_b_mismo_signo = (a[N-1] ~^ b[N-1]) & (q_selector == 0);
-	assign a_and_b_opuestos = (a[N-1] ^ b[N-1]) & (q_selector == 1);
+	assign a_and_b_mismo_signo = (a[N-1] ~^ b[N-1]) & (selector == 0);
+	assign a_and_b_opuestos = (a[N-1] ^ b[N-1]) & (selector == 1);
 	
 	//Se definen flags
 	assign zero_flag = (resultado == 0);
@@ -98,14 +82,6 @@ module aluPara #(parameter N = 4) (
 	assign negative_flag = resultado[N-1];
 	assign overflow_flag = sumador_restador_seleccionado & a_and_s_opuestos & (a_and_b_mismo_signo | a_and_b_opuestos); 
 
-	//Se define comportamiento para el funcionamiento del selector de operaciones 
-	always_comb begin
-		if (q_selector > 4'b1001) begin
-			we_selector = 1'b1;
-		end else begin
-			we_selector = 1'b0;
-		end	
-	end
 	
 	//Se escribe resultado en 7 segmentos
 	//logic [3:0] bin_in1;
