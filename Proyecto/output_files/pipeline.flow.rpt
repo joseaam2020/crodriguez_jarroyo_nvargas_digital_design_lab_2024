@@ -1,5 +1,5 @@
 Flow report for pipeline
-Sat Nov 02 20:57:47 2024
+Tue Nov 05 20:02:45 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,24 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sat Nov 02 20:57:47 2024       ;
-; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name               ; pipeline                                    ;
-; Top-level Entity Name       ; extensor                                    ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CGXFC7C7F23C8                              ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Tue Nov 05 20:02:45 2024       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; pipeline                                    ;
+; Top-level Entity Name           ; registros                                   ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CGXFC7C7F23C8                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 347 / 56,480 ( < 1 % )                      ;
+; Total registers                 ; 512                                         ;
+; Total pins                      ; 143 / 268 ( 53 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
+; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2024 20:56:43 ;
+; Start date & time ; 11/05/2024 19:59:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
@@ -74,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 228800457882635.173060260218728        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 10995770589200.173085835015824         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Sumador_ins ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_sumador     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_extensor    ;
@@ -94,39 +99,53 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; extensor    ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; extensor    ; Top            ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; extensor    ; Top            ;
+; MISC_FILE                            ; ram_bb.v                               ; --            ; --          ; --             ;
+; MISC_FILE                            ; rom_bb.v                               ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; registros   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; registros   ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; registros   ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; extensor                               ; pipeline      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; registros                              ; pipeline      ; --          ; --             ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:01:06     ; 1.0                     ; 4753 MB             ; 00:00:52                           ;
-; Total                  ; 00:01:06     ; --                      ; --                  ; 00:00:52                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4834 MB             ; 00:00:11                           ;
+; Fitter               ; 00:02:28     ; 1.0                     ; 7247 MB             ; 00:02:48                           ;
+; Assembler            ; 00:00:16     ; 1.0                     ; 4841 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:11     ; 1.5                     ; 5286 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4735 MB             ; 00:00:01                           ;
+; Total                ; 00:03:29     ; --                      ; --                  ; 00:03:12                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-UMDOO3C  ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
+quartus_fit --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+quartus_asm --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+quartus_sta pipeline -c pipeline
+quartus_eda --read_settings_files=off --write_settings_files=off pipeline -c pipeline
 
 
 

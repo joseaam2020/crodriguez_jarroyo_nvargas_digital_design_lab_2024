@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sat Nov 02 20:53:54 2024
+Fitter Status : Successful - Tue Nov 05 20:02:11 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : pipeline
-Top-level Entity Name : extensor
+Top-level Entity Name : registros
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 56,480 ( < 1 % )
-Total registers : 0
-Total pins : 13 / 268 ( 5 % )
+Logic utilization (in ALMs) : 347 / 56,480 ( < 1 % )
+Total registers : 512
+Total pins : 143 / 268 ( 53 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )
