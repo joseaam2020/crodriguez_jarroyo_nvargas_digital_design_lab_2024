@@ -80,3 +80,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE extensor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tb_extensor.sv
 set_global_assignment -name HEX_FILE imagen.hex
 set_global_assignment -name QIP_FILE ram.qip
+set_global_assignment -name HEX_FILE instrucciones.hex
+set_global_assignment -name QIP_FILE rom.qip
