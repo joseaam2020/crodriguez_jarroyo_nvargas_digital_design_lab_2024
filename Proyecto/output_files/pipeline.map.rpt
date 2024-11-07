@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Thu Nov 07 02:21:38 2024
+Thu Nov 07 03:04:43 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,26 +14,27 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis IP Cores Summary
- 10. Registers Protected by Synthesis
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated
- 15. Source assignments for vgaTest:vga|vga_controller:vga_ins
- 16. Parameter Settings for User Entity Instance: Top-level Entity: |imagenPrintTest
- 17. Parameter Settings for User Entity Instance: ram:memoriaDatos|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: vgaTest:vga
- 19. Parameter Settings for User Entity Instance: vgaTest:vga|vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i
- 20. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins
- 21. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins
- 22. altsyncram Parameter Settings by Entity Instance
- 23. Port Connectivity Checks: "vgaTest:vga|vga_pll:u1"
- 24. Port Connectivity Checks: "ram:memoriaDatos"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. Analysis & Synthesis IP Cores Summary
+ 11. Registers Protected by Synthesis
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated
+ 16. Source assignments for vgaTest:vga|vga_controller:vga_ins
+ 17. Parameter Settings for User Entity Instance: Top-level Entity: |imagenPrintTest
+ 18. Parameter Settings for User Entity Instance: ram:memoriaDatos|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: vgaTest:vga
+ 20. Parameter Settings for User Entity Instance: vgaTest:vga|vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i
+ 21. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins
+ 22. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins
+ 23. altsyncram Parameter Settings by Entity Instance
+ 24. Port Connectivity Checks: "vgaTest:vga|vga_pll:u1"
+ 25. Port Connectivity Checks: "ram:memoriaDatos"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -60,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 07 02:21:38 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 07 03:04:43 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; pipeline                                    ;
 ; Top-level Entity Name           ; imagenPrintTest                             ;
@@ -70,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 ; Total pins                      ; 31                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,507,328                                   ;
-; Total DSP Blocks                ; 0                                           ;
+; Total DSP Blocks                ; 1                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -220,14 +221,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 155       ;
+; Estimate of Logic utilization (ALMs needed) ; 149       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 253       ;
+; Combinational ALUT usage for logic          ; 241       ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 55        ;
 ;     -- 5 input functions                    ; 33        ;
 ;     -- 4 input functions                    ; 7         ;
-;     -- <=3 input functions                  ; 158       ;
+;     -- <=3 input functions                  ; 146       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 153       ;
 ;                                             ;           ;
@@ -235,15 +236,15 @@ https://fpgasoftware.intel.com/eula.
 ; Total MLAB memory bits                      ; 0         ;
 ; Total block memory bits                     ; 1507328   ;
 ;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
+; Total DSP Blocks                            ; 1         ;
 ;                                             ;           ;
 ; Total PLLs                                  ; 1         ;
 ;     -- PLLs                                 ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 228       ;
-; Total fan-out                               ; 4330      ;
-; Average fan-out                             ; 6.63      ;
+; Total fan-out                               ; 4325      ;
+; Average fan-out                             ; 6.74      ;
 +---------------------------------------------+-----------+
 
 
@@ -252,7 +253,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name          ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |imagenPrintTest                          ; 253 (130)           ; 153 (39)                  ; 1507328           ; 0          ; 31   ; 0            ; |imagenPrintTest                                                                                                        ; imagenPrintTest      ; work         ;
+; |imagenPrintTest                          ; 241 (118)           ; 153 (39)                  ; 1507328           ; 1          ; 31   ; 0            ; |imagenPrintTest                                                                                                        ; imagenPrintTest      ; work         ;
 ;    |ram:memoriaDatos|                     ; 8 (0)               ; 3 (0)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos                                                                                       ; ram                  ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 8 (0)               ; 3 (0)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component                                                       ; altsyncram           ; work         ;
 ;          |altsyncram_njo1:auto_generated| ; 8 (0)               ; 3 (3)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated                        ; altsyncram_njo1      ; work         ;
@@ -274,6 +275,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+------------+
 ; ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 65536        ; 32           ; --           ; --           ; 2097152 ; imagen.hex ;
 +--------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+------------+
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Two Independent 18x18           ; 1           ;
+; Total number of DSP blocks      ; 1           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -817,27 +830,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 16                          ;
 ;     ENA CLR SCLR      ; 10                          ;
 ;     plain             ; 59                          ;
-; arriav_lcell_comb     ; 253                         ;
-;     arith             ; 105                         ;
-;         1 data inputs ; 96                          ;
-;         2 data inputs ; 9                           ;
-;     normal            ; 132                         ;
+; arriav_lcell_comb     ; 241                         ;
+;     arith             ; 94                          ;
+;         1 data inputs ; 92                          ;
+;         2 data inputs ; 2                           ;
+;     normal            ; 131                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 26                          ;
 ;         3 data inputs ; 8                           ;
 ;         4 data inputs ; 7                           ;
 ;         5 data inputs ; 33                          ;
 ;         6 data inputs ; 55                          ;
 ;     shared            ; 16                          ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 11                          ;
+;         2 data inputs ; 16                          ;
+; arriav_mac            ; 1                           ;
 ; boundary_port         ; 31                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 184                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.16                        ;
+; Average LUT depth     ; 1.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -846,7 +859,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -856,7 +869,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 07 02:21:18 2024
+    Info: Processing started: Thu Nov 07 03:04:34 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -1094,17 +1107,18 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/output_files/pipeline.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 478 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 467 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 262 logic cells
+    Info (21061): Implemented 250 logic cells
     Info (21064): Implemented 184 RAM segments
     Info (21065): Implemented 1 PLLs
+    Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
     Info: Peak virtual memory: 4907 megabytes
-    Info: Processing ended: Thu Nov 07 02:21:38 2024
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Processing ended: Thu Nov 07 03:04:43 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +------------------------------------------+
