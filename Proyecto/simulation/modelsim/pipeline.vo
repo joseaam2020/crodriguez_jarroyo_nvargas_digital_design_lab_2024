@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
-// DATE "11/07/2024 03:06:14"
+// DATE "11/07/2024 03:19:49"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -2746,7 +2746,7 @@ defparam \VGA_BLANK~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X70_Y0_N53
 cyclonev_io_obuf \VGA_SYNC~output (
-	.i(\vga|vga_ins|oBLANK_n~q ),
+	.i(!\vga|vga_ins|oBLANK_n~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Thu Nov 07 03:04:43 2024
+Thu Nov 07 03:18:32 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 07 03:04:43 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 07 03:18:31 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; pipeline                                    ;
 ; Top-level Entity Name           ; imagenPrintTest                             ;
@@ -181,7 +181,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -830,13 +831,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 16                          ;
 ;     ENA CLR SCLR      ; 10                          ;
 ;     plain             ; 59                          ;
-; arriav_lcell_comb     ; 241                         ;
+; arriav_lcell_comb     ; 242                         ;
 ;     arith             ; 94                          ;
 ;         1 data inputs ; 92                          ;
 ;         2 data inputs ; 2                           ;
-;     normal            ; 131                         ;
+;     normal            ; 132                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 26                          ;
 ;         3 data inputs ; 8                           ;
 ;         4 data inputs ; 7                           ;
@@ -869,7 +870,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 07 03:04:34 2024
+    Info: Processing started: Thu Nov 07 03:18:23 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -1115,10 +1116,10 @@ Info (21057): Implemented 467 device resources after synthesis - the final resou
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4907 megabytes
-    Info: Processing ended: Thu Nov 07 03:04:43 2024
+    Info: Peak virtual memory: 4913 megabytes
+    Info: Processing ended: Thu Nov 07 03:18:32 2024
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +------------------------------------------+

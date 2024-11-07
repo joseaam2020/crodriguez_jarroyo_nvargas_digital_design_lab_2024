@@ -49,7 +49,7 @@ vga_controller vga_ins(
 
 always_comb begin
 	
-	VGA_SYNC = VGA_BLANK;
+	VGA_SYNC = ~VGA_BLANK;
 	VGA_CLK = MAX10_CLK1_50;
 	
 end
