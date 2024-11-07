@@ -1,0 +1,62 @@
+`timescale 1ns/1ps 
+module imagenPrintTest_tb;
+
+    // Declaración de señales de entrada
+    logic clk;
+    logic rst;
+
+    // Declaración de señales de salida
+    logic VGA_CLK;
+    logic [7:0] VGA_B;
+    logic [7:0] VGA_G;
+    logic [7:0] VGA_R;
+    logic VGA_HS;
+    logic VGA_VS;
+    logic VGA_BLANK;
+    logic VGA_SYNC;
+
+    // Instanciación del módulo a testear
+    imagenPrintTest uut (
+        .clk(clk),
+        .rst(rst),
+        .VGA_CLK(VGA_CLK),
+        .VGA_B(VGA_B),
+        .VGA_G(VGA_G),
+        .VGA_R(VGA_R),
+        .VGA_HS(VGA_HS),
+        .VGA_VS(VGA_VS),
+        .VGA_BLANK(VGA_BLANK),
+        .VGA_SYNC(VGA_SYNC)
+    );
+
+    // Generación del reloj
+    initial begin
+        clk = 0;
+        forever #10 clk = ~clk;  // Genera un reloj con periodo de 10 unidades
+    end
+
+    // Secuencia de prueba
+    initial begin
+        // Inicializar señales
+        rst = 0;
+
+        // Reiniciar la simulación
+        #10 rst = 1;   // Activar el reset
+        #10 rst = 0;   // Desactivar el reset
+
+        // Esperar algunos ciclos para observar la salida
+        #50;
+
+        // Puedes agregar más pruebas o cambios de señales aquí
+
+        // Finalizar la simulación después de un cierto tiempo
+        
+    end
+
+    // Monitoreo de señales (esto es opcional para ver los valores en el simulador)
+    initial begin
+        $monitor("At time %t, VGA_R = %h, VGA_G = %h, VGA_B = %h, VGA_HS = %b, VGA_VS = %b", 
+                 $time, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS);
+    end
+
+endmodule

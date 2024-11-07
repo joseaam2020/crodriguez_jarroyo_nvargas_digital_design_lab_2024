@@ -162,9 +162,9 @@ mux16to1 #(.N(32)) aluMemMux (
 
 always_ff @(posedge clk) begin
     if(~pc4_overflow) begin
-        pc = pc_; //En cada clock actualice pc
+        pc <= pc_; //En cada clock actualice pc
     end else begin
-        pc = 0;  //Si hay overflow reinicie
+        pc <= 0;  //Si hay overflow reinicie
     end 
 end
 
