@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Thu Nov 07 03:18:32 2024
+Thu Nov 07 03:27:48 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 07 03:18:31 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 07 03:27:48 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; pipeline                                    ;
 ; Top-level Entity Name           ; imagenPrintTest                             ;
@@ -224,12 +224,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Estimate of Logic utilization (ALMs needed) ; 149       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 241       ;
+; Combinational ALUT usage for logic          ; 240       ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 55        ;
 ;     -- 5 input functions                    ; 33        ;
 ;     -- 4 input functions                    ; 7         ;
-;     -- <=3 input functions                  ; 146       ;
+;     -- <=3 input functions                  ; 145       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 153       ;
 ;                                             ;           ;
@@ -244,7 +244,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 228       ;
-; Total fan-out                               ; 4325      ;
+; Total fan-out                               ; 4323      ;
 ; Average fan-out                             ; 6.74      ;
 +---------------------------------------------+-----------+
 
@@ -254,13 +254,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name          ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |imagenPrintTest                          ; 241 (118)           ; 153 (39)                  ; 1507328           ; 1          ; 31   ; 0            ; |imagenPrintTest                                                                                                        ; imagenPrintTest      ; work         ;
+; |imagenPrintTest                          ; 240 (118)           ; 153 (39)                  ; 1507328           ; 1          ; 31   ; 0            ; |imagenPrintTest                                                                                                        ; imagenPrintTest      ; work         ;
 ;    |ram:memoriaDatos|                     ; 8 (0)               ; 3 (0)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos                                                                                       ; ram                  ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 8 (0)               ; 3 (0)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component                                                       ; altsyncram           ; work         ;
 ;          |altsyncram_njo1:auto_generated| ; 8 (0)               ; 3 (3)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated                        ; altsyncram_njo1      ; work         ;
 ;             |decode_61a:rden_decode|      ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|decode_61a:rden_decode ; decode_61a           ; work         ;
-;    |vgaTest:vga|                          ; 115 (0)             ; 111 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga                                                                                            ; vgaTest              ; work         ;
-;       |vga_controller:vga_ins|            ; 115 (82)            ; 111 (87)                  ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_controller:vga_ins                                                                     ; vga_controller       ; work         ;
+;    |vgaTest:vga|                          ; 114 (0)             ; 111 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga                                                                                            ; vgaTest              ; work         ;
+;       |vga_controller:vga_ins|            ; 114 (81)            ; 111 (87)                  ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_controller:vga_ins                                                                     ; vga_controller       ; work         ;
 ;          |video_sync_generator:LTM_ins|   ; 33 (33)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins                                        ; video_sync_generator ; work         ;
 ;       |vga_pll:u1|                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_pll:u1                                                                                 ; vga_pll              ; vga_pll      ;
 ;          |vga_pll_0002:vga_pll_inst|      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_pll:u1|vga_pll_0002:vga_pll_inst                                                       ; vga_pll_0002         ; vga_pll      ;
@@ -333,7 +333,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+-----------------------+
 ; Register name                         ; Reason for Removal    ;
 +---------------------------------------+-----------------------+
-; rgb[2][0]                             ; Merged with rgb[1][7] ;
+; rgb[1][7]                             ; Merged with rgb[0][0] ;
 ; Total Number of Removed Registers = 1 ;                       ;
 +---------------------------------------+-----------------------+
 
@@ -358,7 +358,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 9:1                ; 23 bits   ; 138 LEs       ; 138 LEs              ; 0 LEs                  ; Yes        ; |imagenPrintTest|rgb[1][6] ;
+; 9:1                ; 23 bits   ; 138 LEs       ; 138 LEs              ; 0 LEs                  ; Yes        ; |imagenPrintTest|rgb[1][5] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -831,14 +831,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 16                          ;
 ;     ENA CLR SCLR      ; 10                          ;
 ;     plain             ; 59                          ;
-; arriav_lcell_comb     ; 242                         ;
+; arriav_lcell_comb     ; 241                         ;
 ;     arith             ; 94                          ;
 ;         1 data inputs ; 92                          ;
 ;         2 data inputs ; 2                           ;
-;     normal            ; 132                         ;
+;     normal            ; 131                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 26                          ;
+;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 8                           ;
 ;         4 data inputs ; 7                           ;
 ;         5 data inputs ; 33                          ;
@@ -860,7 +860,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -870,7 +870,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 07 03:18:23 2024
+    Info: Processing started: Thu Nov 07 03:27:39 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -925,7 +925,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file imagenp
 Warning (10236): Verilog HDL Implicit Net warning at multiplicador.sv(12): created implicit net for "product" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv Line: 12
 Info (12127): Elaborating entity "imagenPrintTest" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at imagenPrintTest.sv(56): truncated value with size 32 to match size of target (16) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 56
-Warning (10230): Verilog HDL assignment warning at imagenPrintTest.sv(59): truncated value with size 9 to match size of target (8) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 59
+Warning (10230): Verilog HDL assignment warning at imagenPrintTest.sv(57): truncated value with size 9 to match size of target (8) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 57
 Info (12128): Elaborating entity "ram" for hierarchy "ram:memoriaDatos" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 28
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:memoriaDatos|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
 Info (12130): Elaborated megafunction instantiation "ram:memoriaDatos|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
@@ -1108,18 +1108,18 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/output_files/pipeline.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 467 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 468 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 250 logic cells
+    Info (21061): Implemented 251 logic cells
     Info (21064): Implemented 184 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Thu Nov 07 03:18:32 2024
+    Info: Peak virtual memory: 4914 megabytes
+    Info: Processing ended: Thu Nov 07 03:27:48 2024
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +------------------------------------------+

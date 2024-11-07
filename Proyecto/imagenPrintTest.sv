@@ -54,13 +54,13 @@ always_ff @(posedge clk) begin
 	y_cond = (127 <= y) && (y <= 352);
 	if(x_cond && y_cond) begin
 		address <= (x-207) + (y-127)*225;
-		rgb[0] <= pixel[15:8];
+		rgb[0] <= pixel[31:23];
 		rgb[1] <= pixel[23:16];
-		rgb[2] <= pixel[31:23];
+		rgb[2] <= pixel[15:8];
 	end else begin
-		rgb[0] <= 8'h4d;
+		rgb[0] <= 8'd0;
 		rgb[1] <= 8'd0;
-		rgb[2] <= 8'd0;
+		rgb[2] <= 8'h4d;
 	end
 end
 
