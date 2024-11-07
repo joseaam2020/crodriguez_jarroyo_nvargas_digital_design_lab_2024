@@ -1,5 +1,5 @@
 Flow report for pipeline
-Wed Nov 06 16:12:41 2024
+Wed Nov 06 23:51:07 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,29 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 06 16:12:41 2024       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                   ; pipeline                                    ;
-; Top-level Entity Name           ; uniciclo                                    ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CGXFC7C7F23C8                              ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1 / 56,480 ( < 1 % )                        ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 2 / 268 ( < 1 % )                           ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
-; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
-; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Successful - Wed Nov 06 23:51:06 2024       ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; pipeline                                    ;
+; Top-level Entity Name       ; uniciclo                                    ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CGXFC7C7F23C8                              ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/06/2024 16:11:50 ;
+; Start date & time ; 11/06/2024 23:50:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
@@ -79,23 +74,31 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 10995770589200.173093111000356         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 10995770589200.173095865812264         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Sumador_ins ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_sumador     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; registros_tb   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; uniciclo_tb    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_extensor    ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_extensor                            ; --            ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uniciclo_tb                            ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; tb_Sumador_ins.sv                      ; --            ; --          ; tb_Sumador_ins ;
 ; EDA_TEST_BENCH_FILE                  ; tb_Sumador_ins.sv                      ; --            ; --          ; tb_sumador     ;
+; EDA_TEST_BENCH_FILE                  ; registros_tb.sv                        ; --            ; --          ; registros_tb   ;
+; EDA_TEST_BENCH_FILE                  ; uniciclo_tb.sv                         ; --            ; --          ; uniciclo_tb    ;
 ; EDA_TEST_BENCH_FILE                  ; tb_extensor.sv                         ; --            ; --          ; tb_extensor    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_Sumador_ins                         ; --            ; --          ; tb_Sumador_ins ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_sumador                             ; --            ; --          ; tb_sumador     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; registros_tb                           ; --            ; --          ; registros_tb   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; uniciclo_tb                            ; --            ; --          ; uniciclo_tb    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_extensor                            ; --            ; --          ; tb_extensor    ;
 ; EDA_TEST_BENCH_NAME                  ; tb_sumador                             ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; tb_Sumador_ins                         ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; tb_extensor                            ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; registros_tb                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; uniciclo_tb                            ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
@@ -111,41 +114,29 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4844 MB             ; 00:00:04                           ;
-; Fitter               ; 00:00:26     ; 1.0                     ; 7205 MB             ; 00:00:43                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4841 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 5209 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4729 MB             ; 00:00:00                           ;
-; Total                ; 00:00:45     ; --                      ; --                  ; 00:00:50                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4837 MB             ; 00:00:04                           ;
+; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:04                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
-quartus_fit --read_settings_files=off --write_settings_files=off pipeline -c pipeline
-quartus_asm --read_settings_files=off --write_settings_files=off pipeline -c pipeline
-quartus_sta pipeline -c pipeline
-quartus_eda --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline --analysis_and_elaboration
 
 
 

@@ -7,37 +7,152 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/laboratorio\ 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/extensor.sv}
+# vlog -vlog01compat -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:58:14 on Nov 02,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/extensor.sv 
+# Start time: 23:51:42 on Nov 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 23:51:42 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:42 on Nov 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 23:51:42 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:42 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv 
+# -- Compiling module restador_ins
+# -- Compiling module restador
+# 
+# Top level modules:
+# 	restador
+# End time: 23:51:42 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:42 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv 
+# -- Compiling module multiplicador
+# 
+# Top level modules:
+# 	multiplicador
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:43 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv 
+# -- Compiling module sumador
+# -- Compiling module Sumador_estructural
+# 
+# Top level modules:
+# 	Sumador_estructural
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux16to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:43 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux16to1.sv 
+# -- Compiling module mux16to1
+# 
+# Top level modules:
+# 	mux16to1
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:43 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv 
+# -- Compiling module aluPara
+# 
+# Top level modules:
+# 	aluPara
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/extensor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:43 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/extensor.sv 
 # -- Compiling module extensor
 # 
 # Top level modules:
 # 	extensor
-# End time: 20:58:15 on Nov 02,2024, Elapsed time: 0:00:01
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/genne/OneDrive/Escritorio/laboratorio\ 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/tb_extensor.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/registros.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:58:15 on Nov 02,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/genne/OneDrive/Escritorio/laboratorio 3/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/tb_extensor.sv 
-# -- Compiling module tb_extensor
+# Start time: 23:51:43 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/registros.sv 
+# -- Compiling module registros
 # 
 # Top level modules:
-# 	tb_extensor
-# End time: 20:58:15 on Nov 02,2024, Elapsed time: 0:00:00
+# 	registros
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:43 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv 
+# -- Compiling module uniciclo
+# 
+# Top level modules:
+# 	uniciclo
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_extensor
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_extensor 
-# Start time: 20:58:15 on Nov 02,2024
+# vlog -sv -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto {C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:43 on Nov 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto" C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv 
+# -- Compiling module uniciclo_tb
+# 
+# Top level modules:
+# 	uniciclo_tb
+# End time: 23:51:43 on Nov 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  uniciclo_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" uniciclo_tb 
+# Start time: 23:51:43 on Nov 06,2024
 # Loading sv_std.std
-# Loading work.tb_extensor
+# Loading work.uniciclo_tb
+# Loading work.uniciclo
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.registros
 # Loading work.extensor
+# Loading work.aluPara
+# Loading work.mux16to1
+# Loading work.Sumador_estructural
+# Loading work.restador
+# Loading work.multiplicador
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.sumador
+# Loading work.restador_ins
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/sumadorPC4 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 129
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/sumadorPC8 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 137
+# ** Warning: (vsim-3015) [PCDPC] - Port size (512) does not match connection size (64) for port 'in'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux16to1.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/muxPC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 148
+# ** Warning: (vsim-3015) [PCDPC] - Port size (512) does not match connection size (64) for port 'in'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux16to1.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/aluMemMux File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 157
 # 
 # add wave *
 # view structure
@@ -45,5 +160,92 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 21:02:19 on Nov 02,2024, Elapsed time: 0:04:04
-# Errors: 0, Warnings: 0
+# Time: 0 | PC: 00000000 | Instruccion: 00000000 | ALU Result: 00000000 | Read Data: 00000000
+# Time: 5000 | PC: 00000001 | Instruccion: e2800001 | ALU Result: 00000001 | Read Data: 837767ff
+# Time: 15000 | PC: 00000002 | Instruccion: e2811002 | ALU Result: 00000002 | Read Data: 837767ff
+# Time: 25000 | PC: 00000003 | Instruccion: e5801000 | ALU Result: 00000001 | Read Data: 837769ff
+# Time: 35000 | PC: 00000004 | Instruccion: e5903000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 45000 | PC: 00000005 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 55000 | PC: 00000006 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 65000 | PC: 00000007 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 75000 | PC: 00000008 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 85000 | PC: 00000009 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 95000 | PC: 0000000a | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 105000 | PC: 0000000b | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 115000 | PC: 0000000c | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 125000 | PC: 0000000d | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 135000 | PC: 0000000e | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 145000 | PC: 0000000f | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 155000 | PC: 00000010 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 165000 | PC: 00000011 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 175000 | PC: 00000012 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 185000 | PC: 00000013 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 195000 | PC: 00000014 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 205000 | PC: 00000015 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 215000 | PC: 00000016 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 225000 | PC: 00000017 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 235000 | PC: 00000018 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 245000 | PC: 00000019 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 255000 | PC: 0000001a | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 265000 | PC: 0000001b | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 275000 | PC: 0000001c | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 285000 | PC: 0000001d | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 295000 | PC: 0000001e | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 305000 | PC: 0000001f | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# ** Note: $finish    : C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv(47)
+#    Time: 310 ns  Iteration: 0  Instance: /uniciclo_tb
+# 1
+# Break in Module uniciclo_tb at C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv line 47
+add wave -position end  sim:/uniciclo_tb/uut/archivoRegistros/regs
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/sumadorPC4 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 129
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/sumadorPC8 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 137
+# ** Warning: (vsim-3015) [PCDPC] - Port size (512) does not match connection size (64) for port 'in'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux16to1.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/muxPC File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 148
+# ** Warning: (vsim-3015) [PCDPC] - Port size (512) does not match connection size (64) for port 'in'. The port definition is at: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux16to1.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/uut/aluMemMux File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 157
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Time: 0 | PC: 00000000 | Instruccion: 00000000 | ALU Result: 00000000 | Read Data: 00000000
+# Time: 5000 | PC: 00000001 | Instruccion: e2800001 | ALU Result: 00000001 | Read Data: 837767ff
+# Time: 15000 | PC: 00000002 | Instruccion: e2811002 | ALU Result: 00000002 | Read Data: 837767ff
+# Time: 25000 | PC: 00000003 | Instruccion: e5801000 | ALU Result: 00000001 | Read Data: 837769ff
+# Time: 35000 | PC: 00000004 | Instruccion: e5903000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 45000 | PC: 00000005 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 55000 | PC: 00000006 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 65000 | PC: 00000007 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 75000 | PC: 00000008 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 85000 | PC: 00000009 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 95000 | PC: 0000000a | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 105000 | PC: 0000000b | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 115000 | PC: 0000000c | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 125000 | PC: 0000000d | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 135000 | PC: 0000000e | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 145000 | PC: 0000000f | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 155000 | PC: 00000010 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 165000 | PC: 00000011 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 175000 | PC: 00000012 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 185000 | PC: 00000013 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 195000 | PC: 00000014 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 205000 | PC: 00000015 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 215000 | PC: 00000016 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 225000 | PC: 00000017 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 235000 | PC: 00000018 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 245000 | PC: 00000019 | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 255000 | PC: 0000001a | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 265000 | PC: 0000001b | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 275000 | PC: 0000001c | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 285000 | PC: 0000001d | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 295000 | PC: 0000001e | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# Time: 305000 | PC: 0000001f | Instruccion: 00000000 | ALU Result: 00000001 | Read Data: 00000002
+# ** Note: $finish    : C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv(47)
+#    Time: 310 ns  Iteration: 0  Instance: /uniciclo_tb
+# 1
+# Break in Module uniciclo_tb at C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv line 47
+# End time: 23:57:23 on Nov 06,2024, Elapsed time: 0:05:40
+# Errors: 0, Warnings: 4

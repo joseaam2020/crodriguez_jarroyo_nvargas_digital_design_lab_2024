@@ -1,5 +1,5 @@
 |uniciclo
-clk => clk.IN3
+clk => clk.IN2
 rst => rst.IN1
 
 

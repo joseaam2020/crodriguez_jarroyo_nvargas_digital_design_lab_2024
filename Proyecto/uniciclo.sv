@@ -4,7 +4,7 @@ module uniciclo(
 );
 
 //Creacion PC
-logic [31:0] pc;
+logic [31:0] pc = 0;
 
 //Creacion de memorio de instrucciones
 logic [31:0] instruccionActual;
@@ -23,7 +23,7 @@ logic [3:0] aluControl;
 logic [31:0] aluResult;
 
 //Creacion de la memoria de datos
-logic dataWrite;
+logic memWrite;
 logic [31:0] readData;
 
 //Creacion sumadorPD
@@ -35,12 +35,47 @@ logic [31:0] pc_8;
 logic pc8_overflow;
 
 //Creacion de muxPC 
-logic pcSrc;
+logic [3:0] pcSrc;
 logic [31:0] pc_;
 
 //Creacion aluMemMux
-logic memtoReg;
+logic [3:0] memtoReg;
 logic [31:0] result;
+
+always_comb begin
+    // Inicializar todas las señales a sus valores predeterminados
+    aluControl = 4'b0000;
+    regWrite = 0;
+    memtoReg = 0;
+    memWrite = 0;
+    pcSrc = 0;
+
+    if (instruccionActual[27:26] == 2'b00) begin // instrucciones de datos
+        if (instruccionActual[24:21] == 4'b0100) begin // ADD
+            aluControl = 4'b0000; // add
+        end else if (instruccionActual[24:21] == 4'b0010) begin // SUB
+            aluControl = 4'b0001; // sub
+        end
+        regWrite = 1;
+        memtoReg = 0;
+        memWrite = 0;
+        pcSrc = 0;
+    end else if (instruccionActual[27:26] == 2'b01) begin // instrucciones de memoria
+        aluControl = 4'b0000; // add para calcular dirección
+        memtoReg = 1;
+        pcSrc = 0;
+
+        if (instruccionActual[20] == 1'b0) begin
+            // STR
+            memWrite = 1;
+            regWrite = 0;
+        end else begin
+            // LDR
+            memWrite = 0;
+            regWrite = 1;
+        end
+    end
+end
 
 rom memoriaInstrucciones (
     .clock(clk),
@@ -59,7 +94,7 @@ registros archivoRegistros(
     .r15(pc_8),
     
     .rd1(srcA),
-    .rd2(srcB)
+    .rd2(writeData)
 );
 
 extensor #(.M(12), .N(32)) extend (
@@ -87,13 +122,13 @@ ram memoriaDatos(
     .address(aluResult[15:0]),
     .clock(clk),
     .data(writeData),
-    .wren(dataWrite),
+    .wren(memWrite),
     .q(readData)   
 );
 
 Sumador_estructural #(32) sumadorPC4 (
     .a(pc),
-    .b(32'd4),
+    .b(32'd1),
     .cin(32'd0),
     .cout_sumador(pc4_overflow),
     .s_sumador(pc_4)
@@ -101,7 +136,7 @@ Sumador_estructural #(32) sumadorPC4 (
 
 Sumador_estructural #(32) sumadorPC8 (
     .a(pc_4),
-    .b(32'd4),
+    .b(32'd1),
     .cin(32'd0),
     .cout_sumador(pc8_overflow),
     .s_sumador(pc_8)
