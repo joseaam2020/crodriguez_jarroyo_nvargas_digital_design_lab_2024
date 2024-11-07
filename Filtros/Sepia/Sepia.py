@@ -105,7 +105,7 @@ def sepia_filter(img_sepia):
             pixels[px, py] = (outputRed, outputGreen, outputBlue)
     return img_sepia
 
-img = Image.open("pandaR.jpg") # Variable para guardar el path de la imagen
+img = Image.open("computer.jpg") # Variable para guardar el path de la imagen
 img.show() # Muestra la imagen
 
 sepia_img = sepia_filter(img) #Llamada a la función

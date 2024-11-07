@@ -1,0 +1,7 @@
+module mantenimiento_tb ();
+
+logic clk;
+logic rst;
+logic M;
+logic rst_manual;
+logic [7:0] status;

@@ -1,0 +1,55 @@
+# Reading pref.tcl
+# do sumador_vhdl_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {sumador_vhdl.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:14 on Aug 03,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." sumador_vhdl.vo 
+# -- Compiling module sumador_vhdl
+# 
+# Top level modules:
+# 	sumador_vhdl
+# End time: 00:05:15 on Aug 03,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/genne/OneDrive/Escritorio/taller_digitales/sumador_vhdl/sumador_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:15 on Aug 03,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/genne/OneDrive/Escritorio/taller_digitales/sumador_vhdl/sumador_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sumador_tb
+# -- Compiling architecture Behavioral of sumador_tb
+# End time: 00:05:15 on Aug 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  sumador_tb
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" sumador_tb 
+# Start time: 00:05:16 on Aug 03,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sumador_tb(behavioral)
+# Loading work.sumador_vhdl
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 00:06:27 on Aug 03,2024, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0

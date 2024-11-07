@@ -1,0 +1,15 @@
+module mantenimiento (input logic clk, rst, M, rst_manual,
+							output logic [7:0] status);
+							
+
+logic to, error, en_count, rst_timer;
+logic[7:0] out_mantenimiento, out_ciclos, out_mux;
+
+FSM control(clk, rst, M, to, rst_manual, error, en_count, rst_timer);
+counter mant(clk, rst, en_count, out_mantenimiento);
+counter ciclos(clk, rst | rst_timer, 1'b1, out_ciclos);
+Mux_2_to_1 mux21 (out_mantenimiento, 8'hFF, error, out_mux);
+comparator cmp(out_ciclos, 8'd200, to);
+register state_reg(clk, rst, out_mux, status);
+
+endmodule

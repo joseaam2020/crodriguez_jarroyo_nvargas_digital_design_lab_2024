@@ -1,0 +1,8 @@
+module FSM(input clk, rst, x, output, a, b);
+
+
+
+
+
+endmodule
+

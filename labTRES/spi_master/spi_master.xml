@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2024.09.30.16:27:30"
+ outputDirectory="C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spi_master/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CSXFC6D6F31C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6_H6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SPI_0_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SPI_0_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SPI_0_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="spi_0_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="spi_0_clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="spi_0_external" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="spi_0_external_MISO" direction="input" role="MISO" width="1" />
+   <port name="spi_0_external_MOSI" direction="output" role="MOSI" width="1" />
+   <port name="spi_0_external_SCLK" direction="output" role="SCLK" width="1" />
+   <port name="spi_0_external_SS_n" direction="output" role="SS_n" width="1" />
+  </interface>
+  <interface name="spi_0_irq" kind="interrupt" start="0">
+   <property
+       name="associatedAddressablePoint"
+       value="spi_master.spi_0_spi_control_port" />
+   <property name="associatedClock" value="spi_0_clk" />
+   <property name="associatedReset" value="spi_0_reset" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="spi_0_irq_irq" direction="output" role="irq" width="1" />
+  </interface>
+  <interface name="spi_0_reset" kind="reset" start="0">
+   <property name="associatedClock" value="spi_0_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="spi_0_reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="spi_0_spi_control_port" kind="avalon" start="0">
+   <property name="addressAlignment" value="NATIVE" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="8" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="spi_0_clk" />
+   <property name="associatedReset" value="spi_0_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="1" />
+   <property name="writeWaitTime" value="1" />
+   <port
+       name="spi_0_spi_control_port_writedata"
+       direction="input"
+       role="writedata"
+       width="16" />
+   <port
+       name="spi_0_spi_control_port_readdata"
+       direction="output"
+       role="readdata"
+       width="16" />
+   <port
+       name="spi_0_spi_control_port_address"
+       direction="input"
+       role="address"
+       width="3" />
+   <port
+       name="spi_0_spi_control_port_read_n"
+       direction="input"
+       role="read_n"
+       width="1" />
+   <port
+       name="spi_0_spi_control_port_chipselect"
+       direction="input"
+       role="chipselect"
+       width="1" />
+   <port
+       name="spi_0_spi_control_port_write_n"
+       direction="input"
+       role="write_n"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="spi_master:1.0:AUTO_DEVICE=5CSXFC6D6F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6_H6,AUTO_GENERATION_ID=1727735249,AUTO_SPI_0_CLK_CLOCK_DOMAIN=-1,AUTO_SPI_0_CLK_CLOCK_RATE=-1,AUTO_SPI_0_CLK_RESET_DOMAIN=-1,AUTO_UNIQUE_ID=(altera_avalon_spi:20.1:actualClockRate=0.0,actualSlaveSelectToSClkDelay=0.0,avalonSpec=2.0,clockPhase=0,clockPolarity=0,dataWidth=8,disableAvalonFlowControl=false,inputClockRate=0,insertDelayBetweenSlaveSelectAndSClk=false,insertSync=false,legacySignalsAllow=false,lsbOrderedFirst=false,masterSPI=true,numberOfSlaves=1,slaveDataBusWidth=16,syncRegDepth=2,targetClockRate=128000,targetSlaveSelectToSClkDelay=0.0)"
+   instancePathKey="spi_master"
+   kind="spi_master"
+   version="1.0"
+   name="spi_master">
+  <parameter name="AUTO_SPI_0_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1727735249" />
+  <parameter name="AUTO_DEVICE" value="5CSXFC6D6F31C6" />
+  <parameter name="AUTO_SPI_0_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_SPI_0_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6_H6" />
+  <generatedFiles>
+   <file
+       path="C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spi_master/synthesis/spi_master.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/Users/noemi/OneDrive/Documentos/Git_Repos/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labTRES/spi_master.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_lite/20.1/ip/altera/sopc_builder_ip/altera_avalon_spi/altera_avalon_spi_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="spi_master">queue size: 0 starting:spi_master "spi_master"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="spi_master"><![CDATA["<b>spi_master</b>" reuses <b>altera_avalon_spi</b> "<b>submodules/spi_master_spi_master</b>"]]></message>
+   <message level="Debug" culprit="spi_master">queue size: 0 starting:altera_avalon_spi "submodules/spi_master_spi_master"</message>
+   <message level="Info" culprit="spi_master">Starting RTL generation for module 'spi_master_spi_master'</message>
+   <message level="Info" culprit="spi_master">  Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=spi_master_spi_master --dir=C:/Users/noemi/AppData/Local/Temp/alt9996_4415698489615097111.dir/0002_spi_master_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/noemi/AppData/Local/Temp/alt9996_4415698489615097111.dir/0002_spi_master_gen//spi_master_spi_master_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="spi_master">Illegal division by zero at C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/em_spi_qsys.pm line 330.</message>
+   <message level="Info" culprit="spi_master">Done RTL generation for module 'spi_master_spi_master'</message>
+   <message level="Error" culprit="spi_master">Failed to find module spi_master_spi_master</message>
+   <message level="Info" culprit="spi_master"><![CDATA["<b>spi_master</b>" instantiated <b>altera_avalon_spi</b> "<b>spi_master</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_avalon_spi:20.1:actualClockRate=0.0,actualSlaveSelectToSClkDelay=0.0,avalonSpec=2.0,clockPhase=0,clockPolarity=0,dataWidth=8,disableAvalonFlowControl=false,inputClockRate=0,insertDelayBetweenSlaveSelectAndSClk=false,insertSync=false,legacySignalsAllow=false,lsbOrderedFirst=false,masterSPI=true,numberOfSlaves=1,slaveDataBusWidth=16,syncRegDepth=2,targetClockRate=128000,targetSlaveSelectToSClkDelay=0.0"
+   instancePathKey="spi_master:.:spi_master"
+   kind="altera_avalon_spi"
+   version="20.1"
+   name="spi_master_spi_master">
+  <parameter name="legacySignalsAllow" value="false" />
+  <parameter name="insertSync" value="false" />
+  <parameter name="targetClockRate" value="128000" />
+  <parameter name="disableAvalonFlowControl" value="false" />
+  <parameter name="avalonSpec" value="2.0" />
+  <parameter name="clockPolarity" value="0" />
+  <parameter name="insertDelayBetweenSlaveSelectAndSClk" value="false" />
+  <parameter name="actualClockRate" value="0.0" />
+  <parameter name="clockPhase" value="0" />
+  <parameter name="masterSPI" value="true" />
+  <parameter name="slaveDataBusWidth" value="16" />
+  <parameter name="numberOfSlaves" value="1" />
+  <parameter name="syncRegDepth" value="2" />
+  <parameter name="actualSlaveSelectToSClkDelay" value="0.0" />
+  <parameter name="inputClockRate" value="0" />
+  <parameter name="dataWidth" value="8" />
+  <parameter name="targetSlaveSelectToSClkDelay" value="0.0" />
+  <parameter name="lsbOrderedFirst" value="false" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/20.1/ip/altera/sopc_builder_ip/altera_avalon_spi/altera_avalon_spi_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="spi_master" as="spi_master" />
+  <messages>
+   <message level="Debug" culprit="spi_master">queue size: 0 starting:altera_avalon_spi "submodules/spi_master_spi_master"</message>
+   <message level="Info" culprit="spi_master">Starting RTL generation for module 'spi_master_spi_master'</message>
+   <message level="Info" culprit="spi_master">  Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=spi_master_spi_master --dir=C:/Users/noemi/AppData/Local/Temp/alt9996_4415698489615097111.dir/0002_spi_master_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/noemi/AppData/Local/Temp/alt9996_4415698489615097111.dir/0002_spi_master_gen//spi_master_spi_master_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="spi_master">Illegal division by zero at C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/em_spi_qsys.pm line 330.</message>
+   <message level="Info" culprit="spi_master">Done RTL generation for module 'spi_master_spi_master'</message>
+   <message level="Error" culprit="spi_master">Failed to find module spi_master_spi_master</message>
+   <message level="Info" culprit="spi_master"><![CDATA["<b>spi_master</b>" instantiated <b>altera_avalon_spi</b> "<b>spi_master</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

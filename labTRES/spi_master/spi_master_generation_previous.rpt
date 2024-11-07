@@ -1,0 +1,37 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\noemi\OneDrive\Documentos\Git_Repos\crodriguez_jarroyo_nvargas_digital_design_lab_2024\labTRES\spi_master.qsys --block-symbol-file --output-directory=C:\Users\noemi\OneDrive\Documentos\Git_Repos\crodriguez_jarroyo_nvargas_digital_design_lab_2024\labTRES\spi_master --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading labTRES/spi_master.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding spi_master [altera_avalon_spi 20.1]
+Progress: Parameterizing module spi_master
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\noemi\OneDrive\Documentos\Git_Repos\crodriguez_jarroyo_nvargas_digital_design_lab_2024\labTRES\spi_master.qsys --synthesis=VERILOG --output-directory=C:\Users\noemi\OneDrive\Documentos\Git_Repos\crodriguez_jarroyo_nvargas_digital_design_lab_2024\labTRES\spi_master\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading labTRES/spi_master.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding spi_master [altera_avalon_spi 20.1]
+Progress: Parameterizing module spi_master
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: spi_master: Generating spi_master "spi_master" for QUARTUS_SYNTH
+Info: spi_master: Starting RTL generation for module 'spi_master_spi_master'
+Info: spi_master:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=spi_master_spi_master --dir=C:/Users/noemi/AppData/Local/Temp/alt9996_1402329812334574936.dir/0010_spi_master_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/noemi/AppData/Local/Temp/alt9996_1402329812334574936.dir/0010_spi_master_gen//spi_master_spi_master_component_configuration.pl  --do_build_sim=0  ]
+Info: spi_master: Illegal division by zero at C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/em_spi_qsys.pm line 330.
+Info: spi_master: Done RTL generation for module 'spi_master_spi_master'
+Error: spi_master: Failed to find module spi_master_spi_master
+Info: spi_master: "spi_master" instantiated altera_avalon_spi "spi_master"
+Info: spi_master: Done "spi_master" with 2 modules, 1 files
+Error: qsys-generate failed with exit code 1: 1 Error, 0 Warnings
+Info: Finished: Create HDL design files for synthesis

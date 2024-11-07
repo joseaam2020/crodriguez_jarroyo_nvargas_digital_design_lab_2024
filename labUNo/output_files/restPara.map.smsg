@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at restPara.sv(11): always construct contains both blocking and non-blocking assignments File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/labUNo/restPara.sv Line: 11
