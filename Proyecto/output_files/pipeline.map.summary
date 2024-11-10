@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 07 03:27:48 2024
+Analysis & Synthesis Status : Successful - Sun Nov 10 11:51:45 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : imagenPrintTest
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 153
+Total registers : 154
 Total pins : 31
 Total virtual pins : 0
-Total block memory bits : 1,507,328
+Total block memory bits : 1,572,864
 Total DSP Blocks : 1
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

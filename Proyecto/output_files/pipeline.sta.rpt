@@ -1,5 +1,5 @@
 Timing Analyzer report for pipeline
-Thu Nov 07 03:29:02 2024
+Sun Nov 10 11:54:15 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -102,20 +102,20 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 2.35        ;
+; Average used               ; 2.21        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  15.8%      ;
-;     Processor 3            ;  15.2%      ;
-;     Processor 4            ;  15.1%      ;
-;     Processor 5            ;  14.9%      ;
-;     Processor 6            ;  14.9%      ;
-;     Processor 7            ;  14.9%      ;
-;     Processor 8            ;  14.9%      ;
-;     Processor 9            ;  14.8%      ;
-;     Processor 10           ;  14.8%      ;
+;     Processor 2            ;  14.0%      ;
+;     Processor 3            ;  13.7%      ;
+;     Processor 4            ;  13.6%      ;
+;     Processor 5            ;  13.3%      ;
+;     Processor 6            ;  13.3%      ;
+;     Processor 7            ;  13.3%      ;
+;     Processor 8            ;  13.3%      ;
+;     Processor 9            ;  13.2%      ;
+;     Processor 10           ;  13.2%      ;
 +----------------------------+-------------+
 
 
@@ -136,9 +136,9 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+----------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                 ; Note ;
 +------------+-----------------+----------------------------------------------------------------------------+------+
-; 100.07 MHz ; 100.07 MHz      ; clk                                                                        ;      ;
-; 272.55 MHz ; 272.55 MHz      ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 327.76 MHz ; 327.76 MHz      ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
+; 113.22 MHz ; 113.22 MHz      ; clk                                                                        ;      ;
+; 251.76 MHz ; 251.76 MHz      ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 316.46 MHz ; 316.46 MHz      ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
 +------------+-----------------+----------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -154,9 +154,9 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; clk                                                                        ; -6.627 ; -178.887      ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.724 ; -107.063      ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.051 ; -61.070       ;
+; clk                                                                        ; -6.523 ; -200.247      ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.532 ; -104.287      ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.160 ; -58.804       ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -165,9 +165,9 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                      ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------+-------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.287 ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.249 ; 0.000         ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.322 ; 0.000         ;
-; clk                                                                        ; 0.549 ; 0.000         ;
+; clk                                                                        ; 0.466 ; 0.000         ;
 +----------------------------------------------------------------------------+-------+---------------+
 
 
@@ -176,7 +176,7 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                   ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -7.555 ; -256.583      ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -7.746 ; -238.185      ;
 +-------------------------------------------------------------------------+--------+---------------+
 
 
@@ -185,7 +185,7 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                   ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------+-------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.061 ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.302 ; 0.000         ;
 +-------------------------------------------------------------------------+-------+---------------+
 
 
@@ -194,7 +194,7 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.394 ; -20.457       ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.394 ; -18.628       ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666  ; 0.000         ;
 ; clk                                                                        ; 8.869  ; 0.000         ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.159 ; 0.000         ;
@@ -208,7 +208,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 38.193 ns
+Worst Case Available Settling Time: 38.999 ns
 
 
 
@@ -218,9 +218,9 @@ Worst Case Available Settling Time: 38.193 ns
 +------------+-----------------+----------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                 ; Note ;
 +------------+-----------------+----------------------------------------------------------------------------+------+
-; 105.13 MHz ; 105.13 MHz      ; clk                                                                        ;      ;
-; 281.29 MHz ; 281.29 MHz      ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 323.94 MHz ; 323.94 MHz      ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
+; 118.3 MHz  ; 118.3 MHz       ; clk                                                                        ;      ;
+; 262.74 MHz ; 262.74 MHz      ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 312.4 MHz  ; 312.4 MHz       ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ;      ;
 +------------+-----------------+----------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -230,9 +230,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; clk                                                                        ; -6.592 ; -172.016      ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.039 ; -94.370       ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.087 ; -61.537       ;
+; clk                                                                        ; -6.553 ; -194.066      ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.879 ; -91.094       ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.201 ; -59.219       ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -241,9 +241,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -0.124 ; -2.296        ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.340  ; 0.000         ;
-; clk                                                                        ; 0.459  ; 0.000         ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -0.098 ; -1.802        ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.284  ; 0.000         ;
+; clk                                                                        ; 0.443  ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -252,7 +252,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                   ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -7.460 ; -253.376      ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -7.775 ; -238.412      ;
 +-------------------------------------------------------------------------+--------+---------------+
 
 
@@ -261,7 +261,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                   ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------+-------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.188 ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 6.441 ; 0.000         ;
 +-------------------------------------------------------------------------+-------+---------------+
 
 
@@ -270,10 +270,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.394 ; -18.304       ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.394 ; -16.724       ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666  ; 0.000         ;
 ; clk                                                                        ; 8.825  ; 0.000         ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.155 ; 0.000         ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.164 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -284,7 +284,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 38.272 ns
+Worst Case Available Settling Time: 39.005 ns
 
 
 
@@ -294,9 +294,9 @@ Worst Case Available Settling Time: 38.272 ns
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.923 ; -91.934       ;
-; clk                                                                        ; -3.694 ; -105.376      ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.796 ; -22.229       ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.602 ; -89.314       ;
+; clk                                                                        ; -3.542 ; -113.674      ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.918 ; -21.695       ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -305,9 +305,9 @@ Worst Case Available Settling Time: 38.272 ns
 +----------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                      ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------+-------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.122 ; 0.000         ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.199 ; 0.000         ;
-; clk                                                                        ; 0.342 ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.127 ; 0.000         ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.198 ; 0.000         ;
+; clk                                                                        ; 0.270 ; 0.000         ;
 +----------------------------------------------------------------------------+-------+---------------+
 
 
@@ -316,7 +316,7 @@ Worst Case Available Settling Time: 38.272 ns
 +-------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                   ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -4.013 ; -136.265      ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -4.089 ; -126.654      ;
 +-------------------------------------------------------------------------+--------+---------------+
 
 
@@ -325,7 +325,7 @@ Worst Case Available Settling Time: 38.272 ns
 +-------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                   ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------+-------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.478 ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.592 ; 0.000         ;
 +-------------------------------------------------------------------------+-------+---------------+
 
 
@@ -334,10 +334,10 @@ Worst Case Available Settling Time: 38.272 ns
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.136  ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.135  ; 0.000         ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666  ; 0.000         ;
-; clk                                                                        ; 8.806  ; 0.000         ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.529 ; 0.000         ;
+; clk                                                                        ; 8.805  ; 0.000         ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.530 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -348,7 +348,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 38.770 ns
+Worst Case Available Settling Time: 39.414 ns
 
 
 
@@ -358,9 +358,9 @@ Worst Case Available Settling Time: 38.770 ns
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.805 ; -70.657       ;
-; clk                                                                        ; -3.284 ; -88.826       ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.717 ; -19.409       ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.554 ; -68.392       ;
+; clk                                                                        ; -3.173 ; -97.485       ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -0.760 ; -19.139       ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -369,9 +369,9 @@ Worst Case Available Settling Time: 38.770 ns
 +----------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                      ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------+-------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.121 ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.123 ; 0.000         ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.189 ; 0.000         ;
-; clk                                                                        ; 0.273 ; 0.000         ;
+; clk                                                                        ; 0.246 ; 0.000         ;
 +----------------------------------------------------------------------------+-------+---------------+
 
 
@@ -380,7 +380,7 @@ Worst Case Available Settling Time: 38.770 ns
 +-------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                   ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------+--------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -3.874 ; -131.578      ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; -3.979 ; -123.021      ;
 +-------------------------------------------------------------------------+--------+---------------+
 
 
@@ -389,7 +389,7 @@ Worst Case Available Settling Time: 38.770 ns
 +-------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                   ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------+-------+---------------+
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.436 ; 0.000         ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 3.555 ; 0.000         ;
 +-------------------------------------------------------------------------+-------+---------------+
 
 
@@ -400,7 +400,7 @@ Worst Case Available Settling Time: 38.770 ns
 +----------------------------------------------------------------------------+--------+---------------+
 ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0.151  ; 0.000         ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666  ; 0.000         ;
-; clk                                                                        ; 8.799  ; 0.000         ;
+; clk                                                                        ; 8.798  ; 0.000         ;
 ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.533 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
@@ -412,7 +412,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 38.910 ns
+Worst Case Available Settling Time: 39.445 ns
 
 
 
@@ -422,16 +422,16 @@ Worst Case Available Settling Time: 38.910 ns
 +-----------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
 ; Clock                                                                       ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +-----------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack                                                            ; -6.627   ; -0.124 ; -7.555   ; 3.436   ; -0.394              ;
-;  clk                                                                        ; -6.627   ; 0.273  ; N/A      ; N/A     ; 8.799               ;
-;  vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.087   ; 0.121  ; -7.555   ; 3.436   ; -0.394              ;
+; Worst-case Slack                                                            ; -6.553   ; -0.098 ; -7.775   ; 3.555   ; -0.394              ;
+;  clk                                                                        ; -6.553   ; 0.246  ; N/A      ; N/A     ; 8.798               ;
+;  vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -2.201   ; 0.123  ; -7.775   ; 3.555   ; -0.394              ;
 ;  vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A      ; N/A    ; N/A      ; N/A     ; 1.666               ;
-;  vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.724   ; -0.124 ; N/A      ; N/A     ; 19.155              ;
-; Design-wide TNS                                                             ; -347.02  ; -2.296 ; -256.583 ; 0.0     ; -20.457             ;
-;  clk                                                                        ; -178.887 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
-;  vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -61.537  ; 0.000  ; -256.583 ; 0.000   ; -20.457             ;
+;  vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.532   ; -0.098 ; N/A      ; N/A     ; 19.159              ;
+; Design-wide TNS                                                             ; -363.338 ; -1.802 ; -238.412 ; 0.0     ; -18.628             ;
+;  clk                                                                        ; -200.247 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; -59.219  ; 0.000  ; -238.412 ; 0.000   ; -18.628             ;
 ;  vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A      ; N/A    ; N/A      ; N/A     ; 0.000               ;
-;  vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -107.063 ; -2.296 ; N/A      ; N/A     ; 0.000               ;
+;  vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -104.287 ; -1.802 ; N/A      ; N/A     ; 0.000               ;
 +-----------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
 
 
@@ -635,13 +635,13 @@ Worst Case Available Settling Time: 38.910 ns
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                 ; To Clock                                                                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk                                                                        ; clk                                                                        ; 3293     ; 0        ; 0        ; 0        ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; clk                                                                        ; 0        ; 42342    ; 0        ; 0        ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk                                                                        ; 1489     ; 0        ; 0        ; 0        ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 341      ;
+; clk                                                                        ; clk                                                                        ; 3390     ; 0        ; 0        ; 0        ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; clk                                                                        ; 0        ; 42371    ; 0        ; 0        ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk                                                                        ; 1521     ; 0        ; 0        ; 0        ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 313      ;
 ; clk                                                                        ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 24       ; 0        ; 0        ; 0        ;
 ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 20       ; 20       ; 0        ; 0        ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 402      ; 2        ; 0        ; 588      ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 402      ; 2        ; 0        ; 538      ;
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -651,13 +651,13 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                 ; To Clock                                                                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk                                                                        ; clk                                                                        ; 3293     ; 0        ; 0        ; 0        ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; clk                                                                        ; 0        ; 42342    ; 0        ; 0        ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk                                                                        ; 1489     ; 0        ; 0        ; 0        ;
-; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 341      ;
+; clk                                                                        ; clk                                                                        ; 3390     ; 0        ; 0        ; 0        ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; clk                                                                        ; 0        ; 42371    ; 0        ; 0        ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk                                                                        ; 1521     ; 0        ; 0        ; 0        ;
+; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; 0        ; 0        ; 0        ; 313      ;
 ; clk                                                                        ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 24       ; 0        ; 0        ; 0        ;
 ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n    ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 20       ; 20       ; 0        ; 0        ;
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 402      ; 2        ; 0        ; 588      ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 402      ; 2        ; 0        ; 538      ;
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -667,7 +667,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------------------------------------------------+-------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                 ; To Clock                                                                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------+-------------------------------------------------------------------------+----------+----------+----------+----------+
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 34       ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 31       ;
 +----------------------------------------------------------------------------+-------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -677,7 +677,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------------------------------------------------+-------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                 ; To Clock                                                                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------+-------------------------------------------------------------------------+----------+----------+----------+----------+
-; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 34       ;
+; vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n ; 0        ; 0        ; 0        ; 31       ;
 +----------------------------------------------------------------------------+-------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -702,7 +702,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 122   ; 122  ;
+; Unconstrained Input Port Paths  ; 117   ; 117  ;
 ; Unconstrained Output Ports      ; 29    ; 29   ;
 ; Unconstrained Output Port Paths ; 29    ; 29   ;
 +---------------------------------+-------+------+
@@ -820,7 +820,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 07 03:28:57 2024
+    Info: Processing started: Sun Nov 10 11:54:03 2024
 Info: Command: quartus_sta pipeline -c pipeline
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -846,30 +846,30 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.627
+Info (332146): Worst-case setup slack is -6.523
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.627            -178.887 clk 
-    Info (332119):    -5.724            -107.063 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -2.051             -61.070 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case hold slack is 0.287
+    Info (332119):    -6.523            -200.247 clk 
+    Info (332119):    -5.532            -104.287 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -2.160             -58.804 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case hold slack is 0.249
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.287               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.249               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     0.322               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.549               0.000 clk 
-Info (332146): Worst-case recovery slack is -7.555
+    Info (332119):     0.466               0.000 clk 
+Info (332146): Worst-case recovery slack is -7.746
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.555            -256.583 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case removal slack is 6.061
+    Info (332119):    -7.746            -238.185 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case removal slack is 6.302
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     6.061               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     6.302               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -20.457 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    -0.394             -18.628 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.666               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     8.869               0.000 clk 
     Info (332119):    19.159               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
@@ -878,7 +878,7 @@ Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 38.193 ns
+    Info (332114): Worst Case Available Settling Time: 38.999 ns
     Info (332114): 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
@@ -890,39 +890,39 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.592
+Info (332146): Worst-case setup slack is -6.553
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.592            -172.016 clk 
-    Info (332119):    -5.039             -94.370 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -2.087             -61.537 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case hold slack is -0.124
+    Info (332119):    -6.553            -194.066 clk 
+    Info (332119):    -4.879             -91.094 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -2.201             -59.219 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case hold slack is -0.098
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.124              -2.296 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.340               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):     0.459               0.000 clk 
-Info (332146): Worst-case recovery slack is -7.460
+    Info (332119):    -0.098              -1.802 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.284               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.443               0.000 clk 
+Info (332146): Worst-case recovery slack is -7.775
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.460            -253.376 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case removal slack is 6.188
+    Info (332119):    -7.775            -238.412 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case removal slack is 6.441
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     6.188               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     6.441               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -18.304 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):    -0.394             -16.724 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.666               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     8.825               0.000 clk 
-    Info (332119):    19.155               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    19.164               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 38.272 ns
+    Info (332114): Worst Case Available Settling Time: 39.005 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
@@ -934,39 +934,39 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.923
+Info (332146): Worst-case setup slack is -4.602
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.923             -91.934 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.694            -105.376 clk 
-    Info (332119):    -0.796             -22.229 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case hold slack is 0.122
+    Info (332119):    -4.602             -89.314 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.542            -113.674 clk 
+    Info (332119):    -0.918             -21.695 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case hold slack is 0.127
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.122               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-    Info (332119):     0.199               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.342               0.000 clk 
-Info (332146): Worst-case recovery slack is -4.013
+    Info (332119):     0.127               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.198               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.270               0.000 clk 
+Info (332146): Worst-case recovery slack is -4.089
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.013            -136.265 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case removal slack is 3.478
+    Info (332119):    -4.089            -126.654 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case removal slack is 3.592
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.478               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case minimum pulse width slack is 0.136
+    Info (332119):     3.592               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case minimum pulse width slack is 0.135
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.136               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.135               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.666               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.806               0.000 clk 
-    Info (332119):    19.529               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     8.805               0.000 clk 
+    Info (332119):    19.530               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 38.770 ns
+    Info (332114): Worst Case Available Settling Time: 39.414 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
@@ -976,46 +976,46 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.805
+Info (332146): Worst-case setup slack is -3.554
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.805             -70.657 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.284             -88.826 clk 
-    Info (332119):    -0.717             -19.409 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case hold slack is 0.121
+    Info (332119):    -3.554             -68.392 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.173             -97.485 clk 
+    Info (332119):    -0.760             -19.139 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case hold slack is 0.123
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.121               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     0.123               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     0.189               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.273               0.000 clk 
-Info (332146): Worst-case recovery slack is -3.874
+    Info (332119):     0.246               0.000 clk 
+Info (332146): Worst-case recovery slack is -3.979
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.874            -131.578 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
-Info (332146): Worst-case removal slack is 3.436
+    Info (332119):    -3.979            -123.021 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+Info (332146): Worst-case removal slack is 3.555
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.436               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
+    Info (332119):     3.555               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
 Info (332146): Worst-case minimum pulse width slack is 0.151
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.151               0.000 vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins|blank_n 
     Info (332119):     1.666               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.799               0.000 clk 
+    Info (332119):     8.798               0.000 clk 
     Info (332119):    19.533               0.000 vga|u1|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 38.910 ns
+    Info (332114): Worst Case Available Settling Time: 39.445 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5300 megabytes
-    Info: Processing ended: Thu Nov 07 03:29:02 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 5299 megabytes
+    Info: Processing ended: Sun Nov 10 11:54:15 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:11
 
 

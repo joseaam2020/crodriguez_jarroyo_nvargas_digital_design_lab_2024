@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Thu Nov 07 03:27:48 2024
+Sun Nov 10 11:51:45 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -17,24 +17,23 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   9. Analysis & Synthesis DSP Block Usage Summary
  10. Analysis & Synthesis IP Cores Summary
  11. Registers Protected by Synthesis
- 12. Registers Removed During Synthesis
- 13. General Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated
- 16. Source assignments for vgaTest:vga|vga_controller:vga_ins
- 17. Parameter Settings for User Entity Instance: Top-level Entity: |imagenPrintTest
- 18. Parameter Settings for User Entity Instance: ram:memoriaDatos|altsyncram:altsyncram_component
- 19. Parameter Settings for User Entity Instance: vgaTest:vga
- 20. Parameter Settings for User Entity Instance: vgaTest:vga|vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i
- 21. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins
- 22. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins
- 23. altsyncram Parameter Settings by Entity Instance
- 24. Port Connectivity Checks: "vgaTest:vga|vga_pll:u1"
- 25. Port Connectivity Checks: "ram:memoriaDatos"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
- 29. Analysis & Synthesis Suppressed Messages
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated
+ 15. Source assignments for vgaTest:vga|vga_controller:vga_ins
+ 16. Parameter Settings for User Entity Instance: Top-level Entity: |imagenPrintTest
+ 17. Parameter Settings for User Entity Instance: ram:memoriaDatos|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: vgaTest:vga
+ 19. Parameter Settings for User Entity Instance: vgaTest:vga|vga_pll:u1|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i
+ 20. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins
+ 21. Parameter Settings for User Entity Instance: vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins
+ 22. altsyncram Parameter Settings by Entity Instance
+ 23. Port Connectivity Checks: "vgaTest:vga|vga_pll:u1"
+ 24. Port Connectivity Checks: "ram:memoriaDatos"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+ 28. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -61,16 +60,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 07 03:27:48 2024       ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov 10 11:51:45 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; pipeline                                    ;
 ; Top-level Entity Name           ; imagenPrintTest                             ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 153                                         ;
+; Total registers                 ; 154                                         ;
 ; Total pins                      ; 31                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 1,507,328                                   ;
+; Total block memory bits         ; 1,572,864                                   ;
 ; Total DSP Blocks                ; 1                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -182,7 +181,13 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-10        ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -222,20 +227,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 149       ;
+; Estimate of Logic utilization (ALMs needed) ; 151       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 240       ;
+; Combinational ALUT usage for logic          ; 243       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 55        ;
-;     -- 5 input functions                    ; 33        ;
+;     -- 6 input functions                    ; 57        ;
+;     -- 5 input functions                    ; 10        ;
 ;     -- 4 input functions                    ; 7         ;
-;     -- <=3 input functions                  ; 145       ;
+;     -- <=3 input functions                  ; 169       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 153       ;
+; Dedicated logic registers                   ; 154       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 31        ;
 ; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 1507328   ;
+; Total block memory bits                     ; 1572864   ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 1         ;
 ;                                             ;           ;
@@ -243,9 +248,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 228       ;
-; Total fan-out                               ; 4323      ;
-; Average fan-out                             ; 6.74      ;
+; Maximum fan-out                             ; 237       ;
+; Total fan-out                               ; 4446      ;
+; Average fan-out                             ; 6.81      ;
 +---------------------------------------------+-----------+
 
 
@@ -254,13 +259,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name          ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |imagenPrintTest                          ; 240 (118)           ; 153 (39)                  ; 1507328           ; 1          ; 31   ; 0            ; |imagenPrintTest                                                                                                        ; imagenPrintTest      ; work         ;
-;    |ram:memoriaDatos|                     ; 8 (0)               ; 3 (0)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos                                                                                       ; ram                  ; work         ;
-;       |altsyncram:altsyncram_component|   ; 8 (0)               ; 3 (0)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component                                                       ; altsyncram           ; work         ;
-;          |altsyncram_njo1:auto_generated| ; 8 (0)               ; 3 (3)                     ; 1507328           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated                        ; altsyncram_njo1      ; work         ;
+; |imagenPrintTest                          ; 243 (120)           ; 154 (40)                  ; 1572864           ; 1          ; 31   ; 0            ; |imagenPrintTest                                                                                                        ; imagenPrintTest      ; work         ;
+;    |ram:memoriaDatos|                     ; 8 (0)               ; 3 (0)                     ; 1572864           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos                                                                                       ; ram                  ; work         ;
+;       |altsyncram:altsyncram_component|   ; 8 (0)               ; 3 (0)                     ; 1572864           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component                                                       ; altsyncram           ; work         ;
+;          |altsyncram_njo1:auto_generated| ; 8 (0)               ; 3 (3)                     ; 1572864           ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated                        ; altsyncram_njo1      ; work         ;
 ;             |decode_61a:rden_decode|      ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|decode_61a:rden_decode ; decode_61a           ; work         ;
-;    |vgaTest:vga|                          ; 114 (0)             ; 111 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga                                                                                            ; vgaTest              ; work         ;
-;       |vga_controller:vga_ins|            ; 114 (81)            ; 111 (87)                  ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_controller:vga_ins                                                                     ; vga_controller       ; work         ;
+;    |vgaTest:vga|                          ; 115 (0)             ; 111 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga                                                                                            ; vgaTest              ; work         ;
+;       |vga_controller:vga_ins|            ; 115 (82)            ; 111 (87)                  ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_controller:vga_ins                                                                     ; vga_controller       ; work         ;
 ;          |video_sync_generator:LTM_ins|   ; 33 (33)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_controller:vga_ins|video_sync_generator:LTM_ins                                        ; video_sync_generator ; work         ;
 ;       |vga_pll:u1|                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_pll:u1                                                                                 ; vga_pll              ; vga_pll      ;
 ;          |vga_pll_0002:vga_pll_inst|      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |imagenPrintTest|vgaTest:vga|vga_pll:u1|vga_pll_0002:vga_pll_inst                                                       ; vga_pll_0002         ; vga_pll      ;
@@ -328,23 +333,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Registers Removed During Synthesis                            ;
-+---------------------------------------+-----------------------+
-; Register name                         ; Reason for Removal    ;
-+---------------------------------------+-----------------------+
-; rgb[1][7]                             ; Merged with rgb[0][0] ;
-; Total Number of Removed Registers = 1 ;                       ;
-+---------------------------------------+-----------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 153   ;
-; Number of registers using Synchronous Clear  ; 59    ;
+; Total registers                              ; 154   ;
+; Number of registers using Synchronous Clear  ; 83    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 78    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -358,7 +353,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 9:1                ; 23 bits   ; 138 LEs       ; 138 LEs              ; 0 LEs                  ; Yes        ; |imagenPrintTest|rgb[1][5] ;
+; 9:1                ; 24 bits   ; 144 LEs       ; 120 LEs              ; 24 LEs                 ; Yes        ; |imagenPrintTest|rgb[2][1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -808,16 +803,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ram:memoriaDatos"                                                                      ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; data    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; wren    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; q[7..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; q[31]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ram:memoriaDatos"                                                                        ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; data      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; wren      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q[31..24] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -825,33 +819,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 153                         ;
+; arriav_ff             ; 154                         ;
 ;     CLR               ; 19                          ;
 ;     CLR SCLR          ; 49                          ;
 ;     ENA               ; 16                          ;
 ;     ENA CLR SCLR      ; 10                          ;
-;     plain             ; 59                          ;
-; arriav_lcell_comb     ; 241                         ;
+;     SCLR              ; 24                          ;
+;     plain             ; 36                          ;
+; arriav_lcell_comb     ; 244                         ;
 ;     arith             ; 94                          ;
 ;         1 data inputs ; 92                          ;
 ;         2 data inputs ; 2                           ;
-;     normal            ; 131                         ;
+;     normal            ; 134                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 25                          ;
-;         3 data inputs ; 8                           ;
+;         3 data inputs ; 32                          ;
 ;         4 data inputs ; 7                           ;
-;         5 data inputs ; 33                          ;
-;         6 data inputs ; 55                          ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 57                          ;
 ;     shared            ; 16                          ;
 ;         2 data inputs ; 16                          ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 31                          ;
 ; generic_pll           ; 1                           ;
-; stratixv_ram_block    ; 184                         ;
+; stratixv_ram_block    ; 192                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.97                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -870,7 +865,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 07 03:27:39 2024
+    Info: Processing started: Sun Nov 10 11:51:26 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -925,7 +920,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file imagenp
 Warning (10236): Verilog HDL Implicit Net warning at multiplicador.sv(12): created implicit net for "product" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv Line: 12
 Info (12127): Elaborating entity "imagenPrintTest" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at imagenPrintTest.sv(56): truncated value with size 32 to match size of target (16) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 56
-Warning (10230): Verilog HDL assignment warning at imagenPrintTest.sv(57): truncated value with size 9 to match size of target (8) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 57
 Info (12128): Elaborating entity "ram" for hierarchy "ram:memoriaDatos" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 28
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:memoriaDatos|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
 Info (12130): Elaborated megafunction instantiation "ram:memoriaDatos|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
@@ -948,6 +942,7 @@ Info (12133): Instantiated megafunction "ram:memoriaDatos|altsyncram:altsyncram_
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_njo1.tdf
     Info (12023): Found entity 1: altsyncram_njo1 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 34
 Info (12128): Elaborating entity "altsyncram_njo1" for hierarchy "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Critical Warning (127005): Memory depth (65536) in the design file differs from memory depth (50625) in the Memory Initialization File "C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagen.hex" -- setting initial value for remaining addresses to 0 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
     Info (12023): Found entity 1: decode_dla File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/decode_dla.tdf Line: 23
 Info (12128): Elaborating entity "decode_dla" for hierarchy "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|decode_dla:decode3" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 44
@@ -1032,94 +1027,86 @@ Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(82): 
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.sv(85): truncated value with size 32 to match size of target (11) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/video_sync_generator.sv Line: 85
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a0" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 47
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 71
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a2" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 95
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a3" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 119
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a4" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 143
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a5" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 167
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a6" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 191
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a7" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 215
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a24" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 623
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a25" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 647
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a26" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 671
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a27" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 695
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a28" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 719
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a29" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 743
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a30" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 767
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a31" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 791
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a32" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 815
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a33" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 839
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a34" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 863
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a35" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 887
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a36" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 911
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a37" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 935
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a38" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 959
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a39" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 983
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a56" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1391
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a57" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1415
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a58" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1439
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a59" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1463
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a60" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1487
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a61" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1511
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a62" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1535
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a63" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1559
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a64" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1583
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a65" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1607
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a66" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1631
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a67" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1655
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a68" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1679
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a69" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1703
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a70" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1727
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a71" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 1751
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a88" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2159
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a89" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2183
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a90" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2207
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a91" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2231
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a92" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2255
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a93" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2279
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a94" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2303
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a95" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2327
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a96" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2351
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a97" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2375
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a98" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2399
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a99" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2423
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a100" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2447
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a101" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2471
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a102" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2495
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a103" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2519
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a120" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2927
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a121" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2951
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a122" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2975
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a123" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 2999
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a124" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3023
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a125" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3047
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a126" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3071
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a127" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3095
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a128" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3119
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a129" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3143
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a130" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3167
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a131" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3191
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a132" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3215
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a133" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3239
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a134" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3263
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a135" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3287
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a152" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3695
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a153" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3719
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a154" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3743
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a155" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3767
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a156" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3791
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a157" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3815
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a158" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3839
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a159" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3863
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a160" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3887
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a161" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3911
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a162" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3935
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a163" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3959
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a164" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 3983
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a165" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4007
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a166" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4031
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a167" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4055
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a184" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4463
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a185" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4487
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a186" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4511
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a187" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4535
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a188" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4559
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a189" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4583
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a190" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4607
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a191" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4631
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a192" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4655
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a193" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4679
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a194" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4703
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a195" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4727
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a196" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4751
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a197" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4775
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a198" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4799
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a199" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 4823
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a216" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5231
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a217" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5255
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a218" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5279
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a219" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5303
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a220" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5327
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a221" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5351
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a222" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5375
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a223" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5399
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a224" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5423
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a225" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5447
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a226" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5471
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a227" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5495
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a228" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5519
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a229" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5543
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a230" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5567
-        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a231" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5591
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a248" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 5999
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a249" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 6023
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a250" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 6047
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a251" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 6071
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a252" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 6095
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a253" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 6119
+        Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a254" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 6143
         Warning (14320): Synthesized away node "ram:memoriaDatos|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|ram_block1a255" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 6167
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/output_files/pipeline.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 468 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 477 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 251 logic cells
-    Info (21064): Implemented 184 RAM segments
+    Info (21061): Implemented 252 logic cells
+    Info (21064): Implemented 192 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4914 megabytes
-    Info: Processing ended: Thu Nov 07 03:27:48 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:06
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 74 warnings
+    Info: Peak virtual memory: 4911 megabytes
+    Info: Processing ended: Sun Nov 10 11:51:45 2024
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+

@@ -6,9 +6,13 @@ module uniciclo(
 //Creacion PC
 logic [31:0] pc = 0;
 
+//Creacion de instrRegMux
+logic [3:0] regSrc;
+logic [3:0] ra2;
+
+
 //Creacion de memorio de instrucciones
 logic [31:0] instruccionActual;
-
 
 //Creacion archivo de Registros
 logic regWrite;
@@ -17,6 +21,10 @@ logic [31:0] writeData;
 
 //Creacion extensor
 logic [31:0] extImm;
+
+//Creacion regExtAluMux
+logic [3:0] aluSrc;
+logic [31:0] srcB;
 
 //Creacion de la ALU
 logic [3:0] aluControl;
@@ -77,6 +85,16 @@ always_comb begin
     end
 end
 
+
+logic [1:0][31:0] instrRegMux_in;
+assign instrRegMux_in[0] = instruccionActual[3:0];
+assign instrRegMux_in[1] = instruccionActual[15:12];
+mux16to1 #(4) instrRegMux(
+    .s(regSrc),
+    .in(instrRegMux_in),
+    .out(ra2)
+);
+
 rom memoriaInstrucciones (
     .clock(clk),
     .address(pc[8:0]),
@@ -88,7 +106,7 @@ registros archivoRegistros(
     .rst(rst), 
     .we3(regWrite),
     .a1(instruccionActual[19:16]), 
-    .a2(instruccionActual[15:12]), 
+    .a2(ra2), 
     .a3(instruccionActual[15:12]),
     .wd3(result),
     .r15(pc_8),
@@ -103,9 +121,18 @@ extensor #(.M(12), .N(32)) extend (
     .out(extImm)
 );
 
+logic [1:0][31:0] regExtAluMux_in;
+assign regExtAluMux_in[0] = extImm;
+assign regExtAluMux_in[1] = writeData;
+mux16to1 regExtAluMux (
+    .s(aluSrc),
+    .in(regExtAluMux_in),
+    .out(srcB)
+);
+
 aluPara #(.N(32)) ALU (
 	.a(srcA),
-	.b(extImm),	
+	.b(srcB),	
 	.selector(aluControl),
 	.resultado(aluResult),
 	.display_selector1(),

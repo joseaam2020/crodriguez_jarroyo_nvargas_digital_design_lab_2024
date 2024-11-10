@@ -81,9 +81,9 @@ begin
   end
 end
 
-assign oVGA_B=bgr_data[2];
+assign oVGA_B=bgr_data[0];
 assign oVGA_G=bgr_data[1]; 
-assign oVGA_R=bgr_data[0];
+assign oVGA_R=bgr_data[2];
 ///////////////////
 //////Delay the iHD, iVD,iDEN for one clock cycle;
 logic mHS, mVS, mBLANK_n;
