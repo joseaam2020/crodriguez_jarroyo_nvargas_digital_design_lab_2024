@@ -62,6 +62,7 @@ module aluPara #(parameter N = 4) (
 	assign mux_in[7] = a ^ b; 
 	assign mux_in[8] = a << 1;
 	assign mux_in[9] = a >> 1;
+	assign mux_in[10] = b;
 
 	//Se definene valores para overflow y carry
 	logic cout;

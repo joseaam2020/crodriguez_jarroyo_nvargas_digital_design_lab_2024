@@ -60,11 +60,11 @@ always_ff @(posedge clk or posedge reset) begin
         flags <= aluFlags;
     end else begin
         if(flagWrite[1]) begin
-            flags[3:2] <= aluFlags[3:2];
+            flags[3:2] <= aluFlags[3:2]; //Zero y Negativo
         end
 
         if (flagWrite[0])  begin
-            flags[1:0] <= aluFlags[1:0];
+            flags[1:0] <= aluFlags[1:0]; //Overflow y carry
         end
     end
 end

@@ -39,6 +39,13 @@ always_comb begin
                 flagW = 2'b10;
             end 
             aluControl = 4'b0110;
+        end else if (funct[4:1] == 4'b1101) begin //mov
+            if (funct[0] == 0) begin
+                flagW = 2'b00;
+            end else begin
+                flagW = 2'b10;
+            end 
+            aluControl = 4'b1010;
         end
     end
 end
