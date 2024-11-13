@@ -8,6 +8,7 @@ logic [31:0] pc = 0;
 
 //Creacion de instrRegMux
 logic [3:0] regSrc;
+logic [3:0] ra1;
 logic [3:0] ra2;
 
 
@@ -29,6 +30,7 @@ logic [31:0] srcB;
 //Creacion de la ALU
 logic [3:0] aluControl;
 logic [31:0] aluResult;
+logic [3:0] aluFlags;
 
 //Creacion de la memoria de datos
 logic memWrite;
@@ -50,49 +52,43 @@ logic [31:0] pc_;
 logic [3:0] memtoReg;
 logic [31:0] result;
 
-always_comb begin
-    // Inicializar todas las señales a sus valores predeterminados
-    aluControl = 4'b0000;
-    regWrite = 0;
-    memtoReg = 0;
-    memWrite = 0;
-    pcSrc = 0;
+unidadControl uc (
+    //Inputs
+    .clk(clk),
+    .reset(rst),
+    .cond(instruccionActual[31:28]),
+    .op(instruccionActual[27:26]),
+    .funct(instruccionActual[25:20]),
+    .rd(instruccionActual[15:12]),
+    .aluFlags(aluFlags),
 
-    if (instruccionActual[27:26] == 2'b00) begin // instrucciones de datos
-        if (instruccionActual[24:21] == 4'b0100) begin // ADD
-            aluControl = 4'b0000; // add
-        end else if (instruccionActual[24:21] == 4'b0010) begin // SUB
-            aluControl = 4'b0001; // sub
-        end
-        regWrite = 1;
-        memtoReg = 0;
-        memWrite = 0;
-        pcSrc = 0;
-    end else if (instruccionActual[27:26] == 2'b01) begin // instrucciones de memoria
-        aluControl = 4'b0000; // add para calcular dirección
-        memtoReg = 1;
-        pcSrc = 0;
+    //outputs
+    .pcSrc(pcSrc),
+    .regSrc(regSrc),
+    .memtoReg(memtoReg),
+    .memWrite(memWrite),
+    .aluControl(aluControl),
+    .aluSrc(aluSrc),
+    .regWrite(regWrite)
+);
 
-        if (instruccionActual[20] == 1'b0) begin
-            // STR
-            memWrite = 1;
-            regWrite = 0;
-        end else begin
-            // LDR
-            memWrite = 0;
-            regWrite = 1;
-        end
-    end
-end
-
-
-logic [1:0][31:0] instrRegMux_in;
+logic [1:0][3:0] instrRegMux_in;
 assign instrRegMux_in[0] = instruccionActual[3:0];
 assign instrRegMux_in[1] = instruccionActual[15:12];
-mux16to1 #(4) instrRegMux(
-    .s(regSrc),
+mux #(.S(1),.N(4)) instrRegMux(
+    .s(regSrc[1]),
     .in(instrRegMux_in),
     .out(ra2)
+);
+
+
+logic [1:0][3:0] instrRegMux1_in;
+assign instrRegMux1_in[0] = instruccionActual[19:16];
+assign instrRegMux1_in[1] = 4'b1111;
+mux #(.S(1),.N(4)) instrRegMux1(
+    .s(regSrc[0]),
+    .in(instrRegMux1_in),
+    .out(ra1)
 );
 
 rom memoriaInstrucciones (
@@ -105,7 +101,7 @@ registros archivoRegistros(
     .clk(clk), 
     .rst(rst), 
     .we3(regWrite),
-    .a1(instruccionActual[19:16]), 
+    .a1(ra1), 
     .a2(ra2), 
     .a3(instruccionActual[15:12]),
     .wd3(result),
@@ -122,9 +118,9 @@ extensor #(.M(12), .N(32)) extend (
 );
 
 logic [1:0][31:0] regExtAluMux_in;
-assign regExtAluMux_in[0] = extImm;
-assign regExtAluMux_in[1] = writeData;
-mux16to1 regExtAluMux (
+assign regExtAluMux_in[1] = extImm;
+assign regExtAluMux_in[0] = writeData;
+mux #(.S(4),.N(32)) regExtAluMux (
     .s(aluSrc),
     .in(regExtAluMux_in),
     .out(srcB)
@@ -139,10 +135,10 @@ aluPara #(.N(32)) ALU (
 	.display_selector2(),
 	.display_resultado1(),
 	.display_resultado2(),
-	.zero_flag(),
-	.carry_flag(),
-	.overflow_flag(),
-	.negative_flag() 
+	.zero_flag(aluFlags[3]),
+	.carry_flag(aluFlags[1]),
+	.overflow_flag(aluFlags[0]),
+	.negative_flag(aluFlags[2]) 
 );
 
 ram memoriaDatos(
@@ -172,7 +168,7 @@ Sumador_estructural #(32) sumadorPC8 (
 logic [1:0][31:0] muxPC_in;
 assign muxPC_in[0] = pc_4;
 assign muxPC_in[1] = result;
-mux16to1 #(.N(32)) muxPC (
+mux #(.S(4),.N(32)) muxPC (
     .s(pcSrc),
     .in(muxPC_in), //puede ser que los valores de los muxes esten mal y haya que darles vuelta
     .out(pc_)
@@ -181,7 +177,7 @@ mux16to1 #(.N(32)) muxPC (
 logic [1:0][31:0] aluMemMux_in;
 assign aluMemMux_in[0] = aluResult;
 assign aluMemMux_in[1] = readData;
-mux16to1 #(.N(32)) aluMemMux (
+mux #(.S(4),.N(32)) aluMemMux (
     .s(memtoReg),
     .in(aluMemMux_in),
     .out(result)

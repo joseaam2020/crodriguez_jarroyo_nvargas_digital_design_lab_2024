@@ -18,7 +18,7 @@ module aluPara #(parameter N = 4) (
 	//Se define Mux 
     logic [15:0][N-1:0] mux_in;
 	
-	mux16to1 #(N) nuevo_mux (	
+	mux #(.S(4),.N(N)) nuevo_mux (	
         .s(selector),
         .in(mux_in),  
         .out(resultado) 

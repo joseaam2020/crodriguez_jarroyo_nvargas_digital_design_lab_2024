@@ -1,1 +1,3 @@
+Info (10281): Verilog HDL Declaration information at mux_tb.sv(6): object "S" differs only in case from object "s" in the same scope File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux_tb.sv Line: 6
+Info (10281): Verilog HDL Declaration information at mux.sv(1): object "S" differs only in case from object "s" in the same scope File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux.sv Line: 1
 Warning (10268): Verilog HDL information at imagenPrintTest.sv(52): always construct contains both blocking and non-blocking assignments File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest.sv Line: 52
