@@ -5,6 +5,7 @@ module unidadControl (
     input logic [1:0] op,
     input logic [5:0] funct,
     input logic [3:0] rd,
+    input logic [3:0] mulBits,
     input logic [3:0] aluFlags, //LSB VCNZ MSB
     
     output logic [3:0] pcSrc,
@@ -20,6 +21,7 @@ logic branch;
 logic regW;
 logic memW;
 logic aluOp;
+logic mulOp;
 logic [1:0] flagW;
 logic [1:0] flagWrite;
 logic [3:0] flags;
@@ -30,6 +32,7 @@ mainDec decoder (
     //inputs
     .op(op),
     .funct(funct),
+    .mulBits(mulBits),
     //outputs
     .branch(branch),
     .regW(regW),
@@ -37,13 +40,15 @@ mainDec decoder (
     .memtoReg(memtoReg),
     .aluSrc(aluSrc),
     .regSrc(regSrc),
-    .aluOp(aluOp)
+    .aluOp(aluOp),
+    .mulOp(mulOp)
 );
 
 aluDec aluDecoder(
     //inputs
     .funct(funct[4:0]),
     .aluOp(aluOp),
+    .mulOp(mulOp),
     //outputs
     .aluControl(aluControl),
     .flagW(flagW)

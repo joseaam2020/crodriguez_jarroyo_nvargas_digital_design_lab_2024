@@ -10,6 +10,7 @@ logic [31:0] pc = 0;
 logic [3:0] regSrc;
 logic [3:0] ra1;
 logic [3:0] ra2;
+logic [3:0] ra3;
 
 
 //Creacion de memorio de instrucciones
@@ -60,6 +61,7 @@ unidadControl uc (
     .op(instruccionActual[27:26]),
     .funct(instruccionActual[25:20]),
     .rd(instruccionActual[15:12]),
+    .mulBits(instruccionActual[7:4]),
     .aluFlags(aluFlags),
 
     //outputs
@@ -76,19 +78,29 @@ logic [1:0][3:0] instrRegMux_in;
 assign instrRegMux_in[0] = instruccionActual[3:0];
 assign instrRegMux_in[1] = instruccionActual[15:12];
 mux #(.S(1),.N(4)) instrRegMux(
-    .s(regSrc[1]),
+    .s(regSrc[2]),
     .in(instrRegMux_in),
     .out(ra2)
 );
 
 
-logic [1:0][3:0] instrRegMux1_in;
+logic [3:0][3:0] instrRegMux1_in;
 assign instrRegMux1_in[0] = instruccionActual[19:16];
 assign instrRegMux1_in[1] = 4'b1111;
-mux #(.S(1),.N(4)) instrRegMux1(
-    .s(regSrc[0]),
+assign instrRegMux1_in[2] = instruccionActual[11:8];
+mux #(.S(2),.N(4)) instrRegMux1(
+    .s(regSrc[1:0]),
     .in(instrRegMux1_in),
     .out(ra1)
+);
+
+logic [1:0][3:0] instrRegMux2_in;
+assign instrRegMux2_in[0] = instruccionActual[15:12];
+assign instrRegMux2_in[1] = instruccionActual[19:16];
+mux #(.S(1),.N(4)) instrRegMux2(
+    .s(regSrc[3]),
+    .in(instrRegMux2_in),
+    .out(ra3)
 );
 
 rom memoriaInstrucciones (
@@ -103,7 +115,7 @@ registros archivoRegistros(
     .we3(regWrite),
     .a1(ra1), 
     .a2(ra2), 
-    .a3(instruccionActual[15:12]),
+    .a3(ra3),
     .wd3(result),
     .r15(pc_8),
     
