@@ -1,5 +1,5 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=pipeline_iputf_input --spd=C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/vga_pll.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=pipeline_iputf_input --spd=C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/vga_pll.spd --spd=C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk.spd 
 
 ========= EDA Simulation Settings =====================
 

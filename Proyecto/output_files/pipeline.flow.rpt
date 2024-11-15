@@ -1,5 +1,5 @@
 Flow report for pipeline
-Thu Nov 14 17:45:20 2024
+Fri Nov 15 11:08:23 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Thu Nov 14 17:45:20 2024       ;
+; Flow Status                 ; Successful - Fri Nov 15 11:08:23 2024       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; pipeline                                    ;
 ; Top-level Entity Name       ; uniciclo                                    ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2024 17:45:12 ;
+; Start date & time ; 11/15/2024 11:08:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id         ;
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 88648931053584.173162791219108         ; --            ; --          ; --                 ;
+; COMPILER_SIGNATURE_ID                ; 88648931053584.173169049520156         ; --            ; --          ; --                 ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Sumador_ins     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_sumador         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; imagenPrintTest_tb ;
@@ -111,9 +111,10 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                 ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                 ;
 ; MISC_FILE                            ; ram_bb.v                               ; --            ; --          ; --                 ;
-; MISC_FILE                            ; rom_bb.v                               ; --            ; --          ; --                 ;
 ; MISC_FILE                            ; vga_pll.cmp                            ; --            ; --          ; --                 ;
 ; MISC_FILE                            ; vga_pll_sim/vga_pll.vo                 ; --            ; --          ; --                 ;
+; MISC_FILE                            ; instrClk.cmp                           ; --            ; --          ; --                 ;
+; MISC_FILE                            ; instrClk_sim/instrClk.vo               ; --            ; --          ; --                 ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
 ; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
@@ -121,6 +122,8 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                 ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                 ;
 ; SPD_FILE                             ; vga_pll.spd                            ; --            ; --          ; --                 ;
+; SPD_FILE                             ; instrClk.spd                           ; --            ; --          ; --                 ;
+; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --                 ;
 ; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --                 ;
 ; TOP_LEVEL_ENTITY                     ; uniciclo                               ; pipeline      ; --          ; --                 ;
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
@@ -131,8 +134,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4837 MB             ; 00:00:05                           ;
-; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4848 MB             ; 00:00:04                           ;
+; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:04                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

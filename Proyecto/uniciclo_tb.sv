@@ -15,7 +15,7 @@ module uniciclo_tb;
     // Generación de reloj
     initial begin
         clk = 0;
-        forever #5 clk = ~clk;  // Período de reloj de 10 ns
+        forever #10 clk = ~clk;  // Período de reloj de 10 ns
     end
 
     // Proceso de reset y casos de prueba
@@ -24,7 +24,7 @@ module uniciclo_tb;
         rst = 1;
 
         // Aplicar reset al inicio
-        #10;
+        #1;
         rst = 0;
 
         // Caso de prueba 1: Iniciar el sistema

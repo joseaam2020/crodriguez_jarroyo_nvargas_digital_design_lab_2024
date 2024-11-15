@@ -15,6 +15,7 @@ logic [3:0] ra3;
 
 //Creacion de memorio de instrucciones
 logic [31:0] instruccionActual;
+logic instruccionClk;
 
 //Creacion archivo de Registros
 logic regWrite;
@@ -103,14 +104,20 @@ mux #(.S(1),.N(4)) instrRegMux2(
     .out(ra3)
 );
 
+instrClk desfase (
+    .refclk(clk),
+    .rst(rst),
+    .outclk_0(instruccionClk)
+);
+
 rom memoriaInstrucciones (
-    .clock(clk),
+    .clock(instruccionClk),
     .address(pc[8:0]),
     .q(instruccionActual)
 );
 
 registros archivoRegistros(
-    .clk(clk), 
+    .clk(instruccionClk), 
     .rst(rst), 
     .we3(regWrite),
     .a1(ra1), 
@@ -171,7 +178,7 @@ Sumador_estructural #(32) sumadorPC4 (
 
 Sumador_estructural #(32) sumadorPC8 (
     .a(pc_4),
-    .b(32'd1),
+    .b(32'd2),
     .cin(32'd0),
     .cout_sumador(pc8_overflow),
     .s_sumador(pc_8)
@@ -195,12 +202,17 @@ mux #(.S(4),.N(32)) aluMemMux (
     .out(result)
 );
 
-always_ff @(posedge clk) begin
-    if(~pc4_overflow) begin
-        pc <= pc_; //En cada clock actualice pc
+always_ff @(posedge clk or posedge rst) begin
+    if (rst) begin
+        pc <= -1;  //reset
     end else begin
-        pc <= 0;  //Si hay overflow reinicie
+        if(~pc4_overflow) begin
+            pc <= pc_; //En cada clock actualice pc
+        end else begin
+            pc <= 0;  //Si hay overflow reinicie
+        end 
     end 
 end
+
 
 endmodule

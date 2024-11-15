@@ -55,7 +55,7 @@ aluDec aluDecoder(
 );
 
 assign pcS = ((rd == 15) & regW) | branch;
-assign flagWrite = flagW & condEx;
+assign flagWrite = {flagW[1] & condEx,flagW[0] & condEx};
 assign regWrite = regW & condEx;
 assign memWrite = memW & condEx;
 assign pcSrc = pcS & condEx;

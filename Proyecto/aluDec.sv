@@ -56,6 +56,9 @@ always_comb begin
                 flagW = 2'b10;
             end 
             aluControl = 4'b1010;
+        end else if (funct == 5'b10101) begin //cmp
+            flagW = 2'b11;
+            aluControl = 4'b0001;
         end
     end
 end

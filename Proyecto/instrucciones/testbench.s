@@ -4,7 +4,7 @@ _start:
     // Initialize values in registers
     MOV R0, #5          // Load 5 into R0
     MOV R1, #10         // Load 10 into R1
-    MOV R2, #3          // Load 3 into R2
+    MOV R2, #4          // Load 3 into R2
     MOV R3, #50         // Threshold for comparison
 
     // ADD R0 and R1
