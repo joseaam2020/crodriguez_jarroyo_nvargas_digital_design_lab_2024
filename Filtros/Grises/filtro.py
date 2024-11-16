@@ -43,12 +43,13 @@ def gray_filter(img_sepia):
 
             # Dividir
             # Para el rojo
-            valor1 /= 1000
-            valor2 /= 1000
-            valor3 /= 1000
-
+            #valor1 /= 1000
+            #valor2 /= 1000
+            #valor3 /= 1000
             # Valor para los grises
             grayValue = int(valor1 + valor2 + valor3)
+            grayValue /= 1000
+            grayValue = int(grayValue) # 1,5
 
 
 
@@ -65,7 +66,7 @@ def gray_filter(img_sepia):
             pixels[px, py] = (grayValue, grayValue, grayValue)
     return img_sepia
 
-img = Image.open("computer.jpg") # Variable para guardar el path de la imagen
+img = Image.open("pandaR.jpg") # Variable para guardar el path de la imagen
 img.show() # Muestra la imagen
 
 sepia_img = gray_filter(img) #Llamada a la función
