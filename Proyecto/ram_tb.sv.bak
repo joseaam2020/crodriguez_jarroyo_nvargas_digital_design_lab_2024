@@ -1,0 +1,77 @@
+`timescale 1ps / 1ps
+
+module tb_ram;
+
+    // Señales para el módulo
+    logic [15:0] address;
+    logic [3:0] byteena;
+    logic clock;
+    logic [31:0] data;
+    logic wren;
+    logic [31:0] q;
+
+    // Instancia del módulo RAM
+    ram uut (
+        .address(address),
+        .byteena(byteena),
+        .clock(clock),
+        .data(data),
+        .wren(wren),
+        .q(q)
+    );
+
+    // Generador de reloj (20 ns de periodo)
+    initial begin
+        clock = 0;
+        forever #10 clock = ~clock; // Toggle clock cada 10 ns
+    end
+
+    // Procedimiento principal de prueba
+    initial begin
+        // Inicializar señales
+        wren = 0;
+        address = 16'h0000;
+        data = 32'h00000000;
+        byteena = 4'b1111; // Habilitar todos los bytes
+
+        // Esperar a que inicie el reloj
+        @(posedge clock);
+
+        // Prueba de escritura: escribir datos en varias direcciones
+        wren = 1;
+        address = 16'h0000; data = 32'hDEADBEEF; @(posedge clock); // Escribir en 0x0000
+        address = 16'h0001; data = 32'hCAFEBABE; @(posedge clock); // Escribir en 0x0001
+        address = 16'h0002; data = 32'h12345678; @(posedge clock); // Escribir en 0x0002
+
+        // Deshabilitar escritura
+        wren = 0;
+        @(posedge clock);
+
+        // Prueba de lectura: leer datos almacenados
+        address = 16'h0000; @(posedge clock); // Leer dirección 0x0000
+        $display("Read from 0x0000: %h (expected: DEADBEEF)", q);
+
+        address = 16'h0001; @(posedge clock); // Leer dirección 0x0001
+        $display("Read from 0x0001: %h (expected: CAFEBABE)", q);
+
+        address = 16'h0002; @(posedge clock); // Leer dirección 0x0002
+        $display("Read from 0x0002: %h (expected: 12345678)", q);
+
+        // Prueba de byte enable: escribir parcialmente
+        wren = 1;
+        address = 16'h0002;
+        data = 32'hFEDCBA98;
+        byteena = 4'b0011; // Habilitar solo los dos primeros bytes
+        @(posedge clock);
+
+        // Leer dirección para validar byte enable
+        wren = 0;
+        address = 16'h0003;
+        @(posedge clock);
+        $display("Read from 0x0003 with partial write: %h (expected: ????BA98)", q);
+
+        // Terminar simulación
+        $stop;
+    end
+
+endmodule

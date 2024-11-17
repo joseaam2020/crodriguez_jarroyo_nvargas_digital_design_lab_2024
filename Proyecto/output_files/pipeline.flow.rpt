@@ -1,5 +1,5 @@
 Flow report for pipeline
-Fri Nov 15 11:08:23 2024
+Sat Nov 16 19:00:31 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Fri Nov 15 11:08:23 2024       ;
+; Flow Status                 ; Successful - Sat Nov 16 19:00:31 2024       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; pipeline                                    ;
-; Top-level Entity Name       ; uniciclo                                    ;
+; Top-level Entity Name       ; byteRam                                     ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSXFC6D6F31C6                              ;
 ; Timing Models               ; Final                                       ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/15/2024 11:08:15 ;
+; Start date & time ; 11/16/2024 19:00:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id         ;
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 88648931053584.173169049520156         ; --            ; --          ; --                 ;
+; COMPILER_SIGNATURE_ID                ; 88648931053584.173180522423808         ; --            ; --          ; --                 ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Sumador_ins     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_sumador         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; imagenPrintTest_tb ;
@@ -82,7 +82,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mux_tb             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; uniciclo_tb        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_extensor        ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uniciclo_tb                            ; --            ; --          ; eda_simulation     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; byteRam_tb         ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; byteRam_tb                             ; --            ; --          ; eda_simulation     ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation     ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                 ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation     ;
@@ -93,6 +94,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_FILE                  ; mux_tb.sv                              ; --            ; --          ; mux_tb             ;
 ; EDA_TEST_BENCH_FILE                  ; uniciclo_tb.sv                         ; --            ; --          ; uniciclo_tb        ;
 ; EDA_TEST_BENCH_FILE                  ; tb_extensor.sv                         ; --            ; --          ; tb_extensor        ;
+; EDA_TEST_BENCH_FILE                  ; byteRam_tb.sv                          ; --            ; --          ; byteRam_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_Sumador_ins                         ; --            ; --          ; tb_Sumador_ins     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_sumador                             ; --            ; --          ; tb_sumador         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; imagenPrintTest_tb                     ; --            ; --          ; imagenPrintTest_tb ;
@@ -100,6 +102,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_MODULE_NAME           ; mux_tb                                 ; --            ; --          ; mux_tb             ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; uniciclo_tb                            ; --            ; --          ; uniciclo_tb        ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_extensor                            ; --            ; --          ; tb_extensor        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; byteRam_tb                             ; --            ; --          ; byteRam_tb         ;
 ; EDA_TEST_BENCH_NAME                  ; tb_sumador                             ; --            ; --          ; eda_simulation     ;
 ; EDA_TEST_BENCH_NAME                  ; tb_Sumador_ins                         ; --            ; --          ; eda_simulation     ;
 ; EDA_TEST_BENCH_NAME                  ; tb_extensor                            ; --            ; --          ; eda_simulation     ;
@@ -107,6 +110,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_NAME                  ; uniciclo_tb                            ; --            ; --          ; eda_simulation     ;
 ; EDA_TEST_BENCH_NAME                  ; imagenPrintTest_tb                     ; --            ; --          ; eda_simulation     ;
 ; EDA_TEST_BENCH_NAME                  ; mux_tb                                 ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; byteRam_tb                             ; --            ; --          ; eda_simulation     ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation     ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                 ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                 ;
@@ -115,9 +119,9 @@ https://fpgasoftware.intel.com/eula.
 ; MISC_FILE                            ; vga_pll_sim/vga_pll.vo                 ; --            ; --          ; --                 ;
 ; MISC_FILE                            ; instrClk.cmp                           ; --            ; --          ; --                 ;
 ; MISC_FILE                            ; instrClk_sim/instrClk.vo               ; --            ; --          ; --                 ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; byteRam     ; Top                ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; byteRam     ; Top                ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; byteRam     ; Top                ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                 ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                 ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                 ;
@@ -125,7 +129,7 @@ https://fpgasoftware.intel.com/eula.
 ; SPD_FILE                             ; instrClk.spd                           ; --            ; --          ; --                 ;
 ; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --                 ;
 ; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --                 ;
-; TOP_LEVEL_ENTITY                     ; uniciclo                               ; pipeline      ; --          ; --                 ;
+; TOP_LEVEL_ENTITY                     ; byteRam                                ; pipeline      ; --          ; --                 ;
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
 
 
@@ -134,8 +138,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4848 MB             ; 00:00:04                           ;
-; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:04                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4810 MB             ; 00:00:06                           ;
+; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

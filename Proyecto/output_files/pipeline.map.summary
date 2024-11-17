@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Fri Nov 15 11:08:23 2024
+Analysis & Elaboration Status : Successful - Sat Nov 16 19:00:31 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : pipeline
-Top-level Entity Name : uniciclo
+Top-level Entity Name : byteRam
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
