@@ -2,7 +2,7 @@
 _start:
 	mov r0, #0x1000 	// Direción donde se encuentra el primer pixel
 	mov r1, #0 			// Contador
-	mov r2, #0x2000 	// Dirección donde se guarda el pixel inicial convertido
+	ldr r2, =0x32704 	// Dirección donde se guarda el pixel inicial convertido
 	mov r3, #0 			// Guarda el resultado de la división
 	//mov r11, #0			// Contador para llevar la cantidad de pixeles
 	
@@ -64,7 +64,7 @@ result:
 	
 continue_loop:
 	add r1, r1, #1     
-    mov r5, #3          // Total de píxeles
+    ldr r5, =50625          // Total de píxeles
     cmp r11, r5          // Compara r1 con r5
     beq end_loop        // Si r1 >= r5
 	add r2, r2, #4
