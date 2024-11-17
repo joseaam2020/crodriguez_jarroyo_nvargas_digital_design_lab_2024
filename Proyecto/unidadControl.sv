@@ -12,6 +12,7 @@ module unidadControl (
     output logic [3:0] regSrc,
     output logic [3:0] memtoReg,
     output logic memWrite,
+    output logic byteWrite,
     output logic [3:0] aluControl,
     output logic [3:0] aluSrc,
     output logic regWrite
@@ -37,6 +38,7 @@ mainDec decoder (
     .branch(branch),
     .regW(regW),
     .memW(memW),
+    .byteWrite(byteWrite),
     .memtoReg(memtoReg),
     .aluSrc(aluSrc),
     .regSrc(regSrc),

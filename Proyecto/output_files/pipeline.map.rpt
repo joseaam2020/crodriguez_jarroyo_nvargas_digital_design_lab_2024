@@ -1,5 +1,5 @@
 Analysis & Elaboration report for pipeline
-Sat Nov 16 19:00:31 2024
+Sat Nov 16 21:23:57 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,12 +10,104 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
-  5. Source assignments for ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated
-  6. Parameter Settings for User Entity Instance: ram:newRam|altsyncram:altsyncram_component
-  7. altsyncram Parameter Settings by Entity Instance
-  8. Analysis & Elaboration Settings
-  9. Analysis & Elaboration Messages
- 10. Analysis & Elaboration Suppressed Messages
+  5. Source assignments for rom:memoriaInstrucciones|altsyncram:altsyncram_component|altsyncram_4vg1:auto_generated
+  6. Source assignments for byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated
+  7. Parameter Settings for User Entity Instance: mux:instrRegMux
+  8. Parameter Settings for User Entity Instance: mux:instrRegMux1
+  9. Parameter Settings for User Entity Instance: mux:instrRegMux2
+ 10. Parameter Settings for User Entity Instance: instrClk:desfase|instrClk_0002:instrclk_inst|altera_pll:altera_pll_i
+ 11. Parameter Settings for User Entity Instance: rom:memoriaInstrucciones|altsyncram:altsyncram_component
+ 12. Parameter Settings for User Entity Instance: extensor:extend
+ 13. Parameter Settings for User Entity Instance: mux:regExtAluMux
+ 14. Parameter Settings for User Entity Instance: aluPara:ALU
+ 15. Parameter Settings for User Entity Instance: aluPara:ALU|mux:nuevo_mux
+ 16. Parameter Settings for User Entity Instance: aluPara:ALU|Sumador_estructural:nuevo_sumandor
+ 17. Parameter Settings for User Entity Instance: aluPara:ALU|restador:nuevo_restador
+ 18. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador
+ 19. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador
+ 20. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador
+ 21. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador
+ 22. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador
+ 23. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador
+ 24. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador
+ 25. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador
+ 26. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[7].nuevo_sumador
+ 27. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[8].nuevo_sumador
+ 28. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[9].nuevo_sumador
+ 29. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[10].nuevo_sumador
+ 30. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[11].nuevo_sumador
+ 31. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[12].nuevo_sumador
+ 32. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[13].nuevo_sumador
+ 33. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[14].nuevo_sumador
+ 34. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[15].nuevo_sumador
+ 35. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[16].nuevo_sumador
+ 36. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[17].nuevo_sumador
+ 37. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[18].nuevo_sumador
+ 38. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[19].nuevo_sumador
+ 39. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[20].nuevo_sumador
+ 40. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[21].nuevo_sumador
+ 41. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[22].nuevo_sumador
+ 42. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[23].nuevo_sumador
+ 43. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[24].nuevo_sumador
+ 44. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[25].nuevo_sumador
+ 45. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[26].nuevo_sumador
+ 46. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[27].nuevo_sumador
+ 47. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[28].nuevo_sumador
+ 48. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[29].nuevo_sumador
+ 49. Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[30].nuevo_sumador
+ 50. Parameter Settings for User Entity Instance: byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component
+ 51. Parameter Settings for User Entity Instance: Sumador_estructural:sumadorPC4
+ 52. Parameter Settings for User Entity Instance: Sumador_estructural:sumadorPC8
+ 53. Parameter Settings for User Entity Instance: mux:muxPC
+ 54. Parameter Settings for User Entity Instance: mux:aluMemMux
+ 55. altsyncram Parameter Settings by Entity Instance
+ 56. Analysis & Elaboration Settings
+ 57. Port Connectivity Checks: "mux:aluMemMux"
+ 58. Port Connectivity Checks: "mux:muxPC"
+ 59. Port Connectivity Checks: "Sumador_estructural:sumadorPC8"
+ 60. Port Connectivity Checks: "Sumador_estructural:sumadorPC4"
+ 61. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[30].nuevo_sumador"
+ 62. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[29].nuevo_sumador"
+ 63. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[28].nuevo_sumador"
+ 64. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[27].nuevo_sumador"
+ 65. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[26].nuevo_sumador"
+ 66. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[25].nuevo_sumador"
+ 67. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[24].nuevo_sumador"
+ 68. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[23].nuevo_sumador"
+ 69. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[22].nuevo_sumador"
+ 70. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[21].nuevo_sumador"
+ 71. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[20].nuevo_sumador"
+ 72. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[19].nuevo_sumador"
+ 73. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[18].nuevo_sumador"
+ 74. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[17].nuevo_sumador"
+ 75. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[16].nuevo_sumador"
+ 76. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[15].nuevo_sumador"
+ 77. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[14].nuevo_sumador"
+ 78. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[13].nuevo_sumador"
+ 79. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[12].nuevo_sumador"
+ 80. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[11].nuevo_sumador"
+ 81. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[10].nuevo_sumador"
+ 82. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[9].nuevo_sumador"
+ 83. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[8].nuevo_sumador"
+ 84. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[7].nuevo_sumador"
+ 85. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador"
+ 86. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador"
+ 87. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador"
+ 88. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador"
+ 89. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador"
+ 90. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador"
+ 91. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador"
+ 92. Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador"
+ 93. Port Connectivity Checks: "aluPara:ALU|restador:nuevo_restador|restador_ins:restados[0].nuevo"
+ 94. Port Connectivity Checks: "aluPara:ALU|Sumador_estructural:nuevo_sumandor"
+ 95. Port Connectivity Checks: "aluPara:ALU|mux:nuevo_mux"
+ 96. Port Connectivity Checks: "aluPara:ALU"
+ 97. Port Connectivity Checks: "mux:regExtAluMux"
+ 98. Port Connectivity Checks: "extensor:extend"
+ 99. Port Connectivity Checks: "rom:memoriaInstrucciones"
+100. Port Connectivity Checks: "mux:instrRegMux1"
+101. Analysis & Elaboration Messages
+102. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -42,10 +134,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Nov 16 19:00:31 2024       ;
+; Analysis & Elaboration Status ; Successful - Sat Nov 16 21:23:57 2024       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; pipeline                                    ;
-; Top-level Entity Name         ; byteRam                                     ;
+; Top-level Entity Name         ; uniciclo                                    ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -73,103 +165,890 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration IP Cores Summary                                                               ;
-+--------+--------------+---------+--------------+--------------+---------------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance     ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+---------------------+-----------------+
-; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |byteRam|ram:newRam ; ram.v           ;
-+--------+--------------+---------+--------------+--------------+---------------------+-----------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration IP Cores Summary                                                                                     ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                           ; IP Include File ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------+-----------------+
+; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |uniciclo|instrClk:desfase                ; instrClk.v      ;
+; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |uniciclo|byteRam:memoriaDatos|ram:newRam ; ram.v           ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Source assignments for ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated ;
-+---------------------------------+--------------------+------+------------------------------------+
-; Assignment                      ; Value              ; From ; To                                 ;
-+---------------------------------+--------------------+------+------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                  ;
-+---------------------------------+--------------------+------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Source assignments for rom:memoriaInstrucciones|altsyncram:altsyncram_component|altsyncram_4vg1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                               ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                ;
++---------------------------------+--------------------+------+--------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ram:newRam|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-----------------------------+
-; Parameter Name                     ; Value                ; Type                        ;
-+------------------------------------+----------------------+-----------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                     ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE              ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                     ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                     ;
-; WIDTH_A                            ; 32                   ; Signed Integer              ;
-; WIDTHAD_A                          ; 16                   ; Signed Integer              ;
-; NUMWORDS_A                         ; 65536                ; Signed Integer              ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                     ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                     ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                     ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                     ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                     ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                     ;
-; WIDTH_B                            ; 1                    ; Untyped                     ;
-; WIDTHAD_B                          ; 1                    ; Untyped                     ;
-; NUMWORDS_B                         ; 1                    ; Untyped                     ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                     ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                     ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                     ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                     ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                     ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                     ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                     ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                     ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                     ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                     ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer              ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                     ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                     ;
-; BYTE_SIZE                          ; 8                    ; Untyped                     ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                     ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
-; INIT_FILE                          ; imagen.hex           ; Untyped                     ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                     ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                     ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                     ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                     ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                     ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                     ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                     ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                     ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                     ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                     ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                     ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                     ;
-; CBXI_PARAMETER                     ; altsyncram_njo1      ; Untyped                     ;
-+------------------------------------+----------------------+-----------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Source assignments for byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                      ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                       ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux:instrRegMux ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; S              ; 1     ; Signed Integer                      ;
+; N              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                       ;
-+-------------------------------------------+--------------------------------------------+
-; Name                                      ; Value                                      ;
-+-------------------------------------------+--------------------------------------------+
-; Number of entity instances                ; 1                                          ;
-; Entity Instance                           ; ram:newRam|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                ;
-;     -- WIDTH_A                            ; 32                                         ;
-;     -- NUMWORDS_A                         ; 65536                                      ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                               ;
-;     -- WIDTH_B                            ; 1                                          ;
-;     -- NUMWORDS_B                         ; 1                                          ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                     ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                               ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                       ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ;
-+-------------------------------------------+--------------------------------------------+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux:instrRegMux1 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; S              ; 2     ; Signed Integer                       ;
+; N              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux:instrRegMux2 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; S              ; 1     ; Signed Integer                       ;
+; N              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: instrClk:desfase|instrClk_0002:instrclk_inst|altera_pll:altera_pll_i ;
++--------------------------------------+------------------------+---------------------------------------------------+
+; Parameter Name                       ; Value                  ; Type                                              ;
++--------------------------------------+------------------------+---------------------------------------------------+
+; reference_clock_frequency            ; 50.0 MHz               ; String                                            ;
+; fractional_vco_multiplier            ; false                  ; String                                            ;
+; pll_type                             ; General                ; String                                            ;
+; pll_subtype                          ; General                ; String                                            ;
+; number_of_clocks                     ; 1                      ; Signed Integer                                    ;
+; operation_mode                       ; direct                 ; String                                            ;
+; deserialization_factor               ; 4                      ; Signed Integer                                    ;
+; data_rate                            ; 0                      ; Signed Integer                                    ;
+; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                                    ;
+; output_clock_frequency0              ; 50.000000 MHz          ; String                                            ;
+; phase_shift0                         ; 2000 ps                ; String                                            ;
+; duty_cycle0                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency1              ; 0 MHz                  ; String                                            ;
+; phase_shift1                         ; 0 ps                   ; String                                            ;
+; duty_cycle1                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency2              ; 0 MHz                  ; String                                            ;
+; phase_shift2                         ; 0 ps                   ; String                                            ;
+; duty_cycle2                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency3              ; 0 MHz                  ; String                                            ;
+; phase_shift3                         ; 0 ps                   ; String                                            ;
+; duty_cycle3                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency4              ; 0 MHz                  ; String                                            ;
+; phase_shift4                         ; 0 ps                   ; String                                            ;
+; duty_cycle4                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency5              ; 0 MHz                  ; String                                            ;
+; phase_shift5                         ; 0 ps                   ; String                                            ;
+; duty_cycle5                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency6              ; 0 MHz                  ; String                                            ;
+; phase_shift6                         ; 0 ps                   ; String                                            ;
+; duty_cycle6                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency7              ; 0 MHz                  ; String                                            ;
+; phase_shift7                         ; 0 ps                   ; String                                            ;
+; duty_cycle7                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency8              ; 0 MHz                  ; String                                            ;
+; phase_shift8                         ; 0 ps                   ; String                                            ;
+; duty_cycle8                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency9              ; 0 MHz                  ; String                                            ;
+; phase_shift9                         ; 0 ps                   ; String                                            ;
+; duty_cycle9                          ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency10             ; 0 MHz                  ; String                                            ;
+; phase_shift10                        ; 0 ps                   ; String                                            ;
+; duty_cycle10                         ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency11             ; 0 MHz                  ; String                                            ;
+; phase_shift11                        ; 0 ps                   ; String                                            ;
+; duty_cycle11                         ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency12             ; 0 MHz                  ; String                                            ;
+; phase_shift12                        ; 0 ps                   ; String                                            ;
+; duty_cycle12                         ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency13             ; 0 MHz                  ; String                                            ;
+; phase_shift13                        ; 0 ps                   ; String                                            ;
+; duty_cycle13                         ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency14             ; 0 MHz                  ; String                                            ;
+; phase_shift14                        ; 0 ps                   ; String                                            ;
+; duty_cycle14                         ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency15             ; 0 MHz                  ; String                                            ;
+; phase_shift15                        ; 0 ps                   ; String                                            ;
+; duty_cycle15                         ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency16             ; 0 MHz                  ; String                                            ;
+; phase_shift16                        ; 0 ps                   ; String                                            ;
+; duty_cycle16                         ; 50                     ; Signed Integer                                    ;
+; output_clock_frequency17             ; 0 MHz                  ; String                                            ;
+; phase_shift17                        ; 0 ps                   ; String                                            ;
+; duty_cycle17                         ; 50                     ; Signed Integer                                    ;
+; clock_name_0                         ;                        ; String                                            ;
+; clock_name_1                         ;                        ; String                                            ;
+; clock_name_2                         ;                        ; String                                            ;
+; clock_name_3                         ;                        ; String                                            ;
+; clock_name_4                         ;                        ; String                                            ;
+; clock_name_5                         ;                        ; String                                            ;
+; clock_name_6                         ;                        ; String                                            ;
+; clock_name_7                         ;                        ; String                                            ;
+; clock_name_8                         ;                        ; String                                            ;
+; clock_name_global_0                  ; false                  ; String                                            ;
+; clock_name_global_1                  ; false                  ; String                                            ;
+; clock_name_global_2                  ; false                  ; String                                            ;
+; clock_name_global_3                  ; false                  ; String                                            ;
+; clock_name_global_4                  ; false                  ; String                                            ;
+; clock_name_global_5                  ; false                  ; String                                            ;
+; clock_name_global_6                  ; false                  ; String                                            ;
+; clock_name_global_7                  ; false                  ; String                                            ;
+; clock_name_global_8                  ; false                  ; String                                            ;
+; m_cnt_hi_div                         ; 1                      ; Signed Integer                                    ;
+; m_cnt_lo_div                         ; 1                      ; Signed Integer                                    ;
+; m_cnt_bypass_en                      ; false                  ; String                                            ;
+; m_cnt_odd_div_duty_en                ; false                  ; String                                            ;
+; n_cnt_hi_div                         ; 1                      ; Signed Integer                                    ;
+; n_cnt_lo_div                         ; 1                      ; Signed Integer                                    ;
+; n_cnt_bypass_en                      ; false                  ; String                                            ;
+; n_cnt_odd_div_duty_en                ; false                  ; String                                            ;
+; c_cnt_hi_div0                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div0                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en0                     ; false                  ; String                                            ;
+; c_cnt_in_src0                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en0               ; false                  ; String                                            ;
+; c_cnt_prst0                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst0                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div1                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div1                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en1                     ; false                  ; String                                            ;
+; c_cnt_in_src1                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en1               ; false                  ; String                                            ;
+; c_cnt_prst1                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst1                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div2                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div2                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en2                     ; false                  ; String                                            ;
+; c_cnt_in_src2                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en2               ; false                  ; String                                            ;
+; c_cnt_prst2                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst2                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div3                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div3                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en3                     ; false                  ; String                                            ;
+; c_cnt_in_src3                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en3               ; false                  ; String                                            ;
+; c_cnt_prst3                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst3                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div4                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div4                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en4                     ; false                  ; String                                            ;
+; c_cnt_in_src4                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en4               ; false                  ; String                                            ;
+; c_cnt_prst4                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst4                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div5                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div5                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en5                     ; false                  ; String                                            ;
+; c_cnt_in_src5                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en5               ; false                  ; String                                            ;
+; c_cnt_prst5                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst5                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div6                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div6                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en6                     ; false                  ; String                                            ;
+; c_cnt_in_src6                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en6               ; false                  ; String                                            ;
+; c_cnt_prst6                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst6                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div7                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div7                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en7                     ; false                  ; String                                            ;
+; c_cnt_in_src7                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en7               ; false                  ; String                                            ;
+; c_cnt_prst7                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst7                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div8                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div8                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en8                     ; false                  ; String                                            ;
+; c_cnt_in_src8                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en8               ; false                  ; String                                            ;
+; c_cnt_prst8                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst8                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div9                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div9                        ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en9                     ; false                  ; String                                            ;
+; c_cnt_in_src9                        ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en9               ; false                  ; String                                            ;
+; c_cnt_prst9                          ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst9                   ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div10                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div10                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en10                    ; false                  ; String                                            ;
+; c_cnt_in_src10                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en10              ; false                  ; String                                            ;
+; c_cnt_prst10                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst10                  ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div11                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div11                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en11                    ; false                  ; String                                            ;
+; c_cnt_in_src11                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en11              ; false                  ; String                                            ;
+; c_cnt_prst11                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst11                  ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div12                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div12                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en12                    ; false                  ; String                                            ;
+; c_cnt_in_src12                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en12              ; false                  ; String                                            ;
+; c_cnt_prst12                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst12                  ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div13                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div13                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en13                    ; false                  ; String                                            ;
+; c_cnt_in_src13                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en13              ; false                  ; String                                            ;
+; c_cnt_prst13                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst13                  ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div14                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div14                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en14                    ; false                  ; String                                            ;
+; c_cnt_in_src14                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en14              ; false                  ; String                                            ;
+; c_cnt_prst14                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst14                  ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div15                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div15                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en15                    ; false                  ; String                                            ;
+; c_cnt_in_src15                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en15              ; false                  ; String                                            ;
+; c_cnt_prst15                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst15                  ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div16                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div16                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en16                    ; false                  ; String                                            ;
+; c_cnt_in_src16                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en16              ; false                  ; String                                            ;
+; c_cnt_prst16                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst16                  ; 0                      ; Signed Integer                                    ;
+; c_cnt_hi_div17                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_lo_div17                       ; 1                      ; Signed Integer                                    ;
+; c_cnt_bypass_en17                    ; false                  ; String                                            ;
+; c_cnt_in_src17                       ; ph_mux_clk             ; String                                            ;
+; c_cnt_odd_div_duty_en17              ; false                  ; String                                            ;
+; c_cnt_prst17                         ; 1                      ; Signed Integer                                    ;
+; c_cnt_ph_mux_prst17                  ; 0                      ; Signed Integer                                    ;
+; pll_vco_div                          ; 1                      ; Signed Integer                                    ;
+; pll_slf_rst                          ; false                  ; String                                            ;
+; pll_bw_sel                           ; low                    ; String                                            ;
+; pll_output_clk_frequency             ; 0 MHz                  ; String                                            ;
+; pll_cp_current                       ; 0                      ; Signed Integer                                    ;
+; pll_bwctrl                           ; 0                      ; Signed Integer                                    ;
+; pll_fractional_division              ; 1                      ; Signed Integer                                    ;
+; pll_fractional_cout                  ; 24                     ; Signed Integer                                    ;
+; pll_dsm_out_sel                      ; 1st_order              ; String                                            ;
+; mimic_fbclk_type                     ; gclk                   ; String                                            ;
+; pll_fbclk_mux_1                      ; glb                    ; String                                            ;
+; pll_fbclk_mux_2                      ; fb_1                   ; String                                            ;
+; pll_m_cnt_in_src                     ; ph_mux_clk             ; String                                            ;
+; pll_vcoph_div                        ; 1                      ; Signed Integer                                    ;
+; refclk1_frequency                    ; 0 MHz                  ; String                                            ;
+; pll_clkin_0_src                      ; clk_0                  ; String                                            ;
+; pll_clkin_1_src                      ; clk_0                  ; String                                            ;
+; pll_clk_loss_sw_en                   ; false                  ; String                                            ;
+; pll_auto_clk_sw_en                   ; false                  ; String                                            ;
+; pll_manu_clk_sw_en                   ; false                  ; String                                            ;
+; pll_clk_sw_dly                       ; 0                      ; Signed Integer                                    ;
+; pll_extclk_0_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                            ;
+; pll_extclk_1_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                            ;
++--------------------------------------+------------------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom:memoriaInstrucciones|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                      ;
++------------------------------------+----------------------+-------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                   ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                            ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                   ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                   ;
+; WIDTH_A                            ; 32                   ; Signed Integer                            ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                            ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                            ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                   ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                   ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                   ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                   ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                   ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                   ;
+; WIDTH_B                            ; 1                    ; Untyped                                   ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                   ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                   ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                   ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                   ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                   ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                   ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                   ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                   ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                   ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                   ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                   ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                   ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                   ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                   ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                            ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                   ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                   ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                   ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                   ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                   ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                   ;
+; INIT_FILE                          ; instrucciones.hex    ; Untyped                                   ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                   ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                   ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                   ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                   ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                   ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                   ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                   ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                   ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                   ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                   ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                   ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                   ;
+; CBXI_PARAMETER                     ; altsyncram_4vg1      ; Untyped                                   ;
++------------------------------------+----------------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: extensor:extend ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; M              ; 12    ; Signed Integer                      ;
+; N              ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux:regExtAluMux ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; S              ; 4     ; Signed Integer                       ;
+; N              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; N              ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|mux:nuevo_mux ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; S              ; 4     ; Signed Integer                                ;
+; N              ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|Sumador_estructural:nuevo_sumandor ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|restador:nuevo_restador ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[7].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[8].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[9].nuevo_sumador ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[10].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[11].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[12].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[13].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[14].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[15].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[16].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[17].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[18].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[19].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[20].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[21].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[22].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[23].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[24].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[25].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[26].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[27].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[28].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[29].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[30].nuevo_sumador ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; N              ; 63    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                             ;
++------------------------------------+----------------------+--------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                          ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                          ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                   ;
+; WIDTHAD_A                          ; 16                   ; Signed Integer                                   ;
+; NUMWORDS_A                         ; 65536                ; Signed Integer                                   ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                          ;
+; WIDTH_B                            ; 1                    ; Untyped                                          ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                          ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                          ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                          ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                   ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                          ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                          ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                          ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                          ;
+; INIT_FILE                          ; imagen.hex           ; Untyped                                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                          ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                          ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                          ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                          ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                          ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                          ;
+; CBXI_PARAMETER                     ; altsyncram_njo1      ; Untyped                                          ;
++------------------------------------+----------------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Sumador_estructural:sumadorPC4 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Sumador_estructural:sumadorPC8 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux:muxPC ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; S              ; 4     ; Signed Integer                ;
+; N              ; 32    ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux:aluMemMux ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; S              ; 4     ; Signed Integer                    ;
+; N              ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                            ;
++-------------------------------------------+-----------------------------------------------------------------+
+; Name                                      ; Value                                                           ;
++-------------------------------------------+-----------------------------------------------------------------+
+; Number of entity instances                ; 2                                                               ;
+; Entity Instance                           ; rom:memoriaInstrucciones|altsyncram:altsyncram_component        ;
+;     -- OPERATION_MODE                     ; ROM                                                             ;
+;     -- WIDTH_A                            ; 32                                                              ;
+;     -- NUMWORDS_A                         ; 256                                                             ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                    ;
+;     -- WIDTH_B                            ; 1                                                               ;
+;     -- NUMWORDS_B                         ; 1                                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                       ;
+; Entity Instance                           ; byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                     ;
+;     -- WIDTH_A                            ; 32                                                              ;
+;     -- NUMWORDS_A                         ; 65536                                                           ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                    ;
+;     -- WIDTH_B                            ; 1                                                               ;
+;     -- NUMWORDS_B                         ; 1                                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                       ;
++-------------------------------------------+-----------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -178,7 +1057,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; byteRam            ; pipeline           ;
+; Top-level entity name                                                           ; uniciclo           ; pipeline           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -259,13 +1138,454 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++---------------------------------------------+
+; Port Connectivity Checks: "mux:aluMemMux"   ;
++-----------+-------+----------+--------------+
+; Port      ; Type  ; Severity ; Details      ;
++-----------+-------+----------+--------------+
+; in[15..2] ; Input ; Info     ; Stuck at GND ;
++-----------+-------+----------+--------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "mux:muxPC"       ;
++-----------+-------+----------+--------------+
+; Port      ; Type  ; Severity ; Details      ;
++-----------+-------+----------+--------------+
+; in[15..2] ; Input ; Info     ; Stuck at GND ;
++-----------+-------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Sumador_estructural:sumadorPC8"                                                                                                                                                            ;
++--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                                                            ;
++--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b[31..2]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; b[1]         ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; b[0]         ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; cin          ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; cin[-1]      ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; cout_sumador ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "Sumador_estructural:sumadorPC4" ;
++----------+-------+----------+------------------------------+
+; Port     ; Type  ; Severity ; Details                      ;
++----------+-------+----------+------------------------------+
+; b[31..1] ; Input ; Info     ; Stuck at GND                 ;
+; b[0]     ; Input ; Info     ; Stuck at VCC                 ;
+; cin      ; Input ; Info     ; Stuck at GND                 ;
++----------+-------+----------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[30].nuevo_sumador" ;
++----------+-------+----------+----------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                      ;
++----------+-------+----------+----------------------------------------------------------------------------------------------+
+; b[30..0] ; Input ; Info     ; Stuck at GND                                                                                 ;
++----------+-------+----------+----------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[29].nuevo_sumador" ;
++----------+-------+----------+----------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                      ;
++----------+-------+----------+----------------------------------------------------------------------------------------------+
+; b[29..0] ; Input ; Info     ; Stuck at GND                                                                                 ;
+; b[62]    ; Input ; Info     ; Stuck at GND                                                                                 ;
++----------+-------+----------+----------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[28].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..61] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[28..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[27].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..60] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[27..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[26].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..59] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[26..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[25].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..58] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[25..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[24].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..57] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[24..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[23].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..56] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[23..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[22].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..55] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[22..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[21].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..54] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[21..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[20].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..53] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[20..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[19].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..52] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[19..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[18].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..51] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[18..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[17].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..50] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[17..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[16].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..49] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[16..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[15].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..48] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[15..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[14].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..47] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[14..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[13].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..46] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[13..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[12].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..45] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[12..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[11].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..44] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[11..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[10].nuevo_sumador" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                     ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+; b[62..43] ; Input ; Info     ; Stuck at GND                                                                                ;
+; b[10..0]  ; Input ; Info     ; Stuck at GND                                                                                ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[9].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..42] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[9..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[8].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..41] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[8..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[7].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..40] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[7..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[6].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..39] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[6..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[5].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..38] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[5..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[4].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..37] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[4..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[3].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..36] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[3..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[2].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..35] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[2..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[1].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; b[62..34] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[1..0]   ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                    ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+; a[62..32] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[62..33] ; Input ; Info     ; Stuck at GND                                                                               ;
+; b[0]      ; Input ; Info     ; Stuck at GND                                                                               ;
+; cin       ; Input ; Info     ; Stuck at GND                                                                               ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|multiplicador:nuevo_multiplicador"                                                         ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                    ; Type   ; Severity ; Details                                                                             ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; s_multiplicador[63..32] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|restador:nuevo_restador|restador_ins:restados[0].nuevo" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; c    ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|Sumador_estructural:nuevo_sumandor" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU|mux:nuevo_mux" ;
++------------+-------+----------+-----------------------+
+; Port       ; Type  ; Severity ; Details               ;
++------------+-------+----------+-----------------------+
+; in[15..11] ; Input ; Info     ; Stuck at GND          ;
+; in[9][31]  ; Input ; Info     ; Stuck at GND          ;
+; in[8][0]   ; Input ; Info     ; Stuck at GND          ;
++------------+-------+----------+-----------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "aluPara:ALU"                         ;
++--------------------+--------+----------+------------------------+
+; Port               ; Type   ; Severity ; Details                ;
++--------------------+--------+----------+------------------------+
+; display_selector1  ; Output ; Info     ; Explicitly unconnected ;
+; display_selector2  ; Output ; Info     ; Explicitly unconnected ;
+; display_resultado1 ; Output ; Info     ; Explicitly unconnected ;
+; display_resultado2 ; Output ; Info     ; Explicitly unconnected ;
++--------------------+--------+----------+------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "mux:regExtAluMux" ;
++-----------+-------+----------+---------------+
+; Port      ; Type  ; Severity ; Details       ;
++-----------+-------+----------+---------------+
+; in[15..2] ; Input ; Info     ; Stuck at GND  ;
++-----------+-------+----------+---------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "extensor:extend"   ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; sign_extend ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rom:memoriaInstrucciones"                                                                                                                                                          ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                          ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (8 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "mux:instrRegMux1" ;
++-------+-------+----------+-------------------+
+; Port  ; Type  ; Severity ; Details           ;
++-------+-------+----------+-------------------+
+; in[3] ; Input ; Info     ; Stuck at GND      ;
+; in[1] ; Input ; Info     ; Stuck at VCC      ;
++-------+-------+----------+-------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Nov 16 19:00:24 2024
+    Info: Processing started: Sat Nov 16 21:23:49 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline --analysis_and_elaboration
 Warning (125092): Tcl Script File rom.qip not found
     Info (125063): set_global_assignment -name QIP_FILE rom.qip
@@ -333,12 +1653,126 @@ Info (12021): Found 1 design units, including 1 entities, in source file instrcl
 Info (12021): Found 1 design units, including 1 entities, in source file instrclk/instrclk_0002.v
     Info (12023): Found entity 1: instrClk_0002 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk/instrClk_0002.v Line: 2
 Warning (10236): Verilog HDL Implicit Net warning at multiplicador.sv(12): created implicit net for "product" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv Line: 12
-Info (12127): Elaborating entity "byteRam" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at byteRam.sv(20): truncated value with size 32 to match size of target (16) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/byteRam.sv Line: 20
-Info (12128): Elaborating entity "ram" for hierarchy "ram:newRam" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/byteRam.sv Line: 35
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:newRam|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
-Info (12130): Elaborated megafunction instantiation "ram:newRam|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
-Info (12133): Instantiated megafunction "ram:newRam|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
+Info (12127): Elaborating entity "uniciclo" for the top level hierarchy
+Warning (10030): Net "instrRegMux1_in[3]" at uniciclo.sv(90) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 90
+Info (12128): Elaborating entity "unidadControl" for hierarchy "unidadControl:uc" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 78
+Info (12128): Elaborating entity "mainDec" for hierarchy "unidadControl:uc|mainDec:decoder" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/unidadControl.sv Line: 47
+Info (12128): Elaborating entity "aluDec" for hierarchy "unidadControl:uc|aluDec:aluDecoder" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/unidadControl.sv Line: 57
+Info (12128): Elaborating entity "mux" for hierarchy "mux:instrRegMux" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 87
+Info (12128): Elaborating entity "mux" for hierarchy "mux:instrRegMux1" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 98
+Info (12128): Elaborating entity "instrClk" for hierarchy "instrClk:desfase" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 113
+Info (12128): Elaborating entity "instrClk_0002" for hierarchy "instrClk:desfase|instrClk_0002:instrclk_inst" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk.v Line: 19
+Info (12128): Elaborating entity "altera_pll" for hierarchy "instrClk:desfase|instrClk_0002:instrclk_inst|altera_pll:altera_pll_i" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk/instrClk_0002.v Line: 85
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info (12130): Elaborated megafunction instantiation "instrClk:desfase|instrClk_0002:instrclk_inst|altera_pll:altera_pll_i" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk/instrClk_0002.v Line: 85
+Info (12133): Instantiated megafunction "instrClk:desfase|instrClk_0002:instrclk_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk/instrClk_0002.v Line: 85
+    Info (12134): Parameter "fractional_vco_multiplier" = "false"
+    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+    Info (12134): Parameter "operation_mode" = "direct"
+    Info (12134): Parameter "number_of_clocks" = "1"
+    Info (12134): Parameter "output_clock_frequency0" = "50.000000 MHz"
+    Info (12134): Parameter "phase_shift0" = "2000 ps"
+    Info (12134): Parameter "duty_cycle0" = "50"
+    Info (12134): Parameter "output_clock_frequency1" = "0 MHz"
+    Info (12134): Parameter "phase_shift1" = "0 ps"
+    Info (12134): Parameter "duty_cycle1" = "50"
+    Info (12134): Parameter "output_clock_frequency2" = "0 MHz"
+    Info (12134): Parameter "phase_shift2" = "0 ps"
+    Info (12134): Parameter "duty_cycle2" = "50"
+    Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
+    Info (12134): Parameter "phase_shift3" = "0 ps"
+    Info (12134): Parameter "duty_cycle3" = "50"
+    Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
+    Info (12134): Parameter "phase_shift4" = "0 ps"
+    Info (12134): Parameter "duty_cycle4" = "50"
+    Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
+    Info (12134): Parameter "phase_shift5" = "0 ps"
+    Info (12134): Parameter "duty_cycle5" = "50"
+    Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
+    Info (12134): Parameter "phase_shift6" = "0 ps"
+    Info (12134): Parameter "duty_cycle6" = "50"
+    Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
+    Info (12134): Parameter "phase_shift7" = "0 ps"
+    Info (12134): Parameter "duty_cycle7" = "50"
+    Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
+    Info (12134): Parameter "phase_shift8" = "0 ps"
+    Info (12134): Parameter "duty_cycle8" = "50"
+    Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
+    Info (12134): Parameter "phase_shift9" = "0 ps"
+    Info (12134): Parameter "duty_cycle9" = "50"
+    Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
+    Info (12134): Parameter "phase_shift10" = "0 ps"
+    Info (12134): Parameter "duty_cycle10" = "50"
+    Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
+    Info (12134): Parameter "phase_shift11" = "0 ps"
+    Info (12134): Parameter "duty_cycle11" = "50"
+    Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
+    Info (12134): Parameter "phase_shift12" = "0 ps"
+    Info (12134): Parameter "duty_cycle12" = "50"
+    Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
+    Info (12134): Parameter "phase_shift13" = "0 ps"
+    Info (12134): Parameter "duty_cycle13" = "50"
+    Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
+    Info (12134): Parameter "phase_shift14" = "0 ps"
+    Info (12134): Parameter "duty_cycle14" = "50"
+    Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
+    Info (12134): Parameter "phase_shift15" = "0 ps"
+    Info (12134): Parameter "duty_cycle15" = "50"
+    Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
+    Info (12134): Parameter "phase_shift16" = "0 ps"
+    Info (12134): Parameter "duty_cycle16" = "50"
+    Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
+    Info (12134): Parameter "phase_shift17" = "0 ps"
+    Info (12134): Parameter "duty_cycle17" = "50"
+    Info (12134): Parameter "pll_type" = "General"
+    Info (12134): Parameter "pll_subtype" = "General"
+Warning (12125): Using design file rom.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: rom File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v Line: 40
+Info (12128): Elaborating entity "rom" for hierarchy "rom:memoriaInstrucciones" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 119
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom:memoriaInstrucciones|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v Line: 82
+Info (12130): Elaborated megafunction instantiation "rom:memoriaInstrucciones|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v Line: 82
+Info (12133): Instantiated megafunction "rom:memoriaInstrucciones|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "instrucciones.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4vg1.tdf
+    Info (12023): Found entity 1: altsyncram_4vg1 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_4vg1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_4vg1" for hierarchy "rom:memoriaInstrucciones|altsyncram:altsyncram_component|altsyncram_4vg1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Critical Warning (127004): Memory depth (256) in the design file differs from memory depth (512) in the Memory Initialization File "C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrucciones.hex" -- truncated remaining initial content value to fit RAM File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v Line: 82
+Info (12128): Elaborating entity "registros" for hierarchy "registros:archivoRegistros" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 133
+Info (12128): Elaborating entity "extensor" for hierarchy "extensor:extend" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 139
+Info (12128): Elaborating entity "mux" for hierarchy "mux:regExtAluMux" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 148
+Info (12128): Elaborating entity "aluPara" for hierarchy "aluPara:ALU" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 163
+Warning (10030): Net "mux_in[15..11]" at aluPara.sv(19) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 19
+Warning (10034): Output port "display_selector1" at aluPara.sv(8) has no driver File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 8
+Warning (10034): Output port "display_selector2" at aluPara.sv(9) has no driver File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 9
+Warning (10034): Output port "display_resultado1" at aluPara.sv(10) has no driver File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 10
+Warning (10034): Output port "display_resultado2" at aluPara.sv(11) has no driver File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 11
+Info (12128): Elaborating entity "Sumador_estructural" for hierarchy "aluPara:ALU|Sumador_estructural:nuevo_sumandor" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 35
+Info (12128): Elaborating entity "sumador" for hierarchy "aluPara:ALU|Sumador_estructural:nuevo_sumandor|sumador:instacias[0].nuevo" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv Line: 45
+Info (12128): Elaborating entity "restador" for hierarchy "aluPara:ALU|restador:nuevo_restador" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 44
+Info (12128): Elaborating entity "restador_ins" for hierarchy "aluPara:ALU|restador:nuevo_restador|restador_ins:restados[0].nuevo" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv Line: 45
+Info (12128): Elaborating entity "multiplicador" for hierarchy "aluPara:ALU|multiplicador:nuevo_multiplicador" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv Line: 53
+Warning (10036): Verilog HDL or VHDL warning at multiplicador.sv(12): object "product" assigned a value but never read File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv Line: 12
+Warning (10230): Verilog HDL assignment warning at multiplicador.sv(12): truncated value with size 32 to match size of target (1) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv Line: 12
+Info (12128): Elaborating entity "Sumador_estructural" for hierarchy "aluPara:ALU|multiplicador:nuevo_multiplicador|Sumador_estructural:instancias[0].nuevo_sumador" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv Line: 96
+Info (12128): Elaborating entity "byteRam" for hierarchy "byteRam:memoriaDatos" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv Line: 173
+Warning (10230): Verilog HDL assignment warning at byteRam.sv(18): truncated value with size 32 to match size of target (16) File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/byteRam.sv Line: 18
+Info (12128): Elaborating entity "ram" for hierarchy "byteRam:memoriaDatos|ram:newRam" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/byteRam.sv Line: 33
+Info (12128): Elaborating entity "altsyncram" for hierarchy "byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
+Info (12130): Elaborated megafunction instantiation "byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
+Info (12133): Instantiated megafunction "byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "imagen.hex"
@@ -356,32 +1790,28 @@ Info (12133): Instantiated megafunction "ram:newRam|altsyncram:altsyncram_compon
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_njo1.tdf
     Info (12023): Found entity 1: altsyncram_njo1 File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_njo1" for hierarchy "ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_njo1" for hierarchy "byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
     Info (12023): Found entity 1: decode_dla File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/decode_dla.tdf Line: 23
-Info (12128): Elaborating entity "decode_dla" for hierarchy "ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|decode_dla:decode3" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 44
+Info (12128): Elaborating entity "decode_dla" for hierarchy "byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|decode_dla:decode3" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_61a.tdf
     Info (12023): Found entity 1: decode_61a File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/decode_61a.tdf Line: 23
-Info (12128): Elaborating entity "decode_61a" for hierarchy "ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|decode_61a:rden_decode" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 45
+Info (12128): Elaborating entity "decode_61a" for hierarchy "byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|decode_61a:rden_decode" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ahb.tdf
     Info (12023): Found entity 1: mux_ahb File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/mux_ahb.tdf Line: 23
-Info (12128): Elaborating entity "mux_ahb" for hierarchy "ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|mux_ahb:mux2" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 46
-Warning (20013): Ignored 16 assignments for entity "instrClk" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity instrClk -sip instrClk.sip -library lib_instrClk was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 20.1 -entity instrClk -sip instrClk.sip -library lib_instrClk was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity instrClk -sip instrClk.sip -library lib_instrClk was ignored
-Warning (20013): Ignored 317 assignments for entity "instrClk_0002" -- entity does not exist in design
+Info (12128): Elaborating entity "mux_ahb" for hierarchy "byteRam:memoriaDatos|ram:newRam|altsyncram:altsyncram_component|altsyncram_njo1:auto_generated|mux_ahb:mux2" File: C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/db/altsyncram_njo1.tdf Line: 46
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (20013): Ignored 16 assignments for entity "vga_pll" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 20.1 -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
     Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity vga_pll -sip vga_pll.sip -library lib_vga_pll was ignored
 Warning (20013): Ignored 317 assignments for entity "vga_pll_0002" -- entity does not exist in design
 Info (144001): Generated suppressed messages file C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/output_files/pipeline.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Sat Nov 16 19:00:31 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Sat Nov 16 21:23:57 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +--------------------------------------------+

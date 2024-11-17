@@ -4,7 +4,7 @@ module byteRam(
     input logic [7:0] byteData,
     input logic [31:0] wordData,
     input logic byteWriteEnable,
-    input logic wordWriteEnable, 
+    input logic writeEnable, 
 
     output logic [31:0] q
 );
@@ -12,11 +12,9 @@ module byteRam(
     logic [31:0] oldQ;                // Almacena el valor leído previamente
     logic [31:0] writeMux_out;        // Salida del mux de escritura
     logic [15:0] newAddress;          // Dirección en palabras (división por 4)
-    logic wren;                       // Señal de habilitación de escritura
     logic [31:0] newByteData;         // Dato actualizado en la escritura por byte
 
     // Calcular si es escritura de byte o palabra
-    assign wren = byteWriteEnable | wordWriteEnable;
     assign newAddress = address / 4; // Dirección en palabras (división por 4)
 
     // Crear un nuevo dato para la escritura por byte
@@ -30,7 +28,7 @@ module byteRam(
         .clock(clk),
         .address(newAddress),
         .data(writeMux_out),
-        .wren(wren),
+        .wren(writeEnable),
         .q(q)
     );
 

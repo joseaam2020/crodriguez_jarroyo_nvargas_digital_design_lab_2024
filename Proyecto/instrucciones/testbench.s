@@ -14,8 +14,8 @@ _start:
     MUL R5, R4, R2      // R5 = R4 * R2 = 15 * 3 = 45
 
     // Store the result in memory
-    LDR R6, [R0]     // Load the address of `result` into R6
-    STR R5, [R6]        // Store R5 (45) into memory at `result`
+    STRB R5, [R0, #1]
+    LDRB R6, [R0, #1]     // Load the address of `result` into R6
 
     // Compare the result with the threshold
     CMP R5, R3          // Compare R5 (45) with R3 (50)

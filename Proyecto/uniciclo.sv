@@ -36,6 +36,7 @@ logic [3:0] aluFlags;
 
 //Creacion de la memoria de datos
 logic memWrite;
+logic byteWrite;
 logic [31:0] readData;
 
 //Creacion sumadorPD
@@ -70,6 +71,7 @@ unidadControl uc (
     .regSrc(regSrc),
     .memtoReg(memtoReg),
     .memWrite(memWrite),
+    .byteWrite(byteWrite),
     .aluControl(aluControl),
     .aluSrc(aluSrc),
     .regWrite(regWrite)
@@ -160,12 +162,14 @@ aluPara #(.N(32)) ALU (
 	.negative_flag(aluFlags[2]) 
 );
 
-ram memoriaDatos(
-    .address(aluResult[15:0]),
-    .clock(clk),
-    .data(writeData),
-    .wren(memWrite),
-    .q(readData)   
+byteRam memoriaDatos(
+    .clk(instruccionClk),
+    .address(aluResult),
+    .byteData(writeData[7:0]),
+    .wordData(writeData),
+    .byteWriteEnable(byteWrite),
+    .writeEnable(memWrite),
+    .q(readData)
 );
 
 Sumador_estructural #(32) sumadorPC4 (

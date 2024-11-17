@@ -6,6 +6,7 @@ module mainDec(
     output logic branch,
     output logic regW,
     output logic memW,
+    output logic byteWrite,
     output logic [3:0] memtoReg,
     output logic [3:0] aluSrc,
     output logic [3:0] regSrc,
@@ -22,6 +23,7 @@ always_comb begin
     regSrc = 0;
     aluOp = 0;
     mulOp = 0;
+    byteWrite = 0;
 
     if (op == 2'b00) begin // instrucciones de datos
         if (funct[5] == 0) begin 
@@ -41,6 +43,7 @@ always_comb begin
         memW = 0;
         regW = 1;
         aluOp = 1;
+        byteWrite = 0;
     end else if (op == 2'b01) begin // instrucciones de memoria
         if (funct[0] == 1'b0) begin
             // STR
@@ -50,6 +53,11 @@ always_comb begin
             // LDR
             memW = 0;
             regW = 1;
+        end
+        if(funct[2] == 1'b0) begin
+            byteWrite = 0;
+        end else begin
+            byteWrite = 1;
         end
         branch = 0;
         memtoReg = 4'b0001; 
@@ -66,6 +74,7 @@ always_comb begin
         regSrc = 4'b0001;
         aluOp = 0;
         mulOp = 0;
+        byteWrite = 0;
     end
 end
 endmodule
