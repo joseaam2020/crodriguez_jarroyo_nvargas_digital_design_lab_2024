@@ -45,7 +45,7 @@ always_comb begin
         aluOp = 1;
         byteWrite = 0;
     end else if (op == 2'b01) begin // instrucciones de memoria
-        if (funct[0] == 1'b0) begin
+        if (funct[0] == 1'b0) begin 
             // STR
             memW = 1;
             regW = 0;
@@ -54,15 +54,24 @@ always_comb begin
             memW = 0;
             regW = 1;
         end
-        if(funct[2] == 1'b0) begin
+        
+        if (funct[5] == 1) begin //inmediato negado
+            //no inmediato
+            regSrc = 4'b0000;
+            aluSrc = 4'b0000;
+        end else begin
+            //si inmediato
+            regSrc = 4'b0100;
+            aluSrc = 4'b0001;
+        end
+
+        if(funct[2] == 1'b0) begin //si es solo un byte
             byteWrite = 0;
         end else begin
             byteWrite = 1;
         end
         branch = 0;
         memtoReg = 4'b0001; 
-        aluSrc = 4'b0001;
-        regSrc = 4'b0100;
         aluOp = 0;
         mulOp = 0;
     end else if (op == 2'b10) begin //branch

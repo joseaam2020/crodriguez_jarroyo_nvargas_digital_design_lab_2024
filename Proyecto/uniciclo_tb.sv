@@ -41,7 +41,7 @@ module uniciclo_tb;
         // o aplicar entradas específicas si fuera necesario.
 
         // Simulación por un tiempo fijo
-        #200;
+        #70000;
         
         // Finaliza la simulación
         $finish;

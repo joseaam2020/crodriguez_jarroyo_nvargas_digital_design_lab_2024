@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/simulation/modelsim
 valuDec
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1731813947
+Z2 !s110 1731991631
 !i10b 1
 !s100 1n8Mmd:c;A]XKIk=8HIi;1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1731629204
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluDec.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluDec.sv
-!i122 8
+!i122 9
 L0 1 65
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1731813946.000000
+Z6 !s108 1731991630.000000
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluDec.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluDec.sv|
 !i113 1
@@ -49,13 +49,13 @@ R0
 w1731515656
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv
-!i122 12
+!i122 13
 L0 1 96
 R5
 r1
 !s85 0
 31
-Z10 !s108 1731813947.000000
+Z10 !s108 1731991631.000000
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/aluPara.sv|
 !i113 1
@@ -65,19 +65,19 @@ R9
 nalu@para
 vbyteRam
 R1
-Z11 !s110 1731813946
+Z11 !s110 1731991630
 !i10b 1
-!s100 ?d9?aE^5z45Mli=gZl9X63
+!s100 a]Zb1WH<EZ:ej7ERc5M=;3
 R3
-I9Ulh>PZd<4YSL]^0^X>eA1
+IY3S@D^ZjU;Vd:1Q1ni1eW1
 R4
 S1
 R0
-w1731812306
+w1731970333
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/byteRam.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/byteRam.sv
-!i122 4
-L0 1 40
+!i122 5
+L0 1 91
 R5
 r1
 !s85 0
@@ -103,7 +103,7 @@ R0
 Z12 w1730672797
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/extensor.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/extensor.sv
-!i122 13
+!i122 14
 Z13 L0 1 16
 R5
 r1
@@ -118,7 +118,7 @@ R8
 R9
 vimagenPrintTest_tb
 R1
-R2
+Z14 !s110 1731991632
 !i10b 1
 !s100 l9PaD3P_5:[m`L;KPdY4P3
 R3
@@ -129,13 +129,13 @@ R0
 w1730964024
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest_tb.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest_tb.sv
-!i122 16
+!i122 17
 L0 2 61
 R5
 r1
 !s85 0
 31
-R10
+Z15 !s108 1731991632.000000
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/imagenPrintTest_tb.sv|
 !i113 1
@@ -144,7 +144,7 @@ R8
 R9
 nimagen@print@test_tb
 vinstrClk
-R11
+Z16 !s110 1731991629
 !i10b 1
 !s100 YPG4TQK6jNN51z29:`J843
 R3
@@ -155,12 +155,12 @@ w1731687275
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk_sim/instrClk.vo
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk_sim/instrClk.vo
 !i122 1
-Z14 L0 32 264
+Z17 L0 32 264
 R5
 r1
 !s85 0
 31
-R6
+Z18 !s108 1731991629.000000
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk_sim/instrClk.vo|
 !s90 -reportprogress|300|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/instrClk_sim/instrClk.vo|
 !i113 1
@@ -170,17 +170,17 @@ vmainDec
 R1
 R11
 !i10b 1
-!s100 V^QFaGAh9aZbG2W[VV3UF1
+!s100 <Kkc1bWDGihnBn;IhK_Yb3
 R3
-IU2NZjJmYff4OkAZzzUnOO0
+I`nTzZ^BKS78mJ^9h4XUS33
 R4
 S1
 R0
-w1731812049
+w1731979469
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mainDec.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mainDec.sv
-!i122 7
-L0 1 80
+!i122 8
+L0 1 89
 R5
 r1
 !s85 0
@@ -203,10 +203,10 @@ IZWEcjU:QT0;NdM2UX4_9<2
 R4
 S1
 R0
-Z15 w1727926175
+Z19 w1727926175
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/multiplicador.sv
-!i122 10
+!i122 11
 L0 1 136
 R5
 r1
@@ -232,7 +232,7 @@ R0
 w1731470399
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/mux.sv
-!i122 5
+!i122 6
 R13
 R5
 r1
@@ -257,21 +257,45 @@ w1731803435
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v
 !i122 2
-L0 40 71
+Z20 L0 40 71
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v|
+!i113 1
+Z21 o-vlog01compat -work work
+Z22 !s92 -vlog01compat -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto
+R9
+vram2
+R11
+!i10b 1
+!s100 bY4FFLEGlc_hk;O:=gD191
+R3
+Im1kk0lj[_Lj@>YB2VkIe00
+R4
+R0
+w1731972080
+8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram2.v
+FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram2.v
+!i122 3
+R20
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram.v|
+!s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/ram2.v|
 !i113 1
-Z16 o-vlog01compat -work work
-Z17 !s92 -vlog01compat -work work +incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto
+R21
+R22
 R9
 vregistros
 R1
-R2
+R14
 !i10b 1
 !s100 KN0mV3B^d^KfzO9b<E>^i0
 R3
@@ -282,7 +306,7 @@ R0
 w1731685845
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/registros.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/registros.sv
-!i122 14
+!i122 15
 L0 1 95
 R5
 r1
@@ -305,18 +329,18 @@ IEI=M=N<JJ6>lOFNHQNMHW0
 R4
 S1
 R0
-R15
-Z18 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv
-Z19 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv
-!i122 9
-Z20 L0 16 37
+R19
+Z23 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv
+Z24 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv
+!i122 10
+Z25 L0 16 37
 R5
 r1
 !s85 0
 31
 R10
-Z21 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv|
-Z22 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv|
+Z26 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/restador.sv|
 !i113 1
 R7
 R8
@@ -331,18 +355,18 @@ IL0`U?gUj[f67i;APg9OSA0
 R4
 S1
 R0
-R15
-R18
 R19
-!i122 9
-Z23 L0 2 12
+R23
+R24
+!i122 10
+Z28 L0 2 12
 R5
 r1
 !s85 0
 31
 R10
-R21
-R22
+R26
+R27
 !i113 1
 R7
 R8
@@ -358,7 +382,7 @@ R0
 w1731680292
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v
-!i122 3
+!i122 4
 L0 40 66
 R5
 r1
@@ -368,8 +392,8 @@ R6
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/rom.v|
 !i113 1
-R16
-R17
+R21
+R22
 R9
 vsumador
 R1
@@ -382,17 +406,17 @@ R4
 S1
 R0
 R12
-Z24 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv
-Z25 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv
-!i122 11
-R23
+Z29 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv
+Z30 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv
+!i122 12
+R28
 R5
 r1
 !s85 0
 31
 R10
-Z26 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv|
-Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv|
+Z31 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/sumador.sv|
 !i113 1
 R7
 R8
@@ -408,17 +432,17 @@ R4
 S1
 R0
 R12
-R24
+R29
+R30
+!i122 12
 R25
-!i122 11
-R20
 R5
 r1
 !s85 0
 31
 R10
-R26
-R27
+R31
+R32
 !i113 1
 R7
 R8
@@ -426,24 +450,24 @@ R9
 n@sumador_estructural
 vuniciclo
 R1
-R2
+R14
 !i10b 1
-!s100 @jKaHoc`k5Q:=L0?A9mUD1
+!s100 A58Lb@:onVVDYS8R0Y<O>2
 R3
-IBP_YO3kgGfXffN]431nSe2
+If0>9o25VzcWUg`@hVi_:70
 R4
 S1
 R0
-w1731813041
+w1731984797
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv
-!i122 15
-L0 1 222
+!i122 16
+L0 1 229
 R5
 r1
 !s85 0
 31
-R10
+R15
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo.sv|
 !i113 1
@@ -452,24 +476,24 @@ R8
 R9
 vuniciclo_tb
 R1
-!s110 1731813948
+!s110 1731991633
 !i10b 1
-!s100 fLQme;7FPmfCcZi1CzMHj1
+!s100 DcCgj^KBNIbWm_HLTO4fK1
 R3
-I1l^@HEQ0_hl8S:93S6b>U1
+IijfoHKPbGc[:O@n:3M^[W0
 R4
 S1
 R0
-w1731688300
+w1731990090
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv
-!i122 17
+!i122 18
 L0 3 54
 R5
 r1
 !s85 0
 31
-R10
+R15
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/uniciclo_tb.sv|
 !i113 1
@@ -489,7 +513,7 @@ R0
 w1731811509
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/unidadControl.sv
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/unidadControl.sv
-!i122 6
+!i122 7
 L0 1 101
 R5
 r1
@@ -504,7 +528,7 @@ R8
 R9
 nunidad@control
 vvga_pll
-R11
+R16
 !i10b 1
 !s100 f;jjXg^J3TUTfFaCWFN6C1
 R3
@@ -515,12 +539,12 @@ w1730961354
 8C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/vga_pll_sim/vga_pll.vo
 FC:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/vga_pll_sim/vga_pll.vo
 !i122 0
-R14
+R17
 R5
 r1
 !s85 0
 31
-R6
+R18
 !s107 C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/vga_pll_sim/vga_pll.vo|
 !s90 -reportprogress|300|C:/Users/josea/Documents/SystemVerilog/crodriguez_jarroyo_nvargas_digital_design_lab_2024/Proyecto/vga_pll_sim/vga_pll.vo|
 !i113 1

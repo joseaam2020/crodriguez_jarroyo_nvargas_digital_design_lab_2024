@@ -33,9 +33,10 @@ def convert_file_to_intel_hex(input_filename, output_filename):
                 intel_hex = arm_to_intel_hex(arm_hex, address)
                 outfile.write(intel_hex + '\n')
                 address += 1  # Incrementar la dirección en 4 bytes para la siguiente instrucción
+        outfile.write(":00000001FF\n")
 
 # Ejecutar la conversión
-input_filename = "./instrucciones/instruccionesTestbench.txt"
-output_filename = "./instrucciones/memoriaTestbench.txt"
+input_filename = "./instrucciones/instruccionesSepia.txt"
+output_filename = "./instrucciones/memoriaSepia.txt"
 convert_file_to_intel_hex(input_filename, output_filename)
 print(f"Conversion complete. Output saved to {output_filename}.")

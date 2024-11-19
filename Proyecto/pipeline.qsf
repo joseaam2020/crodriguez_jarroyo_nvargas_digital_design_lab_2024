@@ -110,6 +110,7 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME mux_tb -section_id mux_tb
 set_global_assignment -name EDA_TEST_BENCH_NAME byteRam_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id byteRam_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME byteRam_tb -section_id byteRam_tb
+set_global_assignment -name HEX_FILE imagen.hex
 set_global_assignment -name SYSTEMVERILOG_FILE byteRam_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE byteRam.sv
 set_global_assignment -name SYSTEMVERILOG_FILE mux_tb.sv
@@ -130,7 +131,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE aluPara.sv
 set_global_assignment -name SYSTEMVERILOG_FILE aluPara_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE extensor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tb_extensor.sv
-set_global_assignment -name HEX_FILE imagen.hex
 set_global_assignment -name QIP_FILE ram.qip
 set_global_assignment -name HEX_FILE instrucciones.hex
 set_global_assignment -name QIP_FILE rom.qip
@@ -142,6 +142,8 @@ set_global_assignment -name SIP_FILE vga_pll.sip
 set_global_assignment -name SYSTEMVERILOG_FILE imagenPrintTest_tb.sv
 set_global_assignment -name QIP_FILE instrClk.qip
 set_global_assignment -name SIP_FILE instrClk.sip
+set_global_assignment -name QIP_FILE ram2.qip
+set_global_assignment -name HEX_FILE blank.hex
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

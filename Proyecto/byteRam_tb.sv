@@ -1,69 +1,93 @@
-`timescale 1ps / 1ps
+`timescale 1ns / 1ps
 
 module byteRam_tb;
 
-    // Señales para el módulo
+    // Signals
     logic clk;
-    logic [32:0] address;
+    logic [31:0] address;
     logic [7:0] byteData;
     logic [31:0] wordData;
     logic byteWriteEnable;
-    logic wordWriteEnable;
+    logic writeEnable;
     logic [31:0] q;
 
-    // Instancia del módulo bajo prueba
+    // Clock generation
+    initial clk = 0;
+    always #5 clk = ~clk; // 10ns clock period
+
+    // Instantiate the byteRam module
     byteRam uut (
         .clk(clk),
         .address(address),
         .byteData(byteData),
         .wordData(wordData),
         .byteWriteEnable(byteWriteEnable),
-        .wordWriteEnable(wordWriteEnable),
+        .writeEnable(writeEnable),
         .q(q)
     );
 
-    // Generador de reloj (20 ns de periodo)
+    // Test Procedure
     initial begin
-        clk = 0;
-        forever #10 clk = ~clk; // Toggle clock cada 10 ns
-    end
-
-    // Procedimiento principal de prueba
-    initial begin
-        // Inicialización de señales
-        address = 0;
-        byteData = 0;
-        wordData = 0;
+        // Test 1: Write and read from newRam (address < MAX)
+        $display("Starting Test 1: Write/Read from newRam...");
+        address = 32'h0000_0004;  // Address within newRam
+        wordData = 32'hDEAD_BEEF;
+        writeEnable = 1;
         byteWriteEnable = 0;
-        wordWriteEnable = 0;
+        #10; // Wait for the write to complete
 
-        // Esperar a que inicie el reloj
-        @(posedge clk);
+        writeEnable = 0; // Disable write
+        #10; // Wait for the read
+        $display("Address: %h, Read Data: %h (Expected: %h)", address, q, 32'h0000_0000);
 
-        // Prueba 1: Escribir una palabra completa (32 bits)
-        wordWriteEnable = 1;
-        address = 4;            // Dirección para la palabra
-        wordData = 32'hDEADBEEF;
-        @(posedge clk);
-        wordWriteEnable = 0;    // Deshabilitar escritura
-        @(posedge clk);
-        $display("Read after word write: %h (expected: DEADBEEF)", q);
-
-        // Prueba 2: Escribir un byte específico
+        // Test 2: Write and read a byte from newRam
+        $display("Starting Test 2: Byte Write/Read from newRam...");
+        address = 32'h0000_0004;  // Same address
+        byteData = 8'hAA;
         byteWriteEnable = 1;
-        address = 5;            // Dirección del byte
-        byteData = 8'hCA;       // Nuevo dato para el byte
-        @(posedge clk);
-        byteWriteEnable = 0;    // Deshabilitar escritura
-        @(posedge clk);
-        $display("Read after byte write: %h (expected: DEADCAEF)", q);
+        writeEnable = 1;
+        #10; // Wait for the write to complete
 
-        // Prueba 3: Leer sin escritura
-        address = 4;            // Leer la dirección original
-        @(posedge clk);
-        $display("Read without write: %h (expected: DEADCAEF)", q);
+        writeEnable = 0; // Disable write
+        #10; // Wait for the read
+        $display("Address: %h, Read Data: %h (Expected: %h)", address, q, 32'h0000_00AA);
 
-        // Terminar simulación
+        // Test 3: Read from newRam2
+        $display("Starting Test 3: Read from newRam2...");
+        address = 32'h0001_0004;  // Same address
+        byteWriteEnable = 0;
+        writeEnable = 0;
+        #10; // Wait for the write to complete
+
+        writeEnable = 0; // Disable write
+        #10; // Wait for the read
+
+        // Test 4: Write and read from newRam2 (address > MAX)
+        $display("Starting Test 4: Write/Read from newRam2...");
+        address = 32'h0001_0004;  // Address within newRam2
+        wordData = 32'hCAFEBABE;
+        writeEnable = 1;
+        byteWriteEnable = 0;
+        #10; // Wait for the write to complete
+
+        writeEnable = 0; // Disable write
+        #10; // Wait for the read
+        $display("Address: %h, Read Data: %h (Expected: %h)", address, q, wordData);
+
+        // Test 5: Byte Write/Read from newRam2
+        $display("Starting Test 5: Byte Write/Read from newRam2...");
+        address = 32'h0001_0004;  // Same address
+        byteData = 8'h55;
+        byteWriteEnable = 1;
+        writeEnable = 1;
+        #10; // Wait for the write to complete
+
+        writeEnable = 0; // Disable write
+        #10; // Wait for the read
+        $display("Address: %h, Read Data: %h (Expected: %h)", address, q, 32'h00000055);
+
+        // End of Test
+        $display("Test complete.");
         $stop;
     end
 

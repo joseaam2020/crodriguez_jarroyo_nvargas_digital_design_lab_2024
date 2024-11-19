@@ -18,7 +18,7 @@ with open("./imagen/imagen_32bits.hex", "w") as hex_file:
             # Formatear los datos en hexadecimal (4 bytes en total) y calcular el checksum
             data = f"{a:02X}{r:02X}{g:02X}{b:02X}"  # Datos RGBA en formato hex
             data_length = 4  # Longitud en bytes (1 byte para cada canal RGBA)
-            address = (y * width + x)  # Dirección única para cada píxel, ahora ajustada para 32 bits
+            address = (y * width + x)+2  # Dirección única para cada píxel, ahora ajustada para 32 bits
             record_type = "00"  # Tipo de registro (00 para datos)
 
             # Línea en formato Intel HEX
