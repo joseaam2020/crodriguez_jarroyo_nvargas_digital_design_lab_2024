@@ -1,6 +1,16 @@
 module uniciclo(
     input logic clk,
-    input logic rst
+    input logic rst,
+    input logic [1:0] switch,
+
+	output logic VGA_CLK,
+	output logic [7:0] VGA_B,
+	output logic [7:0] VGA_G,
+	output logic [7:0] VGA_R,
+	output logic VGA_HS,
+	output logic VGA_VS,
+	output logic VGA_BLANK,
+	output logic VGA_SYNC
 );
 
 //Creacion PC
@@ -38,7 +48,18 @@ logic [3:0] aluFlags;
 logic memWrite;
 logic byteWrite;
 logic memClk;
+logic [2:0] vgaSignal;
 logic [31:0] readData;
+
+//Creacion de modulo VGA
+logic vgaSelector;
+logic x_cond;
+logic y_cond;
+logic [31:0] address;
+logic [18:0] x;
+logic [18:0] y;
+logic [2:0][7:0] rgb;
+
 
 //Creacion sumadorPD
 logic [31:0] pc_4;
@@ -169,14 +190,67 @@ instrClk desfase2 (
     .outclk_0(memClk)
 );
 
+assign vgaSelector = (vgaSignal > 3'd0); 
+
+logic [1:0][31:0] muxVGAaddress_in;
+logic [31:0] muxVGAaddress_out;
+assign muxVGAaddress_in[0] = aluResult; 
+assign muxVGAaddress_in[1] = address;
+mux #(.S(1),.N(32)) muxVGAaddress(
+    .s(vgaSelector),
+    .in(muxVGAaddress_in),
+    .out(muxVGAaddress_out)
+);
+
+
+logic [1:0] muxVGAaddress1_in;
+logic muxVGAaddress1_out;
+assign muxVGAaddress1_in[0] = byteWrite; 
+assign muxVGAaddress1_in[1] = 0;
+mux #(.S(1),.N(1)) muxVGAaddress1(
+    .s(vgaSelector),
+    .in(muxVGAaddress1_in),
+    .out(muxVGAaddress1_out)
+);
+
+logic [1:0] muxVGAaddress2_in;
+logic muxVGAaddress2_out;
+assign muxVGAaddress2_in[0] = memWrite; 
+assign muxVGAaddress2_in[1] = 0;
+mux #(.S(1),.N(1)) muxVGAaddress2(
+    .s(vgaSelector),
+    .in(muxVGAaddress2_in),
+    .out(muxVGAaddress2_out)
+);
+
 byteRam memoriaDatos(
     .clk(memClk),
-    .address(aluResult),
+    .rst(rst),
+    .switch(switch),
+    .address(muxVGAaddress_out),
     .byteData(writeData[7:0]),
     .wordData(writeData),
-    .byteWriteEnable(byteWrite),
-    .writeEnable(memWrite),
+    .byteWriteEnable(muxVGAaddress1_out),
+    .writeEnable(muxVGAaddress2_out),
+    .vgaSignal(vgaSignal),
     .q(readData)
+);
+
+vgaTest vga (
+	.MAX10_CLK1_50(memClk),
+	.rgb(rgb),
+	.reset(rst),
+
+	.VGA_CLK(VGA_CLK),
+	.VGA_B(VGA_B),
+	.VGA_G(VGA_G),
+	.VGA_R(VGA_R),
+	.VGA_HS(VGA_HS),
+	.VGA_VS(VGA_VS),
+	.VGA_BLANK(VGA_BLANK),
+	.VGA_SYNC(VGA_SYNC),
+	.x(x),
+	.y(y)
 );
 
 Sumador_estructural #(32) sumadorPC4 (
@@ -213,7 +287,7 @@ mux #(.S(4),.N(32)) aluMemMux (
     .out(result)
 );
 
-always_ff @(posedge clk or posedge rst) begin
+always_ff @(posedge clk) begin
     if (rst) begin
         pc <= -1;  //reset
     end else begin
@@ -222,6 +296,32 @@ always_ff @(posedge clk or posedge rst) begin
         end else begin
             pc <= 0;  //Si hay overflow reinicie
         end 
+    end 
+
+end
+
+always_ff @(posedge memClk) begin 
+    if (rst) begin
+        address = 0;
+    end else begin
+        x_cond = (207 <= x) && (x <= 432);
+        y_cond = (127 <= y) && (y <= 352);
+
+        if(x_cond && y_cond) begin
+            if (switch == 0) begin
+                address = ((x-207) + (y-127)*225)*4+16;
+            end else begin
+                address = ((x-207) + (y-127)*225)*4+202624;
+            end
+            rgb[0] = readData[7:0];
+            rgb[1] = readData[15:8];
+            rgb[2] = readData[23:16];
+        end else begin
+            rgb[0] = 8'd0;
+            rgb[1] = 8'd0;
+            rgb[2] = 8'd0;
+            address = 0;
+        end
     end 
 end
 

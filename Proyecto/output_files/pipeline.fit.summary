@@ -1,20 +1,20 @@
-Fitter Status : Successful - Mon Nov 18 09:21:24 2024
+Fitter Status : Successful - Fri Nov 22 02:23:42 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : pipeline
-Top-level Entity Name : imagenPrintTest
+Top-level Entity Name : uniciclo
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 154 / 41,910 ( < 1 % )
-Total registers : 171
-Total pins : 31 / 499 ( 6 % )
+Logic utilization (in ALMs) : 3,154 / 41,910 ( 8 % )
+Total registers : 1309
+Total pins : 33 / 499 ( 7 % )
 Total virtual pins : 0
-Total block memory bits : 1,572,864 / 5,662,720 ( 28 % )
-Total RAM Blocks : 192 / 553 ( 35 % )
-Total DSP Blocks : 1 / 112 ( < 1 % )
+Total block memory bits : 4,204,672 / 5,662,720 ( 74 % )
+Total RAM Blocks : 514 / 553 ( 93 % )
+Total DSP Blocks : 4 / 112 ( 4 % )
 Total HSSI RX PCSs : 0 / 9 ( 0 % )
 Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
 Total HSSI TX PCSs : 0 / 9 ( 0 % )
 Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
-Total PLLs : 1 / 15 ( 7 % )
+Total PLLs : 3 / 15 ( 20 % )
 Total DLLs : 0 / 4 ( 0 % )

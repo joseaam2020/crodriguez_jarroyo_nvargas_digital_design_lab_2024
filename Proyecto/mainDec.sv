@@ -26,22 +26,28 @@ always_comb begin
     byteWrite = 0;
 
     if (op == 2'b00) begin // instrucciones de datos
-        if (funct[5] == 0) begin 
+        if (funct[5] == 0) begin //inmediato
             aluSrc = 4'b0000; 
         end else begin 
             aluSrc = 4'b0001; 
         end
-        if (funct == 0 && mulBits == 4'b1001) begin
+
+        if (funct == 0 && mulBits == 4'b1001) begin //multiplicacion
             regSrc = 4'b1010;
             mulOp = 1;
         end else begin
             regSrc = 4'b0000;
             mulOp = 0;
         end
+
+        if (funct[4:1] == 4'b1010) begin //compare
+            regW = 0;
+        end else begin
+            regW = 1;
+        end
         branch = 0;
         memtoReg = 4'b0000;
         memW = 0;
-        regW = 1;
         aluOp = 1;
         byteWrite = 0;
     end else if (op == 2'b01) begin // instrucciones de memoria

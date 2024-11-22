@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Fri Nov 22 02:20:35 2024
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : pipeline
+Top-level Entity Name : uniciclo
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1288
+Total pins : 33
+Total virtual pins : 0
+Total block memory bits : 4,204,672
+Total DSP Blocks : 4
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 3
+Total DLLs : 0

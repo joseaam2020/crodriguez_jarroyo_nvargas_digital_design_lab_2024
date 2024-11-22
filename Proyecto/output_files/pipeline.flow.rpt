@@ -1,5 +1,5 @@
 Flow report for pipeline
-Mon Nov 18 22:43:45 2024
+Fri Nov 22 02:24:14 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,24 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Mon Nov 18 22:43:45 2024       ;
-; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name               ; pipeline                                    ;
-; Top-level Entity Name       ; uniciclo                                    ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSXFC6D6F31C6                              ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Fri Nov 22 02:24:14 2024       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; pipeline                                    ;
+; Top-level Entity Name           ; uniciclo                                    ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSXFC6D6F31C6                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 3,154 / 41,910 ( 8 % )                      ;
+; Total registers                 ; 1309                                        ;
+; Total pins                      ; 33 / 499 ( 7 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 4,204,672 / 5,662,720 ( 74 % )              ;
+; Total DSP Blocks                ; 4 / 112 ( 4 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
+; Total PLLs                      ; 3 / 15 ( 20 % )                             ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,100 +68,146 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/18/2024 22:43:34 ;
+; Start date & time ; 11/22/2024 02:19:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                 ;
-+--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id         ;
-+--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 88648931053584.173199141416584         ; --            ; --          ; --                 ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Sumador_ins     ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_sumador         ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; imagenPrintTest_tb ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; registros_tb       ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mux_tb             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; uniciclo_tb        ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_extensor        ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; byteRam_tb         ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uniciclo_tb                            ; --            ; --          ; eda_simulation     ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation     ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                 ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_FILE                  ; tb_Sumador_ins.sv                      ; --            ; --          ; tb_Sumador_ins     ;
-; EDA_TEST_BENCH_FILE                  ; tb_Sumador_ins.sv                      ; --            ; --          ; tb_sumador         ;
-; EDA_TEST_BENCH_FILE                  ; imagenPrintTest_tb.sv                  ; --            ; --          ; imagenPrintTest_tb ;
-; EDA_TEST_BENCH_FILE                  ; registros_tb.sv                        ; --            ; --          ; registros_tb       ;
-; EDA_TEST_BENCH_FILE                  ; mux_tb.sv                              ; --            ; --          ; mux_tb             ;
-; EDA_TEST_BENCH_FILE                  ; uniciclo_tb.sv                         ; --            ; --          ; uniciclo_tb        ;
-; EDA_TEST_BENCH_FILE                  ; tb_extensor.sv                         ; --            ; --          ; tb_extensor        ;
-; EDA_TEST_BENCH_FILE                  ; byteRam_tb.sv                          ; --            ; --          ; byteRam_tb         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Sumador_ins                         ; --            ; --          ; tb_Sumador_ins     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_sumador                             ; --            ; --          ; tb_sumador         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; imagenPrintTest_tb                     ; --            ; --          ; imagenPrintTest_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; registros_tb                           ; --            ; --          ; registros_tb       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; mux_tb                                 ; --            ; --          ; mux_tb             ;
-; EDA_TEST_BENCH_MODULE_NAME           ; uniciclo_tb                            ; --            ; --          ; uniciclo_tb        ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_extensor                            ; --            ; --          ; tb_extensor        ;
-; EDA_TEST_BENCH_MODULE_NAME           ; byteRam_tb                             ; --            ; --          ; byteRam_tb         ;
-; EDA_TEST_BENCH_NAME                  ; tb_sumador                             ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Sumador_ins                         ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_extensor                            ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; registros_tb                           ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; uniciclo_tb                            ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; imagenPrintTest_tb                     ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; mux_tb                                 ; --            ; --          ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; byteRam_tb                             ; --            ; --          ; eda_simulation     ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation     ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                 ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                 ;
-; MISC_FILE                            ; ram_bb.v                               ; --            ; --          ; --                 ;
-; MISC_FILE                            ; vga_pll.cmp                            ; --            ; --          ; --                 ;
-; MISC_FILE                            ; vga_pll_sim/vga_pll.vo                 ; --            ; --          ; --                 ;
-; MISC_FILE                            ; instrClk.cmp                           ; --            ; --          ; --                 ;
-; MISC_FILE                            ; instrClk_sim/instrClk.vo               ; --            ; --          ; --                 ;
-; MISC_FILE                            ; ram2_bb.v                              ; --            ; --          ; --                 ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; uniciclo    ; Top                ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                 ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                 ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                 ;
-; SPD_FILE                             ; vga_pll.spd                            ; --            ; --          ; --                 ;
-; SPD_FILE                             ; instrClk.spd                           ; --            ; --          ; --                 ;
-; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --                 ;
-; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --                 ;
-; TOP_LEVEL_ENTITY                     ; uniciclo                               ; pipeline      ; --          ; --                 ;
-+--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                      ;
++--------------------------------------+---------------------------------------------------------------------------------------------+---------------+-------------+--------------------+
+; Assignment Name                      ; Value                                                                                       ; Default Value ; Entity Name ; Section Id         ;
++--------------------------------------+---------------------------------------------------------------------------------------------+---------------+-------------+--------------------+
+; COMPILER_SIGNATURE_ID                ; 88648931053584.173226359211412                                                              ; --            ; --          ; --                 ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; tb_Sumador_ins     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; tb_sumador         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; imagenPrintTest_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; registros_tb       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; mux_tb             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; uniciclo_tb        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; tb_extensor        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                          ; --            ; --          ; byteRam_tb         ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uniciclo_tb                                                                                 ; --            ; --          ; eda_simulation     ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                                 ; --            ; --          ; eda_simulation     ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                                                                   ; <None>        ; --          ; --                 ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                                             ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_FILE                  ; tb_Sumador_ins.sv                                                                           ; --            ; --          ; tb_Sumador_ins     ;
+; EDA_TEST_BENCH_FILE                  ; tb_Sumador_ins.sv                                                                           ; --            ; --          ; tb_sumador         ;
+; EDA_TEST_BENCH_FILE                  ; imagenPrintTest_tb.sv                                                                       ; --            ; --          ; imagenPrintTest_tb ;
+; EDA_TEST_BENCH_FILE                  ; registros_tb.sv                                                                             ; --            ; --          ; registros_tb       ;
+; EDA_TEST_BENCH_FILE                  ; mux_tb.sv                                                                                   ; --            ; --          ; mux_tb             ;
+; EDA_TEST_BENCH_FILE                  ; uniciclo_tb.sv                                                                              ; --            ; --          ; uniciclo_tb        ;
+; EDA_TEST_BENCH_FILE                  ; tb_extensor.sv                                                                              ; --            ; --          ; tb_extensor        ;
+; EDA_TEST_BENCH_FILE                  ; byteRam_tb.sv                                                                               ; --            ; --          ; byteRam_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Sumador_ins                                                                              ; --            ; --          ; tb_Sumador_ins     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_sumador                                                                                  ; --            ; --          ; tb_sumador         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; imagenPrintTest_tb                                                                          ; --            ; --          ; imagenPrintTest_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; registros_tb                                                                                ; --            ; --          ; registros_tb       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mux_tb                                                                                      ; --            ; --          ; mux_tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; uniciclo_tb                                                                                 ; --            ; --          ; uniciclo_tb        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_extensor                                                                                 ; --            ; --          ; tb_extensor        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; byteRam_tb                                                                                  ; --            ; --          ; byteRam_tb         ;
+; EDA_TEST_BENCH_NAME                  ; tb_sumador                                                                                  ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Sumador_ins                                                                              ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_extensor                                                                                 ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; registros_tb                                                                                ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; uniciclo_tb                                                                                 ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; imagenPrintTest_tb                                                                          ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; mux_tb                                                                                      ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; byteRam_tb                                                                                  ; --            ; --          ; eda_simulation     ;
+; EDA_TIME_SCALE                       ; 1 ps                                                                                        ; --            ; --          ; eda_simulation     ;
+; ENABLE_SIGNALTAP                     ; On                                                                                          ; --            ; --          ; --                 ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                                          ; --            ; --          ; --                 ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                                           ; --            ; --          ; --                 ;
+; MISC_FILE                            ; ram_bb.v                                                                                    ; --            ; --          ; --                 ;
+; MISC_FILE                            ; rom_bb.v                                                                                    ; --            ; --          ; --                 ;
+; MISC_FILE                            ; vga_pll.cmp                                                                                 ; --            ; --          ; --                 ;
+; MISC_FILE                            ; vga_pll_sim/vga_pll.vo                                                                      ; --            ; --          ; --                 ;
+; MISC_FILE                            ; instrClk.cmp                                                                                ; --            ; --          ; --                 ;
+; MISC_FILE                            ; instrClk_sim/instrClk.vo                                                                    ; --            ; --          ; --                 ;
+; MISC_FILE                            ; ram2_bb.v                                                                                   ; --            ; --          ; --                 ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                                      ; --            ; uniciclo    ; Top                ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                                      ; --            ; uniciclo    ; Top                ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                                      ; --            ; uniciclo    ; Top                ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                                         ; --            ; --          ; --                 ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                       ; --            ; --          ; --                 ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                                ; --            ; --          ; --                 ;
+; SLD_FILE                             ; db/stp2_auto_stripped.stp                                                                   ; --            ; --          ; --                 ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                                         ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                                               ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                                     ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334528                                                                     ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                                      ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                               ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=128                                                                        ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                  ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                                              ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                                           ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                                      ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                                                   ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                                         ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=128                                                                        ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                                                    ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                                                      ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=0                                                                          ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                                      ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                        ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                               ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=17                                                                            ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=17                                                                         ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=17                                                               ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0   ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=72                                                                ; --            ; --          ; auto_signaltap_0   ;
+; SPD_FILE                             ; vga_pll.spd                                                                                 ; --            ; --          ; --                 ;
+; SPD_FILE                             ; instrClk.spd                                                                                ; --            ; --          ; --                 ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                                          ; --            ; --          ; --                 ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                                          ; --            ; --          ; --                 ;
+; TOP_LEVEL_ENTITY                     ; uniciclo                                                                                    ; pipeline      ; --          ; --                 ;
+; USE_SIGNALTAP_FILE                   ; output_files/stp2.stp                                                                       ; --            ; --          ; --                 ;
++--------------------------------------+---------------------------------------------------------------------------------------------+---------------+-------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4864 MB             ; 00:00:05                           ;
-; Total                  ; 00:00:11     ; --                      ; --                  ; 00:00:05                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:38     ; 1.0                     ; 5050 MB             ; 00:00:19                           ;
+; Partition Merge      ; 00:00:01     ; 1.0                     ; 4810 MB             ; 00:00:00                           ;
+; Fitter               ; 00:03:06     ; 1.3                     ; 7253 MB             ; 00:06:31                           ;
+; Assembler            ; 00:00:09     ; 1.0                     ; 4946 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:15     ; 4.8                     ; 5409 MB             ; 00:00:39                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4913 MB             ; 00:00:02                           ;
+; Total                ; 00:04:12     ; --                      ; --                  ; 00:07:36                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge      ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; JoseS9           ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
+quartus_cdb --read_settings_files=off --write_settings_files=off pipeline -c pipeline --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+quartus_asm --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+quartus_sta pipeline -c pipeline
+quartus_eda --read_settings_files=off --write_settings_files=off pipeline -c pipeline
 
 
 

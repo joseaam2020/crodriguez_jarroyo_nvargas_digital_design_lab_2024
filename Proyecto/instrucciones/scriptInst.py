@@ -36,7 +36,7 @@ def convert_file_to_intel_hex(input_filename, output_filename):
         outfile.write(":00000001FF\n")
 
 # Ejecutar la conversión
-input_filename = "./instrucciones/instruccionesSepia.txt"
-output_filename = "./instrucciones/memoriaSepia.txt"
+input_filename = "./instrucciones/instruccionesCompletas.txt"
+output_filename = "./instrucciones/memoriaCompletas.txt"
 convert_file_to_intel_hex(input_filename, output_filename)
 print(f"Conversion complete. Output saved to {output_filename}.")

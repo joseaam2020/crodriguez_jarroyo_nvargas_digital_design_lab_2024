@@ -76,7 +76,7 @@ module byteRam_tb;
 
         // Test 5: Byte Write/Read from newRam2
         $display("Starting Test 5: Byte Write/Read from newRam2...");
-        address = 32'h0001_0004;  // Same address
+        address = 32'h0003ffff;  // Same address
         byteData = 8'h55;
         byteWriteEnable = 1;
         writeEnable = 1;
