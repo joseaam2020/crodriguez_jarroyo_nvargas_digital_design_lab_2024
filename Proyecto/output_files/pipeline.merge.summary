@@ -1,10 +1,10 @@
-Partition Merge Status : Successful - Fri Nov 22 02:20:35 2024
+Partition Merge Status : Successful - Fri Nov 22 02:57:35 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : uniciclo
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1288
+Total registers : 1321
 Total pins : 33
 Total virtual pins : 0
 Total block memory bits : 4,204,672

@@ -92,10 +92,10 @@ module byteRam(
     // Control de actualización de address12
     always_ff @(posedge clk) begin
         if (rst) begin
-            address12 <= 0;
+            address12 <= 32'd1;
         end else if (newAddress == 3 && writeEnable && ~mayorAMax) begin
             if (writeMux_out == 1 | writeMux_out == 0) begin
-                address12 <= writeMux_out;
+                address12 <= 32'd1;
             end
         end
     end

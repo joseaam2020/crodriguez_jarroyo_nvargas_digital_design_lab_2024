@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Nov 22 02:23:42 2024
+Fitter Status : Successful - Fri Nov 22 03:00:57 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : uniciclo
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 3,154 / 41,910 ( 8 % )
-Total registers : 1309
+Logic utilization (in ALMs) : 3,125 / 41,910 ( 7 % )
+Total registers : 1336
 Total pins : 33 / 499 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 4,204,672 / 5,662,720 ( 74 % )

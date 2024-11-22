@@ -307,7 +307,7 @@ always_ff @(posedge memClk) begin
         x_cond = (207 <= x) && (x <= 432);
         y_cond = (127 <= y) && (y <= 352);
 
-        if(x_cond && y_cond) begin
+        if(x_cond && y_cond && vgaSelector) begin
             if (switch == 0) begin
                 address = ((x-207) + (y-127)*225)*4+16;
             end else begin
